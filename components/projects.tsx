@@ -26,7 +26,7 @@ export function Projects() {
               alt="ykck"
               height={520}
               width={520}
-              className="shadow-box project-frame rounded-xl"
+              className="project-frame "
             />
             <div className="flex flex-wrap text-lg mt-2">
               <p className="flex-1 font-heading text-left">YKCK</p>
@@ -44,7 +44,7 @@ export function Projects() {
               alt="terraceman"
               height={520}
               width={520}
-              className="shadow-box project-frame rounded-xl"
+              className="project-frame "
             />
             <div className="flex flex-wrap text-lg mt-2">
               <p className="flex-1 font-heading text-left">Terrace Man Cave</p>
@@ -59,7 +59,7 @@ export function Projects() {
               alt="Moksha Bar"
               height={420}
               width={420}
-              className="shadow-box project-frame rounded-xl"
+              className="project-frame "
             />
             <div className="flex flex-wrap text-lg mt-2">
               <p className="flex-1 font-heading text-left ">Moksha Bar</p>
@@ -79,7 +79,7 @@ export function Projects() {
               alt="sports one"
               height={820}
               width={820}
-              className="shadow-box project-frame mx-auto rounded-xl"
+              className="project-frame mx-auto "
             />
             <div className="flex flex-wrap text-lg mt-2">
               <p className="flex-1 font-heading text-left">Sports One</p>
@@ -96,7 +96,7 @@ export function Projects() {
               alt="Grand Entrance"
               height={420}
               width={420}
-              className="shadow-box project-frame rounded-xl"
+              className="project-frame "
             />
             <div className="flex flex-wrap text-lg mt-2">
               <p className="flex-1 font-heading text-left ">Grand Entrance</p>
@@ -111,7 +111,7 @@ export function Projects() {
               alt="Casa Grand"
               height={420}
               width={490}
-              className="shadow-box project-frame rounded-xl"
+              className="project-frame "
             />
             <div className="flex flex-wrap text-lg mt-2">
               <p className=" text-left ">Casa Grande- Luxury Interior</p>
@@ -128,7 +128,7 @@ export function Projects() {
               alt="Casa Grand Budget Interior"
               height={420}
               width={420}
-              className="shadow-box project-frame rounded-xl"
+              className="project-frame "
             />
             <div className="flex flex-wrap text-lg mt-2">
               <p className=" text-left">Casa Grand - Budget Interior</p>
@@ -145,7 +145,7 @@ export function Projects() {
               alt="Visore Opticals"
               height={680}
               width={680}
-              className="shadow-box project-frame rounded-xl"
+              className="project-frame "
             />
             <div className="flex flex-wrap text-lg mt-2">
               <p className="flex-1 font-heading text-left">Visore Opticals</p>
@@ -162,7 +162,7 @@ export function Projects() {
               alt="Casa Grand Budget Interior"
               height={680}
               width={680}
-              className="shadow-box project-frame rounded-xl"
+              className="project-frame "
             />
             <div className="flex flex-wrap text-lg mt-2">
               <p className="flex-1 font-heading text-left">Delphi Derma Clinic</p>
@@ -179,7 +179,7 @@ export function Projects() {
               alt="Casa Grand Budget Interior"
               height={380}
               width={380}
-              className="shadow-box project-frame rounded-xl"
+              className="project-frame "
             />
             <div className="flex flex-wrap text-lg mt-2">
               <p className="flex-1 font-heading text-left">AR Rahman Cafe</p>
@@ -197,7 +197,7 @@ export function Projects() {
               alt="Casa Grand Budget Interior"
               height={380}
               width={380}
-              className="shadow-box project-frame rounded-xl"
+              className="project-frame "
             />
             <div className="flex flex-wrap text-lg mt-2">
               <p className="flex-1 font-heading text-left">DUPLEX RESIDENCE</p>
@@ -212,7 +212,7 @@ export function Projects() {
               alt="Casa Grand Budget Interior"
               height={420}
               width={420}
-              className="shadow-box project-frame rounded-xl"
+              className="project-frame "
             />
             <div className="flex flex-wrap text-lg mt-2">
               <p className="flex-1 font-heading text-left">DUPLEX RESIDENCE</p>
