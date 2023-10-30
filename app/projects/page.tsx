@@ -130,7 +130,7 @@ function ProjectsHome() {
       <Head>
         <title>Projects | Studio Bind</title>
       </Head>
-      <div className="md:ml-5 ml-10 flex  justify-between">
+      <div className="md:ml-5 justify-center flex  md:justify-between">
         <MainNav items={HomePage.mainNav} />
         <nav className="justify-between">
           {marketingConfig &&
@@ -149,7 +149,7 @@ function ProjectsHome() {
             ))}
         </nav>
       </div>
-      <p className="text-5xl font-heading font-semibold sub-gradient mb-5 mt-10 text-center display-animation">
+      <p className="md:text-5xl text-4xl font-heading font-semibold sub-gradient mb-5 mt-10 text-center display-animation">
         Projects
       </p>
       <Projects />

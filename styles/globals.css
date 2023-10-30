@@ -95,6 +95,11 @@
   }
 }
 
+.project-frame {
+  transition: transform 0.1s;
+  transform: scale(1);
+}
+
 .project-frame:hover {
   opacity: 0.9;
 }
