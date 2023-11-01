@@ -21,6 +21,7 @@
     "clsx": "^2.0.0",
     "cors": "^2.8.5",
     "emailjs-com": "^3.2.0",
+    "firebase": "^10.5.2",
     "formidable": "^3.5.1",
     "framer-motion": "^10.16.4",
     "gsap": "^3.12.2",

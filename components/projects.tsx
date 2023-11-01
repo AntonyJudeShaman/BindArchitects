@@ -1,5 +1,5 @@
 "use client";
-import React, { CSSProperties,MouseEvent } from "react";
+import React, { CSSProperties, MouseEvent } from "react";
 import { SiteFooter } from "./site-footer";
 import Link from "next/link";
 import image1 from "../assets/ykck.png";
@@ -300,14 +300,40 @@ export function Projects() {
 
   return (
     <div className="min-h-screen animate-fade-in py-8 " data-theme="">
+      <div className="flex flex-wrap gap-2 justify-center w-full ">
+        <Link
+          href="#"
+          style={{ filter: "brightness(90%)" }}
+          aria-label="Projects Section"
+        >
+          <div className=" overflow-hidden mb-10 md:m-0 m-4 md:mb-20">
+            <Image
+              src={image8}
+              alt="Visore Opticals"
+              height={840}
+              width={840}
+              className="project-frame overflow-hidden"
+              onMouseMove={handleMouseMove7}
+              onMouseLeave={handleMouseLeave7}
+              style={hoverStyle7}
+            />
+            <div className="flex flex-wrap text-lg mt-2">
+              <p className="flex-1 font-heading text-left">Visore Opticals</p>
+              <p className="flex-1 font-heading text-right text-zinc-500">
+                2023
+              </p>
+            </div>
+          </div>
+        </Link>
+      </div>
       <div className="flex flex-wrap gap-2 w-full ">
         <Link
           href="#"
           style={{ filter: "brightness(120%)", width: "490px" }}
-          className=""
+          className="  mx-auto md:m-0 p-4 overflow-hidden justify-center  mb-10"
           aria-label="Projects Section"
         >
-          <div className="  mx-auto md:m-0 p-4 overflow-hidden justify-center  mb-10">
+          <div className="  mx-auto  overflow-hidden justify-center  ">
             <img
               src={image1.src}
               alt="ykck"
@@ -326,9 +352,10 @@ export function Projects() {
             </div>
           </div>
         </Link>
-        <Link href="#" aria-label="Projects Section">
+        <Link href="#" aria-label="Projects Section" 
+            className="overflow-hidden md:m-0 m-4  md:ml-28 md:mt-20  mb-10">
           <div
-            className="overflow-hidden md:m-0 m-4  md:ml-28 md:mt-20  mb-10"
+            className="overflow-hidden"
             style={{ filter: "brightness(120%)" }}
           >
             <Image
@@ -337,7 +364,7 @@ export function Projects() {
               height={520}
               width={520}
               className="project-frame overflow-hidden"
-               onMouseMove={handleMouseMove1}
+              onMouseMove={handleMouseMove1}
               onMouseLeave={handleMouseLeave1}
               style={hoverStyle1}
             />
@@ -351,10 +378,11 @@ export function Projects() {
         </Link>
         <Link
           href="#"
-          style={{ filter: "brightness(140%)", width: "400px" }}
+          style={{ filter: "brightness(140%)" }}
           aria-label="Projects Section"
+          className="  md:ml-60 md:m-0 md:mt-10 m-4 overflow-hidden  mb-10"
         >
-          <div className="  md:ml-80 md:m-0 m-4 overflow-hidden  mb-10">
+          <div className="  overflow-hidden">
             <Image
               src={image3}
               alt="Moksha Bar"
@@ -375,10 +403,14 @@ export function Projects() {
         </Link>
       </div>
       <div className="flex flex-wrap gap-2 w-full mx-auto overflow-hidden justify-center align-center">
-        <Link href="#" aria-label="Projects Section">
+        <Link
+          href="#"
+          aria-label="Projects Section"
+          className="overflow-hidden md:m-0 p-4 mx-auto md:mt-20  mb-10"
+        >
           <div
-            className="overflow-hidden md:m-0 p-4 mx-auto md:mt-20  mb-10 w-full"
-            style={{ filter: "brightness(120%)"}}
+            className="overflow-hidden  w-full"
+            style={{ filter: "brightness(120%)" }}
           >
             <Image
               src={image4}
@@ -404,8 +436,9 @@ export function Projects() {
           href="#"
           style={{ filter: "brightness(140%)" }}
           aria-label="Projects Section"
+          className="  md:ml-40 md:m-0 m-4 overflow-hidden md:mt-20  mb-10"
         >
-          <div className="  md:ml-40 md:m-0 m-4 overflow-hidden  mb-10">
+          <div className=" ">
             <Image
               src={image5}
               alt="Grand Entrance"
@@ -428,8 +461,9 @@ export function Projects() {
           href="#"
           style={{ filter: "brightness(140%)" }}
           aria-label="Projects Section"
+          className="overflow-hidden md:m-0 m-4 md:ml-24 md:mt-80   mb-10"
         >
-          <div className="overflow-hidden md:m-0 m-4 md:ml-16 md:mt-60   mb-10">
+          <div className="overflow-hidden ">
             <Image
               src={image6}
               alt="Casa Grand"
@@ -441,7 +475,9 @@ export function Projects() {
               style={hoverStyle5}
             />
             <div className="flex flex-wrap text-lg mt-2">
-              <p className="font-heading text-left ">Casa Grande- Luxury Interior</p>
+              <p className="font-heading text-left ">
+                Casa Grande- Luxury Interior
+              </p>
               <p className="flex-1 font-heading text-right text-zinc-500">
                 2022
               </p>
@@ -449,13 +485,14 @@ export function Projects() {
           </div>
         </Link>
       </div>
-      <div className="flex flex-wrap gap-2 justify-end w-full ">
+      <div className="flex flex-wrap gap-2 justify-start w-full ">
         <Link
           href="#"
           style={{ filter: "brightness(140%)" }}
           aria-label="Projects Section"
+          className="overflow-hidden md:m-0 m-4 md:mt-20 mb-10 md:mr-36"
         >
-          <div className="overflow-hidden md:m-0 m-4  mb-10 md:mr-36">
+          <div className="overflow-hidden ">
             <Image
               src={image7}
               alt="Casa Grand Budget Interior"
@@ -475,39 +512,15 @@ export function Projects() {
           </div>
         </Link>
       </div>
-      <div className="flex flex-wrap gap-2 justify-start w-full ">
-        <Link
-          href="#"
-          style={{ filter: "brightness(90%)" }}
-          aria-label="Projects Section"
-        >
-          <div className=" overflow-hidden mb-10 md:m-0 m-4 md:-mt-40">
-            <Image
-              src={image8}
-              alt="Visore Opticals"
-              height={680}
-              width={680}
-              className="project-frame overflow-hidden"
-              onMouseMove={handleMouseMove7}
-              onMouseLeave={handleMouseLeave7}
-              style={hoverStyle7}
-            />
-            <div className="flex flex-wrap text-lg mt-2">
-              <p className="flex-1 font-heading text-left">Visore Opticals</p>
-              <p className="flex-1 font-heading text-right text-zinc-500">
-                2023
-              </p>
-            </div>
-          </div>
-        </Link>
-      </div>
+
       <div className="flex flex-wrap gap-2 justify-end w-full ">
         <Link
           href="#"
           style={{ filter: "brightness(115%)" }}
           aria-label="Projects Section"
+          className=" overflow-hidden mb-10 md:m-0 m-4 md:-mt-60 md:mr-20 justify-end"
         >
-          <div className=" overflow-hidden mb-10 md:m-0 m-4 md:mt-1 md:mr-28 justify-end">
+          <div className=" overflow-hidden  justify-end">
             <Image
               src={image9}
               alt="Casa Grand Budget Interior"
@@ -534,8 +547,9 @@ export function Projects() {
           href="#"
           style={{ filter: "brightness(130%)" }}
           aria-label="Projects Section"
+          className="  mb-10 overflow-hidden md:m-0 m-4 md:mt-20 md:ml-80 "
         >
-          <div className="  mb-10 overflow-hidden md:m-0 m-4 md:mt-1 md:ml-80 ">
+          <div>
             <Image
               src={image10}
               alt="Casa Grand Budget Interior"
@@ -546,12 +560,10 @@ export function Projects() {
               onMouseLeave={handleMouseLeave9}
               style={hoverStyle9}
             />
-            <div className="flex flex-wrap text-lg mt-2">
-              <p className="flex-1 font-heading text-left">AR Rahman Cafe</p>
-              <p className="flex-1 font-heading text-right text-zinc-500">
-                2021
-              </p>
-            </div>
+          </div>
+          <div className="flex flex-wrap text-lg mt-2">
+            <p className="flex-1 font-heading text-left">AR Rahman Cafe</p>
+            <p className="flex-1 font-heading text-right text-zinc-500">2021</p>
           </div>
         </Link>
       </div>
@@ -560,8 +572,9 @@ export function Projects() {
           href="#"
           style={{ filter: "brightness(130%)" }}
           aria-label="Projects Section"
+          className="overflow-hidden md:m-0 m-4  mb-10 justify-start  md:mt-28 md:mr-40"
         >
-          <div className="overflow-hidden md:m-0 m-4  mb-10  md:mt-28 md:mr-60">
+          <div className="overflow-hidden ">
             <Image
               src={image12}
               alt="Casa Grand Budget Interior"
@@ -573,7 +586,7 @@ export function Projects() {
               style={hoverStyle10}
             />
             <div className="flex flex-wrap text-lg mt-2">
-              <p className="flex-1 font-heading text-left">DUPLEX RESIDENCE</p>
+              <p className="flex-1 font-heading text-left">Remy Cinemas</p>
               <p className="flex-1 font-heading text-right text-zinc-500">
                 2022
               </p>
@@ -582,10 +595,11 @@ export function Projects() {
         </Link>
         <Link
           href="#"
+          className=" overflow-hidden md:m-0 m-4 mb-10  md:mt-40 md:mr-20 "
           style={{ filter: "brightness(130%)" }}
           aria-label="Projects Section"
         >
-          <div className=" overflow-hidden md:m-0 m-4 mb-10  md:mt-1 md:mr-60 ">
+          <div className=" overflow-hidden ">
             <Image
               src={image11}
               alt="Casa Grand Budget Interior"

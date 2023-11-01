@@ -6,10 +6,14 @@ import "@/styles/notfound.css";
 import image from "../assets/notfound.png";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Head from "next/head";
 
 export default function NotFound() {
   return (
     <div class="notfound p-6">
+      <Head>
+        <title>Not Found || Studio Bind</title>
+      </Head>
       <Link href="/" aria-label="go back to homepage">
         <div style={{ display: "flex", justifyContent: "center" }}>
           <Image src={image} width={500} alt="404 not found" />
@@ -23,6 +27,7 @@ export default function NotFound() {
         changed, or is temporarily unavailable.
       </p>
       <div className="text-center mt-3">
+        <Link href="/">
         <Button
           href="/"
           size="lg"
@@ -31,6 +36,7 @@ export default function NotFound() {
         >
           Go To Homepage
         </Button>
+        </Link>
       </div>
     </div>
   );

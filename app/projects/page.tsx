@@ -12,6 +12,7 @@ import { Projects } from "@/components/projects";
 import Head from "next/head";
 import FreeQuote from "@/components/free-quote";
 import { cn } from "@/lib/utils";
+import Card from "@/components/StickyCard";
 
 export interface Project {
   projectId: string;
@@ -130,7 +131,7 @@ function ProjectsHome() {
       <Head>
         <title>Projects | Studio Bind</title>
       </Head>
-      <div className="md:ml-5 justify-center flex  md:justify-between">
+      <div className="md:ml-5 justify-center flex mb-10 md:justify-between">
         <MainNav items={HomePage.mainNav} />
         <nav className="justify-between">
           {marketingConfig &&
@@ -149,10 +150,9 @@ function ProjectsHome() {
             ))}
         </nav>
       </div>
-      <p className="md:text-5xl text-4xl font-heading font-semibold sub-gradient mb-5 mt-10 text-center display-animation">
-        Projects
-      </p>
-      <Projects />
+      
+      <Card />
+      
       {/* <div className="flex flex-wrap gap-2 justify-center">
         {projects.map((project) => (
           <Link href={`/projects/${project.projectId}`} key={project.projectId}>

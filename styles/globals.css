@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 
+
 @font-face {
   font-family: "CustomFont";
   src: url("../assets/fonts/Bauhaus\ 93\ Regular.ttf") format("woff2");
@@ -27,6 +28,46 @@
   font-family: "Montserrat";
   font-weight: 400;
 }
+
+.masonry-container {
+  column-count: 3;
+}
+
+.masonry-item {
+  display: inline-block;
+  width: 100%;
+}
+
+.hhov {
+    transform: scale(1);
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .hhov:hover {
+    transform: scale(0.97);
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0 15px 20px rgb(26, 28, 26);
+  }
+
+
+  .masonry-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 4%;
+  }
+  
+  .masonry-item {
+    display: inline-block;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .masonry-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
 
 @keyframes revealAnimation {
   0% {
@@ -184,13 +225,31 @@
 }
 
 .title-gradient {
-  background: -webkit-linear-gradient(#dfdcdc, #f9f4f4) !important;
+  background: -webkit-linear-gradient(#ffffff, #ffffff) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.title-gradient:hover {
+  background: -webkit-linear-gradient(#a71d0b, #f96475) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
 }
 
 .title-gradient2 {
-  background: -webkit-linear-gradient(#dfdcdc, #b7b3b3) !important;
+  background: -webkit-linear-gradient(#dfdcdc, #7e7c7c) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.title-gradient3:hover {
+  background: -webkit-linear-gradient(#0ba792, #64f9c7) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.title-gradient4:hover {
+  background: -webkit-linear-gradient(#a70b8a, #ec64f9) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
 }

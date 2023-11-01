@@ -1,73 +1,92 @@
-import prisma from "@/lib/prisma";
-import { SiteConfig } from "types";
-import { Metadata } from "next";
-import { Suspense } from "react";
+"use client"
+import { useState, useEffect, Suspense } from "react";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
+import { app } from "@/components/firebase";
+import { getStorage, ref, listAll, getDownloadURL } from "firebase/storage";
+import { HomePage, marketingConfig } from "config/marketing";
 import { MainNav } from "@/components/main-nav";
-import { marketingConfig } from "config/marketing";
 import Head from "next/head";
-import { useState } from "react";
 
-export const metadata: Metadata = {
-  title: "Project",
-  description: "Projects by Studio Bind",
-};
+const storage = getStorage(app);
+const storageRef = ref(storage);
 
-export interface Project {
-  projectId: string;
-  projectName: string;
-  description1: string;
-  description2: string;
-  description3: string;
-  description4: string;
-  description5: string;
-  image1: string;
-  image2: string;
-  image3: string;
-  image4: string;
-  image5: string;
-  image6: string;
-  image7: string;
-  image8: string;
-  image9: string;
-  image10: string;
-  testimonial: string;
-  testimonialPic: string;
-}
-
-export default async function getStaticProps({
+export default function ProjectPage({
   params,
 }: {
   params: { projectId: string };
 }) {
-  const project = await prisma.project.findUnique({
-    where: {
-      projectId: params.projectId,
-    },
-  });
+  const [images, setImages] = useState([]);
+
+  const event = params.projectId; 
+  const imagesRef = ref(storage, `eventImages/${event}/`);
+
+  listAll(imagesRef)
+    .then((res) => {
+      const imagePromises = res.items.map((item) => getDownloadURL(item));
+      Promise.all(imagePromises)
+        .then((urls) => {
+          setImages(urls as never[]);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+
 
   return (
     <div className="min-h-screen animate-fade-in py-8">
-      <div className="md:ml-20 ml-10">
-        <MainNav items={marketingConfig.mainNav} />
+      <div className="md:ml-5 justify-center flex mb-10 md:justify-between">
+        <MainNav items={HomePage.mainNav} />
+        <nav className="justify-between">
+          {marketingConfig &&
+            marketingConfig.mainNav.map((item, index) => (
+              <Link
+                key={index}
+                aria-label="navbar items"
+                href={item.disabled ? "#" : item.href}
+                className={cn(
+                  "group flex flex-col text-right items-center overflow-hidden my-font hidden mr-4 title-gradient md:inline-block rounded-md p-2 text-sm font-medium hover:underline",
+                  item.disabled && "cursor-not-allowed opacity-60"
+                )}
+              >
+                <span className="">{item.title}</span>
+              </Link>
+            ))}
+        </nav>
       </div>
-      <p>id: {params.projectId}</p>
       <Suspense fallback={<h2 className="mx-auto ">Loading...</h2>}>
-        {project ? (
+        {params.projectId ? (
           <div>
             <Head>
-              <title>{project.projectName} || Studio Bind</title>
+              <title>{params.projectId} || Studio Bind</title>
             </Head>
-            <img
-              src={`https://drive.google.com/uc?id=${project.description1}`}
-              className="w-1/2"
-              alt={project.projectName}
-            />
-            <h1>{project.projectName}</h1>
-            <p>{project.description1}</p>
-            <p>{project.description2}</p>
+            <div className="masonry-container min-h-screen">
+              {images.map((url) => (
+                <div key={url} className="masonry-item">
+                  <img src={url} alt="uploaded" className="hhov" />
+                </div>
+              ))}
+            </div>
           </div>
         ) : (
-          <p>Project not found</p>
+          <div className="mx-auto justify-center p-6">
+            <Head>
+              <title>No Project || Studio Bind</title>
+            </Head>
+            <div className="bg-gray-800  mx-auto mt-8 p-8 border border-gray-300 rounded shadow-lg text-center">
+              <p className="text-2xl text-red-500 font-semibold font-heading">
+                Project not found
+              </p>
+              <p className="text-white mt-2">
+                The requested project could not be found. Please try again later
+                :)
+              </p>
+            </div>
+          </div>
         )}
       </Suspense>
     </div>

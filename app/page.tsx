@@ -13,6 +13,7 @@ import { Metadata } from "next";
 import { Projects } from "@/components/projects";
 import Client from "@/components/client";
 import Questions from "@/components/still-questions";
+import Card  from "@/components/StickyCard";
 
 
 interface MarketingLayoutProps {
@@ -30,10 +31,10 @@ export default function HomeLayout() {
   return (
     <>
       <div className="flex min-h-screen flex-col ">
-        <header className="container z-40 bg-background">
-          <div className="flex h-20 items-center justify-between py-6">
+        <header className="md:ml-4 ml-4 z-40 bg-background">
+          <div className="flex h-20 justify-between md:justify-between  py-6">
             <MainNav items={marketingConfig.mainNav} />
-            <nav className="justify-between">
+            <nav className="justify-between inline-block">
                
               {marketingConfig &&
                 marketingConfig.mainNav.map((item, index) => (
@@ -42,35 +43,35 @@ export default function HomeLayout() {
                   aria-label="navbar items"
                   href={item.disabled ? "#" : item.href}
                   className={cn(
-                    "group flex flex-col text-right items-center overflow-hidden my-font hidden mr-4 title-gradient md:inline-block rounded-md p-2 text-sm font-medium hover:underline",
+                    "group flex flex-  text-right items-center overflow-hidden my-font hidden mr-4 title-gradient md:inline-block rounded-md p-2 text-sm font-medium hover:underline",
                     item.disabled && "cursor-not-allowed opacity-60"
                   )}
                 >
-                  <span className="">
+                  <span className="text-md">
                     {item.title}
                   </span>
                 </Link>
                 
                 ))}
-                
-            </nav>
-            {/* <Link
+                <Link
                 href="/login"
                 aria-label="login"
                 className={cn(
                   buttonVariants({
                     variant: "default",
                     className:
-                      "border border-green-300 w-30 bg-gradient-to-bl from-pink-500 to-purple-600 hover:to-pink-500 hover:from-purple-600  ",
+                      "border border-green-300 mr-4 -mt-3 md:hidden w-30 bg-gradient-to-bl from-pink-500 to-purple-600 hover:to-pink-500 hover:from-purple-600  ",
                     size: "lg",
                   }),
                   "px-4"
                 )}
               >
                 Login
-              </Link> */}
+              </Link>
+            </nav>
+            
           </div>
-        
+          
         </header>
 
         <IndexPage />

@@ -32,7 +32,7 @@ function page() {
                 aria-label="navbar items"
                 href={item.disabled ? "#" : item.href}
                 className={cn(
-                  "group flex flex-col text-right items-center overflow-hidden my-font hidden mr-4 title-gradient md:inline-block rounded-md p-2 text-sm font-medium hover:underline",
+                  "group flex hover:text-orange-400 flex-col text-right items-center overflow-hidden my-font hidden mr-4 title-gradient md:inline-block rounded-md p-2 text-sm font-medium hover:underline",
                   item.disabled && "cursor-not-allowed opacity-60"
                 )}
               >
