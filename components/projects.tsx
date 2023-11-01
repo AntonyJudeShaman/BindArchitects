@@ -334,7 +334,7 @@ export function Projects() {
           aria-label="Projects Section"
         >
           <div className="  mx-auto  overflow-hidden justify-center  ">
-            <img
+            <Image
               src={image1.src}
               alt="ykck"
               height={520}
