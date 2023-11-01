@@ -16,7 +16,6 @@ import NavbarM from "./nav2";
 import { app, analytics,firebaseConfig } from "@/components/firebase";
 
 
-const app = initializeApp(firebaseConfig);
 const storage = getStorage(app);
 const storageRef = ref(storage);
 const imagesRef = ref(storageRef, "images");
