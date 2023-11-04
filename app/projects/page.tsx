@@ -14,10 +14,7 @@ import FreeQuote from "@/components/free-quote";
 import { cn } from "@/lib/utils";
 import Card from "@/components/StickyCard";
 
-export const metadata: Metadata = {
-  title: "Projects | Studio Bind",
-  description: "Projects by Studio bind architects. Best architects in chennai",
-};
+
 
 export interface Project {
   projectId: string;
@@ -46,72 +43,6 @@ function ProjectsHome() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  useEffect(() => {
-    // const fetchData = async () => {
-    // try {
-    const cachedData = localStorage.getItem("cachedProjects");
-    const cachedExpiry = localStorage.getItem("cachedProjectsExpiry");
-    const expiryTimestamp = cachedExpiry ? parseInt(cachedExpiry, 10) : 0;
-    const currentTimestamp = new Date().getTime();
-
-    if (cachedData && currentTimestamp < expiryTimestamp) {
-      setProjects(JSON.parse(cachedData));
-      setLoading(false);
-      return;
-    }
-
-    // const res = await fetch("http://localhost:3000/api/auth/viewdata", {
-    //   method: "GET",
-    //   next: {
-    //     tags: ["projects"],
-    //   },
-    // });
-
-    // if (!res.ok) {
-    //   throw new Error("Network response was not ok");
-    // }
-
-    // const data: Project[] = await res.json();
-    // setProjects(data);
-
-    const newExpiryTimestamp = currentTimestamp + 60 * 60 * 1000;
-    // localStorage.setItem("cachedProjects", JSON.stringify(data));
-    localStorage.setItem("cachedProjectsExpiry", newExpiryTimestamp.toString());
-
-    setLoading(false);
-    // } catch (error) {
-    //   console.error("Error fetching data:", error);
-    //   setError("An error occurred while fetching data.");
-    //   setLoading(false);
-    // }
-    // };
-    // fetchData();
-  }, []);
-
-  const handleMouseMove = (e: React.MouseEvent) => {
-    // Get the image element
-    const img = e.currentTarget.querySelector("img");
-
-    if (img) {
-      // Calculate the percentage of mouse position relative to the image
-      const xPercentage = (e.nativeEvent.offsetX / img.clientWidth) * 100;
-      const yPercentage = (e.nativeEvent.offsetY / img.clientHeight) * 100;
-
-      // Adjust the image position based on the mouse position
-      img.style.transform = `translate(${xPercentage * 0.1}px, ${
-        yPercentage * 0.1
-      }px)`;
-    }
-  };
-
-  const handleMouseLeave = (e: React.MouseEvent) => {
-    // Reset the image position on mouse leave
-    const img = e.currentTarget.querySelector("img");
-
-    if (img) {
-      img.style.transform = "translate(0, 0)";
-    }
-  };
 
   if (loading) {
     return (
