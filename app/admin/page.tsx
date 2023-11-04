@@ -14,9 +14,11 @@ import { Label } from "@/components/ui/label";
 import SignOut from "@/components/sign-out";
 import ProjectForm from "@/components/projectform";
 // import { experimental_useFormStatus as useFormStatus } from 'react-dom'
+import AddProject from "@/components/add-project"
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Admin",
+  title: "Admin | Studio Bind",
   description: "Admin page to add and delete projects",
 };
 
@@ -62,15 +64,30 @@ export default async function ProjectsHome() {
   return (
     <div className="min-h-screen animate-fade-in py-8">
       <SignOut />
-      <div className="md:ml-20 ml-10">
+      <div className="md:ml-5 justify-center flex  md:justify-between">
         <MainNav items={marketingConfig.mainNav} />
+        <nav className="justify-between">
+          {marketingConfig &&
+            marketingConfig.mainNav.map((item, index) => (
+              <Link
+                key={index}
+                aria-label="navbar items"
+                href={item.disabled ? "#" : item.href}
+                className={cn(
+                  "group flex hover:text-orange-400 flex-col text-right items-center overflow-hidden my-font hidden mr-4 title-gradient md:inline-block rounded-md p-2 text-sm font-medium hover:underline",
+                  item.disabled && "cursor-not-allowed opacity-60"
+                )}
+              >
+                <span className="">{item.title}</span>
+              </Link>
+            ))}
+        </nav>
       </div>
-      <Nav />
       <p className="text-5xl font-heading font-semibold sub-gradient mb-5 mt-10 text-center display-animation">
         Add Projects
       </p>
 
-      <ProjectForm />
+      <AddProject/>
       <SiteFooter />
     </div>
   );

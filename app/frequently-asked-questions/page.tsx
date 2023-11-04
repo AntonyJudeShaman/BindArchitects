@@ -11,8 +11,8 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "FAQ",
-  description: "Frequently asked questions by customers",
+  title: "FAQ | Studio Bind",
+  description: "Frequently asked questions by clients.",
 }
 
 function page() {

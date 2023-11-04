@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState, useEffect, Suspense } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
@@ -7,18 +7,25 @@ import { getStorage, ref, listAll, getDownloadURL } from "firebase/storage";
 import { HomePage, marketingConfig } from "config/marketing";
 import { MainNav } from "@/components/main-nav";
 import Head from "next/head";
+import { Metadata } from "next";
 
 const storage = getStorage(app);
 const storageRef = ref(storage);
+
+
 
 export default function ProjectPage({
   params,
 }: {
   params: { projectId: string };
 }) {
+  const metadata: Metadata = {
+    title: `${params.projectId}`,
+    description: "Frequently asked questions by customers",
+  }
   const [images, setImages] = useState([]);
 
-  const event = params.projectId; 
+  const event = params.projectId;
   const imagesRef = ref(storage, `eventImages/${event}/`);
 
   listAll(imagesRef)
@@ -35,10 +42,13 @@ export default function ProjectPage({
     .catch((error) => {
       console.error(error);
     });
-
-
+    
   return (
     <div className="min-h-screen animate-fade-in py-8">
+      
+      <Head>
+        <title>{params.projectId} | Studio Bind</title>
+      </Head>
       <div className="md:ml-5 justify-center flex mb-10 md:justify-between">
         <MainNav items={HomePage.mainNav} />
         <nav className="justify-between">

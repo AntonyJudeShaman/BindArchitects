@@ -302,7 +302,7 @@ export function Projects() {
     <div className="min-h-screen animate-fade-in py-8 " data-theme="">
       <div className="flex flex-wrap gap-2 justify-center w-full ">
         <Link
-          href="#"
+          href="/projects/visoreopticals"
           style={{ filter: "brightness(90%)" }}
           aria-label="Projects Section"
         >
@@ -328,7 +328,7 @@ export function Projects() {
       </div>
       <div className="flex flex-wrap gap-2 w-full ">
         <Link
-          href="#"
+          href="/projects/ykck"
           style={{ filter: "brightness(120%)", width: "490px" }}
           className="  mx-auto md:m-0 p-4 overflow-hidden justify-center  mb-10"
           aria-label="Projects Section"
@@ -352,7 +352,7 @@ export function Projects() {
             </div>
           </div>
         </Link>
-        <Link href="#" aria-label="Projects Section" 
+        <Link href="/projects/terraceman" aria-label="Projects Section" 
             className="overflow-hidden md:m-0 m-4  md:ml-28 md:mt-20  mb-10">
           <div
             className="overflow-hidden"
@@ -377,7 +377,7 @@ export function Projects() {
           </div>
         </Link>
         <Link
-          href="#"
+          href="/projects/mokshabar"
           style={{ filter: "brightness(140%)" }}
           aria-label="Projects Section"
           className="  md:ml-60 md:m-0 md:mt-10 m-4 overflow-hidden  mb-10"
@@ -404,7 +404,7 @@ export function Projects() {
       </div>
       <div className="flex flex-wrap gap-2 w-full mx-auto overflow-hidden justify-center align-center">
         <Link
-          href="#"
+          href="/projects/sportsone"
           aria-label="Projects Section"
           className="overflow-hidden md:m-0 p-4 mx-auto md:mt-20  mb-10"
         >
@@ -433,7 +433,7 @@ export function Projects() {
       </div>
       <div className="flex flex-wrap gap-2  overflow-hidden">
         <Link
-          href="#"
+          href="/projects/grandentrance"
           style={{ filter: "brightness(140%)" }}
           aria-label="Projects Section"
           className="  md:ml-40 md:m-0 m-4 overflow-hidden md:mt-20  mb-10"
@@ -458,7 +458,7 @@ export function Projects() {
           </div>
         </Link>
         <Link
-          href="#"
+          href="/projects/casagrandluxury"
           style={{ filter: "brightness(140%)" }}
           aria-label="Projects Section"
           className="overflow-hidden md:m-0 m-4 md:ml-24 md:mt-80   mb-10"
@@ -487,7 +487,7 @@ export function Projects() {
       </div>
       <div className="flex flex-wrap gap-2 justify-start w-full ">
         <Link
-          href="#"
+          href="/projects/casagrandbudget"
           style={{ filter: "brightness(140%)" }}
           aria-label="Projects Section"
           className="overflow-hidden md:m-0 m-4 md:mt-20 mb-10 md:mr-36"
@@ -515,7 +515,7 @@ export function Projects() {
 
       <div className="flex flex-wrap gap-2 justify-end w-full ">
         <Link
-          href="#"
+          href="/projects/delphiderma"
           style={{ filter: "brightness(115%)" }}
           aria-label="Projects Section"
           className=" overflow-hidden mb-10 md:m-0 m-4 md:-mt-60 md:mr-20 justify-end"
@@ -523,7 +523,7 @@ export function Projects() {
           <div className=" overflow-hidden  justify-end">
             <Image
               src={image9}
-              alt="Casa Grand Budget Interior"
+              alt="Delphi Derma Clinic"
               height={680}
               width={680}
               className="project-frame overflow-hidden"
@@ -544,7 +544,7 @@ export function Projects() {
       </div>
       <div className="flex flex-wrap gap-2 justify-start w-full ">
         <Link
-          href="#"
+          href="/projects/arrahmancafe"
           style={{ filter: "brightness(130%)" }}
           aria-label="Projects Section"
           className="  mb-10 overflow-hidden md:m-0 m-4 md:mt-20 md:ml-80 "
@@ -552,7 +552,7 @@ export function Projects() {
           <div>
             <Image
               src={image10}
-              alt="Casa Grand Budget Interior"
+              alt="AR Rahman Cafe"
               height={380}
               width={380}
               className="project-frame overflow-hidden"
@@ -569,7 +569,7 @@ export function Projects() {
       </div>
       <div className="flex flex-wrap gap-2 justify-end w-full ">
         <Link
-          href="#"
+          href="/projects/remycinemas"
           style={{ filter: "brightness(130%)" }}
           aria-label="Projects Section"
           className="overflow-hidden md:m-0 m-4  mb-10 justify-start  md:mt-28 md:mr-40"
@@ -577,7 +577,7 @@ export function Projects() {
           <div className="overflow-hidden ">
             <Image
               src={image12}
-              alt="Casa Grand Budget Interior"
+              alt="Remy Cinemas"
               height={380}
               width={380}
               className="project-frame overflow-hidden"
@@ -594,7 +594,7 @@ export function Projects() {
           </div>
         </Link>
         <Link
-          href="#"
+          href="/projects/duplexresidence"
           className=" overflow-hidden md:m-0 m-4 mb-10  md:mt-40 md:mr-20 "
           style={{ filter: "brightness(130%)" }}
           aria-label="Projects Section"
@@ -602,7 +602,7 @@ export function Projects() {
           <div className=" overflow-hidden ">
             <Image
               src={image11}
-              alt="Casa Grand Budget Interior"
+              alt="DUPLEX RESIDENCE"
               height={420}
               width={420}
               className="project-frame overflow-hidden"
@@ -611,7 +611,7 @@ export function Projects() {
               style={hoverStyle11}
             />
             <div className="flex flex-wrap text-lg mt-2">
-              <p className="flex-1 font-heading text-left">DUPLEX RESIDENCE</p>
+              <p className="flex-1 font-heading text-left">Duplex Residence</p>
               <p className="flex-1 font-heading text-right text-zinc-500">
                 2022
               </p>

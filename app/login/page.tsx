@@ -5,29 +5,33 @@ import { ArrowLeft } from "lucide-react";
 import logo from "@/components/favicon.png";
 import bg from "./bg.jpg";
 import { Metadata } from "next";
+import Particles from "@/components/particles";
 
 export const metadata: Metadata = {
-  title: "Login",
+  title: "Login | Studio Bind",
   description: "Login to your account",
 };
 
 export default function Login() {
   return (
-    <div className="grid grid-cols-1 w-full md:grid-cols-1 h-screen animate-fade-in">
-      {/* Left Half */}
-      {/* <div className="hidden md:flex md:h-full md:w-full md:items-center md:bg-cover md:bg-center">
+    <div className="grid grid-cols-1 md:-ml-32 md:-mr-32 lg:grid-cols-2 h-screen animate-fade-in">
+      <Particles
+            className="animate-fade-in h-full absolute inset-0 -z-10"
+            quantity={100}
+          />
+      <div className="hidden lg:flex lg:h-full lg:w-full lg:items-center lg:bg-cover lg:bg-center">
         <Image
           src={bg}
-          alt="Background Image"
-          className="w-full h-full object-cover"
+          alt="Background"
+          className="h-screen w-full object-cover"
           style={{
             filter: "contrast(180%) brightness(80%)",
           }}
         />
-      </div> */}
+      </div>
 
       {/* Right Half */}
-      <div className="flex flex-col  bg-transparent items-center mx-auto d-block justify-center">
+      <div className="flex flex-col md:w-2/3 w-full bg-transparent items-center mx-auto d-block justify-center">
         <Link href="/">
           <ArrowLeft className="absolute left-8 top-8 text-white w-8 h-8" />
         </Link>

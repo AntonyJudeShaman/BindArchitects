@@ -14,6 +14,11 @@ import FreeQuote from "@/components/free-quote";
 import { cn } from "@/lib/utils";
 import Card from "@/components/StickyCard";
 
+export const metadata: Metadata = {
+  title: "Projects | Studio Bind",
+  description: "Projects by Studio bind architects. Best architects in chennai",
+};
+
 export interface Project {
   projectId: string;
   projectName: string;
@@ -124,7 +129,7 @@ function ProjectsHome() {
 
   return (
     <div
-      className="min-h-screen animate-fade-in py-8"
+      className="min-h-screen animate-fade-in py-2 mt-5"
       data-theme=""
       style={{ visibility: loading ? "hidden" : "visible" }}
     >
@@ -150,30 +155,11 @@ function ProjectsHome() {
             ))}
         </nav>
       </div>
-      
+
       <Card />
-      
-      {/* <div className="flex flex-wrap gap-2 justify-center">
-        {projects.map((project) => (
-          <Link href={`/projects/${project.projectId}`} key={project.projectId}>
-            <div
-              key={project.projectId}
-              className="image-frame overflow-hidden max-w-[69rem] mb-10 relative"
-              style={{ padding: "20px" }} // Adjust padding as needed
-            >
-              <img
-                src={`https://drive.google.com/uc?id=${project.description1}`}
-                alt={project.projectName}
-                className="transition-transform duration-300 ease-in-out"
-              />
-              <div className=" text-xl bottom-0 left-0 right-0  p-4">
-                <p className="text-left">{project.projectName}</p>
-                <p className="text-right text-foreground">2023</p>
-              </div>
-            </div>
-          </Link>
-        ))}
-      </div> */}
+
+      <br />
+      <br />
       <FreeQuote />
       <SiteFooter />
     </div>

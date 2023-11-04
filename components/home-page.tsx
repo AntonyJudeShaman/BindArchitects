@@ -56,17 +56,17 @@ export default function IndexPage() {
           </h1>
           <div className="md:max-w-[58rem] grid md:grid-cols-4 grid-cols-2 max-w-[28rem]  flex-row flex-wrap justify-between mt-8 leading-normal   sm:leading-8">
             
-            <div className="flex flex-col mt-8">
-              <span className="font-heading   title-gradient text-4xl mb-3">10 </span>
+            <div className="flex flex-col title-gradient mt-8">
+              <span className="font-heading title-gradient    text-4xl mb-3">10 </span>
               <span className=" text-gray-300 my-font  text-sm">Years leading</span>
               <span className=" text-gray-300 my-font text-sm">transformations</span>
             </div>
-            <div className="flex flex-col md:ml-0 ml-10 mt-8">
+            <div className="flex flex-col md:ml-0 ml-10 title-gradient3 mt-8">
               <span className="font-heading title-gradient title-gradient3 text-4xl mb-3">60</span>
               <span className=" text-gray-300 my-font text-sm">Successful </span>
               <span className=" text-gray-300 my-font text-sm">clients</span>
             </div>
-            <div className="flex flex-col  mt-8">
+            <div className="flex flex-col title-gradient  mt-8">
               <span className="font-heading title-gradient text-4xl mb-3">03 </span>
               <span className=" text-gray-300 my-font text-sm">
                 Unicorns leading
@@ -74,7 +74,7 @@ export default function IndexPage() {
 
               <span className=" text-gray-300 my-font text-sm">the market</span>
             </div>
-            <div className="flex flex-col md:ml-0 ml-10 mt-8">
+            <div className="flex flex-col title-gradient4 md:ml-0 ml-10 mt-8">
               <span className="font-heading title-gradient title-gradient4 text-4xl mb-3">11</span>
               <span className=" text-gray-300 my-font text-sm">
                 Multicultural 

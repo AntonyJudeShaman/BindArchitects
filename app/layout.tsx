@@ -28,10 +28,7 @@ interface RootLayoutProps {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://studio-bind.vercel.app"),
-  title: {
-    default: siteConfig.name,
-    template: `%s | ${siteConfig.name}`,
-  },
+  
   description: siteConfig.description,
   keywords: [
     "best architects in chennai",

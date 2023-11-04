@@ -10,7 +10,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Contact | Studio Bind",
   description: "Contact us using the contact form",
 }
 
