@@ -153,7 +153,7 @@ export default function ProjectPage({
         }
       >
         {selectedProjectData ? (
-          <div className="min-h-screen">
+          <div className="min-h-screen m-4 max-w-full">
             <Head>
               <title>{params.projectId} || Studio Bind</title>
             </Head>
@@ -193,7 +193,7 @@ export default function ProjectPage({
                     </div>
                     <div className=" md:m-0 max-w-full">
                       <div className="mx-auto mt-20 flex max-w-[88rem] flex-col mb-5 text-center">
-                        <h2 className="font-heading text-4xl text-left dmsans font-medium leading-[1.1] mb-5 md:text-5xl">
+                        <h2 className="font-heading text-5xl text-left dmsans font-medium leading-[1.1] mb-5 md:text-5xl">
                           Gallery
                         </h2>
                       </div>
@@ -214,6 +214,7 @@ export default function ProjectPage({
                     </div>
                   </div>
                 ))}
+                
               </div>
             ) : (
               <div className="text-center bg-gray-600">

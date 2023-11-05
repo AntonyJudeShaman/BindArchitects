@@ -93,7 +93,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body
         id="section1"
         className={cn(
-          "min-h-screen  bg-black md:pl-32 md:pr-32 pr-0 pl-0 max-w-[100vh] md:max-w-full scroll-smooth font-sans antialiased",
+          "min-h-screen  bg-black md:pl-32 md:pr-32 pr-0 pl-0 max-w-full md:max-w-full scroll-smooth font-sans antialiased",
           fontSans.variable,
           fontHeading.variable,
           titleHeading.variable
