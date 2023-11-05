@@ -27,7 +27,7 @@ export default function IndexPage() {
           </h1> */}
           <h1
             aria-label="Studio bind"
-            className="2xl:text-8xl  dmsans-home title-gradient2 mt-28  flex flex-wrap md:max-w-[98rem] max-w-[28rem]  z-30 text-6xl lg:text-7xl md:text-6xl xl:text-8xl title-gradient    duration-1000  cursor-default text-edge-outline animate-title font-display   whitespace-nowrap bg-clip-text"
+            className="2xl:text-8xl  dmsans-home title-gradient2 mt-20  flex flex-wrap md:max-w-[98rem] max-w-[28rem]  z-30 text-6xl lg:text-7xl md:text-6xl xl:text-8xl title-gradient    duration-1000  cursor-default text-edge-outline animate-title font-display   whitespace-nowrap bg-clip-text"
             
           >
             We shape
