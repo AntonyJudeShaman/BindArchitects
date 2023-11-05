@@ -72,7 +72,7 @@ export function AboutSection() {
                   <span className="my-font flex md:flex-row flex-col text-white font-semibold">
                     &bull; &nbsp; Ask.
                   </span>
-                  &nbsp;Discover the things you don't know.
+                  &nbsp;Discover the things you don&apos;t know.
                 </p>
                 <p className="text-xl dmsans flex md:flex-row flex-col text-muted-foreground">
                   <span className="my-font flex md:flex-row flex-col text-white font-semibold">
@@ -84,13 +84,13 @@ export function AboutSection() {
                   <span className="my-font flex md:flex-row flex-col text-white font-semibold">
                     &bull; &nbsp; Colloborate.
                   </span>
-                  &nbsp;Big things can't be done alone.
+                  &nbsp;Big things can&apos;t be done alone.
                 </p>
                 <p className="text-xl dmsans flex md:flex-row flex-col text-muted-foreground">
                   <span className="my-font flex md:flex-row flex-col text-white font-semibold">
                     &bull; &nbsp; Create.
                   </span>
-                  &nbsp;Don't fall in love with your creation.
+                  &nbsp;Don&apos;t fall in love with your creation.
                 </p>
               </div>
             </div>
@@ -104,10 +104,10 @@ export function AboutSection() {
             <p className="text-md text-xl dmsans  leading-normal text-left text-muted-foreground sm:text-md sm:leading-8">
               Our diverse team is comprised of Architects, Interior Designers,
               Visual Designers, and Project Managers. From A to Z, our
-              collaborative approach draws on the team's diverse skills and
+              collaborative approach draws on the team&apos;s diverse skills and
               expertise. This collective knowledge allows us to provide
               comprehensive and tailored solutions for your projects. Whether
-              it's architectural design, interior aesthetics, visual branding,
+              it&apos;s architectural design, interior aesthetics, visual branding,
               or project management, our team combines their skills to deliver
               results that exceed your expectations.
             </p>
