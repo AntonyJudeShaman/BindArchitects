@@ -1,13 +1,14 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+
 export const firebaseConfig = {
-  apiKey: "AIzaSyC7T7WZ-vTEqEOXmn-oQ3Up9XWBd6VLlcw",
-  authDomain: "studio-bind.firebaseapp.com",
-  projectId: "studio-bind",
-  storageBucket: "studio-bind.appspot.com",
-  messagingSenderId: "806244613058",
-  appId: "1:806244613058:web:8ee60d84689e58f787f45b",
-  measurementId: "G-2CWE8HC1ZF"
+  apiKey: "AIzaSyD_Z86v8Dw6McM3hOTm7fZ7d7kKB8-koqo",
+  authDomain: "bind-f87fe.firebaseapp.com",
+  projectId: "bind-f87fe",
+  storageBucket: "bind-f87fe.appspot.com",
+  messagingSenderId: "95279806538",
+  appId: "1:95279806538:web:c3fd5e3fc50febd0ea4eb3",
+  measurementId: "G-9HXTR7WXH3",
 };
 
 export const app = initializeApp(firebaseConfig);

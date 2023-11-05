@@ -14,6 +14,9 @@ import image9 from "../assets/delphi.png";
 import image10 from "../assets/arrahman.png";
 import image11 from "../assets/residence.png";
 import image12 from "../assets/remy.png";
+import image13 from "../assets/ccbm.png";
+import image14 from "../assets/mga.png";
+import image15 from "../assets/eastwest.png";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
@@ -295,324 +298,133 @@ export function Projects() {
   };
 
   const handleMouseLeave10 = () => {
-    setHoverStyle({ transform: "translate(0, 0)" });
+    setHoverStyle({ transform:"none" });
   };
 
   return (
-    <div className="min-h-screen animate-fade-in py-8 " data-theme="">
-      <div className="flex flex-wrap gap-2 justify-center w-full ">
-        <Link
-          href="/projects/visoreopticals"
-          style={{ filter: "brightness(90%)" }}
+    <div className="min-h-screen max-w-full animate-fade-in  py-8 mx-auto justify-center" data-theme="">
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-14 justify-center w-full ">
+      <Link
+          href="/projects/delphiderma"
+          style={{ filter: "brightness(130%)" }}
           aria-label="Projects Section"
-        >
-          <div className=" overflow-hidden mb-10 md:m-0 m-4 md:mb-20">
-            <Image
-              src={image8}
-              alt="Visore Opticals"
-              height={840}
-              width={840}
-              className="project-frame overflow-hidden"
-              onMouseMove={handleMouseMove7}
-              onMouseLeave={handleMouseLeave7}
-              style={hoverStyle7}
-            />
-            <div className="flex flex-wrap text-lg mt-2">
-              <p className="flex-1 font-heading text-left">Visore Opticals</p>
-              <p className="flex-1 font-heading text-right text-zinc-500">
-                2023
-              </p>
-            </div>
-          </div>
-        </Link>
-      </div>
-      <div className="flex flex-wrap gap-2 w-full ">
-        <Link
-          href="/projects/ykck"
-          style={{ filter: "brightness(120%)", width: "490px" }}
-          className="  mx-auto md:m-0 p-4 overflow-hidden justify-center  mb-10"
-          aria-label="Projects Section"
-        >
-          <div className="  mx-auto  overflow-hidden justify-center  ">
-            <Image
-              src={image1.src}
-              alt="ykck"
-              height={520}
-              width={520}
-              className="project-frame overflow-hidden"
-              onMouseMove={handleMouseMove}
-              onMouseLeave={handleMouseLeave}
-              style={hoverStyle}
-            />
-            <div className="flex flex-wrap text-lg mt-2">
-              <p className="flex-1 font-heading text-left">YKCK</p>
-              <p className="flex-1 font-heading text-right text-zinc-500">
-                2023
-              </p>
-            </div>
-          </div>
-        </Link>
-        <Link href="/projects/terraceman" aria-label="Projects Section" 
-            className="overflow-hidden md:m-0 m-4  md:ml-28 md:mt-20  mb-10">
-          <div
-            className="overflow-hidden"
-            style={{ filter: "brightness(120%)" }}
-          >
-            <Image
-              src={image2}
-              alt="terraceman"
-              height={520}
-              width={520}
-              className="project-frame overflow-hidden"
-              onMouseMove={handleMouseMove1}
-              onMouseLeave={handleMouseLeave1}
-              style={hoverStyle1}
-            />
-            <div className="flex flex-wrap text-lg mt-2">
-              <p className="flex-1 font-heading text-left">Terrace Man Cave</p>
-              <p className="flex-1 font-heading text-right text-zinc-500">
-                2021
-              </p>
-            </div>
-          </div>
-        </Link>
-        <Link
-          href="/projects/mokshabar"
-          style={{ filter: "brightness(140%)" }}
-          aria-label="Projects Section"
-          className="  md:ml-60 md:m-0 md:mt-10 m-4 overflow-hidden  mb-10"
-        >
-          <div className="  overflow-hidden">
-            <Image
-              src={image3}
-              alt="Moksha Bar"
-              height={420}
-              width={420}
-              className="project-frame overflow-hidden"
-              onMouseMove={handleMouseMove2}
-              onMouseLeave={handleMouseLeave2}
-              style={hoverStyle2}
-            />
-            <div className="flex flex-wrap text-lg mt-2">
-              <p className="flex-1 font-heading text-left ">Moksha Bar</p>
-              <p className="flex-1 font-heading text-right  text-zinc-500">
-                2022
-              </p>
-            </div>
-          </div>
-        </Link>
-      </div>
-      <div className="flex flex-wrap gap-2 w-full mx-auto overflow-hidden justify-center align-center">
-        <Link
-          href="/projects/sportsone"
-          aria-label="Projects Section"
-          className="overflow-hidden md:m-0 p-4 mx-auto md:mt-20  mb-10"
-        >
-          <div
-            className="overflow-hidden  w-full"
-            style={{ filter: "brightness(120%)" }}
-          >
-            <Image
-              src={image4}
-              alt="sports one"
-              height={820}
-              width={820}
-              className="project-frame overflow-hidden mx-auto "
-              onMouseMove={handleMouseMove3}
-              onMouseLeave={handleMouseLeave3}
-              style={hoverStyle3}
-            />
-            <div className="flex flex-wrap text-lg mt-2">
-              <p className="flex-1 font-heading text-left">Sports One</p>
-              <p className="flex-1 font-heading text-right text-zinc-500">
-                2022
-              </p>
-            </div>
-          </div>
-        </Link>
-      </div>
-      <div className="flex flex-wrap gap-2  overflow-hidden">
-        <Link
-          href="/projects/grandentrance"
-          style={{ filter: "brightness(140%)" }}
-          aria-label="Projects Section"
-          className="  md:ml-40 md:m-0 m-4 overflow-hidden md:mt-20  mb-10"
-        >
-          <div className=" ">
-            <Image
-              src={image5}
-              alt="Grand Entrance"
-              height={420}
-              width={420}
-              className="project-frame overflow-hidden"
-              onMouseMove={handleMouseMove4}
-              onMouseLeave={handleMouseLeave4}
-              style={hoverStyle4}
-            />
-            <div className="flex flex-wrap text-lg mt-2">
-              <p className="flex-1 font-heading text-left ">Grand Entrance</p>
-              <p className="flex-1 font-heading text-right text-zinc-500">
-                2022
-              </p>
-            </div>
-          </div>
-        </Link>
-        <Link
-          href="/projects/casagrandluxury"
-          style={{ filter: "brightness(140%)" }}
-          aria-label="Projects Section"
-          className="overflow-hidden md:m-0 m-4 md:ml-24 md:mt-80   mb-10"
+          className="overflow-hidden md:m-0 m-4 justify-center"
         >
           <div className="overflow-hidden ">
             <Image
-              src={image6}
-              alt="Casa Grand"
-              height={420}
-              width={490}
-              className="project-frame overflow-hidden"
-              onMouseMove={handleMouseMove5}
-              onMouseLeave={handleMouseLeave5}
-              style={hoverStyle5}
-            />
-            <div className="flex flex-wrap text-lg mt-2">
-              <p className="font-heading text-left ">
-                Casa Grande- Luxury Interior
-              </p>
-              <p className="flex-1 font-heading text-right text-zinc-500">
-                2022
-              </p>
-            </div>
-          </div>
-        </Link>
-      </div>
-      <div className="flex flex-wrap gap-2 justify-start w-full ">
-        <Link
-          href="/projects/casagrandbudget"
-          style={{ filter: "brightness(140%)" }}
-          aria-label="Projects Section"
-          className="overflow-hidden md:m-0 m-4 md:mt-20 mb-10 md:mr-36"
-        >
-          <div className="overflow-hidden ">
-            <Image
-              src={image7}
-              alt="Casa Grand Budget Interior"
-              height={420}
-              width={420}
+              src={image9}
+              alt="Delphi Derma Clinic"
+              height={400}
+              width={700}
               className="project-frame overflow-hidden"
               onMouseMove={handleMouseMove6}
               onMouseLeave={handleMouseLeave6}
               style={hoverStyle6}
             />
             <div className="flex flex-wrap text-lg mt-2">
-              <p className=" text-left">Casa Grand - Budget Interior</p>
-              <p className="flex-1 font-heading text-right text-zinc-500">
+              <p className="flex-1 dmsans text-left">Delphi Derma</p>
+              <p className="flex-1 dmsans text-right text-zinc-500">
                 2022
               </p>
             </div>
           </div>
         </Link>
-      </div>
-
-      <div className="flex flex-wrap gap-2 justify-end w-full ">
-        <Link
-          href="/projects/delphiderma"
-          style={{ filter: "brightness(115%)" }}
-          aria-label="Projects Section"
-          className=" overflow-hidden mb-10 md:m-0 m-4 md:-mt-60 md:mr-20 justify-end"
-        >
-          <div className=" overflow-hidden  justify-end">
-            <Image
-              src={image9}
-              alt="Delphi Derma Clinic"
-              height={680}
-              width={680}
-              className="project-frame overflow-hidden"
-              onMouseMove={handleMouseMove8}
-              onMouseLeave={handleMouseLeave8}
-              style={hoverStyle8}
-            />
-            <div className="flex flex-wrap text-lg mt-2">
-              <p className="flex-1 font-heading text-left">
-                Delphi Derma Clinic
-              </p>
-              <p className="flex-1 font-heading text-right text-zinc-500">
-                2023
-              </p>
-            </div>
-          </div>
-        </Link>
-      </div>
-      <div className="flex flex-wrap gap-2 justify-start w-full ">
-        <Link
-          href="/projects/arrahmancafe"
-          style={{ filter: "brightness(130%)" }}
-          aria-label="Projects Section"
-          className="  mb-10 overflow-hidden md:m-0 m-4 md:mt-20 md:ml-80 "
-        >
-          <div>
-            <Image
-              src={image10}
-              alt="AR Rahman Cafe"
-              height={380}
-              width={380}
-              className="project-frame overflow-hidden"
-              onMouseMove={handleMouseMove9}
-              onMouseLeave={handleMouseLeave9}
-              style={hoverStyle9}
-            />
-          </div>
-          <div className="flex flex-wrap text-lg mt-2">
-            <p className="flex-1 font-heading text-left">AR Rahman Cafe</p>
-            <p className="flex-1 font-heading text-right text-zinc-500">2021</p>
-          </div>
-        </Link>
-      </div>
-      <div className="flex flex-wrap gap-2 justify-end w-full ">
         <Link
           href="/projects/remycinemas"
           style={{ filter: "brightness(130%)" }}
           aria-label="Projects Section"
-          className="overflow-hidden md:m-0 m-4  mb-10 justify-start  md:mt-28 md:mr-40"
+          className="overflow-hidden md:m-0 m-4 justify-center"
         >
           <div className="overflow-hidden ">
             <Image
               src={image12}
               alt="Remy Cinemas"
-              height={380}
-              width={380}
+              height={400}
+              width={700}
               className="project-frame overflow-hidden"
               onMouseMove={handleMouseMove10}
               onMouseLeave={handleMouseLeave10}
               style={hoverStyle10}
             />
             <div className="flex flex-wrap text-lg mt-2">
-              <p className="flex-1 font-heading text-left">Remy Cinemas</p>
-              <p className="flex-1 font-heading text-right text-zinc-500">
+              <p className="flex-1 dmsans text-left">Remy Cinemas</p>
+              <p className="flex-1 dmsans text-right text-zinc-500">
                 2022
               </p>
             </div>
           </div>
         </Link>
-        <Link
-          href="/projects/duplexresidence"
-          className=" overflow-hidden md:m-0 m-4 mb-10  md:mt-40 md:mr-20 "
+         <Link
+          href="/projects/ccbm"
+          className=" overflow-hidden md:m-0 m-4 "
           style={{ filter: "brightness(130%)" }}
           aria-label="Projects Section"
         >
           <div className=" overflow-hidden ">
             <Image
-              src={image11}
-              alt="DUPLEX RESIDENCE"
-              height={420}
-              width={420}
+              src={image13}
+              alt="CCBM"
+              height={400}
+              width={700}
               className="project-frame overflow-hidden"
               onMouseMove={handleMouseMove11}
               onMouseLeave={handleMouseLeave11}
               style={hoverStyle11}
             />
             <div className="flex flex-wrap text-lg mt-2">
-              <p className="flex-1 font-heading text-left">Duplex Residence</p>
-              <p className="flex-1 font-heading text-right text-zinc-500">
+              <p className="flex-1 dmsans text-left">CCBM</p>
+              <p className="flex-1 dmsans text-right text-zinc-500">
+                2022
+              </p>
+            </div>
+          </div>
+        </Link>
+        <Link
+          href="/projects/mgasristi"
+          className=" overflow-hidden md:m-0 m-4"
+          style={{ filter: "brightness(130%)" }}
+          aria-label="Projects Section"
+        >
+          <div className=" overflow-hidden ">
+            <Image
+              src={image14}
+              alt="MGA Sristi"
+              height={400}
+              width={700}
+              className="project-frame overflow-hidden"
+              onMouseMove={handleMouseMove9}
+              onMouseLeave={handleMouseLeave9}
+              style={hoverStyle9}
+            />
+            <div className="flex flex-wrap text-lg mt-2">
+              <p className="flex-1 dmsans text-left">MGA Sristi</p>
+              <p className="flex-1 dmsans text-right text-zinc-500">
+                2022
+              </p>
+            </div>
+          </div>
+        </Link>
+        <Link
+          href="/projects/eastwest"
+          className=" overflow-hidden md:m-0 m-4 "
+          style={{ filter: "brightness(130%)" }}
+          aria-label="Projects Section"
+        >
+          <div className=" overflow-hidden ">
+            <Image
+              src={image15}
+              alt="East West"
+              height={400}
+              width={700}
+              className="project-frame overflow-hidden"
+              onMouseMove={handleMouseMove8}
+              onMouseLeave={handleMouseLeave8}
+              style={hoverStyle8}
+            />
+            <div className="flex flex-wrap text-lg mt-2">
+              <p className="flex-1 dmsans text-left">East West</p>
+              <p className="flex-1 dmsans text-right text-zinc-500">
                 2022
               </p>
             </div>

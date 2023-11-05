@@ -34,6 +34,7 @@
     "radix-ui": "^1.0.1",
     "react": "^18.2.0",
     "react-autosuggest": "^10.1.0",
+    "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
     "react-dropzone": "^14.2.3",
     "react-hook-form": "^7.46.2",
@@ -44,6 +45,7 @@
     "react-select": "^5.7.4",
     "tailwind-merge": "^1.14.0",
     "tailwindcss-animate": "^1.0.7",
+    "uuid": "^9.0.1",
     "web-vitals": "^3.5.0"
   },
   "devDependencies": {

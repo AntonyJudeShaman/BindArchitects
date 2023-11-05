@@ -4,7 +4,7 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    domains: ['loremflickr.com'],
+    domains: ['loremflickr.com','firebasestorage.googleapis.com'],
   },
   swcMinify: true,
   experimental: {

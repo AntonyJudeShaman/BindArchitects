@@ -114,7 +114,7 @@ export function LightBox({ className }) {
         <DialogTrigger asChild>
           <Button
             variant="default"
-            className="border-2 border-green-300 border-black bg-gradient-to-b from-green-500 to-blue-600 hover:to-green-500 hover:from-blue-600  w-full"
+            className="border-2 border-green-300 font-heading border-black bg-gradient-to-b from-green-500 to-blue-600 hover:to-green-500 hover:from-blue-600  w-full"
             size="lg"
             aria-label="contact us"
           >
@@ -123,15 +123,16 @@ export function LightBox({ className }) {
         </DialogTrigger>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle className="text-center display-animation font-heading font-semibold text-3xl sub-gradient">
+            <DialogTitle className="text-center display-animation font-heading font-semibold text-3xl sub-gradient dmsans
+">
               Book a Free Design Session
             </DialogTitle>
           </DialogHeader>
           <form ref={form} onSubmit={handleSubmit}>
             <div className="grid gap-4 py-4">
               <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4" aria-label="enter your name">
-                <Label htmlFor="name" className="sub-gradient font-semibold">
-                  Name<span className="error-gradient"> *</span>
+                <Label htmlFor="name" className="sub-gradient  font-semibold">
+                  Name<span className="error-gradient "> *</span>
                 </Label>
                 <Input
                   id="name"
@@ -142,14 +143,14 @@ export function LightBox({ className }) {
                   onChange={(e) => setName(e.target.value)}
                 />
                 {showNameAlert && (
-                  <div className=" error-gradient text-sm w-full">
+                  <div className=" error-gradient my-font font-semibold  text-sm w-full">
                     <p>Name is Empty or Invalid.</p>
                   </div>
                 )}
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4" aria-label="enter your email">
-                <Label htmlFor="email" className="sub-gradient font-semibold">
-                  Email<span className="error-gradient"> *</span>
+                <Label htmlFor="email" className="sub-gradient  font-semibold">
+                  Email<span className="error-gradient "> *</span>
                 </Label>
                 <Input
                   id="email"
@@ -160,14 +161,14 @@ export function LightBox({ className }) {
                   onChange={(e) => setEmail(e.target.value)}
                 />
                 {showEmailAlert && (
-                  <div className=" error-gradient text-sm w-full">
+                  <div className=" error-gradient my-font font-semibold  text-sm w-full">
                     <p>Email is Empty or Invalid.</p>
                   </div>
                 )}
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4" aria-label="enter your phone number">
-                <Label htmlFor="phone" className="sub-gradient font-semibold">
-                  Phone<span className="error-gradient"> *</span>
+                <Label htmlFor="phone" className="sub-gradient  font-semibold">
+                  Phone<span className="error-gradient "> *</span>
                 </Label>
                 <Input
                   id="phone"
@@ -178,13 +179,13 @@ export function LightBox({ className }) {
                   onChange={(e) => setPhone(e.target.value)}
                 />
                 {showPhoneAlert && (
-                  <div className=" error-gradient text-sm w-full">
+                  <div className=" error-gradient my-font font-semibold  text-sm w-full">
                     <p className="w-full">Phone is Empty or Invalid.</p>
                   </div>
                 )}
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4" aria-label="enter your message optional">
-                <Label htmlFor="message" className="sub-gradient font-semibold">
+                <Label htmlFor="message" className="sub-gradient pb-2 font-semibold">
                   Message
                 </Label>
                 <Textarea
@@ -200,7 +201,7 @@ export function LightBox({ className }) {
             {showDialog && (
               <Dialog className="pb-2">
                 <DialogTrigger asChild>
-                  <div className="text-center success-gradient text-sm ">
+                  <div className="text-center success-gradient  text-sm ">
                     <p>
                       Your details has been submitted. Our team will contact you
                       shortly.

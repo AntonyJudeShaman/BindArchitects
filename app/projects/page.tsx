@@ -43,6 +43,72 @@ function ProjectsHome() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  useEffect(() => {
+    // const fetchData = async () => {
+    // try {
+    const cachedData = localStorage.getItem("cachedProjects");
+    const cachedExpiry = localStorage.getItem("cachedProjectsExpiry");
+    const expiryTimestamp = cachedExpiry ? parseInt(cachedExpiry, 10) : 0;
+    const currentTimestamp = new Date().getTime();
+
+    if (cachedData && currentTimestamp < expiryTimestamp) {
+      setProjects(JSON.parse(cachedData));
+      setLoading(false);
+      return;
+    }
+
+    // const res = await fetch("http://localhost:3000/api/auth/viewdata", {
+    //   method: "GET",
+    //   next: {
+    //     tags: ["projects"],
+    //   },
+    // });
+
+    // if (!res.ok) {
+    //   throw new Error("Network response was not ok");
+    // }
+
+    // const data: Project[] = await res.json();
+    // setProjects(data);
+
+    const newExpiryTimestamp = currentTimestamp + 60 * 60 * 1000;
+    // localStorage.setItem("cachedProjects", JSON.stringify(data));
+    localStorage.setItem("cachedProjectsExpiry", newExpiryTimestamp.toString());
+
+    setLoading(false);
+    // } catch (error) {
+    //   console.error("Error fetching data:", error);
+    //   setError("An error occurred while fetching data.");
+    //   setLoading(false);
+    // }
+    // };
+    // fetchData();
+  }, []);
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    // Get the image element
+    const img = e.currentTarget.querySelector("img");
+
+    if (img) {
+      // Calculate the percentage of mouse position relative to the image
+      const xPercentage = (e.nativeEvent.offsetX / img.clientWidth) * 100;
+      const yPercentage = (e.nativeEvent.offsetY / img.clientHeight) * 100;
+
+      // Adjust the image position based on the mouse position
+      img.style.transform = `translate(${xPercentage * 0.1}px, ${
+        yPercentage * 0.1
+      }px)`;
+    }
+  };
+
+  const handleMouseLeave = (e: React.MouseEvent) => {
+    // Reset the image position on mouse leave
+    const img = e.currentTarget.querySelector("img");
+
+    if (img) {
+      img.style.transform = "translate(0, 0)";
+    }
+  };
 
   if (loading) {
     return (
@@ -67,7 +133,7 @@ function ProjectsHome() {
       <Head>
         <title>Projects | Studio Bind</title>
       </Head>
-      <div className="md:ml-5 justify-center flex mb-10 md:justify-between">
+      <div className="md:ml-5 ml-5 flex mb-10 md:justify-between">
         <MainNav items={HomePage.mainNav} />
         <nav className="justify-between">
           {marketingConfig &&
@@ -86,11 +152,30 @@ function ProjectsHome() {
             ))}
         </nav>
       </div>
-
+      
       <Card />
-
-      <br />
-      <br />
+      
+      {/* <div className="flex flex-wrap gap-2 justify-center">
+        {projects.map((project) => (
+          <Link href={`/projects/${project.projectId}`} key={project.projectId}>
+            <div
+              key={project.projectId}
+              className="image-frame overflow-hidden max-w-[69rem] mb-10 relative"
+              style={{ padding: "20px" }} // Adjust padding as needed
+            >
+              <img
+                src={`https://drive.google.com/uc?id=${project.description1}`}
+                alt={project.projectName}
+                className="transition-transform duration-300 ease-in-out"
+              />
+              <div className=" text-xl bottom-0 left-0 right-0  p-4">
+                <p className="text-left">{project.projectName}</p>
+                <p className="text-right text-foreground">2023</p>
+              </div>
+            </div>
+          </Link>
+        ))}
+      </div> */}<br/><br/>
       <FreeQuote />
       <SiteFooter />
     </div>

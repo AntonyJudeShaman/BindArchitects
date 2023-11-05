@@ -13,8 +13,9 @@ import { Metadata } from "next";
 import { Projects } from "@/components/projects";
 import Client from "@/components/client";
 import Questions from "@/components/still-questions";
-import Card  from "@/components/StickyCard";
-
+import Card from "@/components/StickyCard";
+import Image from "next/image";
+import logo from "@/components/logo.png";
 
 interface MarketingLayoutProps {
   children: React.ReactNode;
@@ -26,34 +27,28 @@ export const metadata: Metadata = {
 };
 
 export default function HomeLayout() {
-
-  
   return (
     <>
       <div className="flex min-h-screen flex-col ">
-        <header className="md:ml-4 ml-4 z-40 bg-background">
+        <header className="md:ml-4 ml-4  bg-background">
           <div className="flex h-20 justify-between md:justify-between  py-6">
             <MainNav items={marketingConfig.mainNav} />
             <nav className="justify-between inline-block">
-               
               {marketingConfig &&
                 marketingConfig.mainNav.map((item, index) => (
                   <Link
-                  key={index}
-                  aria-label="navbar items"
-                  href={item.disabled ? "#" : item.href}
-                  className={cn(
-                    "group flex flex-  text-right items-center overflow-hidden my-font hidden mr-4 title-gradient md:inline-block rounded-md p-2 text-sm font-medium hover:underline",
-                    item.disabled && "cursor-not-allowed opacity-60"
-                  )}
-                >
-                  <span className="text-md">
-                    {item.title}
-                  </span>
-                </Link>
-                
+                    key={index}
+                    aria-label="navbar items"
+                    href={item.disabled ? "#" : item.href}
+                    className={cn(
+                      "group flex   text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium hover:underline",
+                      item.disabled && "cursor-not-allowed opacity-60"
+                    )}
+                  >
+                    <span className="text-md">{item.title}</span>
+                  </Link>
                 ))}
-                <Link
+              {/* <Link
                 href="/login"
                 aria-label="login"
                 className={cn(
@@ -67,17 +62,19 @@ export default function HomeLayout() {
                 )}
               >
                 Login
-              </Link>
+              </Link> */}
+             
             </nav>
-            
+            <div className="flex max-w-[10rem] mr-5 items-center space-x-2 bg-black md:hidden">
+                <Image height={90} width={90} alt="logo" src={logo} />
+              </div>
           </div>
-          
         </header>
 
         <IndexPage />
         <Projects />
         <Client />
-        <Questions/>
+        <Questions />
         <SiteFooter />
       </div>
     </>

@@ -22,44 +22,7 @@ export const metadata: Metadata = {
   description: "Admin page to add and delete projects",
 };
 
-export interface Project {
-  id: string;
-  name: string;
-  description: string;
-  image: string;
-}
-
 export default async function ProjectsHome() {
-  // const { pending } = useFormStatus()
-
-  const addProjectToDatabase = async (e: FormData) => {
-    "use server";
-
-    const id = e.get("id")?.toString();
-    const name = e.get("name")?.toString();
-    const description = e.get("description")?.toString();
-    const image = e.get("image")?.toString();
-
-    if (!id || !name || !description || !image) return;
-
-    const newProject: Project = {
-      id,
-      name,
-      description,
-      image,
-    };
-    await fetch("https://65157bb8dc3282a6a3ce7ead.mockapi.io/projs", {
-      method: "POST",
-      body: JSON.stringify(newProject),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-
-    toast.success("New project created successfully.");
-
-    revalidateTag("projects");
-  };
 
   return (
     <div className="min-h-screen animate-fade-in py-8">

@@ -5,6 +5,7 @@ import Dropzone from "react-dropzone";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
+import { v4 as uuidv4 } from "uuid";
 import {
   getStorage,
   ref as reff,
@@ -21,6 +22,7 @@ import {
   remove,
 } from "firebase/database";
 import { firebaseConfig } from "@/components/firebase";
+import toast from "react-hot-toast";
 
 const firebaseApp = initializeApp(firebaseConfig, "events");
 const database = getDatabase(firebaseApp);
@@ -58,21 +60,20 @@ function newLine(text) {
   });
 }
 
-const AddProject = (projectname) => {
+const AddProject = () => {
   const [menuItems, setMenuItems] = useState([]);
   const [projectName, setprojectName] = useState("");
   const [description, setDescription] = useState("");
   const [editItemId, setEditItemId] = useState(null);
-  const [field1, setField1] = useState("");
-  const [field2, setField2] = useState("");
-  const [field3, setField3] = useState("");
-  const [field4, setField4] = useState("");
-  const [success, setSuccess] = useState("");
-  const [isUploading, setIsUploading] = useState(false);
+  const [projectNumber, setprojectNumber] = useState("");
+  const [type, settype] = useState("");
+  const [description2, setdescription2] = useState("");
+  const [projectYear, setprojectYear] = useState("");
+  const [projectPath, setprojectPath] = useState("");
 
   useEffect(() => {
     const fetchMenuData = async () => {
-      const menuRef = ref(database, "Event");
+      const menuRef = ref(database, "Project");
       onValue(menuRef, (snapshot) => {
         const data = snapshot.val();
         if (data) {
@@ -92,73 +93,79 @@ const AddProject = (projectname) => {
     e.preventDefault();
 
     if (editItemId) {
-      const menuRef = ref(database, "Event/" + projectName);
+      const menuRef = ref(database, "Project/" + `${projectPath}/`);
       update(menuRef, {
         projectName,
         description,
-        field1,
-        field2,
-        field3,
-        field4,
+        projectNumber,
+        type,
+        description2,
+        projectYear,
+        projectPath,
       });
 
       setprojectName("");
       setDescription("");
-      setField1("");
-      setField2("");
-      setField3("");
-      setField4("");
+      setprojectNumber("");
+      settype("");
+      setdescription2("");
+      setprojectYear("");
+      setprojectPath("");
 
       setEditItemId(null);
+      toast.success("Project updated successfully.");
     } else if (projectName != null) {
-      const menuRef = ref(database, "Event/" + projectName);
-     
+      const menuRef = ref(database, "Project/" + `${projectPath}/`);
+
       const menuItem = {
         projectName,
         description,
-        field1,
-        field2,
-        field3,
-        field4,
+        projectNumber,
+        type,
+        description2,
+        projectYear,
+        projectPath,
       };
       update(menuRef, menuItem);
-
+      toast.success("Project added successfully.");
       setprojectName("");
       setDescription("");
-      setField1("");
-      setField2("");
-      setField3("");
-      setField4("");
+      setprojectNumber("");
+      settype("");
+      setdescription2("");
+      setprojectYear("");
+
+      setprojectPath("");
     }
   };
 
   const handleEditItem = (item) => {
     setprojectName(item.projectName);
     setDescription(item.description);
-    setField1(item.field1);
-    setField2(item.field2);
-    setField3(item.field3);
-    setField4(item.field4);
+    setprojectNumber(item.projectNumber);
+    settype(item.type);
+    setdescription2(item.description2);
+    setprojectYear(item.projectYear);
+    setprojectPath(item.projectPath);
   };
 
   const handleFileUpload = async (files) => {
     try {
       const file = files[0];
-      const storageRef = reff(storage, `/Event/${projectName}`);
+      const uniqueFileName = `${projectPath}/${Date.now()}_${file.name}`; 
+      const storageRef = reff(storage, "Project/" + uniqueFileName);
+  
+      toast.loading("File Uploading. Please wait...");
       await uploadBytes(storageRef, file);
+  
       const downloadURL = await getDownloadURL(storageRef);
-      console.log("File uploaded successfully.");
-      setSuccess(true);
-      setTimeout(() => {
-        setSuccess(false);
-        setIsUploading(false);
-      }, 3000);
+      toast.dismiss();
+      toast.success("File uploaded successfully.");
     } catch (error) {
-      console.error("Error uploading file:", error);
-      setIsUploading(false);
+      toast.error("Error uploading file:", error);
     }
   };
-
+  
 
   return (
     <>
@@ -182,9 +189,36 @@ const AddProject = (projectname) => {
             type="text"
             placeholder="Project Number"
             className="flex  w-full rounded-md placeholder-zinc-50 border border-input bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-            value={field1}
+            value={projectNumber}
             rows={10}
-            onChange={(e) => setField1(e.target.value)}
+            onChange={(e) => setprojectNumber(e.target.value)}
+          />
+          <br />
+
+          <Textarea
+            type="text"
+            className="flex  w-full rounded-md placeholder-zinc-50 border border-input bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            placeholder="Project Type"
+            value={type}
+            onChange={(e) => settype(e.target.value)}
+          />
+          <br />
+
+          <Textarea
+            type="text"
+            className="flex  w-full rounded-md placeholder-zinc-50 border border-input bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            placeholder="Project Year"
+            value={projectYear}
+            onChange={(e) => setprojectYear(e.target.value)}
+          />
+
+          <br />
+          <Textarea
+            type="text"
+            className="flex  w-full rounded-md placeholder-zinc-50 border border-input bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            placeholder="Project Name in small"
+            value={projectPath}
+            onChange={(e) => setprojectPath(e.target.value)}
           />
           <br />
           <Textarea
@@ -200,26 +234,9 @@ const AddProject = (projectname) => {
             type="text"
             className="flex  w-full rounded-md placeholder-zinc-50 border border-input bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
             placeholder="Description 2"
-            value={field2}
-            onChange={(e) => setField2(e.target.value)}
+            value={description2}
+            onChange={(e) => setdescription2(e.target.value)}
           />
-          <br />
-          <Textarea
-            type="text"
-            className="flex  w-full rounded-md placeholder-zinc-50 border border-input bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-            placeholder="Project Type"
-            value={field3}
-            onChange={(e) => setField3(e.target.value)}
-          />
-          <br />
-          <Textarea
-            type="text"
-            className="flex  w-full rounded-md placeholder-zinc-50 border border-input bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-            placeholder="Project Year"
-            value={field4}
-            onChange={(e) => setField4(e.target.value)}
-          />
-
           <br />
           <Dropzone onDrop={handleFileUpload} multiple={false}>
             {({ getRootProps, getInputProps }) => (
@@ -236,17 +253,8 @@ const AddProject = (projectname) => {
             )}
           </Dropzone>
           <br />
-          {isUploading && (
-            <div>
-              <div className="spinner mx-auto d-block"></div>
-              <h1 className="upload-text">Uploading...</h1>
-            </div>
-          )}
-          {success && (
-            <div className="fixed top-0 right-0 p-4 m-4 bg-green-500 text-white rounded-lg z-50">
-              File uploaded successfully!
-            </div>
-          )}
+          <br />
+
           <Button
             type="submit"
             variant="secondary"
@@ -255,13 +263,6 @@ const AddProject = (projectname) => {
             {editItemId ? "Update Project" : "Add Project"}
           </Button>
         </form>
-        <Button
-          variant="secondary"
-          className="text-white mb-10 border border-zinc-50"
-          onClick={() => handleEditItem(item)}
-        >
-          Edit Event
-        </Button>
       </div>
     </>
   );

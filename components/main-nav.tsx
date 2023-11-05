@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
@@ -7,7 +7,7 @@ import { MainNavItem } from "types";
 import { siteConfig } from "config/site";
 import { Icons } from "@/components/icons";
 import { MobileNav } from "@/components/mobile-nav";
-import logo from "./logo.png"
+import logo from "./logo.png";
 import Image from "next/image";
 
 interface MainNavProps {
@@ -24,13 +24,19 @@ export function MainNav({ items, children }: MainNavProps) {
   };
 
   return (
-    <div className="flex gap-6 md:gap-10 bg-black">
-      <Link href="/" className="hidden bg-black items-center space-x-2 md:flex" aria-label="logo">
+    <div className="flex gap-6 max-w-full md:gap-10 bg-black">
+      <Link
+        href="/"
+        className="hidden bg-black items-center space-x-2 md:flex"
+        aria-label="logo"
+      >
         <span className="hidden logo-font text-4xl  font-bold sm:inline-block">
-          <Tilt className="logo-font"><Image height={70} width={70} alt="logo" src={logo} /></Tilt>
+          <Tilt className="logo-font">
+            <Image height={70} width={70} alt="logo" src={logo} />
+          </Tilt>
         </span>
       </Link>
-      
+
       <button
         className="flex items-center space-x-2 bg-black md:hidden"
         onClick={toggleMobileMenu}
@@ -38,9 +44,12 @@ export function MainNav({ items, children }: MainNavProps) {
         {showMobileMenu ? (
           <Icons.close />
         ) : (
-          <p className="logo-font text-4xl display-animation2 font-bold sm:inline-block">
-            <Image height={90} width={90} alt="logo" src={logo} />
-          </p>
+          <div className="burger" >
+          <input type="checkbox" id="burger" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         )}
         <span className="font-bold"></span>
       </button>
