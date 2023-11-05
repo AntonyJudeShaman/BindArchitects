@@ -13,7 +13,7 @@ function Services() {
           <h2 className="p-4 pb-0 dmsans">Architecture</h2>
           <p className="dmsans text-muted-foreground p-4">
             Our team of skilled architects designs 
-            innovative and functional spaces, whether it's your dream home or a
+            innovative and functional spaces, whether it&apos;s your dream home or a
             business establishment. We bring together aesthetics and
             practicality to create spaces that ins pire and
             enhance your lifestyle or business operations.
@@ -61,7 +61,7 @@ function Services() {
           <p className="dmsans text-muted-foreground p-4">
             We understand the importance of a strong brand identity. Our
             branding services encompass logo design, color schemes, typography,
-            and visual elements that effectively communicate your brand's values
+            and visual elements that effectively communicate your brand&apos;s values
             and resonate with your target audience, giving your business a
             distinct and memorable presence.
           </p>
@@ -72,7 +72,7 @@ function Services() {
           <p className="dmsans  text-muted-foreground p-4">
             Make a lasting impression with our expert signage solutions
             . We design and produce impactful signage that
-            enhances your brand visibility, whether it's for storefronts,
+            enhances your brand visibility, whether it&apos;s for storefronts,
             exhibitions, or wayfinding systems. Our
             attention to detail and strategic placement ensure your message stands out and captures
             attention in any environment.
