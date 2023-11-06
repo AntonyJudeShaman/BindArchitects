@@ -114,7 +114,7 @@ export function Contactform({ className }) {
       >
         <div className="grid gap-4 py-4">
           <div
-            className="grid grid-cols-1 md:grid-cols-2 items-center gap-4"
+            className="grid grid-cols-1 md:grid-cols-1 items-center gap-4"
             
             aria-label="enter your name"
           >
@@ -142,7 +142,7 @@ export function Contactform({ className }) {
             )}
           </div>
           <div
-            className="grid grid-cols-1 md:grid-cols-2 items-center gap-4"
+            className="grid grid-cols-1 md:grid-cols-1 items-center gap-4"
             
             aria-label="enter your email"
           >
@@ -170,7 +170,7 @@ export function Contactform({ className }) {
             )}
           </div>
           <div
-            className="grid grid-cols-1 md:grid-cols-2 items-center gap-4"
+            className="grid grid-cols-1 md:grid-cols-1 items-center gap-4"
             
             aria-label="enter your phone number"
           >
@@ -198,7 +198,7 @@ export function Contactform({ className }) {
             )}
           </div>
           <div
-            className="grid grid-cols-1 md:grid-cols-2 items-center gap-4"
+            className="grid grid-cols-1 md:grid-cols-1 items-center gap-4"
           
             aria-label="enter your message optional"
           >

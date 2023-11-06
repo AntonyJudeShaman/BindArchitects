@@ -215,8 +215,8 @@
     border-radius: 10px;
     padding: 20px;
     border: 2px solid #0baefa;
-    box-shadow: 0px 0px 10px #e9baba;
-    animation: glow 4s infinite ease-in-out;
+    /* box-shadow: 0px 0px 10px #e9baba; */
+    /* animation: glow 4s infinite ease-in-out; */
   }
 
   @keyframes glow {

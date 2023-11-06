@@ -44,7 +44,7 @@ function page() {
                 <Image height={90} width={90} alt="logo" src={logo} />
               </div>
       </div>
-        <p className="md:text-5xl text-4xl font-heading font-semibold sub-gradient mb-8 mt-10 text-center display-animation">
+        <p className="md:text-5xl text-4xl dmsans mb-8 mt-10 text-center ">
           Contact Us
         </p>
         <Contactform className="" />
