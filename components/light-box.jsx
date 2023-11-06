@@ -119,7 +119,7 @@ export function LightBox({ className }) {
         <DialogTrigger asChild>
           <Button
             variant="default"
-            className="border-2 border-green-300 dmsans border-black bg-gradient-to-b from-green-500 to-blue-600 hover:to-green-500 hover:from-blue-600  w-full"
+            className="border-2 border-green-300 dmsans-bold border-black bg-gradient-to-b from-green-500 to-blue-600 hover:to-green-500 hover:from-blue-600  w-full"
             size="lg"
             aria-label="contact us"
           >
