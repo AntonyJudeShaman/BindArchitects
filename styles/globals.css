@@ -41,6 +41,11 @@
   font-weight: 200;
 }
 
+.dmsans-bold{
+  font-family: "DM Sans";
+  font-weight: 600;
+}
+
 .our-story {
   display: flex;
   flex-wrap: wrap;

@@ -70,6 +70,8 @@ const AddProject = () => {
   const [description2, setdescription2] = useState("");
   const [projectYear, setprojectYear] = useState("");
   const [projectPath, setprojectPath] = useState("");
+  const [expertise, setExpertise] = useState("");
+  const [location, setLocation] = useState("");
 
   useEffect(() => {
     const fetchMenuData = async () => {
@@ -102,6 +104,8 @@ const AddProject = () => {
         description2,
         projectYear,
         projectPath,
+        expertise,
+        location,
       });
 
       setprojectName("");
@@ -111,6 +115,8 @@ const AddProject = () => {
       setdescription2("");
       setprojectYear("");
       setprojectPath("");
+      setExpertise("");
+      setLocation("");
 
       setEditItemId(null);
       toast.success("Project updated successfully.");
@@ -125,16 +131,19 @@ const AddProject = () => {
         description2,
         projectYear,
         projectPath,
+        expertise,
+        location,
       };
       update(menuRef, menuItem);
-      toast.success("Project added successfully.");
+      toast.success("Project created successfully.");
       setprojectName("");
       setDescription("");
       setprojectNumber("");
       settype("");
       setdescription2("");
       setprojectYear("");
-
+      setExpertise("");
+      setLocation("");
       setprojectPath("");
     }
   };
@@ -147,17 +156,19 @@ const AddProject = () => {
     setdescription2(item.description2);
     setprojectYear(item.projectYear);
     setprojectPath(item.projectPath);
+    setExpertise(item.expertise);
+    setLocation(item.location);
   };
 
   const handleFileUpload = async (files) => {
     try {
       const file = files[0];
-      const uniqueFileName = `${projectPath}/${Date.now()}_${file.name}`; 
+      const uniqueFileName = `${projectPath}/${Date.now()}_${file.name}`;
       const storageRef = reff(storage, "Project/" + uniqueFileName);
-  
+
       toast.loading("File Uploading. Please wait...");
       await uploadBytes(storageRef, file);
-  
+
       const downloadURL = await getDownloadURL(storageRef);
       toast.dismiss();
       toast.success("File uploaded successfully.");
@@ -165,7 +176,6 @@ const AddProject = () => {
       toast.error("Error uploading file:", error);
     }
   };
-  
 
   return (
     <>
@@ -198,9 +208,25 @@ const AddProject = () => {
           <Textarea
             type="text"
             className="flex  w-full rounded-md placeholder-zinc-50 border border-input bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-            placeholder="Project Type"
+            placeholder="Project Sector"
             value={type}
             onChange={(e) => settype(e.target.value)}
+          />
+          <br />
+          <Textarea
+            type="text"
+            className="flex  w-full rounded-md placeholder-zinc-50 border border-input bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            placeholder="Expertise"
+            value={expertise}
+            onChange={(e) => setExpertise(e.target.value)}
+          />
+          <br />
+          <Textarea
+            type="text"
+            className="flex  w-full rounded-md placeholder-zinc-50 border border-input bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            placeholder="Location"
+            value={location}
+            onChange={(e) => setLocation(e.target.value)}
           />
           <br />
 

@@ -9,6 +9,7 @@ import {
 } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import logo from "@/components/logo.png"
 import { app } from "@/components/firebase";
 import { HomePage, marketingConfig } from "config/marketing";
 import { MainNav } from "@/components/main-nav";
@@ -27,29 +28,28 @@ import toast from "react-hot-toast";
 import { firebaseConfig } from "@/components/firebase";
 import Image from "next/image";
 import { SiteFooter } from "@/components/site-footer";
+import { ArrowLeft } from "lucide-react";
+import React from "react";
+import ProjectNotFound from "@/components/project-notfound";
 
 const firebaseApp = initializeApp(firebaseConfig, "Project");
 const database = getDatabase(firebaseApp);
 const storage = getStorage(firebaseApp);
 
+const metadata: Metadata = {
+  title: "Project | Studio Bind",
+  description: "Project details and description.",
+};
+
+
 interface MenuItem {
   projectNumber: string | null | undefined;
-  projectName:
-    | string
-    | ReactElement
-    | ReactPortal
-    | ReactNode
-    | null
-    | undefined;
-  description:
-    | string
-    | ReactElement
-    | ReactPortal
-    | ReactNode
-    | null
-    | undefined;
+  projectName: string | null | undefined;
+  description: string | null | undefined;
   type: string | null | undefined;
   projectPath: string | null | undefined;
+  expertise: string | null | undefined;
+  location: string | null | undefined;
 }
 
 export default function ProjectPage({
@@ -89,6 +89,10 @@ export default function ProjectPage({
               type: (value as { type: string | null | undefined }).type,
               projectPath: (value as { projectPath: string | null | undefined })
                 .projectPath,
+                expertise: (value as { expertise: string | null | undefined })
+                .expertise,
+                location: (value as { location: string | null | undefined }).location,
+
             })
           );
           setMenuItems(menuData);
@@ -121,28 +125,8 @@ export default function ProjectPage({
 
   return (
     <div className="min-h-screen max-w-full animate-fade-in mt-8">
-      <Head>
-        <title>{params.projectId} | Studio Bind</title>
-      </Head>
-      <div className="ml-5  flex mb-10 md:justify-between">
-        <MainNav items={HomePage.mainNav} />
-        <nav className="justify-between">
-          {marketingConfig &&
-            marketingConfig.mainNav.map((item, index) => (
-              <Link
-                key={index}
-                aria-label="navbar items"
-                href={item.disabled ? "#" : item.href}
-                className={cn(
-                  "group flex flex-col text-right items-center overflow-hidden my-font hidden mr-4 title-gradient md:inline-block rounded-md p-2 text-sm font-medium hover-underline",
-                  item.disabled && "cursor-not-allowed opacity-60"
-                )}
-              >
-                <span className="">{item.title}</span>
-              </Link>
-            ))}
-        </nav>
-      </div>
+      
+
       <Suspense
         fallback={
           <div className="text-center bg-gray-600">
@@ -152,18 +136,39 @@ export default function ProjectPage({
           </div>
         }
       >
-        {selectedProjectData ? (
+        {/* <title>{params.projectId} | Studio Bind</title> */}
+        {selectedProjectData && selectedProjectData.length > 0 ? (
           <div className="min-h-screen m-4 max-w-full">
-            <Head>
-              <title>{params.projectId} || Studio Bind</title>
-            </Head>
+           <div className="md:ml-5 ml-5 flex  justify-between">
+        <MainNav items={marketingConfig.mainNav} />
+        <nav className="justify-between">
+          {marketingConfig &&
+            marketingConfig.mainNav.map((item, index) => (
+              <Link
+                key={index}
+                aria-label="navbar items"
+                href={item.disabled ? "#" : item.href}
+                className={cn(
+                  "group flex hover:text-orange-400 flex-col text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium hover:underline",
+                  item.disabled && "cursor-not-allowed opacity-60"
+                )}
+              >
+                <span className="">{item.title}</span>
+              </Link>
+            ))}
+        </nav>
+        <div className="flex max-w-[10rem] justify-end mr-5 space-x-2 bg-black md:hidden">
+                <Image height={90} width={90} alt="logo" src={logo} />
+              </div>
+      </div>
             {selectedProjectData ? (
               <div className="min-h-screen">
                 {selectedProjectData.map((menuItem, index) => (
                   <div
-                    key={menuItem.projectNumber || index}
+                    key={menuItem.projectNumber}
                     className="mx-auto ml-5 justify-center items-center"
                   >
+                    <title>{menuItem.projectName}</title>
                     <div className="container  min-h-screen text-wrapper p-4 flex flex-col gap-4 ">
                       <p className="text-xl mt-28 ">{menuItem.projectNumber}</p>
                       <p
@@ -172,18 +177,18 @@ export default function ProjectPage({
                       >
                         {menuItem.projectName}
                       </p>
-                      <div className=" flex-row grid md:grid-cols-3 mt-10 grid-cols-1 ">
-                        <p className="flex  flex-col flex-wrap justify-center mt-8 leading-normal sm:leading-8">
+                      <div className=" flex-row grid md:grid-cols-3 md:mt-16 mt-6 gap-6 inline-block grid-cols-1 ">
+                        <p className="flex  flex-col max-w-[20rem] flex-wrap justify-center mt-8 leading-normal sm:leading-8">
                           <span className="font-semibold">Expertise</span>
+                          {menuItem.expertise}
+                        </p>
+                        <p className=" flex flex-col flex-wrap justify-center mt-8 leading-normal sm:leading-8">
+                          <span className="font-semibold ">Sector</span>
                           {menuItem.type}
                         </p>
                         <p className=" flex flex-col flex-wrap justify-center mt-8 leading-normal sm:leading-8">
-                          <span className="font-semibold ">Platforms</span>
-                          {menuItem.type}
-                        </p>
-                        <p className=" flex flex-col flex-wrap justify-center mt-8 leading-normal sm:leading-8">
-                          <span className="font-semibold ">Expertise</span>
-                          {menuItem.type}
+                          <span className="font-semibold ">Location</span>
+                          {menuItem.location}
                         </p>
                       </div>
                     </div>
@@ -214,7 +219,6 @@ export default function ProjectPage({
                     </div>
                   </div>
                 ))}
-                
               </div>
             ) : (
               <div className="text-center bg-gray-600">
@@ -225,25 +229,10 @@ export default function ProjectPage({
             )}
           </div>
         ) : (
-          <div className="mx-auto justify-center p-6">
-            <Head>
-              <title>No Project || Studio Bind</title>
-            </Head>
-            <div className="bg-gray-800  mx-auto mt-8 p-8 border border-gray-300 rounded shadow-lg text-center">
-              <p className="text-2xl text-red-500 font-semibold font-heading">
-                Project not found
-              </p>
-              <p className="text-white mt-2">
-                The requested project could not be found. Please try again later
-                :)
-              </p>
-            </div>
-          </div>
+          <ProjectNotFound />
         )}
       </Suspense>
-      <div className="hidden md:block">
-        <SiteFooter />
-      </div>
+      <div className="hidden md:block"></div>
     </div>
   );
 }

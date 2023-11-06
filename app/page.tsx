@@ -41,7 +41,7 @@ export default function HomeLayout() {
                     aria-label="navbar items"
                     href={item.disabled ? "#" : item.href}
                     className={cn(
-                      "group flex   text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium hover:underline",
+                      "group flex hover:text-orange-400  text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium hover:underline",
                       item.disabled && "cursor-not-allowed opacity-60"
                     )}
                   >

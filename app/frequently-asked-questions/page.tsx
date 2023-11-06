@@ -5,7 +5,8 @@ import Nav from "@/components/nav";
 import { marketingConfig } from "config/marketing";
 import { SiteFooter } from "@/components/site-footer";
 import Questions from "@/components/still-questions";
-
+import logo from "@/components/logo.png"
+import Image from "next/image";
 import { Metadata } from "next";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
@@ -22,7 +23,7 @@ function page() {
     <div
       className="min-h-screen animate-fade-in py-4 mt-4"
     >
-      <div className="md:ml-5 ml-5 flex  md:justify-between">
+      <div className="md:ml-5 ml-5 flex  justify-between">
         <MainNav items={marketingConfig.mainNav} />
         <nav className="justify-between">
           {marketingConfig &&
@@ -40,6 +41,9 @@ function page() {
               </Link>
             ))}
         </nav>
+        <div className="flex max-w-[10rem] justify-end mr-5 space-x-2 bg-black md:hidden">
+                <Image height={90} width={90} alt="logo" src={logo} />
+              </div>
       </div>
       <p className="md:text-5xl text-4xl font-heading font-semibold sub-gradient mb-5 mt-10 text-center display-animation">
         Frequently asked questions

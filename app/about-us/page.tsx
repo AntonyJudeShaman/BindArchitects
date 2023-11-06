@@ -13,6 +13,8 @@ import AboutSection from "@/components/about-section";
 import Services from "@/components/services";
 import { ArrowRight } from "lucide-react";
 import Awards from "@/components/awards";
+import logo from "@/components/logo.png"
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About | Studio Bind",
@@ -24,25 +26,28 @@ function About() {
     <div>
       
       <title>About | Studio Bind</title>
-      <div className="md:ml-8 ml-5 flex mt-8  md:justify-between">
-        <MainNav items={marketingConfig.mainNav} />
-        <nav className="justify-between">
-          {marketingConfig &&
-            marketingConfig.mainNav.map((item, index) => (
-              <Link
-                key={index}
-                aria-label="navbar items"
-                href={item.disabled ? "#" : item.href}
-                className={cn(
-                  "group flex flex-col text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium hover:underline",
-                  item.disabled && "cursor-not-allowed opacity-60"
-                )}
-              >
-                <span className="">{item.title}</span>
-              </Link>
-            ))}
-        </nav>
-      </div>
+      <div className="md:ml-5 ml-5 mt-8 flex  justify-between">
+          <MainNav items={marketingConfig.mainNav} />
+          <nav className="justify-between">
+            {marketingConfig &&
+              marketingConfig.mainNav.map((item, index) => (
+                <Link
+                  key={index}
+                  aria-label="navbar items"
+                  href={item.disabled ? "#" : item.href}
+                  className={cn(
+                    "group flex hover:text-orange-400 flex-col text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium hover:underline",
+                    item.disabled && "cursor-not-allowed opacity-60"
+                  )}
+                >
+                  <span className="">{item.title}</span>
+                </Link>
+              ))}
+          </nav>
+          <div className="flex max-w-[10rem] justify-end mr-5 space-x-2 bg-black md:hidden">
+            <Image height={90} width={90} alt="logo" src={logo} />
+          </div>
+        </div>
           <AboutSection />
           <Awards/>
           <Services/>

@@ -139,12 +139,16 @@ body {
 	background-color: #03200b;
 }
 
-.card-body {
-  min-height: 70vh;
-	padding: 120px;
+.card-body { /* Reduce padding for smaller screens */
 	transition: all 0.5s;
-}
-
-h2 {
-	font-size: 3.5em;
-}
+  }
+  
+  /* Responsive styles for smaller screens (e.g., mobile devices) */
+  @media (max-width: 768px) {
+	.card-body {
+	  padding: 10px; /* Further reduce padding for smaller screens */
+	}
+  }
+  
+  /* Additional media queries for other screen sizes if needed */
+  

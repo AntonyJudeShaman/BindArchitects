@@ -17,7 +17,7 @@ export function AboutSection() {
             The Studio
           </h2>
         </div>
-        <div className="md:max-w-[58rem] md:grid-cols-1">
+        <div className="md:max-w-full md:grid-cols-1">
           <div className="flex md:flex-col flex-col">
             <div className="flex-1 text-xl dmsans leading-normal dmsans text-left text-muted-foreground sm:text-md sm:leading-8">
               Our in-house design team comprises professionals with diverse
@@ -43,7 +43,7 @@ export function AboutSection() {
             Our Story
           </h2>
         </div>
-        <div className=" text-left max-w-[58rem]">
+        <div className=" text-left max-w-full">
           <p className="text-xl dmsans  leading-normal text-left text-muted-foreground sm:text-md sm:leading-8">
             We believe good design and powerful storytelling can bring a
             brand&apos;s essence and personality to life. From conception to
@@ -60,7 +60,7 @@ export function AboutSection() {
                 Our Values
               </h2>
             </div>
-            <div className="max-w-[58rem] text-justify text-md text-xl dmsans leading-normal text-muted-foreground sm:text-md sm:leading-8">
+            <div className="max-w-full text-justify text-md text-xl dmsans leading-normal text-muted-foreground sm:text-md sm:leading-8">
               <div className="text-left space-y-4">
                 <p className="text-xl dmsans flex md:flex-row flex-col text-muted-foreground">
                   <span className="my-font flex md:flex-row flex-col text-white font-semibold">

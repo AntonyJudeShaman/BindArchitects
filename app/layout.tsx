@@ -1,4 +1,4 @@
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 import "@/styles/globals.css";
 import { Metadata } from "next";
 import localFont from "next/font/local";
@@ -10,7 +10,6 @@ import Particles from "@/components/particles";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { ThemeProvider } from "@/components/theme-provider";
 import { fontSans } from "./fontSans";
-
 
 const fontHeading = localFont({
   src: "../assets/fonts/CalSans-SemiBold.woff2",
@@ -28,7 +27,7 @@ interface RootLayoutProps {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://studio-bind.vercel.app"),
-  
+
   description: siteConfig.description,
   keywords: [
     "best architects in chennai",
@@ -79,16 +78,31 @@ export const metadata: Metadata = {
 };
 
 const fallbackStyle = {
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  height: '100vh', 
-  backgroundColor: 'black', 
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  height: "100vh",
+  backgroundColor: "black",
 };
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
+      <head>
+        <link rel="canonical" href="https://www.example.com/canonical-url" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="google-site-verification" content="verification_token" />
+        <meta name="description" content="This is the official page of Bind Architects." />
+        <meta name="robots" content="index, follow" />
+        <meta
+          name="author"
+          content="Studio Bind Architects"
+        />
+        <meta
+          name="keywords"
+          content="best architects in chennai, architects near me, cheap price architects, famous architects, interior designs, Architect in chennai, Interior designer in chennai, Top architects in chennnai, Best architects in chennai, Home design in chennai, Shop design in chennai, Showroom designer in chennai"
+        />
+      </head>
       <head />
       <body
         id="section1"
@@ -98,19 +112,22 @@ export default function RootLayout({ children }: RootLayoutProps) {
           fontHeading.variable,
           titleHeading.variable
         )}
-        style={{fontWeight:'300'}}
+        style={{ fontWeight: "300" }}
       >
-        <Suspense data-speed="1.5" fallback={<div style={fallbackStyle}>Loading...</div>}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          {children}
-          <Analytics />
-          <Toaster />
-          {/* <Particles
+        <Suspense
+          data-speed="1.5"
+          fallback={<div style={fallbackStyle}>Loading...</div>}
+        >
+          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+            {children}
+            <Analytics />
+            <Toaster />
+            {/* <Particles
             className="animate-fade-in h-full absolute inset-0 -z-10"
             quantity={100}
           /> */}
-          <TailwindIndicator />
-        </ThemeProvider>
+            <TailwindIndicator />
+          </ThemeProvider>
         </Suspense>
       </body>
     </html>

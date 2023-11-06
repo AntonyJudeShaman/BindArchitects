@@ -13,8 +13,13 @@ import Head from "next/head";
 import FreeQuote from "@/components/free-quote";
 import { cn } from "@/lib/utils";
 import Card from "@/components/StickyCard";
+import logo from "@/components/logo.png"
+import Image from "next/image";
 
-
+const metadata: Metadata = {
+  title: "Projects | Studio Bind",
+  description: "Projects page",
+};
 
 export interface Project {
   projectId: string;
@@ -130,52 +135,35 @@ function ProjectsHome() {
       data-theme=""
       style={{ visibility: loading ? "hidden" : "visible" }}
     >
-      <Head>
-        <title>Projects | Studio Bind</title>
-      </Head>
-      <div className="md:ml-5 ml-5 flex mb-10 md:justify-between">
-        <MainNav items={HomePage.mainNav} />
-        <nav className="justify-between">
-          {marketingConfig &&
-            marketingConfig.mainNav.map((item, index) => (
-              <Link
-                key={index}
-                aria-label="navbar items"
-                href={item.disabled ? "#" : item.href}
-                className={cn(
-                  "group flex flex-col text-right items-center overflow-hidden my-font hidden mr-4 title-gradient md:inline-block rounded-md p-2 text-sm font-medium hover:underline",
-                  item.disabled && "cursor-not-allowed opacity-60"
-                )}
-              >
-                <span className="">{item.title}</span>
-              </Link>
-            ))}
-        </nav>
-      </div>
-      
+      <title>Projects | Studio Bind</title>
+
+      <div className="md:ml-5 ml-5 flex  justify-between">
+          <MainNav items={marketingConfig.mainNav} />
+          <nav className="justify-between">
+            {marketingConfig &&
+              marketingConfig.mainNav.map((item, index) => (
+                <Link
+                  key={index}
+                  aria-label="navbar items"
+                  href={item.disabled ? "#" : item.href}
+                  className={cn(
+                    "group flex hover:text-orange-400 flex-col text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium hover:underline",
+                    item.disabled && "cursor-not-allowed opacity-60"
+                  )}
+                >
+                  <span className="">{item.title}</span>
+                </Link>
+              ))}
+          </nav>
+          <div className="flex max-w-[10rem] justify-end mr-5 space-x-2 bg-black md:hidden">
+            <Image height={90} width={90} alt="logo" src={logo} />
+          </div>
+        </div>
+
       <Card />
-      
-      {/* <div className="flex flex-wrap gap-2 justify-center">
-        {projects.map((project) => (
-          <Link href={`/projects/${project.projectId}`} key={project.projectId}>
-            <div
-              key={project.projectId}
-              className="image-frame overflow-hidden max-w-[69rem] mb-10 relative"
-              style={{ padding: "20px" }} // Adjust padding as needed
-            >
-              <img
-                src={`https://drive.google.com/uc?id=${project.description1}`}
-                alt={project.projectName}
-                className="transition-transform duration-300 ease-in-out"
-              />
-              <div className=" text-xl bottom-0 left-0 right-0  p-4">
-                <p className="text-left">{project.projectName}</p>
-                <p className="text-right text-foreground">2023</p>
-              </div>
-            </div>
-          </Link>
-        ))}
-      </div> */}<br/><br/>
+
+      <br />
+      <br />
       <FreeQuote />
       <SiteFooter />
     </div>
