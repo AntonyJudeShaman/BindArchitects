@@ -31,6 +31,11 @@ const cardColors = [
   "#FF00FF"    // Darker shade
 ];
 
+const fontColors = [
+  "#FFF",   
+  "000",
+
+];
 
 function Card() {
   const [MenuItems, setMenuItems] = useState<MenuItem[] | null>(null);
@@ -81,7 +86,7 @@ function Card() {
         >
           <Link href={`/projects/${project.projectPath}`}>
             <div
-              style={{ backgroundColor: cardColors[index % cardColors.length] }}
+              style={{ backgroundColor: cardColors[index % cardColors.length], color: fontColors[index % fontColors.length]}}
               className=" mt-10 md:max-w-[90rem] mi0rem] w-full  border border-zinc-50 justify-center ml-0 md:ml-0 flex-col flex"
             >
               <div className="container text-wrapper md:pt-32 pt-12 pb-12 md:pl-12 md:pr-12 md:pb-20 flex flex-col gap-4 ">

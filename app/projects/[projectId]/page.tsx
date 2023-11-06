@@ -167,6 +167,7 @@ export default function ProjectPage({
                   <div
                     key={menuItem.projectNumber}
                     className="mx-auto ml-5 justify-center items-center"
+                    
                   >
                     <title>{menuItem.projectName}</title>
                     <div className="container  min-h-screen text-wrapper p-4 flex flex-col gap-4 ">
