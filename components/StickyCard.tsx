@@ -93,7 +93,7 @@ function Card() {
                 <p className="text-xl  ">{project.projectNumber}</p>
                 <p
                   aria-label="Studio bind"
-                  className="2xl:text-9xl dmsans-home mt-2 flex flex-wrap md:max-w-[98rem] z-30 text-6xl"
+                  className="md:text-9xl dmsans-home mt-2 flex flex-wrap md:max-w-[98rem] z-30 text-6xl"
                 >
                   {project.projectName}
                 </p>

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState, useRef } from "react";
 import emailjs from "emailjs-com";
 import { Button } from "@/components/ui/button";
@@ -8,6 +8,7 @@ import { Textarea } from "./ui/textarea";
 import { cn } from "@/lib/utils";
 import LoadingDots from "./loading-dots";
 import logo from "../assets/8.png";
+import Link from "next/link";
 
 export function Contactform({ className }) {
   const [name, setName] = useState("");
@@ -101,127 +102,169 @@ export function Contactform({ className }) {
   };
 
   return (
-    <div className="mx-auto max-w-lg form-container " aria-label="contact form">
+    <div
+      className=" justify-start max-w-[50rem] p-4 "
+      aria-label="contact form"
+    >
       <form
         ref={form}
         onSubmit={handleSubmit}
-        className={cn("space-x-4 md:-mt-4 sm:pt-10", className)}
+        className={cn("space-x-4 md:-mt-12 sm:pt-10", className)}
         style={{
           maxWidth: "100%",
           margin: "0 auto",
-          padding: "0 20px",
         }}
       >
-        <div className="grid gap-4 py-4">
+        <div className="grid gap-4 ">
+          <p
+            className="md:text-5xl text-5xl dmsans-bold mb-4 text-left "
+            aria-label="Contact us"
+          >
+            Hello! Let&apos;s talk about your new project
+          </p>
+          <p
+            className="md:text-2xl text-muted-foreground text-xl mb-4   text-left "
+            aria-label="Contact us"
+          >
+            Fill in the form to contact us or send an email to{" "}
+            <Link
+              href="mailto:bindarchitects@gmail.com"
+              aria-label="contact email"
+            >
+              <span className="dmsans-bold hover:text-orange-400">
+                bindarchitects@gmail.com
+              </span>
+            </Link>
+          </p>
+          {/* <div className="wave-group">
+            <Input required type="text" className="input" id="name"
+              name="name"
+              value={name}
+              style={{
+                filter: "brightness(180%)",
+              }}/>
+            <span className="bar"></span>
+            <label className="label">
+              <span className="label-char" style={{ "--index": 0 }}>
+                N
+              </span>
+              <span className="label-char" style={{ "--index": 1 }}>
+                a
+              </span>
+              <span className="label-char" style={{ "--index": 2 }}>
+                m
+              </span>
+              <span className="label-char" style={{ "--index": 3 }}>
+                e
+              </span>
+            </label>
+          </div> */}
           <div
-            className="grid grid-cols-1 md:grid-cols-1 items-center gap-4"
-            
+            className="grid grid-cols-1  md:grid-cols-1  items-center gap-4"
             aria-label="enter your name"
           >
-            <Label
+            {/* <Label
               htmlFor="name"
               className="sub-gradient text-lg font-semibold"
             >
-              Name<span className="error-gradient"> *</span>
-            </Label>
+              Name
+            </Label> */}
+
             <Input
               id="name"
               name="name"
-              className="md:col-span-3  caret-blue-500 focus:caret-indigo-500"
+              className="md:col-span-3 input text-lg"
               placeholder="Enter your name"
               value={name}
               style={{
-                filter: "brightness(150%)",
+                filter: "brightness(180%)",
               }}
               onChange={(e) => setName(e.target.value)}
             />
             {showNameAlert && (
-              <div className="error-gradient text-sm w-full">
+              <div className="error-gradient text-md w-full">
                 <p>Name is Empty or Invalid.</p>
               </div>
             )}
           </div>
           <div
-            className="grid grid-cols-1 md:grid-cols-1 items-center gap-4"
-            
+            className="grid grid-cols-1 md:grid-cols-1  items-center gap-4"
             aria-label="enter your email"
           >
-            <Label
+            {/* <Label
               htmlFor="email"
               className="sub-gradient text-lg font-semibold"
             >
               Email<span className="error-gradient"> *</span>
-            </Label>
+            </Label> */}
             <Input
               id="email"
               name="email"
-              className="md:col-span-3 caret-blue-500 focus:caret-indigo-500"
+              className="md:col-span-3 text-lg"
               placeholder="Enter your email"
               value={email}
               style={{
-                filter: "brightness(150%)",
+                filter: "brightness(180%)",
               }}
               onChange={(e) => setEmail(e.target.value)}
             />
             {showEmailAlert && (
-              <div className="error-gradient text-sm w-full">
+              <div className="error-gradient text-md w-full">
                 <p>Email is Empty or Invalid.</p>
               </div>
             )}
           </div>
           <div
-            className="grid grid-cols-1 md:grid-cols-1 items-center gap-4"
-            
+            className="grid grid-cols-1 md:grid-cols-1  items-center gap-4"
             aria-label="enter your phone number"
           >
-            <Label
+            {/* <Label
               htmlFor="phone"
               className="sub-gradient text-lg font-semibold"
             >
               Phone<span className="error-gradient"> *</span>
-            </Label>
+            </Label> */}
             <Input
               id="phone"
               name="phone"
               style={{
-                filter: "brightness(150%)",
+                filter: "brightness(180%)",
               }}
-              className="md:col-span-3 caret-blue-500 focus:caret-indigo-500"
+              className="md:col-span-3 text-lg"
               placeholder="Enter your phone number"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
             />
             {showPhoneAlert && (
-              <div className="error-gradient text-sm w-full">
+              <div className="error-gradient text-md w-full">
                 <p className="w-full">Phone is Empty or Invalid.</p>
               </div>
             )}
           </div>
           <div
-            className="grid grid-cols-1 md:grid-cols-1 items-center gap-4"
-          
+            className="grid grid-cols-1 md:grid-cols-1  items-center gap-4"
             aria-label="enter your message optional"
           >
-            <Label
+            {/* <Label
               htmlFor="message"
               className="sub-gradient text-lg font-semibold"
             >
               Message
-            </Label>
+            </Label> */}
             <Textarea
               id="message"
               style={{
-                filter: "brightness(150%)",
+                filter: "brightness(180%)",
               }}
               name="message"
-              className="md:col-span-3 h-28 caret-blue-500 focus:caret-indigo-500"
+              className="md:col-span-3 text-lg"
               placeholder="Type your message here."
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
           </div>
           {showDialog && (
-            <div className="text-center success-gradient text-sm pb-2">
+            <div className="text-center success-gradient text-md pb-2">
               <p>
                 Your details has been submitted. Our team will contact you
                 shortly.
@@ -232,7 +275,8 @@ export function Contactform({ className }) {
             <Button
               aria-label="submit contact form"
               type="submit"
-              className="w-full w-30 mt-2 border border-green-300 bg-gradient-to-bl from-pink-500 to-purple-700 hover:to-pink-500 hover:from-purple-600"
+              variant="white"
+              className=" w-60 mt-4 border text-md border-green-300 "
               disabled={loading}
             >
               {loading ? <LoadingDots color="red" /> : "Submit"}

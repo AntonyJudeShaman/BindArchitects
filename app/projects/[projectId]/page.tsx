@@ -9,7 +9,7 @@ import {
 } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import logo from "@/components/logo.png"
+import logo from "@/components/logo.png";
 import { app } from "@/components/firebase";
 import { HomePage, marketingConfig } from "config/marketing";
 import { MainNav } from "@/components/main-nav";
@@ -36,11 +36,24 @@ const firebaseApp = initializeApp(firebaseConfig, "Project");
 const database = getDatabase(firebaseApp);
 const storage = getStorage(firebaseApp);
 
+const cardColors = [
+  "#FF3F00", // Darker shade
+  "#00FF3E", // Darker shade
+  "#5733FF", // Original color
+  "#A888FF", // Lighter shade
+  "#2700FF", // Darker shade
+  "#33FFFF", // Original color
+  "#88FFFA", // Lighter shade
+  "#00FFFD", // Darker shade
+  "#FF33FF", // Original color
+  "#FFA8FF", // Lighter shade
+  "#FF00FF", // Darker shade
+];
+
 const metadata: Metadata = {
   title: "Project | Studio Bind",
   description: "Project details and description.",
 };
-
 
 interface MenuItem {
   projectNumber: string | null | undefined;
@@ -89,10 +102,10 @@ export default function ProjectPage({
               type: (value as { type: string | null | undefined }).type,
               projectPath: (value as { projectPath: string | null | undefined })
                 .projectPath,
-                expertise: (value as { expertise: string | null | undefined })
+              expertise: (value as { expertise: string | null | undefined })
                 .expertise,
-                location: (value as { location: string | null | undefined }).location,
-
+              location: (value as { location: string | null | undefined })
+                .location,
             })
           );
           setMenuItems(menuData);
@@ -124,111 +137,96 @@ export default function ProjectPage({
       : [];
 
   return (
-    <div className="min-h-screen max-w-full animate-fade-in mt-8">
-      
-
+    <div className="min-h-screen min-w-screen animate-fade-in mt-8 ">
       <Suspense
         fallback={
           <div className="text-center bg-gray-600">
-            <h2 className="mx-auto font-semibold text-lg text-gray-200">
+            <h2 className="mx-auto dmsans-bold text-lg text-gray-200">
               Loading Project
             </h2>
           </div>
         }
       >
-        {/* <title>{params.projectId} | Studio Bind</title> */}
         {selectedProjectData && selectedProjectData.length > 0 ? (
-          <div className="min-h-screen m-4 max-w-full">
-           <div className="md:ml-5 ml-5 flex  justify-between">
-        <MainNav items={marketingConfig.mainNav} />
-        <nav className="justify-between">
-          {marketingConfig &&
-            marketingConfig.mainNav.map((item, index) => (
-              <Link
-                key={index}
-                aria-label="navbar items"
-                href={item.disabled ? "#" : item.href}
-                className={cn(
-                  "group flex hover:text-orange-400 flex-col text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium hover:underline",
-                  item.disabled && "cursor-not-allowed opacity-60"
-                )}
-              >
-                <span className="">{item.title}</span>
-              </Link>
-            ))}
-        </nav>
-        <div className="flex max-w-[10rem] justify-end mr-5 space-x-2 bg-black md:hidden">
-                <Image height={90} width={90} alt="logo" src={logo} />
+          selectedProjectData.map((menuItem, index) => (
+            <div
+              key={menuItem.projectNumber}
+              className="min-h-screen m-4 max-w-full "
+            >
+              <div className="md:ml-0 ml-5 flex justify-between">
+                <MainNav items={marketingConfig.mainNav} />
+                <nav className="justify-between">
+                  {marketingConfig.mainNav.map((item, index) => (
+                    <Link
+                      key={index}
+                      aria-label="navbar items"
+                      href={item.disabled ? "#" : item.href}
+                      className={cn(
+                        "group flex hover:text-orange-400 flex-col text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium hover:underline",
+                        item.disabled && "cursor-not-allowed opacity-60"
+                      )}
+                    >
+                      <span className="">{item.title}</span>
+                    </Link>
+                  ))}
+                </nav>
+                <div className="flex max-w-[10rem] justify-end mr-5 space-x-2 bg-black md:hidden">
+                  <Image height={90} width={90} alt="logo" src={logo} />
+                </div>
               </div>
-      </div>
-            {selectedProjectData ? (
               <div className="min-h-screen">
-                {selectedProjectData.map((menuItem, index) => (
-                  <div
-                    key={menuItem.projectNumber}
-                    className="mx-auto ml-5 justify-center items-center"
-                    
+                <title>{menuItem.projectName}</title>
+                <div className="container min-h-screen text-wrapper p-4 flex flex-col gap-4">
+                  <p className="text-xl mt-28 dmsans">
+                    {menuItem.projectNumber}
+                  </p>
+                  <p
+                    aria-label="Studio bind"
+                    className="md:text-9xl  dmsans-home title-gradient2 mt-2 flex flex-wrap max-w-[58rem] md:max-w-full z-30 text-8xl title-gradient"
                   >
-                    <title>{menuItem.projectName}</title>
-                    <div className="container  min-h-screen text-wrapper p-4 flex flex-col gap-4 ">
-                      <p className="text-xl mt-28 ">{menuItem.projectNumber}</p>
-                      <p
-                        aria-label="Studio bind"
-                        className="2xl:text-9xl dmsans-home title-gradient2 mt-2 flex flex-wrap md:max-w-[98rem] z-30 text-6xl title-gradient"
-                      >
-                        {menuItem.projectName}
+                    {menuItem.projectName}
+                  </p>
+                  <div className="groupss md:mt-24 mt-10">
+                    <div className="groupp dmsans md:gap-40 text-lg">
+                      <p className="expertise md:mb-0 mb-5 dmsans-bold max-w-[20rem]">
+                        Expertise <span className="dmsans">{menuItem.expertise}</span>
                       </p>
-                      <div className=" flex-row grid md:grid-cols-3 md:mt-16 mt-6 gap-6 inline-block grid-cols-1 ">
-                        <p className="flex  flex-col max-w-[20rem] flex-wrap justify-center mt-8 leading-normal sm:leading-8">
-                          <span className="font-semibold">Expertise</span>
-                          {menuItem.expertise}
-                        </p>
-                        <p className=" flex flex-col flex-wrap justify-center mt-8 leading-normal sm:leading-8">
-                          <span className="font-semibold ">Sector</span>
-                          {menuItem.type}
-                        </p>
-                        <p className=" flex flex-col flex-wrap justify-center mt-8 leading-normal sm:leading-8">
-                          <span className="font-semibold ">Location</span>
-                          {menuItem.location}
-                        </p>
-                      </div>
-                    </div>
-                    <div className="dmsans flex flex-col flex-wrap leading-[1.1] justify-center mt-8 sm:leading-8">
-                      <span className="dmsans text-5xl mb-5">About</span>
-                      <span className="text-lg">{menuItem.description}</span>
-                    </div>
-                    <div className=" md:m-0 max-w-full">
-                      <div className="mx-auto mt-20 flex max-w-[88rem] flex-col mb-5 text-center">
-                        <h2 className="font-heading text-5xl text-left dmsans font-medium leading-[1.1] mb-5 md:text-5xl">
-                          Gallery
-                        </h2>
-                      </div>
-                      <div className="mb-20 max-w-full animate-fade-in mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-14 gap-8 justify-center w-full">
-                        {images.map((url) => (
-                          <div key={url} className="">
-                            <Image
-                              height={400}
-                              width={700}
-                              src={url}
-                              alt="uploaded"
-                              className="project-frame"
-                              style={{ filter: "brightness(110%)" }}
-                            />
-                          </div>
-                        ))}
-                      </div>
+                      <p className="sector md:mb-0 mb-5 dmsans-bold">
+                        Sector <span className="dmsans">Healthcare</span>
+                      </p>
+                      <p className="location md:mb-0 mb-5 dmsans-bold">
+                        Location <span className="dmsans">Chennai</span>
+                      </p>
                     </div>
                   </div>
-                ))}
+                </div>
+                <div className="dmsans flex flex-col flex-wrap p-4 leading-[1.1] justify-center mt-8 sm:leading-8">
+                  <span className="dmsans text-5xl mb-5">About</span>
+                  <span className="text-lg">{menuItem.description}</span>
+                </div>
+                <div className="md:m-0 max-w-full">
+                  <div className="mx-auto mt-20 flex max-w-[88rem] p-4 flex-col  text-center">
+                    <h2 className="font-heading text-5xl text-left dmsans font-medium leading-[1.1]  md:text-5xl">
+                      Gallery
+                    </h2>
+                  </div>
+                  <div className="mb-20 max-w-full p-4 animate-fade-in mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-14 gap-8 justify-center w-full">
+                    {images.map((url) => (
+                      <div key={url} className="project-frame ">
+                        <Image
+                          height={400}
+                          width={700}
+                          src={url}
+                          alt="uploaded"
+                          style={{ filter: "brightness(110%)" }}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
-            ) : (
-              <div className="text-center bg-gray-600">
-                <h2 className="mx-auto font-semibold text-lg text-gray-200">
-                  Loading Project...
-                </h2>
-              </div>
-            )}
-          </div>
+            </div>
+          ))
         ) : (
           <ProjectNotFound />
         )}

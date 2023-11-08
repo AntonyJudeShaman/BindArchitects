@@ -14,10 +14,10 @@ export function ProjectNotFound() {
       <ArrowLeft className="absolute md:left-8 left-4 top-8 text-white w-8 h-8" />
     </Link>
     <div className="bg-gray-800  mx-auto mt-16 justify-center items-center p-8 border border-gray-300 rounded shadow-lg text-center">
-      <p className="text-2xl text-red-500 font-semibold font-heading">
+      <p className="text-2xl text-red-500 dmsans-bold">
         Project not found
       </p>
-      <p className="text-white mt-2">
+      <p className="text-white mt-2 dmsans">
         The requested project could not be found. Please try again later
         :)
       </p>

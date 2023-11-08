@@ -10,6 +10,7 @@ import Link from "next/link";
 import logo from "@/components/logo.png"
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import ContactHead from "@/components/contact-head"
 
 export const metadata: Metadata = {
   title: "Contact | Studio Bind",
@@ -19,10 +20,10 @@ export const metadata: Metadata = {
 function page() {
   return (
     <div
-        className="min-h-screen  py-4 animate-fade-in"
+        className="min-h-screen max-w-full py-4 animate-fade-in"
       >
       
-      <div className="md:ml-5 ml-5 flex  justify-between">
+      <div className="md:ml-5 ml-5 flex mt-4 justify-between">
         <MainNav items={marketingConfig.mainNav} />
         <nav className="justify-between">
           {marketingConfig &&
@@ -44,9 +45,7 @@ function page() {
                 <Image height={90} width={90} alt="logo" src={logo} />
               </div>
       </div>
-        <p className="md:text-5xl text-4xl dmsans mb-8 mt-10 text-center ">
-          Contact Us
-        </p>
+        <ContactHead/>
         <Contactform className="" />
         <SiteFooter className="mt-5"/>
     </div>
