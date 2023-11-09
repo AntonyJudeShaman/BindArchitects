@@ -41,7 +41,7 @@ const HomeGallery = (projectName) => {
       .catch((error) => {
         console.error(error);
       });
-  }, []);
+  }, [imagesRef]);
 
   useEffect(() => {
     if (localStorage.getItem("authUID") === "") {

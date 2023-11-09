@@ -6,7 +6,6 @@ import { Toaster } from "react-hot-toast";
 import { siteConfig } from "config/site";
 import { cn } from "@/lib/utils";
 import { Suspense } from "react";
-import Particles from "@/components/particles";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { ThemeProvider } from "@/components/theme-provider";
 import { fontSans } from "./fontSans";
