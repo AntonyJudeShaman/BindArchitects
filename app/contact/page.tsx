@@ -14,7 +14,7 @@ import ContactHead from "@/components/contact-head"
 import Contact from "@/components/contact";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Studio Bind",
+  title: "Contact Us - Studio Bind Architects",
   description: "Get in touch with Studio Bind for architectural inquiries, collaboration opportunities, or any questions you may have. Reach out to us through our contact form, and we'll be delighted to assist you."
 };
 
@@ -25,6 +25,7 @@ function page() {
         className="min-h-screen max-w-screen py-4 animate-fade-in"
       >
       
+      <title>Contact Us - Studio Bind Architects</title>
       <div className="md:ml-5 ml-5 flex mt-4 justify-between">
         <MainNav items={marketingConfig.mainNav} />
         <nav className="justify-between">

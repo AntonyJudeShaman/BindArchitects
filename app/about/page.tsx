@@ -17,15 +17,15 @@ import logo from "@/components/logo.png"
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "About | Studio Bind",
-  description: "About studio bind architects",
+  title: "About Us - Studio Bind Architects",
+  description: "Discover the vision and expertise of Studio Bind Architects in crafting innovative and sustainable designs. Learn more about our team and commitment to architectural excellence.",
 };
 
 function About() {
   return (
     <div>
       
-      <title>About | Studio Bind</title>
+      <title>About Us - Studio Bind Architects</title>
       <div className="md:ml-5 ml-5 mt-8 flex  justify-between">
           <MainNav items={marketingConfig.mainNav} />
           <nav className="justify-between">
@@ -36,7 +36,7 @@ function About() {
                   aria-label="navbar items"
                   href={item.disabled ? "#" : item.href}
                   className={cn(
-                    "group flex hover:text-orange-400 flex-col text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium hover:underline",
+                    "group flex hover:text-orange-400 flex-col text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium ",
                     item.disabled && "cursor-not-allowed opacity-60"
                   )}
                 >

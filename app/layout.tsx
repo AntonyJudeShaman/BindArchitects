@@ -10,6 +10,7 @@ import Particles from "@/components/particles";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { ThemeProvider } from "@/components/theme-provider";
 import { fontSans } from "./fontSans";
+import { NextSeo } from "next-seo";
 
 const fontHeading = localFont({
   src: "../assets/fonts/CalSans-SemiBold.woff2",
@@ -27,7 +28,8 @@ interface RootLayoutProps {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bindhomes.com"),
-
+  title:
+    "Studio Bind - Top Architectural Firm - Best Architects in Chennai - Best Interior Designers",
   description: siteConfig.description,
   keywords: [
     "best architects in chennai",
@@ -88,8 +90,30 @@ const fallbackStyle = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
+      {/* <NextSeo
+        title="Studio Bind Architects - Best Architects in Chennai, Tamil Nadu | Top Architectural Firm"
+        description="Explore the excellence of Studio Bind Architects, the best architectural firm in Chennai, Tamil Nadu. Our innovative designs and commitment to quality make us stand out as the top choice for your architectural needs."
+        canonical="https://www.studiobindarchitects.com/about"
+        openGraph={{
+          url: "https://www.studiobindarchitects.com",
+          title:
+            "Studio Bind Architects - Innovating Spaces, Creating Masterpieces",
+          description:
+            "Discover the visionary designs and architectural brilliance of Studio Bind. We are the leading architectural firm in Chennai, Tamil Nadu, dedicated to creating timeless and sustainable spaces.",
+          images: [
+            {
+              url: "https://www.studiobindarchitects.com/logo.png",
+              width: 1200,
+              height: 630,
+              alt: "Studio Bind Architects - Creating Architectural Masterpieces",
+            },
+          ],
+          site_name: "Studio Bind Architects",
+        }}
+      /> */}
+
       <head>
-        <link rel="canonical" href="https://www.example.com/canonical-url" />
+        <link rel="canonical" href="https://www.bindhomes.com" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"

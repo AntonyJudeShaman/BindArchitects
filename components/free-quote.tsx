@@ -8,7 +8,7 @@ function FreeQuote() {
         <div className="flex  flex-col justify-between rounded-md p-6">
           <div className="  mt-1 text-center mx-auto d-block">
             <p className="text-4xl dmsans " aria-label="Still have questions">
-              Get a free quote
+              Get a free quote!
             </p>
             <LightBox className=" md:mt-5 mt-5 w-60 justify-center mx-auto" />
             <p className=" md:text-lg text-md  text-center mt-5  mb-5 text-muted-foreground dmsans">

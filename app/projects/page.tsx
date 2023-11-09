@@ -57,7 +57,7 @@ function ProjectsHome() {
       className="min-h-screen animate-fade-in py-2 mt-5"
       data-theme=""
     >
-      <title>Projects | Studio Bind</title>
+      <title>Projects - Studio Bind Architects</title>
 
       <div className="md:ml-5 ml-5 flex  justify-between">
         <MainNav items={marketingConfig.mainNav} />

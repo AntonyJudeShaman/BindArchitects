@@ -12,7 +12,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Frequently Asked Questions (FAQ) | Studio Bind",
+  title: "Frequently Asked Questions (FAQ) | Studio Bind Architects",
   description:
     "Find answers to common queries about our architectural services and expertise. Explore our FAQ section to get insights into Studio Bind's offerings, processes, and more.",
 };
@@ -21,7 +21,7 @@ function page() {
   
   return (
     <>
-      <title>FAQ | Studio Bind</title>
+      <title>FAQ - Studio Bind Architects</title>
       <div className="min-h-screen animate-fade-in py-4 mt-4">
         <div className="md:ml-5 ml-5 flex  justify-between">
           <MainNav items={marketingConfig.mainNav} />

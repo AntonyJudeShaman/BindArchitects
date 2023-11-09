@@ -11,7 +11,7 @@ import logo from "@/components/logo.png";
 import Image from "next/image";
 
 const metadata: Metadata = {
-  title: "Projects at Studio Bind. Best Architects in Chennai.",
+  title: "Works of Studio Bind. Best Architects in Chennai.",
   description:
     "Explore Our Portfolio of Exceptional Architectural. Dive into a curated collection of our architectural endeavors, showcasing innovation, creativity, and timeless design excellence.",
 };
@@ -57,7 +57,7 @@ function ProjectsHome() {
       className="min-h-screen animate-fade-in py-2 mt-5"
       data-theme=""
     >
-      <title>Projects | Studio Bind</title>
+      <title>Our Work - Studio Bind Architects</title>
 
       <div className="md:ml-5 ml-5 flex  justify-between">
         <MainNav items={marketingConfig.mainNav} />
