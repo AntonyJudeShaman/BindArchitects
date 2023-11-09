@@ -89,7 +89,9 @@ const fallbackStyle = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <link rel="preload" href="../assets/fonts/Bauhaus.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@500;600&family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500&family=Montserrat:wght@100;200;400;500&family=Open+Sans:wght@300&family=Tilt+Neon&display=swap" as="font" type="font" crossOrigin="anonymous" />
+      <link rel="preload" href="./logo.png" as="image" crossOrigin="anonymous"/>
+
 
       {/* <NextSeo
         title="Studio Bind Architects - Best Architects in Chennai, Tamil Nadu | Top Architectural Firm"
