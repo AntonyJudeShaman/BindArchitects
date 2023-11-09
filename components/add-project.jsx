@@ -5,7 +5,6 @@ import Dropzone from "react-dropzone";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
-import { v4 as uuidv4 } from "uuid";
 import {
   getStorage,
   ref as reff,

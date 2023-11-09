@@ -1,9 +1,4 @@
 import React from "react";
-import { LightBox } from "./light-box";
-import { Metadata } from "next";
-import { motion } from "framer-motion";
-import Particles from "./particles";
-import { ArrowRight } from "lucide-react";
 
 export function AboutSection() {
   return (
