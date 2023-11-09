@@ -105,7 +105,7 @@ export default function ProjectPage({
     };
 
     fetchMenuData();
-  }, []);
+  });
 
   listAll(imagesRef)
     .then((res) => {

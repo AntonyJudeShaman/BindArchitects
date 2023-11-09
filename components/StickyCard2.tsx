@@ -89,7 +89,7 @@ function Card2({ excludeProject }: CardProps) {
     };
 
     fetchMenuData();
-  }, []);
+  });
 
   return (
     <div className="container w-full md:pt-10  mb-4" id="cards">

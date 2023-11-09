@@ -90,7 +90,7 @@ function Card() {
     };
 
     fetchMenuData();
-  }, []);
+  });
 
   return (
     <div className="container w-full md:pt-10  mb-20" id="cards">
