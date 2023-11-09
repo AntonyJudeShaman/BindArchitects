@@ -40,6 +40,7 @@ export function MainNav({ items, children }: MainNavProps) {
       <button
         className="flex items-center space-x-2 bg-black md:hidden"
         onClick={toggleMobileMenu}
+        aria-label="open menu"
       >
         {showMobileMenu ? (
           <Icons.close />

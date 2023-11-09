@@ -1,19 +1,14 @@
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { marketingConfig } from "config/marketing";
 import { cn } from "@/lib/utils";
-import { buttonVariants } from "@/components/ui/button";
 import { MainNav } from "@/components/main-nav";
 import { SiteFooter } from "@/components/site-footer";
 import IndexPage from "@/components/home-page";
-import Nav from "@/components/nav";
 import Aboutus from "@/components/about-us";
-import Particles from "@/components/particles";
 import { Metadata } from "next";
 import { Projects } from "@/components/projects";
 import Client from "@/components/client";
 import Questions from "@/components/still-questions";
-import Card from "@/components/StickyCard";
 import Image from "next/image";
 import logo from "@/components/logo.png";
 
@@ -23,7 +18,7 @@ interface MarketingLayoutProps {
 
 export const metadata: Metadata = {
   title: "Home | Studio Bind",
-  description: "Home page of best architects in chennai",
+  description: "Discover the Leading Architects in Chennai - Unveiling Unparalleled Design Excellence. Explore the portfolio of top-tier architects and architectural firms in Chennai, renowned for crafting innovative, sustainable, and aesthetically captivating designs. Elevate your architectural visions with our exceptional expertise and dedication to transforming spaces.",
 };
 
 export default function HomeLayout() {
@@ -41,7 +36,7 @@ export default function HomeLayout() {
                     aria-label="navbar items"
                     href={item.disabled ? "#" : item.href}
                     className={cn(
-                      "group flex hover:text-orange-400  text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium hover:underline",
+                      "group flex hover:text-orange-400  text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium ",
                       item.disabled && "cursor-not-allowed opacity-60"
                     )}
                   >
@@ -65,7 +60,7 @@ export default function HomeLayout() {
               </Link> */}
              
             </nav>
-            <div className="flex max-w-[10rem] mr-5 items-center space-x-2 bg-black md:hidden">
+            <div className="flex mr-5 items-center space-x-2 bg-black md:hidden">
                 <Image height={90} width={90} alt="logo" src={logo} />
               </div>
           </div>
@@ -74,6 +69,7 @@ export default function HomeLayout() {
         <IndexPage />
         <Projects />
         <Client />
+        <Aboutus/>
         <Questions />
         <SiteFooter />
       </div>

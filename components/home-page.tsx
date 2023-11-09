@@ -1,22 +1,22 @@
 "use client";
-import { LightBox } from "./light-box";
-import Particles from "./particles";
-import { motion, useScroll } from "framer-motion";
+import { motion} from "framer-motion";
 import { Metadata } from "next";
-import tilt from "react-parallax-tilt";
+import { useEffect } from "react";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: "Home | Best Architects in Chennai | Home & Interior.",
   description: "Home page of best architects in chennai",
 };
 
 export default function IndexPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="">
       <motion.section
-        initial={{ y: "100%", opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.85 }}
+        initial={{ y: "0%", opacity: 0 }}
+        transition={{ duration: 1, delay: 0.55 }}
         animate={{ y: "0%", opacity: 1 }}
         className="h-100   "
         style={{ minHeight: "100vh" }}

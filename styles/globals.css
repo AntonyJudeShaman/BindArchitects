@@ -59,6 +59,26 @@
   }
 }
 
+.projectName{
+  font-size: 10rem;
+}
+
+@media (max-width: 768px) {
+  .projectName{
+    font-size: 4.5rem;
+  }
+}
+
+.contact-title{
+  font-size: 5rem;
+}
+
+@media (max-width: 768px) {
+  .contact-title{
+    font-size: 3.8rem;
+  }
+}
+
 .wave-group {
   position: relative;
 }

@@ -17,6 +17,9 @@ interface MenuItem {
   location: string | null | undefined;
 }
 
+interface CardProps {
+  excludeProject: string | null | undefined;
+}
 
 const database = getDatabase(app);
 
@@ -49,14 +52,10 @@ const fontColors = [
 
 ];
 
-function Card() {
+function Card2({ excludeProject }: CardProps) {
   const [MenuItems, setMenuItems] = useState<MenuItem[] | null>(null);
 
   const menuRef = ref(database, `Project/`);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   useEffect(() => {
     const fetchMenuData = async () => {
@@ -93,8 +92,10 @@ function Card() {
   }, []);
 
   return (
-    <div className="container w-full md:pt-10  mb-20" id="cards">
-      {MenuItems?.map((project, index) => (
+    <div className="container w-full md:pt-10  mb-4" id="cards">
+      {MenuItems
+        ?.filter((project) => project.projectNumber !== excludeProject)
+        .map((project, index) => (
         <div
           className={`card pt-10 pb-10 w-full ${index % 5 !== 0 ? "mt-5" : ""}
           }`}
@@ -135,4 +136,4 @@ function Card() {
   );
 }
 
-export default Card;
+export default Card2;

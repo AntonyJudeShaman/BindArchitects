@@ -110,6 +110,7 @@ export function Contactform({ className }) {
         ref={form}
         onSubmit={handleSubmit}
         className={cn("space-x-4 md:-mt-12 sm:pt-10", className)}
+        aria-label="contact-form"
         style={{
           maxWidth: "100%",
           margin: "0 auto",
@@ -175,6 +176,7 @@ export function Contactform({ className }) {
               name="name"
               className="md:col-span-3 input text-lg"
               placeholder="Enter your name"
+              aria-label="name field"
               value={name}
               style={{
                 filter: "brightness(180%)",
@@ -201,6 +203,7 @@ export function Contactform({ className }) {
               id="email"
               name="email"
               className="md:col-span-3 text-lg"
+              aria-label="email field"
               placeholder="Enter your email"
               value={email}
               style={{
@@ -227,6 +230,7 @@ export function Contactform({ className }) {
             <Input
               id="phone"
               name="phone"
+              aria-label="phone number field"
               style={{
                 filter: "brightness(180%)",
               }}
@@ -257,6 +261,7 @@ export function Contactform({ className }) {
                 filter: "brightness(180%)",
               }}
               name="message"
+              aria-label="message field"
               className="md:col-span-3 text-lg"
               placeholder="Type your message here."
               value={message}

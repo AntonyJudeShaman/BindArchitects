@@ -12,11 +12,13 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "FAQ | Studio Bind",
-  description: "Frequently asked questions by clients.",
+  title: "Frequently Asked Questions (FAQ) | Studio Bind",
+  description:
+    "Find answers to common queries about our architectural services and expertise. Explore our FAQ section to get insights into Studio Bind's offerings, processes, and more.",
 };
 
 function page() {
+  
   return (
     <>
       <title>FAQ | Studio Bind</title>
@@ -31,19 +33,19 @@ function page() {
                   aria-label="navbar items"
                   href={item.disabled ? "#" : item.href}
                   className={cn(
-                    "group flex hover:text-orange-400 flex-col text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium hover:underline",
+                    "group flex hover:text-orange-400 flex-col text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium",
                     item.disabled && "cursor-not-allowed opacity-60"
                   )}
                 >
                   <span className="">{item.title}</span>
                 </Link>
               ))}
+            <div className="flex max-w-[10rem] justify-end mr-5 space-x-2 bg-black md:hidden">
+              <Image height={90} width={90} alt="logo" src={logo} />
+            </div>
           </nav>
-          <div className="flex max-w-[10rem] justify-end mr-5 space-x-2 bg-black md:hidden">
-            <Image height={90} width={90} alt="logo" src={logo} />
-          </div>
         </div>
-        <p className="md:text-5xl text-4xl dmsans mb-5 mt-10 text-center ">
+        <p className="md:text-5xl text-4xl p-4 dmsans mb-5 mt-10 text-center ">
           Frequently asked questions
         </p>
         <FAQAccordion />

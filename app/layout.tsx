@@ -26,7 +26,7 @@ interface RootLayoutProps {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://studio-bind.vercel.app"),
+  metadataBase: new URL("https://bindhomes.com"),
 
   description: siteConfig.description,
   keywords: [
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "AJS",
-      url: "www.bindarchitects.com",
+      url: "www.bindhomes.com",
     },
   ],
   creator: "AJS",
@@ -91,13 +91,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <head>
         <link rel="canonical" href="https://www.example.com/canonical-url" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="google-site-verification" content="verification_token" />
-        <meta name="description" content="This is the official page of Bind Architects." />
-        <meta name="robots" content="index, follow" />
         <meta
-          name="author"
-          content="Studio Bind Architects"
+          name="description"
+          content="Welcome to Studio Bind, Your Premier Architectural Firm in Chennai. Transforming Visions into Stunning Reality. As a top architectural firm based in Chennai, we specialize in crafting innovative and sustainable architectural solutions. Explore our portfolio of breathtaking designs and discover how we bring your architectural dreams to life."
         />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Studio Bind Architects" />
         <meta
           name="keywords"
           content="best architects in chennai, architects near me, cheap price architects, famous architects, interior designs, Architect in chennai, Interior designer in chennai, Top architects in chennnai, Best architects in chennai, Home design in chennai, Shop design in chennai, Showroom designer in chennai"
@@ -107,7 +106,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body
         id="section1"
         className={cn(
-          "min-h-screen  bg-black dmsans md:pl-32 md:pr-32 pr-0 pl-0 max-w-full md:max-w-full scroll-smooth font-sans antialiased",
+          "min-h-screen  bg-black dmsans md:pl-32 md:pr-32 pr-0 pl-0 max-w-screen md:max-w-full scroll-smooth  antialiased",
           fontSans.variable,
           fontHeading.variable,
           titleHeading.variable
@@ -116,7 +115,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       >
         <Suspense
           data-speed="1.5"
-          fallback={<div style={fallbackStyle}>Loading...</div>}
+          fallback={<div style={fallbackStyle}>Loading Please wait...</div>}
         >
           <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
             {children}

@@ -323,8 +323,8 @@ export function Projects() {
               style={hoverStyle6}
             />
             <div className="flex flex-wrap text-lg mt-2">
-              <p className="flex-1 dmsans text-left">Delphi Derma</p>
-              <p className="flex-1 dmsans text-right text-zinc-500">
+              <p className="flex-1 dmsans-bold text-left">Delphi Derma</p>
+              <p className="flex-1 dmsans-bold text-right text-zinc-500">
                 2022
               </p>
             </div>
@@ -348,8 +348,8 @@ export function Projects() {
               style={hoverStyle10}
             />
             <div className="flex flex-wrap text-lg mt-2">
-              <p className="flex-1 dmsans text-left">Remy Cinemas</p>
-              <p className="flex-1 dmsans text-right text-zinc-500">
+              <p className="flex-1 dmsans-bold text-left">Remy Cinemas</p>
+              <p className="flex-1 dmsans-bold text-right text-zinc-500">
                 2022
               </p>
             </div>
@@ -373,8 +373,8 @@ export function Projects() {
               style={hoverStyle11}
             />
             <div className="flex flex-wrap text-lg mt-2">
-              <p className="flex-1 dmsans text-left">CCBM</p>
-              <p className="flex-1 dmsans text-right text-zinc-500">
+              <p className="flex-1 dmsans-bold text-left">CCBM</p>
+              <p className="flex-1 dmsans-bold text-right text-zinc-500">
                 2022
               </p>
             </div>
@@ -398,8 +398,8 @@ export function Projects() {
               style={hoverStyle9}
             />
             <div className="flex flex-wrap text-lg mt-2">
-              <p className="flex-1 dmsans text-left">MGA Sristi</p>
-              <p className="flex-1 dmsans text-right text-zinc-500">
+              <p className="flex-1 dmsans-bold text-left">MGA Sristi</p>
+              <p className="flex-1 dmsans-bold text-right text-zinc-500">
                 2022
               </p>
             </div>
@@ -423,8 +423,8 @@ export function Projects() {
               style={hoverStyle8}
             />
             <div className="flex flex-wrap text-lg mt-2">
-              <p className="flex-1 dmsans text-left">East West</p>
-              <p className="flex-1 dmsans text-right text-zinc-500">
+              <p className="flex-1 dmsans-bold text-left">East West</p>
+              <p className="flex-1 dmsans-bold text-right text-zinc-500">
                 2022
               </p>
             </div>

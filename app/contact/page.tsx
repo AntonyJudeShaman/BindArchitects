@@ -11,16 +11,18 @@ import logo from "@/components/logo.png"
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import ContactHead from "@/components/contact-head"
+import Contact from "@/components/contact";
 
 export const metadata: Metadata = {
-  title: "Contact | Studio Bind",
-  description: "Contact us using the contact form",
-}
+  title: "Contact Us | Studio Bind",
+  description: "Get in touch with Studio Bind for architectural inquiries, collaboration opportunities, or any questions you may have. Reach out to us through our contact form, and we'll be delighted to assist you."
+};
+
 
 function page() {
   return (
     <div
-        className="min-h-screen max-w-full py-4 animate-fade-in"
+        className="min-h-screen max-w-screen py-4 animate-fade-in"
       >
       
       <div className="md:ml-5 ml-5 flex mt-4 justify-between">
@@ -33,20 +35,22 @@ function page() {
                 aria-label="navbar items"
                 href={item.disabled ? "#" : item.href}
                 className={cn(
-                  "group flex hover:text-orange-400 flex-col text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium hover:underline",
+                  "group flex hover:text-orange-400 flex-col text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium ",
                   item.disabled && "cursor-not-allowed opacity-60"
                 )}
               >
                 <span className="">{item.title}</span>
               </Link>
             ))}
-        </nav>
+            
         <div className="flex max-w-[10rem] justify-end mr-5 space-x-2 bg-black md:hidden">
                 <Image height={90} width={90} alt="logo" src={logo} />
               </div>
+        </nav>
       </div>
         <ContactHead/>
         <Contactform className="" />
+        <Contact/>
         <SiteFooter className="mt-5"/>
     </div>
   );

@@ -18,6 +18,8 @@ import LoadingDots from "./loading-dots";
 import logo from "../assets/8.png";
 import { Checkbox } from "./ui/checkbox";
 import Link from "next/link";
+import { Input2 } from "./ui/input2";
+import { Textarea2} from "./ui/textarea2";
 
 export function LightBox({ className }) {
   const [name, setName] = useState("");
@@ -112,44 +114,40 @@ export function LightBox({ className }) {
 
   return (
     <div
-      className={cn("space-x-4 pt-0 sm:pt-10 ", className)}
+      className={cn("space-x-4 pt-0 sm:pt-10 dmsans justify-center flex", className)}
       aria-label="contact form"
     >
       <Dialog>
         <DialogTrigger asChild>
           <Button
-            variant="default"
-            className="border-2 border-green-300 dmsans-bold border-black bg-gradient-to-b from-green-500 to-blue-600 hover:to-green-500 hover:from-blue-600  w-full"
+            variant="white"
+            className="border-2 border-green-50 dmsans-bold  from-green-500 to-blue-600 hover:to-green-500 hover:from-blue-600  w-full"
             size="lg"
-            aria-label="contact us"
+            aria-label="click here to fill the form"
           >
-            Contact Us
+            Say Hi!!
           </Button>
         </DialogTrigger>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle
-              className="text-center display-animation dmsans font-semibold text-3xl sub-gradient dmsans
-"
-            >
+            <DialogTitle className="text-center dmsans font-semibold text-3xl">
               Book a Free Design Session
             </DialogTitle>
           </DialogHeader>
-          <form ref={form} onSubmit={handleSubmit}>
+          <form ref={form} onSubmit={handleSubmit} 
+        aria-label="contact form">
             <div className="grid gap-4 py-4 flex flex-col">
               <div
                 className="grid grid-cols-1 md:grid-cols-1 items-center gap-4"
                 aria-label="enter your name"
               >
-                <Label htmlFor="name" className="sub-gradient  font-semibold">
-                  Name<span className="error-gradient "> *</span>
-                </Label>
-                <Input
+                <Input2
                   id="name"
                   name="name"
                   className="md:col-span-3 caret-blue-500 focus:caret-indigo-500"
                   placeholder="Enter your name"
                   value={name}
+                  aria-label="Name field"
                   onChange={(e) => setName(e.target.value)}
                 />
                 {showNameAlert && (
@@ -162,15 +160,13 @@ export function LightBox({ className }) {
                 className="grid grid-cols-1 md:grid-cols-1 items-center gap-4"
                 aria-label="enter your email"
               >
-                <Label htmlFor="email" className="sub-gradient  font-semibold">
-                  Email<span className="error-gradient "> *</span>
-                </Label>
-                <Input
+                <Input2
                   id="email"
                   name="email"
                   className="md:col-span-3 caret-blue-500 focus:caret-indigo-500"
                   placeholder="Enter your email"
                   value={email}
+                  aria-label="email field"
                   onChange={(e) => setEmail(e.target.value)}
                 />
                 {showEmailAlert && (
@@ -183,15 +179,13 @@ export function LightBox({ className }) {
                 className="grid grid-cols-1 md:grid-cols-1 items-center gap-4"
                 aria-label="enter your phone number"
               >
-                <Label htmlFor="phone" className="sub-gradient  font-semibold">
-                  Phone<span className="error-gradient "> *</span>
-                </Label>
-                <Input
+                <Input2
                   id="phone"
                   name="phone"
                   className="md:col-span-3 caret-blue-500 focus:caret-indigo-500"
                   placeholder="Enter your phone number"
                   value={phone}
+                  aria-label="phone number field"
                   onChange={(e) => setPhone(e.target.value)}
                 />
                 {showPhoneAlert && (
@@ -204,18 +198,13 @@ export function LightBox({ className }) {
                 className="grid grid-cols-1 md:grid-cols-1 items-center gap-4"
                 aria-label="enter your message optional"
               >
-                <Label
-                  htmlFor="message"
-                  className="sub-gradient pb-2 font-semibold"
-                >
-                  Message
-                </Label>
-                <Textarea
+                <Textarea2
                   id="message"
                   name="message"
                   className="md:col-span-3 h-28 caret-blue-500 focus:caret-indigo-500"
                   placeholder="Type your message here."
                   value={message}
+                  aria-label="message field optional"
                   onChange={(e) => setMessage(e.target.value)}
                 />
               </div>
@@ -224,11 +213,8 @@ export function LightBox({ className }) {
                 aria-label="please check this"
               >
                 <Checkbox />
-                <div
-                  htmlFor="message"
-                  className="sub-gradient pb-2 dmsans"
-                >
-                  By submitting this you agree to our{" "}
+                <div htmlFor="message" className="pt-2 pb-2 dmsans">
+                  By submitting this form you agree to our{" "}
                   <Link
                     href="/terms"
                     className="hover:text-brand  dmsans-bold underline underline-offset-4"
@@ -263,6 +249,7 @@ export function LightBox({ className }) {
                 type="submit"
                 className="w-40 mt-2  "
                 disabled={loading}
+                variant="white"
                 aria-label="Submit contact form"
               >
                 {loading ? <LoadingDots color="red" /> : "Submit"}

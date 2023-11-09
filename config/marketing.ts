@@ -12,7 +12,7 @@ export const marketingConfig: MarketingConfig = {
     },
     {
       title: "About",
-      href: "/about-us",
+      href: "/about",
     },
     {
       title: "FAQ",
@@ -34,7 +34,7 @@ export const HomePage: MarketingConfig = {
     },
     {
       title: "About",
-      href: "#about-us",
+      href: "#about",
     },
     {
       title: "FAQ",
