@@ -53,6 +53,8 @@ function ProjectsHome() {
           data-speed="1.5"
           fallback={<div style={fallbackStyle}>Loading Please wait...</div>}
         >
+          
+        <link rel="canonical" href="https://www.bindhomes.com/works" />
     <div
       className="min-h-screen animate-fade-in py-2 mt-5"
       data-theme=""

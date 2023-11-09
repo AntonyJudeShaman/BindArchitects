@@ -14,8 +14,8 @@ import { ModeToggle } from "@/components/mode-toggle";
 export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
   return (
     <footer className={cn(className)}>
-      <div className="container flex flex-col items-center justify-between gap-4 w-full py-10 md:h-24 md:flex-row md:py-0">
-        <div className="flex flex-col items-center gap-4 space-x-5  md:flex-row md:gap-2 md:px-0">
+      <div className="container flex flex-col items-center justify-between gap-4 max-w-full py-10 md:h-24 md:flex-row md:py-0">
+        <div className="flex flex-col items-center gap-4   md:flex-row md:gap-2 md:px-0">
           <Link href="/" className="block items-center space-x-2 md:flex">
             <div className=" ">
               <Tilt className=""><Image height={70} width={70} alt="logo" src={logo} /></Tilt>

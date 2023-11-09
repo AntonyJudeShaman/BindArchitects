@@ -17,7 +17,7 @@ interface MarketingLayoutProps {
 }
 
 export const metadata: Metadata = {
-  title: "Home | Studio Bind",
+  title: "Home - Studio Bind - Best Architects in Chennai",
   description: "Discover the Leading Architects in Chennai - Unveiling Unparalleled Design Excellence. Explore the portfolio of top-tier architects and architectural firms in Chennai, renowned for crafting innovative, sustainable, and aesthetically captivating designs. Elevate your architectural visions with our exceptional expertise and dedication to transforming spaces.",
 };
 

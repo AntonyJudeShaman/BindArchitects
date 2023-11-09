@@ -90,6 +90,8 @@ const fallbackStyle = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
+      <link rel="preload" href="../assets/fonts/Bauhaus.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+
       {/* <NextSeo
         title="Studio Bind Architects - Best Architects in Chennai, Tamil Nadu | Top Architectural Firm"
         description="Explore the excellence of Studio Bind Architects, the best architectural firm in Chennai, Tamil Nadu. Our innovative designs and commitment to quality make us stand out as the top choice for your architectural needs."
