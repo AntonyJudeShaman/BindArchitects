@@ -5,7 +5,6 @@ import { ArrowLeft } from "lucide-react";
 import logo from "@/components/favicon.png";
 import bg from "./bg.jpg";
 import { Metadata } from "next";
-import Particles from "@/components/particles";
 
 export const metadata: Metadata = {
   title: "Login | Studio Bind",
@@ -15,10 +14,7 @@ export const metadata: Metadata = {
 export default function Login() {
   return (
     <div className="grid grid-cols-1 md:-ml-32 md:-mr-32 lg:grid-cols-2 h-screen animate-fade-in">
-      <Particles
-            className="animate-fade-in h-full absolute inset-0 -z-10"
-            quantity={100}
-          />
+     
       <div className="hidden lg:flex lg:h-full lg:w-full lg:items-center lg:bg-cover lg:bg-center">
         <Image
           src={bg}
