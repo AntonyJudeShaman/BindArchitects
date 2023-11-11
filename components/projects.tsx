@@ -310,12 +310,9 @@ export function Projects() {
         <Link
           href="/projects/delphiderma"
           style={{ filter: "brightness(130%)" }}
-          aria-label="Delphi Derma Clinic 2023"
           className="overflow-hidden md:m-0 m-4 justify-center"
         >
-          <div
-            className="overflow-hidden "
-          >
+          <div className="overflow-hidden ">
             <Image
               src={image9}
               alt="Delphi Derma Clinic"
@@ -327,20 +324,27 @@ export function Projects() {
               // style={hoverStyle6}
             />
           </div>
-          <div
-            className="flex flex-wrap text-lg mt-2"
-          >
-            <p className="flex-1 dmsans-bold text-left">Delphi Derma</p>
-            <p className="flex-1 dmsans-bold text-right text-zinc-500">2023</p>
+          <div className="flex flex-wrap text-lg mt-2">
+            <p
+              className="flex-1 dmsans-bold text-left"
+              aria-label="Delphi Derma"
+            >
+              Delphi Derma
+            </p>
+            <p
+              className="flex-1 dmsans-bold text-right text-zinc-500"
+              aria-label="2023"
+            >
+              2023
+            </p>
           </div>
         </Link>
         <Link
           href="/projects/remycinemas"
           style={{ filter: "brightness(130%)" }}
-          aria-label="Remy Cinemas 2022"
           className="overflow-hidden md:m-0 m-4 justify-center"
         >
-          <div className="overflow-hidden " >
+          <div className="overflow-hidden ">
             <Image
               src={image12}
               alt="Remy Cinemas"
@@ -352,18 +356,25 @@ export function Projects() {
               // style={hoverStyle10}
             />
           </div>
-          <div
-            className="flex flex-wrap text-lg mt-2"
-          >
-            <p className="flex-1 dmsans-bold text-left">Remy Cinemas</p>
-            <p className="flex-1 dmsans-bold text-right text-zinc-500">2022</p>
+          <div className="flex flex-wrap text-lg mt-2">
+            <p
+              className="flex-1 dmsans-bold text-left"
+              aria-label="Remy Cinemas"
+            >
+              Remy Cinemas
+            </p>
+            <p
+              className="flex-1 dmsans-bold text-right text-zinc-500"
+              aria-label="2022"
+            >
+              2022
+            </p>
           </div>
         </Link>
         <Link
           href="/projects/ccbm"
           className=" overflow-hidden md:m-0 m-4 "
           style={{ filter: "brightness(130%)" }}
-          aria-label="CCBM 2022"
         >
           <div className=" overflow-hidden " aria-label="CCBM 2022">
             <Image
@@ -378,15 +389,21 @@ export function Projects() {
             />
           </div>
           <div className="flex flex-wrap text-lg mt-2">
-            <p className="flex-1 dmsans-bold text-left">CCBM</p>
-            <p className="flex-1 dmsans-bold text-right text-zinc-500">2022</p>
+            <p className="flex-1 dmsans-bold text-left" aria-label="CCBM">
+              CCBM
+            </p>
+            <p
+              className="flex-1 dmsans-bold text-right text-zinc-500"
+              aria-label="2022"
+            >
+              2022
+            </p>
           </div>
         </Link>
         <Link
           href="/projects/mgasristi"
           className=" overflow-hidden md:m-0 m-4"
           style={{ filter: "brightness(130%)" }}
-          aria-label="MGA Sristi 2022"
         >
           <div className=" overflow-hidden ">
             <Image
@@ -400,20 +417,24 @@ export function Projects() {
               // style={hoverStyle9}
             />
           </div>
-          <div
-            className="flex flex-wrap text-lg mt-2"
-          >
-            <p className="flex-1 dmsans-bold text-left">MGA Sristi</p>
-            <p className="flex-1 dmsans-bold text-right text-zinc-500">2022</p>
+          <div className="flex flex-wrap text-lg mt-2">
+            <p className="flex-1 dmsans-bold text-left" aria-label="MGA Sristi">
+              MGA Sristi
+            </p>
+            <p
+              className="flex-1 dmsans-bold text-right text-zinc-500"
+              aria-label="2022"
+            >
+              2022
+            </p>
           </div>
         </Link>
         <Link
           href="/projects/eastwest"
           className="overflow-hidden md:m-0 m-4 "
           style={{ filter: "brightness(130%)" }}
-          aria-label="East West 2022"
         >
-          <div className="overflow-hidden" >
+          <div className="overflow-hidden">
             <Image
               src={image15}
               alt="East West"
@@ -425,11 +446,16 @@ export function Projects() {
               // style={hoverStyle8}
             />
           </div>
-          <div
-            className="flex flex-wrap text-lg mt-2"
-          >
-            <p className="flex-1 dmsans-bold text-left">East West</p>
-            <p className="flex-1 dmsans-bold text-right text-zinc-500">2022</p>
+          <div className="flex flex-wrap text-lg mt-2">
+            <p className="flex-1 dmsans-bold text-left" aria-label="East West">
+              East West
+            </p>
+            <p
+              className="flex-1 dmsans-bold text-right text-zinc-500"
+              aria-label="2022"
+            >
+              2022
+            </p>
           </div>
         </Link>
       </div>
