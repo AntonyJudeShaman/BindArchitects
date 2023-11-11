@@ -136,6 +136,13 @@ export default function RootLayout({ children }: RootLayoutProps) {
     Showroom designer in chennai,
     Residential architects,
     Commercial architects,
+    best architects in chennai, 
+    top architects, 
+    residential architecture, 
+    apartment design, 
+    villa design, 
+    restaurant architecture, 
+    interior design
     Modern home designs,
     Affordable home architects,
     Office interior designers,

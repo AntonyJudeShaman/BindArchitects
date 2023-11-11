@@ -13,7 +13,7 @@ export function Aboutus() {
       </Head>
       <section
         id="about-us"
-        className="container mx-auto space-y-6 items-center text-center bg-slate-50 -z-20 mb-20 animate-fade-in dark:bg-transparent md:py-6"
+        className="container mx-auto space-y-6 items-center text-center bg-slate-50 -z-20 mb-20  dark:bg-transparent md:py-6"
         aria-label="about us section"
       >
         <div className="mx-auto mt-20 flex max-w-[88rem] flex-col items-center space-y-4 text-center">

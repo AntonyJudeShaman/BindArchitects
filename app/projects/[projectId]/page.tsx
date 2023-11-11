@@ -156,18 +156,18 @@ export default function ProjectPage({
               >
                 <ArrowLeft className="absolute md:left-8 left-4 top-8 text-white hover:text-orange-600 w-8 h-8" />
               </Link>
-              <div className="flex  float-right justify-end md:mr-0 mr-4">
+              <div className="flex   float-right justify-end md:mr-0 mr-4">
                 <Link href="/" className="cursor-pointer">
                   <span className=" logo-font text-4xl  font-bold ">
-                    <Tilt className="logo-font">
+                    <div className="logo-font">
                       <p className="logo-font">BIND</p>
-                    </Tilt>
+                    </div>
                   </span>
                 </Link>
               </div>
-              <div className="min-h-screen">
+              <div className="min-h-screen max-w-screen">
                 <title>{menuItem.projectName}</title>
-                <div className="container min-h-screen text-wrapper p-4 flex flex-col gap-4">
+                <div className="container text-wrapper p-4 flex flex-col gap-4">
                   <p className="text-xl md:mt-28 mt-10 dmsans">
                     {menuItem.projectNumber}
                   </p>

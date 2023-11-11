@@ -13,7 +13,7 @@ export function Awards() {
       </Head>
       <div className="">
         <section
-          className="container mx-auto  items-center text-center bg-slate-50 mb-20 animate-fade-in dark:bg-transparent md:py-6"
+          className="container mx-auto  items-center text-center bg-slate-50 mb-20  dark:bg-transparent md:py-6"
           aria-label="about us section"
         >
           <div className="mx-auto  flex max-w-[88rem] flex-col space-y-4 text-center">

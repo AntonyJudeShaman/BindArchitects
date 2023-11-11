@@ -71,65 +71,65 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
-        "fade-in": {
-          "0%": {
-            opacity: "0%",
-          },
-          "25%": {
-            opacity: "0%",
-          },
-          "50%": {
-            opacity: "100%",
-          },
-          "75%": {
-            opacity: "100%",
-          },
-          "100%": {
-            opacity: "100%",
-          },
-        },
-        "fade-left": {
-          "0%": {
-            transform: "translateX(100%)",
-            opacity: "0%",
-          },
+        // "fade-in": {
+        //   "0%": {
+        //     opacity: "0%",
+        //   },
+        //   "25%": {
+        //     opacity: "0%",
+        //   },
+        //   "50%": {
+        //     opacity: "100%",
+        //   },
+        //   "75%": {
+        //     opacity: "100%",
+        //   },
+        //   "100%": {
+        //     opacity: "100%",
+        //   },
+        // },
+        // "fade-left": {
+        //   "0%": {
+        //     transform: "translateX(100%)",
+        //     opacity: "0%",
+        //   },
 
-          "30%": {
-            transform: "translateX(0%)",
-            opacity: "100%",
-          },
-          "100%": {
-            opacity: "0%",
-          },
-        },
-        "fade-right": {
-          "0%": {
-            transform: "translateX(-100%)",
-            opacity: "0%",
-          },
+        //   "30%": {
+        //     transform: "translateX(0%)",
+        //     opacity: "100%",
+        //   },
+        //   "100%": {
+        //     opacity: "0%",
+        //   },
+        // },
+        // "fade-right": {
+        //   "0%": {
+        //     transform: "translateX(-100%)",
+        //     opacity: "0%",
+        //   },
 
-          "30%": {
-            transform: "translateX(0%)",
-            opacity: "100%",
-          },
-          "100%": {
-            opacity: "100%",
-          },
-        },
-        "fade-down": {
-          "0%": {
-            transform: "translateY(-100%)",
-            opacity: "0%",
-          },
+        //   "30%": {
+        //     transform: "translateX(0%)",
+        //     opacity: "100%",
+        //   },
+        //   "100%": {
+        //     opacity: "100%",
+        //   },
+        // },
+        // "fade-down": {
+        //   "0%": {
+        //     transform: "translateY(-100%)",
+        //     opacity: "0%",
+        //   },
 
-          "30%": {
-            transform: "translateY(0%)",
-            opacity: "100%",
-          },
-          "100%": {
-            opacity: "0%",
-          },
-        },
+        //   "30%": {
+        //     transform: "translateY(0%)",
+        //     opacity: "100%",
+        //   },
+        //   "100%": {
+        //     opacity: "0%",
+        //   },
+        // },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",

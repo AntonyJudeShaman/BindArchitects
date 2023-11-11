@@ -12,7 +12,7 @@ export function AboutSection() {
         />
       </Head>
       <section
-        className="container mx-auto space-y-3 items-center text-center bg-slate-50 mb-20 animate-fade-in dark:bg-transparent md:py-6"
+        className="container mx-auto space-y-3 items-center text-center bg-slate-50 mb-20  dark:bg-transparent md:py-6"
         aria-label="about us section"
       >
         <div className="mx-auto mt-20 flex max-w-[88rem] flex-col space-y-4 text-center">
@@ -38,7 +38,7 @@ export function AboutSection() {
       </section>
 
       <section
-        className="container mx-auto space-y- items-center text-center bg-slate-50 mb-20 animate-fade-in dark:bg-transparent md:py"
+        className="container mx-auto space-y- items-center text-center bg-slate-50 mb-20  dark:bg-transparent md:py"
         aria-label="about us section"
       >
         <div className="mx-auto mt-20 flex max-w-[88rem] flex-col space-y-4 text-center">

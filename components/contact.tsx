@@ -12,7 +12,7 @@ export function Contact() {
           content="Contact Studio Bind Architects for architectural inquiries. Find our phone number, address, and email. Reach out to us for your residential and commercial projects in Chennai."
         />
       </Head>
-      <section className="p-4 max-w-screen space-y-3 items-start text-left bg-slate-50 mb-20 animate-fade-in dark:bg-transparent md:py-6">
+      <section className="p-4 max-w-screen space-y-3 items-start text-left bg-slate-50 mb-20  dark:bg-transparent md:py-6">
         <div className="mx-auto mt-20 flex max-w-[88rem] flex-col space-y-4 text-left">
           <h2 className="font-heading text-3xl dmsans font-medium leading-[1.1] mb-5 md:text-5xl">
             Contact The Studio

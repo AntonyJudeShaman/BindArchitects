@@ -15,6 +15,13 @@ body {
 	margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+	.container {
+		width: 100%;
+		margin-left: 18px;
+	}
+  }
+
 #cards {
 	list-style: none;
 	padding-left: 0;
@@ -150,5 +157,4 @@ body {
 	}
   }
   
-  /* Additional media queries for other screen sizes if needed */
   
