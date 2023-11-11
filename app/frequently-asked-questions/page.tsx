@@ -44,7 +44,7 @@ function page() {
         rel="canonical"
         href="https://www.bindhomes.com/frequently-asked-questions"
       />
-      <div className="min-h-screen animate-fade-in py-4 mt-4">
+      <div className="min-h-screen py-4 mt-4">
         <div className="md:ml-5 ml-5 flex  justify-between">
           <MainNav items={marketingConfig.mainNav} />
           <nav className="justify-between">

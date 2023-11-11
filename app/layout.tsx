@@ -181,10 +181,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
             {children}
             <Analytics />
             <Toaster />
-            {/* <Particles
-            className="animate-fade-in h-full absolute inset-0 -z-10"
-            quantity={100}
-          /> */}
             <TailwindIndicator />
           </ThemeProvider>
         </Suspense>

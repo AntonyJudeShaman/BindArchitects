@@ -303,7 +303,7 @@ export function Projects() {
 
   return (
     <div
-      className="min-h-screen max-w-full animate-fade-in  py-8 mx-auto justify-center"
+      className="min-h-screen max-w-full py-8 mx-auto justify-center"
       data-theme=""
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-14 justify-center w-full ">

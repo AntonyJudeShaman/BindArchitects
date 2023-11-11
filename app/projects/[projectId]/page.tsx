@@ -141,7 +141,7 @@ export default function ProjectPage({
       : [];
 
   return (
-    <div className="min-h-screen max-w-screen animate-fade-in mt-8 ">
+    <div className="min-h-screen max-w-screen mt-8 ">
       <Suspense fallback={<div style={fallbackStyle}>Please wait...</div>}>
         {selectedProjectData && selectedProjectData.length > 0 ? (
           selectedProjectData.map((menuItem, index) => (
@@ -203,7 +203,7 @@ export default function ProjectPage({
                       Gallery
                     </h2>
                   </div>
-                  <div className="mb-20 max-w-full p-4 animate-fade-in mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-14 gap-8 justify-center w-full">
+                  <div className="mb-20 max-w-full p-4  mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-14 gap-8 justify-center w-full">
                     {images.map((url) => (
                       <div key={url} className="project-frame ">
                         <Image

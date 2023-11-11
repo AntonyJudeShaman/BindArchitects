@@ -2,7 +2,7 @@ import React from "react";
 
 function Services() {
   return (
-    <div className="md:pl-8 md:pr-8 flex flex-col md:flex-col pl-1 pr-1 animate-fade-right ">
+    <div className="md:pl-8 md:pr-8 flex flex-col md:flex-col pl-1 pr-1  ">
       <div className="mx-auto mt-20 flex  flex-col space-y-4 text-center">
         <h2 className="font-heading text-3xl text-left dmsans font-medium leading-[1.1] mb-5 md:text-5xl">
           Our Services

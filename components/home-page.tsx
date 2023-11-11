@@ -15,12 +15,7 @@ export default function IndexPage() {
   }, []);
   return (
     <div className="">
-      <motion.section
-        initial={{ y: "0%", opacity: 0 }}
-        transition={{ duration: 1, delay: 0.55 }}
-        animate={{ y: "0%", opacity: 1 }}
-        className="h-100   "
-        style={{ minHeight: "100vh" }}
+      <section
       >
         <div className="container text-wrapper p-4 flex flex-col gap-4 ">
           {/* <h1 className="font-semibold ">
@@ -28,14 +23,14 @@ export default function IndexPage() {
           </h1> */}
           <h1
             aria-label="Studio bind"
-            className="2xl:text-8xl  dmsans-home title-gradient2 mt-20  flex flex-wrap md:max-w-[98rem] max-w-[28rem]  z-30 text-6xl lg:text-7xl md:text-6xl xl:text-8xl title-gradient    duration-1000  cursor-default text-edge-outline animate-title font-display   whitespace-nowrap bg-clip-text"
+            className="2xl:text-8xl  dmsans-home title-gradient2 mt-20  flex flex-wrap md:max-w-[98rem] max-w-[28rem]  z-30 text-6xl lg:text-7xl md:text-6xl xl:text-8xl title-gradient    duration-1000   font-display   whitespace-nowrap bg-clip-text"
           >
             We shape
           </h1>
 
           <h1
             aria-label="Studio bind"
-            className="2xl:text-8xl dmsans-home title-gradient2 flex dmsans-home flex-wrap md:max-w-[98rem] max-w-[28rem]  z-30 text-6xl lg:text-7xl md:text-6xl xl:text-8xl dmsans-home title-gradient3    duration-1000  cursor-default text-edge-outline animate-title font-display   whitespace-nowrap bg-clip-text"
+            className="2xl:text-8xl dmsans-home title-gradient2 flex dmsans-home flex-wrap md:max-w-[98rem] max-w-[28rem]  z-30 text-6xl lg:text-7xl md:text-6xl xl:text-8xl dmsans-home title-gradient3    duration-1000   font-display   whitespace-nowrap bg-clip-text"
           >
             brands that
             <span className="sm:hidden dmsans-home hidden md:inline-block">
@@ -44,13 +39,13 @@ export default function IndexPage() {
           </h1>
           <h1
             aria-label="Studio bind"
-            className="2xl:text-8xl dmsans-home title-gradient2 sm:inline-block md:hidden flex dmsans-home flex-wrap md:max-w-[98rem] max-w-[28rem]  z-30 text-6xl lg:text-7xl md:text-6xl xl:text-8xl dmsans-home title-gradient    duration-1000  cursor-default text-edge-outline animate-title font-display   whitespace-nowrap bg-clip-text"
+            className="2xl:text-8xl dmsans-home title-gradient2 sm:inline-block md:hidden flex dmsans-home flex-wrap md:max-w-[98rem] max-w-[28rem]  z-30 text-6xl lg:text-7xl md:text-6xl xl:text-8xl dmsans-home title-gradient    duration-1000   font-display   whitespace-nowrap bg-clip-text"
           >
             need no
           </h1>
           <h1
             aria-label="Studio bind"
-            className="2xl:text-8xl dmsans-home title-gradient2 flex dmsans-home flex-wrap   z-30 text-6xl lg:text-7xl md:text-6xl xl:text-8xl dmsans-home title-gradient4    duration-1000  cursor-default text-edge-outline animate-title font-display   whitespace-nowrap bg-clip-text"
+            className="2xl:text-8xl dmsans-home title-gradient2 flex dmsans-home flex-wrap   z-30 text-6xl lg:text-7xl md:text-6xl xl:text-8xl dmsans-home title-gradient4    duration-1000   font-display   whitespace-nowrap bg-clip-text"
           >
             introduction
           </h1>
@@ -103,7 +98,7 @@ export default function IndexPage() {
             </div>
           </div>
         </div>
-      </motion.section>
+      </section>
     </div>
   );
 }

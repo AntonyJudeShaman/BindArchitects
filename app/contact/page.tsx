@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 function page() {
   return (
-    <div className="min-h-screen max-w-screen py-4 animate-fade-in">
+    <div className="min-h-screen max-w-screen py-4">
       <Head>
         <title>
           Contact Us - Studio Bind Architects - Best Architects in Chennai
