@@ -16,6 +16,8 @@ export default function IndexPage() {
   return (
     <div className="">
       <section
+        className="h-100   "
+        style={{ minHeight: "100vh" }}
       >
         <div className="container text-wrapper p-4 flex flex-col gap-4 ">
           {/* <h1 className="font-semibold ">
