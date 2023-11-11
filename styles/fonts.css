@@ -1,11 +1,13 @@
 @font-face {
     font-family: "CustomFont";
     src: url("../assets/fonts/Bauhaus.ttf") format("truetype");
+    font-display: swap;
   }
   
   @font-face {
     font-family: "titleFont";
     src: url("../assets/fonts/AeonikTRIAL-Light.otf") format("otf");
+    font-display: swap;
   }
   
   .logo-font {
