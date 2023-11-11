@@ -109,7 +109,7 @@ const fallbackStyle = {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en" suppressHydrationWarning={true}>
+    <html lang="en" suppressHydrationWarning={true} >
       <Head>
         <link rel="canonical" href="https://www.bindhomes.com" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -162,7 +162,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
   "
         />
       </Head>
-      <head />
       <body
         id="section1"
         className={cn(

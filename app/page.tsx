@@ -9,8 +9,6 @@ import { Metadata } from "next";
 import { Projects } from "@/components/projects";
 import Client from "@/components/client";
 import Questions from "@/components/still-questions";
-import Image from "next/image";
-import logo from "@/components/logo.png";
 import Head from "next/head";
 
 interface MarketingLayoutProps {

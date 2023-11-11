@@ -332,7 +332,7 @@ export function Projects() {
               Delphi Derma
             </p>
             <p
-              className="flex-1 dmsans-bold text-right text-gray-300"
+              className="flex-1 dmsans text-right text-gray-300"
               aria-label="2023"
             >
               2023
@@ -364,7 +364,7 @@ export function Projects() {
               Remy Cinemas
             </p>
             <p
-              className="flex-1 dmsans-bold text-right text-gray-300"
+              className="flex-1 dmsans text-right text-gray-300"
               aria-label="2022"
             >
               2022
@@ -393,7 +393,7 @@ export function Projects() {
               CCBM
             </p>
             <p
-              className="flex-1 dmsans-bold text-right text-gray-300"
+              className="flex-1 dmsans text-right text-gray-300"
               aria-label="2022"
             >
               2022
@@ -422,7 +422,7 @@ export function Projects() {
               MGA Sristi
             </p>
             <p
-              className="flex-1 dmsans-bold text-right text-gray-300"
+              className="flex-1 dmsans text-right text-gray-300"
               aria-label="2022"
             >
               2022
@@ -451,7 +451,7 @@ export function Projects() {
               East West
             </p>
             <p
-              className="flex-1 dmsans-bold text-right text-gray-300"
+              className="flex-1 dmsans text-right text-gray-300"
               aria-label="2022"
             >
               2022
