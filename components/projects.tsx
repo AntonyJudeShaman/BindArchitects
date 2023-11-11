@@ -310,7 +310,7 @@ export function Projects() {
         <Link
           href="/projects/delphiderma"
           style={{ filter: "brightness(130%)" }}
-          aria-label="delphiderma"
+          aria-label="Delphi Derma Clinic"
           className="overflow-hidden md:m-0 m-4 justify-center"
         >
           <div className="overflow-hidden ">
@@ -319,25 +319,25 @@ export function Projects() {
               alt="Delphi Derma Clinic"
               height={400}
               width={700}
-              aria-label="delphiderma"
+              aria-label="Delphi Derma Clinic 2023"
               className="project-frame overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
               // onMouseMove={handleMouseMove6}
               // onMouseLeave={handleMouseLeave6}
               // style={hoverStyle6}
             />
-           
           </div>
-          <div className="flex flex-wrap text-lg mt-2">
-              <p className="flex-1 dmsans-bold text-left">Delphi Derma</p>
-              <p className="flex-1 dmsans-bold text-right text-zinc-500">
-                2022
-              </p>
-            </div>
+          <div
+            className="flex flex-wrap text-lg mt-2"
+            aria-label="Delphi Derma Clinic 2023"
+          >
+            <p className="flex-1 dmsans-bold text-left">Delphi Derma</p>
+            <p className="flex-1 dmsans-bold text-right text-zinc-500">2023</p>
+          </div>
         </Link>
         <Link
           href="/projects/remycinemas"
           style={{ filter: "brightness(130%)" }}
-          aria-label="remycinemas"
+          aria-label="Remy Cinemas 2022"
           className="overflow-hidden md:m-0 m-4 justify-center"
         >
           <div className="overflow-hidden ">
@@ -346,80 +346,77 @@ export function Projects() {
               alt="Remy Cinemas"
               height={400}
               width={700}
-              aria-label="remycinemas"
+              aria-label="Remy Cinemas 2022"
               className="project-frame overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
               // onMouseMove={handleMouseMove10}
               // onMouseLeave={handleMouseLeave10}
               // style={hoverStyle10}
             />
-            
           </div>
-          <div className="flex flex-wrap text-lg mt-2">
-              <p className="flex-1 dmsans-bold text-left">Remy Cinemas</p>
-              <p className="flex-1 dmsans-bold text-right text-zinc-500">
-                2022
-              </p>
-            </div>
+          <div
+            className="flex flex-wrap text-lg mt-2"
+            aria-label="Remy Cinemas 2022"
+          >
+            <p className="flex-1 dmsans-bold text-left">Remy Cinemas</p>
+            <p className="flex-1 dmsans-bold text-right text-zinc-500">2022</p>
+          </div>
         </Link>
         <Link
           href="/projects/ccbm"
           className=" overflow-hidden md:m-0 m-4 "
           style={{ filter: "brightness(130%)" }}
-          aria-label="ccbm"
+          aria-label="CCBM 2022"
         >
           <div className=" overflow-hidden ">
             <Image
               src={image13}
               alt="CCBM"
               height={400}
-              aria-label="ccbm"
+              aria-label="CCBM 2022"
               width={700}
               className="project-frame overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
               // onMouseMove={handleMouseMove11}
               // onMouseLeave={handleMouseLeave11}
               // style={hoverStyle11}
             />
-           
           </div>
-          <div className="flex flex-wrap text-lg mt-2">
-              <p className="flex-1 dmsans-bold text-left">CCBM</p>
-              <p className="flex-1 dmsans-bold text-right text-zinc-500">
-                2022
-              </p>
-            </div>
+          <div className="flex flex-wrap text-lg mt-2" aria-label="CCBM 2022">
+            <p className="flex-1 dmsans-bold text-left">CCBM</p>
+            <p className="flex-1 dmsans-bold text-right text-zinc-500">2022</p>
+          </div>
         </Link>
         <Link
           href="/projects/mgasristi"
           className=" overflow-hidden md:m-0 m-4"
           style={{ filter: "brightness(130%)" }}
-          aria-label="mgasristi"
+          aria-label="MGA Sristi 2022"
         >
           <div className=" overflow-hidden ">
             <Image
               src={image14}
               alt="MGA Sristi"
               height={400}
-              aria-label="mgasristi"
+              aria-label="MGA Sristi 2022"
               width={700}
               className="project-frame overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
               // onMouseMove={handleMouseMove9}
               // onMouseLeave={handleMouseLeave9}
               // style={hoverStyle9}
             />
-            
           </div>
-          <div className="flex flex-wrap text-lg mt-2">
-              <p className="flex-1 dmsans-bold text-left">MGA Sristi</p>
-              <p className="flex-1 dmsans-bold text-right text-zinc-500">
-                2022
-              </p>
-            </div>
+          <div
+            className="flex flex-wrap text-lg mt-2"
+            aria-label="MGA Sristi 2022"
+          >
+            <p className="flex-1 dmsans-bold text-left">MGA Sristi</p>
+            <p className="flex-1 dmsans-bold text-right text-zinc-500">2022</p>
+          </div>
         </Link>
         <Link
           href="/projects/eastwest"
           className="overflow-hidden md:m-0 m-4 "
           style={{ filter: "brightness(130%)" }}
-          aria-label="eastwest"
+          aria-label="East West 2022"
         >
           <div className="overflow-hidden">
             <Image
@@ -427,20 +424,20 @@ export function Projects() {
               alt="East West"
               height={400}
               width={700}
-              aria-label="eastwest"
+              aria-label="East West 2022"
               className="project-frame overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
               // onMouseMove={handleMouseMove8}
               // onMouseLeave={handleMouseLeave8}
               // style={hoverStyle8}
             />
-            
           </div>
-          <div className="flex flex-wrap text-lg mt-2">
-              <p className="flex-1 dmsans-bold text-left">East West</p>
-              <p className="flex-1 dmsans-bold text-right text-zinc-500">
-                2022
-              </p>
-            </div>
+          <div
+            className="flex flex-wrap text-lg mt-2"
+            aria-label="East West 2022"
+          >
+            <p className="flex-1 dmsans-bold text-left">East West</p>
+            <p className="flex-1 dmsans-bold text-right text-zinc-500">2022</p>
+          </div>
         </Link>
       </div>
     </div>

@@ -21,10 +21,10 @@ export function MobileNav({ items, children }: MobileNavProps) {
       )}
     >
       <div className="relative z-20 grid gap-6 rounded-md bg-popover p-4 text-popover-foreground shadow-md">
-        <Link href="/" className="hidden items-center space-x-2 md:flex">
+        <Link href="/" aria-label="BIND" className="hidden items-center space-x-2 md:flex">
         <span className="hidden logo-font text-4xl display-animation2 font-bold sm:inline-block">
           <Tilt className="logo-font">
-            <p className="logo-font">BIND</p>
+            <p className="logo-font" aria-label="BIND">BIND</p>
           </Tilt>
         </span>
       </Link>
