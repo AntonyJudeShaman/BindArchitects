@@ -45,7 +45,7 @@ export default function HomeLayout() {
         />
       </Head>
       <div className="flex min-h-screen flex-col ">
-        <header className="md:ml-4 ml-4  bg-background">
+        <header className="md:ml-4 ml-4 mt-3 bg-background">
           <div className="flex h-20 justify-between md:justify-between  py-6">
             <MainNav items={marketingConfig.mainNav} />
             <nav className="justify-between inline-block">
