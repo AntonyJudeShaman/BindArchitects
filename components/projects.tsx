@@ -310,7 +310,7 @@ export function Projects() {
         <Link
           href="/projects/delphiderma"
           style={{ filter: "brightness(130%)" }}
-          aria-label="Delphi Derma Clinic"
+          aria-label="delphiderma"
           className="overflow-hidden md:m-0 m-4 justify-center"
         >
           <div className="overflow-hidden ">
@@ -319,7 +319,7 @@ export function Projects() {
               alt="Delphi Derma Clinic"
               height={400}
               width={700}
-              aria-label="Delphi Derma Clinic"
+              aria-label="delphiderma"
               className="project-frame overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
               // onMouseMove={handleMouseMove6}
               // onMouseLeave={handleMouseLeave6}
@@ -337,7 +337,7 @@ export function Projects() {
         <Link
           href="/projects/remycinemas"
           style={{ filter: "brightness(130%)" }}
-          aria-label="Remy Cinemas"
+          aria-label="remycinemas"
           className="overflow-hidden md:m-0 m-4 justify-center"
         >
           <div className="overflow-hidden ">
@@ -346,7 +346,7 @@ export function Projects() {
               alt="Remy Cinemas"
               height={400}
               width={700}
-              aria-label="Remy Cinemas"
+              aria-label="remycinemas"
               className="project-frame overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
               // onMouseMove={handleMouseMove10}
               // onMouseLeave={handleMouseLeave10}
@@ -365,14 +365,14 @@ export function Projects() {
           href="/projects/ccbm"
           className=" overflow-hidden md:m-0 m-4 "
           style={{ filter: "brightness(130%)" }}
-          aria-label="CCBM"
+          aria-label="ccbm"
         >
           <div className=" overflow-hidden ">
             <Image
               src={image13}
               alt="CCBM"
               height={400}
-              aria-label="CCBM"
+              aria-label="ccbm"
               width={700}
               className="project-frame overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
               // onMouseMove={handleMouseMove11}
@@ -392,14 +392,14 @@ export function Projects() {
           href="/projects/mgasristi"
           className=" overflow-hidden md:m-0 m-4"
           style={{ filter: "brightness(130%)" }}
-          aria-label="MGA Sristi"
+          aria-label="mgasristi"
         >
           <div className=" overflow-hidden ">
             <Image
               src={image14}
               alt="MGA Sristi"
               height={400}
-              aria-label="MGA Sristi"
+              aria-label="mgasristi"
               width={700}
               className="project-frame overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
               // onMouseMove={handleMouseMove9}
@@ -419,7 +419,7 @@ export function Projects() {
           href="/projects/eastwest"
           className="overflow-hidden md:m-0 m-4 "
           style={{ filter: "brightness(130%)" }}
-          aria-label="East West"
+          aria-label="eastwest"
         >
           <div className="overflow-hidden">
             <Image
@@ -427,7 +427,7 @@ export function Projects() {
               alt="East West"
               height={400}
               width={700}
-              aria-label="East West"
+              aria-label="eastwest"
               className="project-frame overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
               // onMouseMove={handleMouseMove8}
               // onMouseLeave={handleMouseLeave8}

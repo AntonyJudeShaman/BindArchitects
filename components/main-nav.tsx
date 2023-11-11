@@ -28,9 +28,9 @@ export function MainNav({ items, children }: MainNavProps) {
         className="hidden bg-black items-center space-x-2 md:flex"
         aria-label="logo"
       >
-        <span className="hidden logo-font text-4xl  font-bold sm:inline-block">
+        <span aria-label="BIND" className="hidden logo-font text-4xl  font-bold sm:inline-block">
           <Tilt className="logo-font">
-            <p className="logo-font">BIND</p>
+            <p className="logo-font" aria-label="BIND">BIND</p>
           </Tilt>
         </span>
       </Link>

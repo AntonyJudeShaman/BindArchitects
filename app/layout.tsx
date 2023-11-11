@@ -166,12 +166,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body
         id="section1"
         className={cn(
-          "min-h-screen  bg-black dmsans md:pl-32 md:pr-32 pr-0 pl-0 max-w-screen md:max-w-full scroll-smooth  antialiased",
+          "min-h-screen  bg-black dmsans md:pl-32 md:pr-32 pr-0 pl-0 max-w-screen md:max-w-screen scroll-smooth  antialiased",
           fontSans.variable,
-          fontHeading.variable,
-          titleHeading.variable
+          fontHeading.variable
         )}
-        style={{ fontWeight: "300" }}
       >
         <Suspense
           data-speed="1.5"
@@ -183,7 +181,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <TailwindIndicator />
           </ThemeProvider>
         </Suspense>
-        <Analytics />
       </body>
     </html>
   );
