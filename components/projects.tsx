@@ -310,19 +310,17 @@ export function Projects() {
         <Link
           href="/projects/delphiderma"
           style={{ filter: "brightness(130%)" }}
-          aria-label="Delphi Derma Clinic"
+          aria-label="Delphi Derma Clinic 2023"
           className="overflow-hidden md:m-0 m-4 justify-center"
         >
           <div
             className="overflow-hidden "
-            aria-label="Delphi Derma Clinic 2023"
           >
             <Image
               src={image9}
               alt="Delphi Derma Clinic"
               height={400}
               width={700}
-              aria-label="Delphi Derma Clinic 2023"
               className="project-frame overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
               // onMouseMove={handleMouseMove6}
               // onMouseLeave={handleMouseLeave6}
@@ -331,7 +329,6 @@ export function Projects() {
           </div>
           <div
             className="flex flex-wrap text-lg mt-2"
-            aria-label="Delphi Derma Clinic 2023"
           >
             <p className="flex-1 dmsans-bold text-left">Delphi Derma</p>
             <p className="flex-1 dmsans-bold text-right text-zinc-500">2023</p>
@@ -343,13 +340,12 @@ export function Projects() {
           aria-label="Remy Cinemas 2022"
           className="overflow-hidden md:m-0 m-4 justify-center"
         >
-          <div className="overflow-hidden " aria-label="Remy Cinemas 2022">
+          <div className="overflow-hidden " >
             <Image
               src={image12}
               alt="Remy Cinemas"
               height={400}
               width={700}
-              aria-label="Remy Cinemas 2022"
               className="project-frame overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
               // onMouseMove={handleMouseMove10}
               // onMouseLeave={handleMouseLeave10}
@@ -358,7 +354,6 @@ export function Projects() {
           </div>
           <div
             className="flex flex-wrap text-lg mt-2"
-            aria-label="Remy Cinemas 2022"
           >
             <p className="flex-1 dmsans-bold text-left">Remy Cinemas</p>
             <p className="flex-1 dmsans-bold text-right text-zinc-500">2022</p>
@@ -375,7 +370,6 @@ export function Projects() {
               src={image13}
               alt="CCBM"
               height={400}
-              aria-label="CCBM 2022"
               width={700}
               className="project-frame overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
               // onMouseMove={handleMouseMove11}
@@ -383,7 +377,7 @@ export function Projects() {
               // style={hoverStyle11}
             />
           </div>
-          <div className="flex flex-wrap text-lg mt-2" aria-label="CCBM 2022">
+          <div className="flex flex-wrap text-lg mt-2">
             <p className="flex-1 dmsans-bold text-left">CCBM</p>
             <p className="flex-1 dmsans-bold text-right text-zinc-500">2022</p>
           </div>
@@ -394,13 +388,11 @@ export function Projects() {
           style={{ filter: "brightness(130%)" }}
           aria-label="MGA Sristi 2022"
         >
-          <div className=" overflow-hidden " 
-              aria-label="MGA Sristi 2022">
+          <div className=" overflow-hidden ">
             <Image
               src={image14}
               alt="MGA Sristi"
               height={400}
-              aria-label="MGA Sristi 2022"
               width={700}
               className="project-frame overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
               // onMouseMove={handleMouseMove9}
@@ -410,7 +402,6 @@ export function Projects() {
           </div>
           <div
             className="flex flex-wrap text-lg mt-2"
-            aria-label="MGA Sristi 2022"
           >
             <p className="flex-1 dmsans-bold text-left">MGA Sristi</p>
             <p className="flex-1 dmsans-bold text-right text-zinc-500">2022</p>
@@ -422,14 +413,12 @@ export function Projects() {
           style={{ filter: "brightness(130%)" }}
           aria-label="East West 2022"
         >
-          <div className="overflow-hidden" 
-              aria-label="East West 2022">
+          <div className="overflow-hidden" >
             <Image
               src={image15}
               alt="East West"
               height={400}
               width={700}
-              aria-label="East West 2022"
               className="project-frame overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
               // onMouseMove={handleMouseMove8}
               // onMouseLeave={handleMouseLeave8}
@@ -438,7 +427,6 @@ export function Projects() {
           </div>
           <div
             className="flex flex-wrap text-lg mt-2"
-            aria-label="East West 2022"
           >
             <p className="flex-1 dmsans-bold text-left">East West</p>
             <p className="flex-1 dmsans-bold text-right text-zinc-500">2022</p>
