@@ -28,7 +28,7 @@ export default function HomeLayout() {
     <>
       <Head>
         <title>Studio Bind Architects - Best Architects in Chennai</title>
-        <link rel="canonical" href="https://www.bindhomes.com/about" />
+        <link rel="canonical" href="https://www.bindhomes.com/" />
         <meta
           property="og:description"
           content="Discover the portfolio of Studio Bind Architects' projects in Chennai. Explore a showcase of innovative and inspiring residential and commercial spaces. From conceptualization to realization, immerse yourself in the artistry and functionality of our architectural designs. Elevate your vision of modern living with Chennai's leading architectural firm, Studio Bind Architects."
@@ -53,7 +53,7 @@ export default function HomeLayout() {
                 marketingConfig.mainNav.map((item, index) => (
                   <Link
                     key={index}
-                    aria-label="navbar items"
+                    aria-label={item.title}
                     href={item.disabled ? "#" : item.href}
                     className={cn(
                       "group flex hover:bg-slate-900 hover:text-orange-400  text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium ",

@@ -24,7 +24,10 @@ function page() {
     <>
       <Head>
         <title>FAQ - Studio Bind Architects - Best Architects in Chennai</title>
-        <link rel="canonical" href="https://www.bindhomes.com/about" />
+        <link
+          rel="canonical"
+          href="https://www.bindhomes.com/frequently-asked-questions"
+        />
         <meta
           property="og:description"
           content="Explore Studio Bind Architects' FAQ page for insightful answers to common questions about our architectural services in Chennai. From project inquiries to design inspirations, find expert guidance on residential and commercial spaces. Elevate your understanding of the architectural process with Chennai's leading firm. Have a question? Find the answer here at Studio Bind Architects."
@@ -40,10 +43,7 @@ function page() {
           content="FAQ - Studio Bind Architects - Best Architects in Chennai"
         />
       </Head>
-      <link
-        rel="canonical"
-        href="https://www.bindhomes.com/frequently-asked-questions"
-      />
+
       <div className="min-h-screen py-4 mt-4">
         <div className="md:ml-5 ml-5 flex  justify-between">
           <MainNav items={marketingConfig.mainNav} />
@@ -52,7 +52,7 @@ function page() {
               marketingConfig.mainNav.map((item, index) => (
                 <Link
                   key={index}
-                  aria-label="navbar items"
+                  aria-label={item.title}
                   href={item.disabled ? "#" : item.href}
                   className={cn(
                     "group flex hover:bg-slate-900 hover:text-orange-400 flex-col text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium",
@@ -62,7 +62,7 @@ function page() {
                   <span className="">{item.title}</span>
                 </Link>
               ))}
-            
+
             <div className="flex mr-5 items-center space-x-2 bg-black md:hidden">
               <p className="logo-font text-4xl font-bold">BIND</p>
             </div>

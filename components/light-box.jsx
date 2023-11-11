@@ -123,7 +123,7 @@ export function LightBox({ className }) {
             variant="white"
             className="border-2 border-green-50 dmsans-bold  from-green-500 to-blue-600 hover:to-green-500 hover:from-blue-600  w-full"
             size="lg"
-            aria-label="click here to fill the form"
+            aria-label="Say Hi by filling out the form"
           >
             Say Hi!!
           </Button>

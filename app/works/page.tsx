@@ -86,7 +86,7 @@ function ProjectsHome() {
                 marketingConfig.mainNav.map((item, index) => (
                   <Link
                     key={index}
-                    aria-label="navbar items"
+                    aria-label={item.title}
                     href={item.disabled ? "#" : item.href}
                     className={cn(
                       "group flex hover:bg-slate-900 hover:text-orange-400 flex-col text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium ",

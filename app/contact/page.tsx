@@ -40,7 +40,6 @@ function page() {
           content="Contact Us - Studio Bind Architects - Best Architects in Chennai"
         />
       </Head>
-      <link rel="canonical" href="https://www.bindhomes.com/contact" />
       <div className="md:ml-5 ml-5 flex mt-4 justify-between">
         <MainNav items={marketingConfig.mainNav} />
         <nav className="justify-between">
@@ -48,7 +47,7 @@ function page() {
             marketingConfig.mainNav.map((item, index) => (
               <Link
                 key={index}
-                aria-label="navbar items"
+                aria-label={item.title}
                 href={item.disabled ? "#" : item.href}
                 className={cn(
                   "group flex hover:bg-slate-900 hover:text-orange-400 flex-col text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium ",

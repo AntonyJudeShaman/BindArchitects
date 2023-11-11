@@ -179,11 +179,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
         >
           <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
             {children}
-            <Analytics />
             <Toaster />
             <TailwindIndicator />
           </ThemeProvider>
         </Suspense>
+        <Analytics />
       </body>
     </html>
   );
