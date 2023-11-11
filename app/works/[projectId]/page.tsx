@@ -1,9 +1,5 @@
 "use client";
-import {
-  useState,
-  useEffect,
-  Suspense
-} from "react";
+import { useState, useEffect, Suspense } from "react";
 import Link from "next/link";
 import { Metadata } from "next";
 import { initializeApp } from "firebase/app";
@@ -21,11 +17,21 @@ import { ArrowLeft } from "lucide-react";
 import React from "react";
 import ProjectNotFound from "@/components/project-notfound";
 import Card2 from "@/components/StickyCard2";
-import logo from "@/components/logo.png";
+import "@/styles/fonts.css";
+import Tilt from "react-parallax-tilt";
 
 const firebaseApp = initializeApp(firebaseConfig, "Project");
 const database = getDatabase(firebaseApp);
 const storage = getStorage(firebaseApp);
+
+const imgStyles = {
+  position: "fixed",
+  top: 0,
+  left: 0,
+  width: "100%",
+  height: "100%",
+  zIndex: -20,
+};
 
 const cardColors = [
   "#FF3F00", // Darker shade
@@ -42,8 +48,16 @@ const cardColors = [
 ];
 
 const metadata: Metadata = {
-  title: "Project | Best Architects in Chennai | Studio Bind Architects",
+  title: "Works - Best Architects in Chennai | Studio Bind Architects",
   description: "Project details and description.",
+};
+
+const fallbackStyle = {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  height: "100vh",
+  backgroundColor: "black",
 };
 
 interface MenuItem {
@@ -61,7 +75,10 @@ export default function ProjectPage({
 }: {
   params: { projectId: string };
 }) {
-  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [images, setImages] = useState<string[]>([]);
   const [MenuItems, setMenuItems] = useState<MenuItem[] | null>(null);
 
@@ -70,10 +87,6 @@ export default function ProjectPage({
   const imagesRef = reff(storage, `Project/${project}/`);
 
   const menuRef = ref(database, `Project/`);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   useEffect(() => {
     const fetchMenuData = async () => {
@@ -129,15 +142,7 @@ export default function ProjectPage({
 
   return (
     <div className="min-h-screen max-w-screen animate-fade-in mt-8 ">
-      <Suspense
-        fallback={
-          <div className="text-center bg-gray-600">
-            <h2 className="mx-auto dmsans-bold text-lg text-gray-200">
-              Loading Project
-            </h2>
-          </div>
-        }
-      >
+      <Suspense fallback={<div style={fallbackStyle}>Please wait...</div>}>
         {selectedProjectData && selectedProjectData.length > 0 ? (
           selectedProjectData.map((menuItem, index) => (
             <div
@@ -152,13 +157,14 @@ export default function ProjectPage({
                 <ArrowLeft className="absolute md:left-8 left-4 top-8 text-white hover:text-orange-600 w-8 h-8" />
               </Link>
               <div className="flex  float-right justify-end md:mr-0 mr-4">
-              <Link
-                href="/"
-                className="cursor-pointer"
-              >
-            <Image height={90} width={90} alt="logo" src={logo} />
-            </Link>
-          </div>
+                <Link href="/" className="cursor-pointer">
+                  <span className=" logo-font text-4xl  font-bold ">
+                    <Tilt className="logo-font">
+                      <p className="logo-font">BIND</p>
+                    </Tilt>
+                  </span>
+                </Link>
+              </div>
               <div className="min-h-screen">
                 <title>{menuItem.projectName}</title>
                 <div className="container min-h-screen text-wrapper p-4 flex flex-col gap-4">
@@ -171,7 +177,7 @@ export default function ProjectPage({
                   >
                     {menuItem.projectName}
                   </p>
-                  <div className="groupss md:mt-12 mt-5">
+                  <div className="groupss md:mt-20 mt-5">
                     <div className="groupp dmsans md:gap-40 text-lg">
                       <p className="expertise md:mb-0 mb-5 dmsans-bold max-w-[20rem]">
                         Expertise{" "}
@@ -205,6 +211,7 @@ export default function ProjectPage({
                           width={700}
                           src={url}
                           alt="uploaded"
+                          className="overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
                           style={{ filter: "brightness(110%)" }}
                         />
                       </div>

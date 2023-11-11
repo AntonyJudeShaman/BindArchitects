@@ -7,8 +7,7 @@ import { Contactform } from "@/components/contact-form";
 import Head from "next/head";
 import { Metadata } from "next";
 import Link from "next/link";
-import logo from "@/components/logo.png";
-import Image from "next/image";
+import "@/styles/fonts.css";
 import { cn } from "@/lib/utils";
 import ContactHead from "@/components/contact-head";
 import Contact from "@/components/contact";
@@ -16,14 +15,31 @@ import Contact from "@/components/contact";
 export const metadata: Metadata = {
   title: "Contact Us - Studio Bind Architects",
   description:
-    "Get in touch with Studio Bind for architectural inquiries, collaboration opportunities, or any questions you may have. Reach out to us through our contact form, and we'll be delighted to assist you.",
+    "Connect with Studio Bind Architects, Chennai's premier architectural firm. Specializing in bespoke solutions for residential and commercial projects, our team blends aesthetics and functionality to redefine the cityscape. Elevate your vision — contact Chennai's leading architecture firm today.",
 };
 
 function page() {
   return (
     <div className="min-h-screen max-w-screen py-4 animate-fade-in">
-      <title>Contact Us - Studio Bind Architects</title>
+      <Head>
+        <title>
+          Contact Us - Studio Bind Architects - Best Architects in Chennai
+        </title>
+        <link rel="canonical" href="https://www.bindhomes.com/contact" />
+        <meta
+          property="og:description"
+          content="Connect with Studio Bind Architects, Chennai's premier architectural firm. Specializing in bespoke solutions for residential and commercial projects, our team blends aesthetics and functionality to redefine the cityscape. Elevate your vision — contact Chennai's leading architecture firm today."
+        />
+        <meta
+          name="description"
+          content="Connect with Studio Bind Architects, Chennai's premier architectural firm. Specializing in bespoke solutions for residential and commercial projects, our team blends aesthetics and functionality to redefine the cityscape. Elevate your vision — contact Chennai's leading architecture firm today."
+        />
 
+        <meta
+          property="og:title"
+          content="Contact Us - Studio Bind Architects - Best Architects in Chennai"
+        />
+      </Head>
       <link rel="canonical" href="https://www.bindhomes.com/contact" />
       <div className="md:ml-5 ml-5 flex mt-4 justify-between">
         <MainNav items={marketingConfig.mainNav} />
@@ -35,7 +51,7 @@ function page() {
                 aria-label="navbar items"
                 href={item.disabled ? "#" : item.href}
                 className={cn(
-                  "group flex hover:text-orange-400 flex-col text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium ",
+                  "group flex hover:bg-slate-900 hover:text-orange-400 flex-col text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium ",
                   item.disabled && "cursor-not-allowed opacity-60"
                 )}
               >
@@ -43,8 +59,8 @@ function page() {
               </Link>
             ))}
 
-          <div className="flex max-w-[10rem] justify-end mr-5 space-x-2 bg-black md:hidden">
-            <Image height={90} width={90} alt="logo" src={logo} />
+          <div className="flex mr-5 items-center space-x-2 bg-black md:hidden">
+            <p className="logo-font text-4xl font-bold">BIND</p>
           </div>
         </nav>
       </div>

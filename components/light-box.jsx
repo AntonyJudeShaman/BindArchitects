@@ -217,14 +217,14 @@ export function LightBox({ className }) {
                   By submitting this form you agree to our{" "}
                   <Link
                     href="/terms"
-                    className="hover:text-brand  dmsans-bold underline underline-offset-4"
+                    className="hover:text-orange-400  dmsans-bold underline underline-offset-4"
                   >
                     Terms of Use
                   </Link>{" "}
                   and{" "}
                   <Link
                     href="/privacy"
-                    className="hover:text-brand  dmsans-bold underline underline-offset-4"
+                    className="hover:text-orange-400  dmsans-bold underline underline-offset-4"
                   >
                     Privacy Policy
                   </Link>

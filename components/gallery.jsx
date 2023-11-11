@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./gallery.css";
 import Footer from "./footer";
-import { Helmet } from "react-helmet";
-import { initializeApp } from "firebase/app";
-import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
 import {
   getStorage,
@@ -12,8 +9,8 @@ import {
   listAll,
   getDownloadURL,
 } from "firebase/storage";
-import NavbarM from "./nav2";
-import { app, analytics,firebaseConfig } from "@/components/firebase";
+import Image from "next/image";
+import { app } from "@/components/firebase";
 
 
 const storage = getStorage(app);
@@ -55,7 +52,7 @@ const HomeGallery = (projectName) => {
       <div className="masonry-container min-h-screen">
         {images.map((url) => (
           <div key={url} className="masonry-item">
-            <img src={url} alt="uploaded" className="hhov" />
+            <Image src={url} width={400} height={400} alt="uploaded" className="hhov" />
           </div>
         ))}
       </div>

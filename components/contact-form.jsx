@@ -8,6 +8,7 @@ import { Textarea } from "./ui/textarea";
 import { cn } from "@/lib/utils";
 import LoadingDots from "./loading-dots";
 import logo from "../assets/8.png";
+import { Checkbox } from "./ui/checkbox";
 import Link from "next/link";
 
 export function Contactform({ className }) {
@@ -276,12 +277,35 @@ export function Contactform({ className }) {
               </p>
             </div>
           )}
+          <div
+            className="flex flex-row mt-4 items-center gap-4"
+            aria-label="please check this"
+          >
+            <Checkbox />
+            <div htmlFor="message" className="pt-2 pb-2 dmsans">
+              By submitting this form you agree to our{" "}
+              <Link
+                href="/terms"
+                className="hover:text-orange-400  dmsans-bold underline underline-offset-4"
+              >
+                Terms of Use
+              </Link>{" "}
+              and{" "}
+              <Link
+                href="/privacy"
+                className="hover:text-orange-400  dmsans-bold underline underline-offset-4"
+              >
+                Privacy Policy
+              </Link>
+              .
+            </div>
+          </div>
           <div className="align-right float-right text-right mb-5">
             <Button
               aria-label="submit contact form"
               type="submit"
               variant="white"
-              className=" w-60 mt-4 border text-md border-green-300 "
+              className=" w-full mt-4 border text-md border-green-300 "
               disabled={loading}
             >
               {loading ? <LoadingDots color="red" /> : "Submit"}

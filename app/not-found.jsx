@@ -10,28 +10,25 @@ import Head from "next/head";
 
 export default function NotFound() {
   return (
-    <div class="notfound p-6">
+    <div class="notfound p-6 mt-10 md:mt-24 justify-center">
       <Head>
         <title>Not Found || Studio Bind</title>
       </Head>
-      <Link href="/" aria-label="go back to homepage">
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          <Image src={image} width={500} alt="404 not found" />
-        </div>
-      </Link>
-      <h2 className="sub-gradient font-heading text-3xl pb-3 text-center">
+      
+      <h2 className="dmsans contact-title pb-3 text-left">
         404 - Page not found
       </h2>
-      <p className="font-heading  text-center pb-2 text-xl sm:text-6xl">
+      <p className="dmsans  text-left pb-2 text-2xl sm:text-6xl">
         The page you are looking for might have been removed, had its name
         changed, or is temporarily unavailable.
       </p>
-      <div className="text-center mt-3">
+      <div className="text-left mt-8">
         <Link href="" onClick={() => window.history.back()}>
         <Button
           size="lg"
+          variant="white"
           aria-label="go back to homepage"
-          className="border-black bg-gradient-to-b from-green-500 to-blue-600 hover:to-green-500 hover:from-blue-600 text-white hover:bg-white hover:text-black"
+          className=""
         >
           Go Back
         </Button>

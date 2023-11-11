@@ -1,13 +1,10 @@
 import * as React from "react"
 import Link from "next/link"
-import Image from "next/image"
 import Tilt from "react-parallax-tilt"
 import { MainNavItem } from "types"
-import { siteConfig } from "config/site"
 import { cn } from "@/lib/utils"
 import { useLockBody } from "hooks/use-lock-body"
-import { Icons } from "@/components/icons"
-import logo from "./logo.png"
+import "@/styles/fonts.css"
 
 interface MobileNavProps {
   items: MainNavItem[]
@@ -27,7 +24,7 @@ export function MobileNav({ items, children }: MobileNavProps) {
         <Link href="/" className="hidden items-center space-x-2 md:flex">
         <span className="hidden logo-font text-4xl display-animation2 font-bold sm:inline-block">
           <Tilt className="logo-font">
-          <Image height={60} width={60} alt="logo" src={logo} />
+            <p className="logo-font">BIND</p>
           </Tilt>
         </span>
       </Link>

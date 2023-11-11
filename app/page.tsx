@@ -11,19 +11,39 @@ import Client from "@/components/client";
 import Questions from "@/components/still-questions";
 import Image from "next/image";
 import logo from "@/components/logo.png";
+import Head from "next/head";
 
 interface MarketingLayoutProps {
   children: React.ReactNode;
 }
 
 export const metadata: Metadata = {
-  title: "Home - Studio Bind Architects",
-  description: "Discover the Leading Architects in Chennai - Unveiling Unparalleled Design Excellence. Explore the portfolio of top-tier architects and architectural firms in Chennai, renowned for crafting innovative, sustainable, and aesthetically captivating designs. Elevate your architectural visions with our exceptional expertise and dedication to transforming spaces.",
+  title: "Studio Bind Architects",
+  description:
+    "Discover the Leading Architects in Chennai - Unveiling Unparalleled Design Excellence. Explore the portfolio of top-tier architects and architectural firms in Chennai, renowned for crafting innovative, sustainable, and aesthetically captivating designs. Elevate your architectural visions with our exceptional expertise and dedication to transforming spaces. Whether you're seeking modern house designs, sustainable architecture, or creative commercial spaces, our top architects in Chennai are here to exceed your expectations. Explore our portfolio for residential and commercial architects, and witness the fusion of functionality and aesthetic appeal. Elevate your architectural dreams with the best architects in Chennai, dedicated to delivering excellence in every project.",
 };
 
 export default function HomeLayout() {
   return (
     <>
+      <Head>
+        <title>Studio Bind Architects - Best Architects in Chennai</title>
+        <link rel="canonical" href="https://www.bindhomes.com/about" />
+        <meta
+          property="og:description"
+          content="Discover the portfolio of Studio Bind Architects' projects in Chennai. Explore a showcase of innovative and inspiring residential and commercial spaces. From conceptualization to realization, immerse yourself in the artistry and functionality of our architectural designs. Elevate your vision of modern living with Chennai's leading architectural firm, Studio Bind Architects."
+        />
+
+        <meta
+          name="description"
+          content="Discover Chennai's Leading Architects - Unleashing Design Excellence. Explore top-tier portfolios renowned for innovative, sustainable, and captivating designs. Elevate your visions with our expertise in transforming spaces. Whether modern homes, sustainable architecture, or creative commercial spaces, our top Chennai architects exceed expectations. Explore our residential and commercial portfolios, witnessing the fusion of functionality and aesthetic appeal. Elevate your architectural dreams with Chennai's best, dedicated to excellence in every project."
+        />
+
+        <meta
+          property="og:title"
+          content="Studio Bind Architects - Best Architects in Chennai"
+        />
+      </Head>
       <div className="flex min-h-screen flex-col ">
         <header className="md:ml-4 ml-4  bg-background">
           <div className="flex h-20 justify-between md:justify-between  py-6">
@@ -36,40 +56,24 @@ export default function HomeLayout() {
                     aria-label="navbar items"
                     href={item.disabled ? "#" : item.href}
                     className={cn(
-                      "group flex hover:text-orange-400  text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium ",
+                      "group flex hover:bg-slate-900 hover:text-orange-400  text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium ",
                       item.disabled && "cursor-not-allowed opacity-60"
                     )}
                   >
                     <span className="text-md">{item.title}</span>
                   </Link>
                 ))}
-              {/* <Link
-                href="/login"
-                aria-label="login"
-                className={cn(
-                  buttonVariants({
-                    variant: "default",
-                    className:
-                      "border border-green-300 mr-4 -mt-3 md:hidden w-30 bg-gradient-to-bl from-pink-500 to-purple-600 hover:to-pink-500 hover:from-purple-600  ",
-                    size: "lg",
-                  }),
-                  "px-4"
-                )}
-              >
-                Login
-              </Link> */}
-             
-            </nav>
-            <div className="flex mr-5 items-center space-x-2 bg-black md:hidden">
-                <Image height={90} width={90} alt="logo" src={logo} />
+              <div className="flex mr-5 items-center space-x-2 bg-black md:hidden">
+                <p className="logo-font text-4xl font-bold">BIND</p>
               </div>
+            </nav>
           </div>
         </header>
 
         <IndexPage />
         <Projects />
         <Client />
-        <Aboutus/>
+        <Aboutus />
         <Questions />
         <SiteFooter />
       </div>

@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import { useEffect } from "react";
 
 export const metadata: Metadata = {
-  title: "Home | Best Architects in Chennai | Home & Interior.",
+  title: "Studio Bind | Best Architects in Chennai | Home & Interior Designers in Chennai",
   description:
     "Welcome to Studio Bind, Your Premier Architectural Firm in Chennai. Transforming Visions into Stunning Reality. As a top architectural firm based in Chennai, we specialize in crafting innovative and sustainable architectural solutions. Explore our portfolio of breathtaking designs and discover how we bring your architectural dreams to life.",
 };

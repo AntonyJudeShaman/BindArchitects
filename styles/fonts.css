@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "CustomFont";
+    src: url("../assets/fonts/Bauhaus.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "titleFont";
+    src: url("../assets/fonts/AeonikTRIAL-Light.otf") format("otf");
+  }
+  
+  .logo-font {
+    font-family: "CustomFont";
+  }
+  
+  .title-font {
+    font-family: "titleFont";
+  }

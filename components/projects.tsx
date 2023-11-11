@@ -298,14 +298,16 @@ export function Projects() {
   };
 
   const handleMouseLeave10 = () => {
-    setHoverStyle({ transform:"none" });
+    setHoverStyle({ transform: "none" });
   };
 
   return (
-    <div className="min-h-screen max-w-full animate-fade-in  py-8 mx-auto justify-center" data-theme="">
-      
+    <div
+      className="min-h-screen max-w-full animate-fade-in  py-8 mx-auto justify-center"
+      data-theme=""
+    >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-14 justify-center w-full ">
-      <Link
+        <Link
           href="/projects/delphiderma"
           style={{ filter: "brightness(130%)" }}
           aria-label="Projects Section"
@@ -317,18 +319,19 @@ export function Projects() {
               alt="Delphi Derma Clinic"
               height={400}
               width={700}
-              className="project-frame overflow-hidden"
-              onMouseMove={handleMouseMove6}
-              onMouseLeave={handleMouseLeave6}
-              style={hoverStyle6}
+              className="project-frame overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
+              // onMouseMove={handleMouseMove6}
+              // onMouseLeave={handleMouseLeave6}
+              // style={hoverStyle6}
             />
-            <div className="flex flex-wrap text-lg mt-2">
+           
+          </div>
+          <div className="flex flex-wrap text-lg mt-2">
               <p className="flex-1 dmsans-bold text-left">Delphi Derma</p>
               <p className="flex-1 dmsans-bold text-right text-zinc-500">
                 2022
               </p>
             </div>
-          </div>
         </Link>
         <Link
           href="/projects/remycinemas"
@@ -342,20 +345,21 @@ export function Projects() {
               alt="Remy Cinemas"
               height={400}
               width={700}
-              className="project-frame overflow-hidden"
-              onMouseMove={handleMouseMove10}
-              onMouseLeave={handleMouseLeave10}
-              style={hoverStyle10}
+              className="project-frame overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
+              // onMouseMove={handleMouseMove10}
+              // onMouseLeave={handleMouseLeave10}
+              // style={hoverStyle10}
             />
-            <div className="flex flex-wrap text-lg mt-2">
+            
+          </div>
+          <div className="flex flex-wrap text-lg mt-2">
               <p className="flex-1 dmsans-bold text-left">Remy Cinemas</p>
               <p className="flex-1 dmsans-bold text-right text-zinc-500">
                 2022
               </p>
             </div>
-          </div>
         </Link>
-         <Link
+        <Link
           href="/projects/ccbm"
           className=" overflow-hidden md:m-0 m-4 "
           style={{ filter: "brightness(130%)" }}
@@ -367,18 +371,19 @@ export function Projects() {
               alt="CCBM"
               height={400}
               width={700}
-              className="project-frame overflow-hidden"
-              onMouseMove={handleMouseMove11}
-              onMouseLeave={handleMouseLeave11}
-              style={hoverStyle11}
+              className="project-frame overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
+              // onMouseMove={handleMouseMove11}
+              // onMouseLeave={handleMouseLeave11}
+              // style={hoverStyle11}
             />
-            <div className="flex flex-wrap text-lg mt-2">
+           
+          </div>
+          <div className="flex flex-wrap text-lg mt-2">
               <p className="flex-1 dmsans-bold text-left">CCBM</p>
               <p className="flex-1 dmsans-bold text-right text-zinc-500">
                 2022
               </p>
             </div>
-          </div>
         </Link>
         <Link
           href="/projects/mgasristi"
@@ -392,43 +397,45 @@ export function Projects() {
               alt="MGA Sristi"
               height={400}
               width={700}
-              className="project-frame overflow-hidden"
-              onMouseMove={handleMouseMove9}
-              onMouseLeave={handleMouseLeave9}
-              style={hoverStyle9}
+              className="project-frame overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
+              // onMouseMove={handleMouseMove9}
+              // onMouseLeave={handleMouseLeave9}
+              // style={hoverStyle9}
             />
-            <div className="flex flex-wrap text-lg mt-2">
+            
+          </div>
+          <div className="flex flex-wrap text-lg mt-2">
               <p className="flex-1 dmsans-bold text-left">MGA Sristi</p>
               <p className="flex-1 dmsans-bold text-right text-zinc-500">
                 2022
               </p>
             </div>
-          </div>
         </Link>
         <Link
           href="/projects/eastwest"
-          className=" overflow-hidden md:m-0 m-4 "
+          className="overflow-hidden md:m-0 m-4 "
           style={{ filter: "brightness(130%)" }}
           aria-label="Projects Section"
         >
-          <div className=" overflow-hidden ">
+          <div className="overflow-hidden">
             <Image
               src={image15}
               alt="East West"
               height={400}
               width={700}
-              className="project-frame overflow-hidden"
-              onMouseMove={handleMouseMove8}
-              onMouseLeave={handleMouseLeave8}
-              style={hoverStyle8}
+              className="project-frame overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
+              // onMouseMove={handleMouseMove8}
+              // onMouseLeave={handleMouseLeave8}
+              // style={hoverStyle8}
             />
-            <div className="flex flex-wrap text-lg mt-2">
+            
+          </div>
+          <div className="flex flex-wrap text-lg mt-2">
               <p className="flex-1 dmsans-bold text-left">East West</p>
               <p className="flex-1 dmsans-bold text-right text-zinc-500">
                 2022
               </p>
             </div>
-          </div>
         </Link>
       </div>
     </div>

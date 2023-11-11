@@ -4,11 +4,9 @@ import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
 import Tilt from "react-parallax-tilt";
 import { MainNavItem } from "types";
-import { siteConfig } from "config/site";
 import { Icons } from "@/components/icons";
 import { MobileNav } from "@/components/mobile-nav";
-import logo from "./logo.png";
-import Image from "next/image";
+import "@/styles/fonts.css"
 
 interface MainNavProps {
   items?: MainNavItem[];
@@ -32,7 +30,7 @@ export function MainNav({ items, children }: MainNavProps) {
       >
         <span className="hidden logo-font text-4xl  font-bold sm:inline-block">
           <Tilt className="logo-font">
-            <Image height={70} width={70} alt="logo" src={logo} />
+            <p className="logo-font">BIND</p>
           </Tilt>
         </span>
       </Link>

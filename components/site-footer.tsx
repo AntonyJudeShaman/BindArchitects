@@ -3,13 +3,14 @@
 import * as React from "react";
 import Link from "next/link";
 import Tilt from "react-parallax-tilt";
-import logo from "./logo.png"
+import logo from "./logo.png";
 import Image from "next/image";
 import { siteConfig } from "config/site";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Icons } from "@/components/icons";
 import { ModeToggle } from "@/components/mode-toggle";
+import "@/styles/fonts.css"
 
 export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
   return (
@@ -17,11 +18,13 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
       <div className="container flex flex-col items-center justify-between gap-4 max-w-full py-10 md:h-24 md:flex-row md:py-0">
         <div className="flex flex-col items-center gap-4   md:flex-row md:gap-2 md:px-0">
           <Link href="/" className="block items-center space-x-2 md:flex">
-            <div className=" ">
-              <Tilt className=""><Image height={70} width={70} alt="logo" src={logo} /></Tilt>
+            <div className="logo-font text-4xl  font-bold">
+              <Tilt className="logo-font">
+                <p className="logo-font">BIND</p>
+              </Tilt>
             </div>
           </Link>
-          <p className="text-center text-sm  md:text-left dmsans">
+          <p className="text-center text-sm md:ml-6 ml-0  md:text-left dmsans">
             &copy; {new Date().getFullYear()} {siteConfig.name}.
           </p>
         </div>

@@ -37,7 +37,7 @@ export default async function ProjectsHome() {
                 aria-label="navbar items"
                 href={item.disabled ? "#" : item.href}
                 className={cn(
-                  "group flex hover:text-orange-400 flex-col text-right items-center overflow-hidden my-font hidden mr-4 title-gradient md:inline-block rounded-md p-2 text-sm font-medium hover:underline",
+                  "group flex hover:bg-slate-900 hover:text-orange-400 flex-col text-right items-center overflow-hidden my-font hidden mr-4 title-gradient md:inline-block rounded-md p-2 text-sm font-medium hover:underline",
                   item.disabled && "cursor-not-allowed opacity-60"
                 )}
               >
@@ -46,7 +46,7 @@ export default async function ProjectsHome() {
             ))}
         </nav>
       </div>
-      <p className="text-5xl font-heading font-semibold sub-gradient mb-5 mt-10 text-center display-animation">
+      <p className="text-5xl mb-5 mt-10 text-center dmsans">
         Add Projects
       </p>
 

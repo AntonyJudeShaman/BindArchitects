@@ -1,15 +1,20 @@
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
+import Head from "next/head";
 
 export function Contact() {
   return (
-    <div className="">
-      <section
-        className="container mx-auto space-y-3 items-center text-center bg-slate-50 mb-20 animate-fade-right dark:bg-transparent md:py-6"
-        aria-label="about us section"
-      >
-        <div className="mx-auto mt-20 flex max-w-[88rem] flex-col space-y-4 text-center">
-          <h2 className="font-heading text-3xl text-left dmsans font-medium leading-[1.1] mb-5 md:text-5xl">
+    <>
+      <Head>
+        <title>Contact Us - Studio Bind Architects</title>
+        <meta
+          name="description"
+          content="Contact Studio Bind Architects for architectural inquiries. Find our phone number, address, and email. Reach out to us for your residential and commercial projects in Chennai."
+        />
+      </Head>
+      <section className="p-4 max-w-screen space-y-3 items-start text-left bg-slate-50 mb-20 animate-fade-in dark:bg-transparent md:py-6">
+        <div className="mx-auto mt-20 flex max-w-[88rem] flex-col space-y-4 text-left">
+          <h2 className="font-heading text-3xl dmsans font-medium leading-[1.1] mb-5 md:text-5xl">
             Contact The Studio
           </h2>
         </div>
@@ -17,26 +22,26 @@ export function Contact() {
           <div className="flex md:flex-col flex-col">
             <Link
               href="tel:8072701454"
-              className="flex-1 text-xl dmsans leading-normal dmsans text-left text-muted-foreground sm:text-md sm:leading-8"
+              className="text-xl hover:text-orange-400 dmsans leading-normal text-left text-muted-foreground sm:text-md sm:leading-8"
             >
               Phone Number: 8072701454
             </Link>
-            <br/>
-            <p className="text-xl dmsans  leading-normal text-left text-muted-foreground sm:text-md sm:leading-8">
-              Address: 10, Anjugam Street, Meenakshi Amman Nagar,<br/>
+            <br />
+            <p className="text-xl dmsans leading-normal text-left text-muted-foreground sm:text-md sm:leading-8">
+              Address: 10, Anjugam Street, Meenakshi Amman Nagar, <br />
               Alwarthirunagar, Chennai - 600087.
             </p>
             <br />
             <Link
               href="mailto:bindarchitects@gmail.com"
-              className="text-xl dmsans  leading-normal text-left text-muted-foreground sm:text-md sm:leading-8"
+              className="text-xl hover:text-orange-400 leading-normal text-left text-muted-foreground sm:text-md sm:leading-8"
             >
               Mail: bindarchitects@gmail.com
             </Link>
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 }
 
