@@ -310,7 +310,7 @@ export function Projects() {
         <Link
           href="/projects/delphiderma"
           style={{ filter: "brightness(130%)" }}
-          className="overflow-hidden md:m-0 m-4 justify-center"
+          className="overflow-hidden md:m-0 m-4 groupjustify-center"
         >
           <div className="overflow-hidden ">
             <Image
@@ -326,13 +326,13 @@ export function Projects() {
           </div>
           <div className="flex flex-wrap text-lg mt-2">
             <p
-              className="flex-1 dmsans-bold text-left"
+              className="flex-1 dmsans-bold text-left text-orange-500"
               aria-label="Delphi Derma"
-            >
+             >
               Delphi Derma
             </p>
             <p
-              className="flex-1 dmsans-bold text-right text-zinc-500"
+              className="flex-1 dmsans-bold text-right text-gray-300"
               aria-label="2023"
             >
               2023
@@ -342,7 +342,7 @@ export function Projects() {
         <Link
           href="/projects/remycinemas"
           style={{ filter: "brightness(130%)" }}
-          className="overflow-hidden md:m-0 m-4 justify-center"
+          className="overflow-hidden md:m-0 m-4 groupjustify-center"
         >
           <div className="overflow-hidden ">
             <Image
@@ -358,13 +358,13 @@ export function Projects() {
           </div>
           <div className="flex flex-wrap text-lg mt-2">
             <p
-              className="flex-1 dmsans-bold text-left"
+              className="flex-1 dmsans-bold text-left text-orange-500"
               aria-label="Remy Cinemas"
-            >
+             >
               Remy Cinemas
             </p>
             <p
-              className="flex-1 dmsans-bold text-right text-zinc-500"
+              className="flex-1 dmsans-bold text-right text-gray-300"
               aria-label="2022"
             >
               2022
@@ -373,7 +373,7 @@ export function Projects() {
         </Link>
         <Link
           href="/projects/ccbm"
-          className=" overflow-hidden md:m-0 m-4 "
+          className=" overflow-hidden md:m-0 m-4 group"
           style={{ filter: "brightness(130%)" }}
         >
           <div className=" overflow-hidden " aria-label="CCBM 2022">
@@ -389,11 +389,11 @@ export function Projects() {
             />
           </div>
           <div className="flex flex-wrap text-lg mt-2">
-            <p className="flex-1 dmsans-bold text-left" aria-label="CCBM">
+            <p className="flex-1 dmsans-bold text-left text-orange-500" aria-label="CCBM">
               CCBM
             </p>
             <p
-              className="flex-1 dmsans-bold text-right text-zinc-500"
+              className="flex-1 dmsans-bold text-right text-gray-300"
               aria-label="2022"
             >
               2022
@@ -402,7 +402,7 @@ export function Projects() {
         </Link>
         <Link
           href="/projects/mgasristi"
-          className=" overflow-hidden md:m-0 m-4"
+          className=" overflow-hidden md:m-0 m-4 group"
           style={{ filter: "brightness(130%)" }}
         >
           <div className=" overflow-hidden ">
@@ -418,11 +418,11 @@ export function Projects() {
             />
           </div>
           <div className="flex flex-wrap text-lg mt-2">
-            <p className="flex-1 dmsans-bold text-left" aria-label="MGA Sristi">
+            <p className="flex-1 dmsans-bold text-left text-orange-500" aria-label="MGA Sristi">
               MGA Sristi
             </p>
             <p
-              className="flex-1 dmsans-bold text-right text-zinc-500"
+              className="flex-1 dmsans-bold text-right text-gray-300"
               aria-label="2022"
             >
               2022
@@ -431,7 +431,7 @@ export function Projects() {
         </Link>
         <Link
           href="/projects/eastwest"
-          className="overflow-hidden md:m-0 m-4 "
+          className="overflow-hidden md:m-0 m-4 group"
           style={{ filter: "brightness(130%)" }}
         >
           <div className="overflow-hidden">
@@ -447,11 +447,11 @@ export function Projects() {
             />
           </div>
           <div className="flex flex-wrap text-lg mt-2">
-            <p className="flex-1 dmsans-bold text-left" aria-label="East West">
+            <p className="flex-1 dmsans-bold text-left text-orange-500" aria-label="East West">
               East West
             </p>
             <p
-              className="flex-1 dmsans-bold text-right text-zinc-500"
+              className="flex-1 dmsans-bold text-right text-gray-300"
               aria-label="2022"
             >
               2022
