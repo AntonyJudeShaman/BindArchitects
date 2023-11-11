@@ -313,7 +313,10 @@ export function Projects() {
           aria-label="Delphi Derma Clinic"
           className="overflow-hidden md:m-0 m-4 justify-center"
         >
-          <div className="overflow-hidden ">
+          <div
+            className="overflow-hidden "
+            aria-label="Delphi Derma Clinic 2023"
+          >
             <Image
               src={image9}
               alt="Delphi Derma Clinic"
@@ -340,7 +343,7 @@ export function Projects() {
           aria-label="Remy Cinemas 2022"
           className="overflow-hidden md:m-0 m-4 justify-center"
         >
-          <div className="overflow-hidden ">
+          <div className="overflow-hidden " aria-label="Remy Cinemas 2022">
             <Image
               src={image12}
               alt="Remy Cinemas"
@@ -367,7 +370,7 @@ export function Projects() {
           style={{ filter: "brightness(130%)" }}
           aria-label="CCBM 2022"
         >
-          <div className=" overflow-hidden ">
+          <div className=" overflow-hidden " aria-label="CCBM 2022">
             <Image
               src={image13}
               alt="CCBM"
@@ -391,7 +394,8 @@ export function Projects() {
           style={{ filter: "brightness(130%)" }}
           aria-label="MGA Sristi 2022"
         >
-          <div className=" overflow-hidden ">
+          <div className=" overflow-hidden " 
+              aria-label="MGA Sristi 2022">
             <Image
               src={image14}
               alt="MGA Sristi"
@@ -418,7 +422,8 @@ export function Projects() {
           style={{ filter: "brightness(130%)" }}
           aria-label="East West 2022"
         >
-          <div className="overflow-hidden">
+          <div className="overflow-hidden" 
+              aria-label="East West 2022">
             <Image
               src={image15}
               alt="East West"
