@@ -33,21 +33,21 @@ const imgStyles = {
   zIndex: -20,
 };
 const cardColors = [
-  'linear-gradient(to right, #1c3a54, #38404f)',
-  'linear-gradient(to right, #862d3a, #89304e)',
-  'linear-gradient(to right, #503c67, #8a6f8f)',
-  'linear-gradient(to right, #892210, #732023)',
-  'linear-gradient(to right, #5a4758, #a77da8)',
-  'linear-gradient(to right, #46592d, #586b5f)',
-  'linear-gradient(to right, #a52f51, #b15e66)',
-  'linear-gradient(to right, #6b076b, #1c367f)',
-  'linear-gradient(to right, #1f3058, #8c2f6b)',
-  'linear-gradient(to right, #291b37, #923a6f)',
-  'linear-gradient(to right, #36207a, #935b8e)',
-  'linear-gradient(to right, #7f2d3c, #7b4440)',
-  'linear-gradient(to right, #005b7e, #002b59)',
-  'linear-gradient(to right, #1d2a55, #112048)',
-  'linear-gradient(to right, #0e3a60, #072a4f)'
+  "linear-gradient(to right, #1c3a54, #38404f)",
+  "linear-gradient(to right, #862d3a, #89304e)",
+  "linear-gradient(to right, #503c67, #8a6f8f)",
+  "linear-gradient(to right, #892210, #732023)",
+  "linear-gradient(to right, #5a4758, #a77da8)",
+  "linear-gradient(to right, #46592d, #586b5f)",
+  "linear-gradient(to right, #a52f51, #b15e66)",
+  "linear-gradient(to right, #6b076b, #1c367f)",
+  "linear-gradient(to right, #1f3058, #8c2f6b)",
+  "linear-gradient(to right, #291b37, #923a6f)",
+  "linear-gradient(to right, #36207a, #935b8e)",
+  "linear-gradient(to right, #7f2d3c, #7b4440)",
+  "linear-gradient(to right, #005b7e, #002b59)",
+  "linear-gradient(to right, #1d2a55, #112048)",
+  "linear-gradient(to right, #0e3a60, #072a4f)",
 ];
 const metadata: Metadata = {
   title: "Works - Best Architects in Chennai | Studio Bind Architects",
@@ -150,7 +150,7 @@ export default function ProjectPage({
       : [];
 
   return (
-    <div className="max-w-screen" >
+    <div className="max-w-screen">
       <Suspense fallback={<div style={fallbackStyle}>Please wait...</div>}>
         {selectedProjectData && selectedProjectData.length > 0 ? (
           selectedProjectData
@@ -158,9 +158,11 @@ export default function ProjectPage({
               (a.projectNumber || "").localeCompare(b.projectNumber || "")
             )
             .map((menuItem) => (
-              <div className="min-h-screen md:-ml-32 md:-mr-32 max-w-screen  ">
+              <div
+                className="min-h-screen md:-ml-32 md:-mr-32 max-w-screen  "
+                key={menuItem.projectNumber}
+              >
                 <div
-                  key={menuItem.projectNumber}
                   className="min-h-screen max-w-screen "
                 >
                   <Link
@@ -232,7 +234,10 @@ export default function ProjectPage({
                       </div>
                       <div className="mb-20 md:max-w-[90rem] p-8  mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-14 gap-8 justify-center w-full">
                         {images.map((url) => (
-                          <div key={url} className="project-frame overflow-hidden">
+                          <div
+                            key={url}
+                            className="project-frame overflow-hidden"
+                          >
                             <Image
                               height={400}
                               width={700}
