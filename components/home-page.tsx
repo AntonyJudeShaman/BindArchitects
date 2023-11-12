@@ -19,7 +19,7 @@ export default function IndexPage() {
         className="h-100   "
         style={{ minHeight: "100vh" }}
       >
-        <div className="container text-wrapper p-4 flex flex-col gap-4 ">
+        <div className="md:p-0 p-4 text-wrapper flex flex-col gap-4 ">
           {/* <h1 className="font-semibold ">
             <Image src={logo} alt="Jude" className="h-15 w-20" />
           </h1> */}
@@ -56,10 +56,10 @@ export default function IndexPage() {
               <span className="dmsans title-gradient title-gradient4   text-4xl mb-3">
                 10{" "}
               </span>
-              <span className="dmsans text-gray-400 dmsans  text-sm">
+              <span className="dmsans text-muted-foreground dmsans  text-sm">
                 Years leading
               </span>
-              <span className="dmsans text-gray-400 dmsans text-sm">
+              <span className="dmsans text-muted-foreground dmsans text-sm">
                 transformations
               </span>
             </div>
@@ -67,10 +67,10 @@ export default function IndexPage() {
               <span className=" dmsans title-gradient  title-gradient3 text-4xl mb-3">
                 60
               </span>
-              <span className="dmsans text-gray-400 dmsans text-sm">
+              <span className="dmsans text-muted-foreground dmsans text-sm">
                 Successful{" "}
               </span>
-              <span className="dmsans text-gray-400 dmsans text-sm">
+              <span className="dmsans text-muted-foreground dmsans text-sm">
                 clients
               </span>
             </div>
@@ -78,11 +78,11 @@ export default function IndexPage() {
               <span className=" dmsans title-gradient title-gradient3 text-4xl mb-3">
                 03{" "}
               </span>
-              <span className="dmsans text-gray-400 dmsans text-sm">
+              <span className="dmsans text-muted-foreground dmsans text-sm">
                 Unicorns leading
               </span>
 
-              <span className="dmsans text-gray-400 dmsans text-sm">
+              <span className="dmsans text-muted-foreground dmsans text-sm">
                 the market
               </span>
             </div>
@@ -90,11 +90,11 @@ export default function IndexPage() {
               <span className="title-gradient dmsans title-gradient4 text-4xl mb-3">
                 11
               </span>
-              <span className="dmsans text-gray-400 dmsans text-sm">
+              <span className="dmsans text-muted-foreground dmsans text-sm">
                 Multicultural
               </span>
 
-              <span className="dmsans text-gray-400 dmsans text-sm">
+              <span className="dmsans text-muted-foreground dmsans text-sm">
                 team players
               </span>
             </div>

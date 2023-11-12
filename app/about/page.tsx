@@ -46,7 +46,7 @@ function About() {
           content="About Us - Studio Bind Architects - Best Architects in Chennai"
         />
       </Head>
-      <div className="md:ml-5 ml-5 mt-8 flex  justify-between">
+      <div className="md:ml-0 w-full ml-5 mt-8 flex  justify-between">
         <MainNav items={marketingConfig.mainNav} />
         <nav className="justify-between bg-transparent">
           {marketingConfig &&

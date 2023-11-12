@@ -4,8 +4,8 @@ import cover from "../assets/contact-cover.svg";
 
 function ContactHead() {
   return (
-    <div className="flex min-h-screen flex-row mt-28 md:mt-52 max-w-screen">
-      <div className=" flex max-w-[50rem]  flex-col m-4 text-left">
+    <div className="flex min-h-screen flex-row justify-center max-w-screen">
+      <div className=" flex max-w-[50rem] justify-center  flex-col md:m-0 m-6 text-left">
         <p
           className="md:text-2xl  text-muted-foreground text-3xl  text-left mb-"
           aria-label="Lets create something special"
@@ -20,13 +20,13 @@ function ContactHead() {
         </p>
        
       </div>
-      <div>
+      <div className="flex justify-center">
         <Image
           src={cover}
           alt="contact cover image"
-          className="mt-12 2xl:block xl:block hidden"
-          width={450}
-          height={450}
+          className=" 2xl:block xl:block lg:block hidden"
+          width={800}
+          height={800}
         />
       </div>
     </div>

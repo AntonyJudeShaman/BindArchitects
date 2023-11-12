@@ -40,7 +40,7 @@ function page() {
           content="Contact Us - Studio Bind Architects - Best Architects in Chennai"
         />
       </Head>
-      <div className="md:ml-5 ml-5 flex mt-4 justify-between">
+      <div className="md:ml-0 ml-5 flex mt-4 justify-between">
         <MainNav items={marketingConfig.mainNav} />
         <nav className="justify-between">
           {marketingConfig &&
@@ -68,7 +68,7 @@ function page() {
       <ContactHead />
       <Contactform className="" />
       <Contact />
-      <SiteFooter className="mt-5" />
+      <SiteFooter className="mt-5 md:-ml-8" />
     </div>
   );
 }

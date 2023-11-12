@@ -3,15 +3,15 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
   background-color: #09090a;
 }
 
-.bg{
+.bg {
   background-color: #09090a;
 }
 
-.text-muted-foreground{
+.text-muted-foreground {
   color: #888888;
 }
 
@@ -57,7 +57,9 @@ body{
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(100vw - 100%)); /* Move from 0 to 100vw (full screen width) */
+    transform: translateX(
+      calc(100vw - 100%)
+    ); /* Move from 0 to 100vw (full screen width) */
   }
 }
 
@@ -66,7 +68,6 @@ body{
   white-space: nowrap; /* Prevent text from wrapping */
   overflow: hidden; /* Hide overflow text */
 }
-
 
 .groupss {
   display: flex;
@@ -81,7 +82,7 @@ body{
   }
 }
 
-.contact-bg{
+.contact-bg {
   background-color: #292931;
 }
 
@@ -209,7 +210,16 @@ body{
 }
 
 .our-story-item {
-  flex: 0 0 calc(33.33% - 1rem);
+  flex: 0 0 calc(33.33% - 2rem);
+  font-size: x-large;
+}
+
+.our-story-item h2 {
+  margin: 0 0 1rem;
+}
+
+.our-story-item p {
+  line-height: 1.4;
 }
 
 .burger {
@@ -273,12 +283,10 @@ body{
 }
 
 .our-story-item h2 {
-  font-size: 1.5rem;
   margin: 0 0 1rem;
 }
 
 .our-story-item p {
-  font-size: 1rem;
   line-height: 1.4;
 }
 
@@ -523,5 +531,3 @@ body{
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
 }
-
-

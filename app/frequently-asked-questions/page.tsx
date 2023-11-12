@@ -45,7 +45,7 @@ function page() {
       </Head>
 
       <div className="min-h-screen py-4 mt-4">
-        <div className="md:ml-5 ml-5 flex  justify-between">
+        <div className="md:ml-0 ml-5 flex  justify-between">
           <MainNav items={marketingConfig.mainNav} />
           <nav className="justify-between">
             {marketingConfig &&

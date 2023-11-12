@@ -13,18 +13,15 @@ export function Aboutus() {
       </Head>
       <section
         id="about-us"
-        className="container mx-auto space-y-6 items-center text-left bg-slate-50 -z-20 mb-20  dark:bg-transparent md:py-6"
+        className="md:-ml-1 mx-auto space-y-6 items-center text-left bg-slate-50 -z-20 mb-20  dark:bg-transparent md:py-6"
         aria-label="about us section"
       >
-        <div className="mx-auto mt-20 flex max-w-[88rem] flex-col items-center space-y-4 text-left">
+        <div className=" mt-20 flex flex-col md:items-start items-center space-y-4 text-left">
           <h2 aria-label="About us" className="dmsans text-5xl title-gradient4  leading-[1.1] mb-10  md:text-6xl">
             About Us
           </h2>
-          {/* <p className="max-w-[42rem] leading-normal text-2xl text-muted-foreground sm:text-md sm:leading-8">
-            We have worked with some of the best brands in the industry.
-          </p> */}
         </div>
-        <div className="mx-auto flex-col flex grid justify-center gap-4 sm:grid-cols-2 md:max-w-[80rem] justify-between md:grid-cols-1">
+        <div className="mx-auto flex-col flex grid justify-center gap-4 sm:grid-cols-2  justify-between md:grid-cols-1">
           <div className="flex md:flex-row flex-col ">
             <div className="flex-1 text-4xl dmsans-semibold   title-gradient md:text-left md:mr-10 mr-0 text-center">
               We shape brands that need no introduction.

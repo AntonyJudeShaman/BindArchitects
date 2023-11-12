@@ -1,6 +1,7 @@
 "use client"
 import Head from "next/head";
 import React, { useEffect } from "react";
+import Awards from "./awards";
 
 export function AboutSection() {
 
@@ -23,7 +24,7 @@ export function AboutSection() {
       >
         <div className="mx-auto flex flex-col items-center space-y-4 max-w-[40rem] text-center">
           <h2
-            className="text-5xl dmsans-semibold font-medium leading-[1.1] mb-5 md:text-7xl"
+            className="text-5xl dmsans-semibold font-medium leading-[1.1] mb-5 md:text-8xl"
             aria-label="The Studio"
           >
             The Studio
@@ -37,7 +38,7 @@ export function AboutSection() {
         </div>
       </section>
       <section
-        className=" md:mb-10 min-h-[40rem] p-4 md:-ml-20 md:-mr-20 gap-x-16 grid md:grid-cols-3 grid-cols-1"
+        className=" md:mb-10 min-h-[40rem] p-4 md:-ml-28 md:-mr-28 gap-x-24 grid md:grid-cols-3 grid-cols-1"
         aria-label="about us section"
       >
         <div className="flex flex-col p-4  max-w-[40rem] text-left">
@@ -47,7 +48,7 @@ export function AboutSection() {
           >
             Our Story
           </h2>
-          <div className="text-lg dmsans leading-normal text-justify md:text-left text-muted-foreground">
+          <div className="text-lg dmsans leading-normal text-justify  text-muted-foreground">
             We believe good design and powerful storytelling can bring a
             brand&apos;s essence and personality to life. From conception to
             project completion, listening is our top priority to ensure we
@@ -106,7 +107,7 @@ export function AboutSection() {
           >
             Our Team
           </h2>
-          <div className="text-lg dmsans leading-normal text-justify md:text-left text-muted-foreground">
+          <div className="text-lg dmsans leading-normal text-justify text-muted-foreground">
             Our diverse team is comprised of Architects, Interior Designers,
             Visual Designers, and Project Managers. From A to Z, our
             collaborative approach draws on the team&apos;s diverse skills and

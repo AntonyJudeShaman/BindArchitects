@@ -14,7 +14,7 @@ function Client() {
   const [isHovered1, setIsHovered1] = useState(false);
 
   return (
-    <div className="items-center md:mt-20 mt-0 flex md:flex-row gap-20 flex-col p-6 mb-20 justify-center md:justify-between max-w-screen">
+    <div className="items-center md:mt-20 mt-0 flex md:flex-row gap-20 flex-col md:p-0 p-6 mb-3 md:mb-20 justify-center md:justify-between max-w-screen">
       <div className="flex flex-col mt-20 max-w-[25rem]">
         <h2
           className="text-5xl dmsans leading-[1.1] mb-5 md:text-6xl"
@@ -29,49 +29,37 @@ function Client() {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 gap-8 md:grid-cols-4 max-w-[50rem] mx-auto mt-10 mb-10 justify-between">
-        <div className="mx-auto mt-10 ">
+      <div className="grid grid-cols-2 gap-16 md:grid-cols-4 max-w-[50rem] mx-auto mt-0 md:mt-10 mb-10 justify-between">
+        <div className="mx-auto md:mt-20 grayscale hover:grayscale-0">
           <Image
             height={130}
             width={130}
             alt="logo"
             src={client1}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-            style={{ filter: isHovered ? "grayscale(0%)" : "grayscale(100%)" }}
           />
         </div>
-        <div className="mx-auto mt-10 ">
+        <div className="mx-auto md:mt-20 grayscale hover:grayscale-0">
           <Image
             height={130}
             width={130}
             alt="logo"
             src={client2}
-            onMouseEnter={() => setIsHovered1(true)}
-            onMouseLeave={() => setIsHovered1(false)}
-            style={{ filter: isHovered1 ? "grayscale(0%)" : "grayscale(100%)" }}
           />
         </div>
-        <div className="mx-auto mt-10 ">
+        <div className="mx-auto md:mt-20 grayscale hover:grayscale-0">
           <Image
             height={130}
             width={130}
             alt="logo"
             src={client3}
-            onMouseEnter={() => setIsHovered2(true)}
-            onMouseLeave={() => setIsHovered2(false)}
-            style={{ filter: isHovered2 ? "grayscale(0%)" : "grayscale(100%)" }}
           />
         </div>
-        <div className="mx-auto mt-10 ">
+        <div className="mx-auto md:mt-20 grayscale hover:grayscale-0">
           <Image
             height={130}
             width={130}
             alt="logo"
             src={client4}
-            onMouseEnter={() => setIsHovered3(true)}
-            onMouseLeave={() => setIsHovered3(false)}
-            style={{ filter: isHovered3 ? "grayscale(0%)" : "grayscale(100%)" }}
           />
         </div>
       </div>
