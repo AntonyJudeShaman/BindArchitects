@@ -32,21 +32,23 @@ const imgStyles = {
   height: "100%",
   zIndex: -20,
 };
-
 const cardColors = [
-  "#FF3F00", // Darker shade
-  "#00FF3E", // Darker shade
-  "#5733FF", // Original color
-  "#A888FF", // Lighter shade
-  "#2700FF", // Darker shade
-  "#33FFFF", // Original color
-  "#88FFFA", // Lighter shade
-  "#00FFFD", // Darker shade
-  "#FF33FF", // Original color
-  "#FFA8FF", // Lighter shade
-  "#FF00FF", // Darker shade
+  'linear-gradient(to right, #1c3a54, #38404f)',
+  'linear-gradient(to right, #862d3a, #89304e)',
+  'linear-gradient(to right, #503c67, #8a6f8f)',
+  'linear-gradient(to right, #892210, #732023)',
+  'linear-gradient(to right, #5a4758, #a77da8)',
+  'linear-gradient(to right, #46592d, #586b5f)',
+  'linear-gradient(to right, #a52f51, #b15e66)',
+  'linear-gradient(to right, #6b076b, #1c367f)',
+  'linear-gradient(to right, #1f3058, #8c2f6b)',
+  'linear-gradient(to right, #291b37, #923a6f)',
+  'linear-gradient(to right, #36207a, #935b8e)',
+  'linear-gradient(to right, #7f2d3c, #7b4440)',
+  'linear-gradient(to right, #005b7e, #002b59)',
+  'linear-gradient(to right, #1d2a55, #112048)',
+  'linear-gradient(to right, #0e3a60, #072a4f)'
 ];
-
 const metadata: Metadata = {
   title: "Works - Best Architects in Chennai | Studio Bind Architects",
   description: "Project details and description.",
@@ -87,6 +89,13 @@ export default function ProjectPage({
   const imagesRef = reff(storage, `Project/${project}/`);
 
   const menuRef = ref(database, `Project/`);
+
+  const mapProjectNumberToColorIndex = (projectNumber: any) => {
+    const projectNumberAsNumber = parseInt(projectNumber, 10);
+    return isNaN(projectNumberAsNumber)
+      ? 0
+      : (projectNumberAsNumber - 1 + cardColors.length) % cardColors.length;
+  };
 
   useEffect(() => {
     const fetchMenuData = async () => {
@@ -141,22 +150,27 @@ export default function ProjectPage({
       : [];
 
   return (
-    <div className="min-h-screen max-w-screen mt-8 ">
+    <div className="max-w-screen" >
       <Suspense fallback={<div style={fallbackStyle}>Please wait...</div>}>
         {selectedProjectData && selectedProjectData.length > 0 ? (
-          selectedProjectData.map((menuItem, index) => (
-            <div
-              key={menuItem.projectNumber}
-              className="min-h-screen m-4 max-w-screen "
-            >
-              <Link
-                href="#"
-                className="cursor-pointer"
-                onClick={() => window.history.back()}
-              >
-                <ArrowLeft className="absolute md:left-8 left-4 top-8 text-white hover:text-orange-600 w-8 h-8" />
-              </Link>
-              <div className="flex   float-right justify-end md:mr-0 mr-4">
+          selectedProjectData
+            ?.sort((a, b) =>
+              (a.projectNumber || "").localeCompare(b.projectNumber || "")
+            )
+            .map((menuItem) => (
+              <div className="min-h-screen md:-ml-32 md:-mr-32 max-w-screen  ">
+                <div
+                  key={menuItem.projectNumber}
+                  className="min-h-screen max-w-screen "
+                >
+                  <Link
+                    href=""
+                    className="cursor-pointer"
+                    onClick={() => window.history.back()}
+                  >
+                    <ArrowLeft className="absolute md:left-8 left-4 top-8 text-white hover:text-orange-600 w-8 h-8" />
+                  </Link>
+                  {/* <div className="flex   float-left justify-start md:mr-0 mr-4">
                 <Link href="/" className="cursor-pointer">
                   <span className=" logo-font text-4xl  font-bold ">
                     <div className="logo-font">
@@ -164,69 +178,82 @@ export default function ProjectPage({
                     </div>
                   </span>
                 </Link>
-              </div>
-              <div className="min-h-screen max-w-screen">
-                <title>{menuItem.projectName}</title>
-                <div className="container min-h-screen text-wrapper p-4 flex flex-col gap-4">
-                  <p className="text-xl md:mt-28 mt-10 dmsans">
-                    {menuItem.projectNumber}
-                  </p>
-                  <p
-                    aria-label="Studio bind"
-                    className="projectName  dmsans-home title-gradient2 mt-2 flex flex-wrap max-w-[58rem] md:max-w-full z-30  title-gradient4"
-                  >
-                    {menuItem.projectName}
-                  </p>
-                  <div className="groupss md:mt-20 mt-5">
-                    <div className="groupp dmsans md:gap-40 text-lg">
-                      <p className="expertise md:mb-0 mb-5 dmsans-bold max-w-[20rem]">
-                        Expertise{" "}
-                        <span className="dmsans">{menuItem.expertise}</span>
+              </div> */}
+                  <div className="min-h-screen max-w-screen">
+                    <title>{menuItem.projectName}</title>
+                    <div
+                      className="p-8 md:p-4 justify-center min-h-screen text-wrapper  flex flex-col gap-4"
+                      style={{
+                        background:
+                          cardColors[
+                            mapProjectNumberToColorIndex(menuItem.projectNumber)
+                          ],
+                      }}
+                    >
+                      <p className="text-xl dmsans md:ml-32">
+                        {menuItem.projectNumber}
                       </p>
-                      <p className="sector md:mb-0 mb-5 dmsans-bold">
-                        Sector <span className="dmsans">{menuItem.type}</span>
+                      <p
+                        aria-label="Studio bind"
+                        className="projectName md:ml-32 dmsans-home title-gradient2 mt-2 flex flex-wrap md:max-w-full z-30"
+                      >
+                        {menuItem.projectName}
                       </p>
-                      <p className="location md:mb-0 mb-5 dmsans-bold">
-                        Location{" "}
-                        <span className="dmsans">{menuItem.location}</span>
-                      </p>
+                      <div className="groupss md:mt-20 mt-5 md:ml-32">
+                        <div className="groupp dmsans md:gap-40 text-lg">
+                          <p className="expertise md:mb-0 mb-5 dmsans-bold ">
+                            Expertise{" "}
+                            <span className="dmsans">{menuItem.expertise}</span>
+                          </p>
+                          <p className="sector md:mb-0 mb-5 dmsans-bold">
+                            Sector{" "}
+                            <span className="dmsans">{menuItem.type}</span>
+                          </p>
+                          <p className="location md:mb-0 mb-5 dmsans-bold">
+                            Location{" "}
+                            <span className="dmsans">{menuItem.location}</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className=" bg-gray-900 max-w-screen">
+                      <div className="dmsans min-h-screen flex flex-col mx-auto max-w-[60rem] flex-wrap leading-[1.5] justify-center sm:leading-8">
+                        {/* <span className="dmsans text-5xl mb-5">About</span> */}
+                        <span className="md:text-4xl p-8 text-2xl leading-[1.5] ">
+                          {menuItem.description}
+                        </span>
+                      </div>
+                    </div>
+                    <div className="md:m-0  mx-auto">
+                      <div className="mx-auto mt-20 flex max-w-[88rem] p-4 md:p-8 flex-col  text-center">
+                        <h2 className="font-heading text-6xl text-left dmsans font-medium leading-[1.1]  md:text-7xl">
+                          Gallery
+                        </h2>
+                      </div>
+                      <div className="mb-20 md:max-w-[90rem] p-8  mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-14 gap-8 justify-center w-full">
+                        {images.map((url) => (
+                          <div key={url} className="project-frame overflow-hidden">
+                            <Image
+                              height={400}
+                              width={700}
+                              src={url}
+                              alt="uploaded"
+                              className="overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
+                              style={{ filter: "brightness(110%)" }}
+                            />
+                          </div>
+                        ))}
+                      </div>
+                      <Card2 excludeProject={menuItem.projectNumber} />
                     </div>
                   </div>
                 </div>
-                <div className="dmsans flex flex-col flex-wrap p-4 leading-[1.1] justify-center mt-8 sm:leading-8">
-                  <span className="dmsans text-5xl mb-5">About</span>
-                  <span className="text-lg">{menuItem.description}</span>
-                </div>
-                <div className="md:m-0 max-w-full">
-                  <div className="mx-auto mt-20 flex max-w-[88rem] p-4 flex-col  text-center">
-                    <h2 className="font-heading text-5xl text-left dmsans font-medium leading-[1.1]  md:text-5xl">
-                      Gallery
-                    </h2>
-                  </div>
-                  <div className="mb-20 max-w-full p-4 mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-14 gap-8 justify-center w-full">
-                    {images.map((url) => (
-                      <div key={url} className="project-frame ">
-                        <Image
-                          height={400}
-                          width={700}
-                          src={url}
-                          alt="uploaded"
-                          className="overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
-                          style={{ filter: "brightness(110%)" }}
-                        />
-                      </div>
-                    ))}
-                  </div>
-                  <Card2 excludeProject={menuItem.projectNumber} />
-                </div>
               </div>
-            </div>
-          ))
+            ))
         ) : (
           <ProjectNotFound />
         )}
       </Suspense>
-      <div className="hidden md:block"></div>
     </div>
   );
 }
