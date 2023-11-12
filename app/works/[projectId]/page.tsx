@@ -150,7 +150,7 @@ export default function ProjectPage({
               className="min-h-screen m-4 max-w-screen "
             >
               <Link
-                href=""
+                href="#"
                 className="cursor-pointer"
                 onClick={() => window.history.back()}
               >
@@ -167,7 +167,7 @@ export default function ProjectPage({
               </div>
               <div className="min-h-screen max-w-screen">
                 <title>{menuItem.projectName}</title>
-                <div className="container text-wrapper p-4 flex flex-col gap-4">
+                <div className="container min-h-screen text-wrapper p-4 flex flex-col gap-4">
                   <p className="text-xl md:mt-28 mt-10 dmsans">
                     {menuItem.projectNumber}
                   </p>

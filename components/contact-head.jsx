@@ -8,13 +8,13 @@ function ContactHead() {
       <div className=" flex max-w-[50rem]  flex-col m-4 text-left">
         <p
           className="md:text-2xl  text-muted-foreground text-3xl  text-left mb-"
-          aria-label="Contact us"
+          aria-label="Lets create something special"
         >
           Let&apos;s create something special
         </p>
         <p
           className="contact-title max-w-screen  dmsans-bold  md:mt-0 mt-5  mb-4  text-left"
-          aria-label="Contact us"
+          aria-label="Transform your idea into pixel-perfect design"
         >
           Transform your idea into pixel-perfect design
         </p>

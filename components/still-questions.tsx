@@ -4,11 +4,11 @@ import { LightBox } from "./light-box";
 function Questions() {
   return (
     <div className="mb-10 p-6">
-      <div className="relative overflow-hidden hover:bg-slate-950 rounded-lg border  border-zinc-400 bg-gray-950 p-2 mx-auto grid justify-center  gap-4 sm:grid-cols-2 md:max-w-[75rem] md:grid-cols-1">
+      <div className="relative overflow-hidden hover:bg-slate-950 rounded-lg border  border-zinc-400 text-muted-foreground p-2 mx-auto grid justify-center  gap-4 sm:grid-cols-2 md:max-w-[75rem] md:grid-cols-1">
         <div className="flex  flex-col justify-between rounded-md p-6">
           <div className="  mt-1 text-center mx-auto d-block">
             <p
-              className="md:text-5xl text-4xl dmsans"
+              className="md:text-5xl text-4xl text-zinc-50 dmsans"
               aria-label="Still have questions"
             >
               Any questions ?

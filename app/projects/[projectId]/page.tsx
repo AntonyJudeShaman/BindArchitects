@@ -167,19 +167,19 @@ export default function ProjectPage({
               </div>
               <div className="min-h-screen max-w-screen">
                 <title>{menuItem.projectName}</title>
-                <div className="container text-wrapper p-4 flex flex-col gap-4">
-                  <p className="text-xl md:mt-28 mt-10 dmsans">
+                <div className="p-4 justify-center min-h-screen text-wrapper flex flex-col gap-4">
+                  <p className="text-xl dmsans">
                     {menuItem.projectNumber}
                   </p>
                   <p
                     aria-label="Studio bind"
-                    className="projectName  dmsans-home title-gradient2 mt-2 flex flex-wrap max-w-[58rem] md:max-w-full z-30  title-gradient4"
+                    className="projectName  dmsans-home title-gradient2 mt-2 flex flex-wrap md:max-w-full z-30  title-gradient4"
                   >
                     {menuItem.projectName}
                   </p>
                   <div className="groupss md:mt-20 mt-5">
                     <div className="groupp dmsans md:gap-40 text-lg">
-                      <p className="expertise md:mb-0 mb-5 dmsans-bold max-w-[20rem]">
+                      <p className="expertise md:mb-0 mb-5 dmsans-bold ">
                         Expertise{" "}
                         <span className="dmsans">{menuItem.expertise}</span>
                       </p>

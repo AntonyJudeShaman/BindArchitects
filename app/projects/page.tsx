@@ -76,7 +76,7 @@ function ProjectsHome() {
         fallback={<div style={fallbackStyle}>Loading Please wait...</div>}
       >
         <link rel="canonical" href="https://www.bindhomes.com/projects" />
-        <div className="min-h-screen py-2 mt-5" data-theme="">
+        <div className="min-h-screen py-2 mt-5 bg" data-theme="">
           <title>Projects - Studio Bind Architects</title>
 
           <div className="md:ml-5 ml-5 flex justify-between">
@@ -96,10 +96,12 @@ function ProjectsHome() {
                     <span className="">{item.title}</span>
                   </Link>
                 ))}
-              
-            <div className="flex mr-5 items-center space-x-2 bg-black md:hidden">
-              <p className="logo-font text-4xl font-bold">BIND</p>
-            </div>
+
+              <div className="flex mr-5 items-center space-x-2 bg-black md:hidden">
+                <p className="logo-font text-4xl font-bold" aria-label="BIND">
+                  BIND
+                </p>
+              </div>
             </nav>
           </div>
 

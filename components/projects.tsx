@@ -326,7 +326,7 @@ export function Projects() {
           </div>
           <div className="flex flex-wrap text-lg mt-2">
             <p
-              className="flex-1 dmsans-bold text-left text-orange-500"
+              className="flex-1 dmsans-bold text-left text-orange-50"
               aria-label="Delphi Derma"
              >
               Delphi Derma
@@ -358,7 +358,7 @@ export function Projects() {
           </div>
           <div className="flex flex-wrap text-lg mt-2">
             <p
-              className="flex-1 dmsans-bold text-left text-orange-500"
+              className="flex-1 dmsans-bold text-left text-orange-50"
               aria-label="Remy Cinemas"
              >
               Remy Cinemas
@@ -389,7 +389,7 @@ export function Projects() {
             />
           </div>
           <div className="flex flex-wrap text-lg mt-2">
-            <p className="flex-1 dmsans-bold text-left text-orange-500" aria-label="CCBM">
+            <p className="flex-1 dmsans-bold text-left text-orange-50" aria-label="CCBM">
               CCBM
             </p>
             <p
@@ -418,7 +418,7 @@ export function Projects() {
             />
           </div>
           <div className="flex flex-wrap text-lg mt-2">
-            <p className="flex-1 dmsans-bold text-left text-orange-500" aria-label="MGA Sristi">
+            <p className="flex-1 dmsans-bold text-left text-orange-50" aria-label="MGA Sristi">
               MGA Sristi
             </p>
             <p
@@ -447,7 +447,7 @@ export function Projects() {
             />
           </div>
           <div className="flex flex-wrap text-lg mt-2">
-            <p className="flex-1 dmsans-bold text-left text-orange-500" aria-label="East West">
+            <p className="flex-1 dmsans-bold text-left text-orange-50" aria-label="East West">
               East West
             </p>
             <p

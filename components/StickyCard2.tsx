@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import "@/styles/card.css";
 import { useState, useEffect } from "react";
@@ -41,16 +41,7 @@ const cardColors = [
   "linear-gradient(to right, #0F2DAA, #B3B3B3)",
 ];
 
-
-
-
-
-
-const fontColors = [
-  "#FFF",   
-  "000",
-
-];
+const fontColors = ["#FFF", "000"];
 
 function Card2({ excludeProject }: CardProps) {
   const [MenuItems, setMenuItems] = useState<MenuItem[] | null>(null);
@@ -78,9 +69,10 @@ function Card2({ excludeProject }: CardProps) {
                 .projectPath,
               projectYear: (value as { projectYear: string | null | undefined })
                 .projectYear,
-                expertise: (value as { expertise: string | null | undefined })
+              expertise: (value as { expertise: string | null | undefined })
                 .expertise,
-                location: (value as { location: string | null | undefined }).location
+              location: (value as { location: string | null | undefined })
+                .location,
             })
           );
           setMenuItems(menuData);
@@ -92,10 +84,10 @@ function Card2({ excludeProject }: CardProps) {
   }, []);
 
   return (
-    <div className="container w-full md:pt-10  mb-4" id="cards">
-      {MenuItems
-        ?.filter((project) => project.projectNumber !== excludeProject)
-        .map((project, index) => (
+    <div className="container md:pt-10 max-w-full" id="cards">
+      {MenuItems?.filter(
+        (project) => project.projectNumber !== excludeProject
+      ).map((project, index) => (
         <div
           className={`card pt-10 pb-10 w-full ${index % 5 !== 0 ? "mt-5" : ""}
           }`}
@@ -103,30 +95,43 @@ function Card2({ excludeProject }: CardProps) {
         >
           <Link href={`/projects/${project.projectPath}`}>
             <div
-              style={{ background: cardColors[index % cardColors.length], color: fontColors[index % fontColors.length]}}
+              style={{ background: cardColors[index % cardColors.length] }}
               className=" mt-10 md:max-w-[90rem] w-full  border border-zinc-50 justify-center ml-0 md:ml-0 flex-col flex"
             >
               <div className="container text-wrapper md:pt-32 pt-12 pb-12 md:pl-12 md:pr-12 md:pb-20 flex flex-col gap-4 ">
-                <p className="text-xl  ">{project.projectNumber}</p>
+                <p className="text-xl" aria-label={project.projectNumber || ""}>
+                  {project.projectNumber}
+                </p>
                 <p
-                  aria-label="Studio bind"
+                  aria-label={project.projectName || ""}
                   className="md:text-9xl dmsans-home mt-2 flex flex-wrap md:max-w-[98rem] z-30 text-6xl"
                 >
                   {project.projectName}
                 </p>
                 <div className="groupss md:mt-24 mt-10">
-                    <div className="groupp dmsans md:gap-40 text-lg">
-                      <p className="expertise  mb-5 dmsans-bold max-w-[20rem]">
-                        Expertise <span className="dmsans">{project.expertise}</span>
-                      </p>
-                      <p className="sector  mb-5 dmsans-bold">
-                        Sector <span className="dmsans">{project.type}</span>
-                      </p>
-                      <p className="location  mb-5 dmsans-bold">
-                        Location <span className="dmsans">{project.location}</span>
-                      </p>
-                    </div>
+                  <div className="groupp dmsans md:gap-40 text-lg">
+                    <p
+                      className="expertise mb-5 dmsans-bold sm:max-w-[20rem]"
+                      aria-label={project.expertise || ""}
+                    >
+                      Expertise{" "}
+                      <span className="dmsans">{project.expertise}</span>
+                    </p>
+                    <p
+                      className="sector  mb-5 dmsans-bold"
+                      aria-label={project.type || ""}
+                    >
+                      Sector <span className="dmsans">{project.type}</span>
+                    </p>
+                    <p
+                      className="location  mb-5 dmsans-bold mr-3"
+                      aria-label={project.location || ""}
+                    >
+                      Location{" "}
+                      <span className="dmsans">{project.location}</span>
+                    </p>
                   </div>
+                </div>
               </div>
             </div>
           </Link>

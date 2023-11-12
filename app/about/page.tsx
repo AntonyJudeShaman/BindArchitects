@@ -17,6 +17,7 @@ import logo from "@/components/logo.png";
 import Image from "next/image";
 import { Skeleton } from "@/components/ui/skeleton";
 import Head from "next/head";
+import ContactScroll from "@/components/contactscroll"
 
 export const metadata: Metadata = {
   title: "About Us - Studio Bind Architects",
@@ -35,27 +36,24 @@ function About() {
         <meta
           property="og:description"
           content="Discover unparalleled architectural excellence in Chennai with Studio Bind Architects, a visionary firm shaping spaces that transcend expectations. Our innovative designs seamlessly blend aesthetics and functionality, redefining the cityscape. From residential marvels to commercial landmarks, we specialize in crafting bespoke solutions that stand the test of time. Explore the intersection of art and engineering with Chennai's leading architecture firm. Elevate your vision with Studio Bind Architects"
-          
         />
         <meta
           name="description"
           content="Discover unparalleled architectural excellence in Chennai with Studio Bind Architects, a visionary firm shaping spaces that transcend expectations. Our innovative designs seamlessly blend aesthetics and functionality, redefining the cityscape. From residential marvels to commercial landmarks, we specialize in crafting bespoke solutions that stand the test of time. Explore the intersection of art and engineering with Chennai's leading architecture firm. Elevate your vision with Studio Bind Architects"
-          
         />
-         <meta
+        <meta
           property="og:title"
           content="About Us - Studio Bind Architects - Best Architects in Chennai"
-          
         />
       </Head>
       <div className="md:ml-5 ml-5 mt-8 flex  justify-between">
         <MainNav items={marketingConfig.mainNav} />
-        <nav className="justify-between">
+        <nav className="justify-between bg-transparent">
           {marketingConfig &&
             marketingConfig.mainNav.map((item, index) => (
               <Link
                 key={index}
-                aria-label="navbar items"
+                aria-label={item.title}
                 href={item.disabled ? "#" : item.href}
                 className={cn(
                   "group flex hover:bg-slate-900 hover:text-orange-400 flex-col text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium ",
@@ -65,15 +63,18 @@ function About() {
                 <span className="">{item.title}</span>
               </Link>
             ))}
+          <div className="flex mr-5 items-center space-x-2 bg-black md:hidden">
+            <p className="logo-font text-4xl font-bold" aria-label="BIND">
+              BIND
+            </p>
+          </div>
         </nav>
-        <div className="flex max-w-[10rem] justify-end mr-5 space-x-2 bg-black md:hidden">
-          <Image height={90} width={90} alt="logo" src={logo} />
-        </div>
       </div>
       <AboutSection />
       <Awards />
       <Services />
       <Questions />
+      {/* <ContactScroll/> */}
       <SiteFooter />
     </div>
   );

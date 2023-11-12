@@ -3,6 +3,18 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  background-color: #09090a;
+}
+
+.bg{
+  background-color: #09090a;
+}
+
+.text-muted-foreground{
+  color: #888888;
+}
+
 .my-font {
   font-family: "Montserrat";
   font-weight: 400;
@@ -11,6 +23,11 @@
 .dmsans {
   font-family: "DM Sans";
   font-weight: 300;
+}
+
+.dmsans-heading {
+  font-family: "DM Sans";
+  font-weight: 200;
 }
 
 .dmsans-home {
@@ -23,10 +40,33 @@
   font-weight: 200;
 }
 
+.dmsans-semibold {
+  font-family: "DM Sans";
+  font-weight: 500;
+}
+
 .dmsans-bold {
   font-family: "DM Sans";
   font-weight: 600;
 }
+
+/* styles.css (or your Tailwind CSS file) */
+
+@keyframes moveHorizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(100vw - 100%)); /* Move from 0 to 100vw (full screen width) */
+  }
+}
+
+.animate-moveHorizontal {
+  animation: moveHorizontal 2s linear infinite; /* Adjust the duration as needed */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflow text */
+}
+
 
 .groupss {
   display: flex;
@@ -41,13 +81,27 @@
   }
 }
 
+.contact-bg{
+  background-color: #292931;
+}
+
 .projectName {
   font-size: 10rem;
 }
 
 @media (max-width: 768px) {
   .projectName {
-    font-size: 4.5rem;
+    font-size: 5rem;
+  }
+}
+
+.contact-heading {
+  font-size: 10rem;
+}
+
+@media (max-width: 768px) {
+  .contact-heading {
+    font-size: 5rem;
   }
 }
 
@@ -156,9 +210,6 @@
 
 .our-story-item {
   flex: 0 0 calc(33.33% - 1rem);
-  padding: 1rem;
-  border: 1px solid #e1e1e1;
-  margin: 1rem 0;
 }
 
 .burger {
@@ -342,7 +393,7 @@
 @layer base {
   :root {
     --background: 158.5 84% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* --foreground: 222.2 84% 4.9%; */
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
@@ -365,7 +416,7 @@
 
   .dark {
     --background: 255 84% 0%;
-    --foreground: 210 40% 98%;
+    /* --foreground: 210 40% 98%; */
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
     --popover: 222.2 84% 4.9%;
@@ -473,134 +524,4 @@
   -webkit-text-fill-color: transparent !important;
 }
 
-@keyframes lights {
-  0% {
-    color: hsl(230, 40%, 80%);
-    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
-      0 0 0.125em hsla(320, 100%, 60%, 0.3),
-      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
-      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
-  }
 
-  30% {
-    color: hsl(230, 80%, 90%);
-  }
-
-  40% {
-    color: hsl(230, 100%, 95%);
-  }
-
-  70% {
-  }
-
-  100% {
-    color: hsl(230, 40%, 80%);
-    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
-      0 0 0.125em hsla(320, 100%, 60%, 0.3),
-      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
-      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
-  }
-}
-
-@keyframes lights2 {
-  0% {
-    color: hsl(0, 0%, 100%);
-    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
-      0 0 0.125em hsla(320, 100%, 60%, 0.3),
-      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
-      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
-  }
-
-  30% {
-    color: hsl(0, 0%, 100%);
-    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
-      0 0 0.125em hsla(320, 100%, 60%, 0.5),
-      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
-      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
-  }
-
-  40% {
-    color: hsl(0, 0%, 100%);
-    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
-      0 0 0.125em hsla(320, 100%, 90%, 0.5),
-      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
-      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
-  }
-
-  70% {
-    color: hsl(0, 0%, 100%);
-    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
-      0 0 0.125em hsla(320, 100%, 60%, 0.5),
-      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
-      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
-  }
-
-  100% {
-    color: hsl(0, 0%, 100%);
-    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
-      0 0 0.125em hsla(320, 100%, 60%, 0.3),
-      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
-      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
-  }
-}
-
-.display-animation {
-  animation: lights 5s 750ms linear infinite;
-}
-
-.display-animation2 {
-  animation: neon 0.08s ease-in-out infinite alternate,
-    flicker 1s ease-in-out infinite;
-}
-
-.display-animation2:hover {
-  animation: neon2 0.08s ease-in-out infinite alternate;
-}
-
-@keyframes flicker {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 0.9;
-  }
-  75% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes neon2 {
-  from {
-    text-shadow: 0 0 6px rgba(202, 228, 225, 0.92),
-      0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52),
-      0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78),
-      0 0 54px rgba(30, 132, 242, 0.92);
-  }
-  to {
-    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98),
-      0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58),
-      0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88),
-      0 0 60px rgba(30, 132, 242, 1);
-  }
-}
-
-@keyframes neon {
-  from {
-    text-shadow: 0 0 6px rgba(202, 228, 225, 0.92),
-      0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(2, 10, 17, 0.52),
-      0 0 21px rgba(1, 30, 60, 0.92), 0 0 34px rgba(6, 31, 57, 0.78),
-      0 0 54px rgba(3, 22, 41, 0.92);
-  }
-  to {
-    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98),
-      0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(3, 27, 54, 0.58),
-      0 0 22px rgba(4, 19, 36, 0.84), 0 0 38px rgba(4, 23, 42, 0.88),
-      0 0 60px rgb(7, 31, 58);
-  }
-}

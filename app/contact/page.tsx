@@ -59,7 +59,9 @@ function page() {
             ))}
 
           <div className="flex mr-5 items-center space-x-2 bg-black md:hidden">
-            <p className="logo-font text-4xl font-bold">BIND</p>
+            <p className="logo-font text-4xl font-bold" aria-label="BIND">
+              BIND
+            </p>
           </div>
         </nav>
       </div>

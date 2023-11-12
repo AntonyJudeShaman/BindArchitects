@@ -165,7 +165,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body
         id="section1"
         className={cn(
-          "min-h-screen  bg-background dmsans md:pl-32 md:pr-32 pr-0 pl-0 max-w-screen md:max-w-screen scroll-smooth  antialiased",
+          "min-h-screen dmsans bg md:pl-32 md:pr-32 pr-0 pl-0 max-w-screen md:max-w-screen scroll-smooth  antialiased",
           fontSans.variable,
           fontHeading.variable
         )}

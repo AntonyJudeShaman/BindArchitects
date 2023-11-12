@@ -13,11 +13,11 @@ export function Aboutus() {
       </Head>
       <section
         id="about-us"
-        className="container mx-auto space-y-6 items-center text-center bg-slate-50 -z-20 mb-20  dark:bg-transparent md:py-6"
+        className="container mx-auto space-y-6 items-center text-left bg-slate-50 -z-20 mb-20  dark:bg-transparent md:py-6"
         aria-label="about us section"
       >
-        <div className="mx-auto mt-20 flex max-w-[88rem] flex-col items-center space-y-4 text-center">
-          <h2 className="dmsans text-5xl title-gradient4  leading-[1.1] mb-10  md:text-6xl">
+        <div className="mx-auto mt-20 flex max-w-[88rem] flex-col items-center space-y-4 text-left">
+          <h2 aria-label="About us" className="dmsans text-5xl title-gradient4  leading-[1.1] mb-10  md:text-6xl">
             About Us
           </h2>
           {/* <p className="max-w-[42rem] leading-normal text-2xl text-muted-foreground sm:text-md sm:leading-8">
@@ -26,7 +26,7 @@ export function Aboutus() {
         </div>
         <div className="mx-auto flex-col flex grid justify-center gap-4 sm:grid-cols-2 md:max-w-[80rem] justify-between md:grid-cols-1">
           <div className="flex md:flex-row flex-col ">
-            <div className="flex-1 text-3xl dmsans   title-gradient md:text-left md:mr-10 mr-0 text-center">
+            <div className="flex-1 text-4xl dmsans-semibold   title-gradient md:text-left md:mr-10 mr-0 text-center">
               We shape brands that need no introduction.
             </div>
             <div className="flex-1 md:text-md  fs-3  font-extralight dmsans text-md text-muted-foreground text-md md:text-left text-center  md:p-0 p-3 md:justify-items-center md:ml-0 md:ml-24 md:mt-0 mt-10 ">
@@ -36,7 +36,7 @@ export function Aboutus() {
             </div>
           </div>
           <div className="flex md:flex-row flex-col md:mt-5">
-            <div className="flex-1 text-3xl dmsans  title-gradient md:text-left  md:mr-10 mr-0  text-center md:mt-0 mt-6">
+            <div className="flex-1 text-4xl dmsans-semibold  title-gradient md:text-left  md:mr-10 mr-0  text-center md:mt-0 mt-6">
               No-kidding kick-offs
             </div>
             <div className="flex-1 md:text-md  fs-3 font-extralight dmsans text-md   text-muted-foreground text-md md:text-left text-center  md:p-0 p-3 md:justify-items-center md:ml-0 md:ml-24 md:mt-0 mt-10">
@@ -47,7 +47,7 @@ export function Aboutus() {
             </div>
           </div>
           <div className="flex md:flex-row flex-col md:mt-5">
-            <div className="flex-1 text-3xl dmsans  title-gradient md:text-left md:mr-10 mr-0  text-center md:mt-0 mt-6">
+            <div className="flex-1 text-4xl dmsans-semibold  title-gradient md:text-left md:mr-10 mr-0  text-center md:mt-0 mt-6">
               Try fast. Faster.
             </div>
             <div className="flex-1 md:text-md  fs-3 font-extralight dmsans text-md   text-muted-foreground text-md md:text-left text-center  md:p-0 p-3 md:justify-items-center md:ml-0 md:ml-24 md:mt-0 mt-6">
@@ -57,7 +57,7 @@ export function Aboutus() {
             </div>
           </div>
           <div className="flex md:flex-row flex-col md:mt-5">
-            <div className="flex-1 text-3xl dmsans  title-gradient md:text-left md:mr-10 mr-0  text-center md:mt-0 mt-6">
+            <div className="flex-1 text-4xl dmsans-semibold  title-gradient md:text-left md:mr-10 mr-0  text-center md:mt-0 mt-6">
               Talk to the boss
             </div>
             <div className="flex-1 md:text-md fs-3  font-extralight dmsans text-md text-muted-foreground text-md md:text-left text-center  md:p-0 p-3 md:justify-items-center md:ml-0 md:ml-24 md:mt-0 mt-10">

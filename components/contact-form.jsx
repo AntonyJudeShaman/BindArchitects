@@ -131,7 +131,7 @@ export function Contactform({ className }) {
             Fill in the form to contact us or send an email to{" "}
             <Link
               href="mailto:bindarchitects@gmail.com"
-              aria-label="contact email"
+              aria-label="Mail: bindarchitects@gmail.com"
             >
               <span className="dmsans-bold hover:text-orange-400">
                 bindarchitects@gmail.com
@@ -279,13 +279,14 @@ export function Contactform({ className }) {
           )}
           <div
             className="flex flex-row mt-4 items-center gap-4"
-            aria-label="please check this"
+            aria-label="please check this checkbox"
           >
-            <Checkbox />
+            <Checkbox aria-label="tick this checkbox"/>
             <div htmlFor="message" className="pt-2 pb-2 dmsans">
               By submitting this form you agree to our{" "}
               <Link
                 href="/terms"
+                aria-label="Terms Of Use"
                 className="hover:text-orange-400  dmsans-bold underline underline-offset-4"
               >
                 Terms of Use
@@ -293,6 +294,7 @@ export function Contactform({ className }) {
               and{" "}
               <Link
                 href="/privacy"
+                aria-label="Privacy Policy"
                 className="hover:text-orange-400  dmsans-bold underline underline-offset-4"
               >
                 Privacy Policy
@@ -302,7 +304,7 @@ export function Contactform({ className }) {
           </div>
           <div className="align-right float-right text-right mb-5">
             <Button
-              aria-label="submit contact form"
+              aria-label={loading ? "Submitting..." : "Submit the form"}
               type="submit"
               variant="white"
               className=" w-full mt-4 border text-md border-green-300 "

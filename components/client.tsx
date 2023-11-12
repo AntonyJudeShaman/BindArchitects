@@ -1,66 +1,78 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import logo from "./logo.png";
 import Image from "next/image";
+import client1 from "../assets/iyer.jpg";
+import client2 from "../assets/rahmanicon.jpg";
+import client3 from "../assets/ttdc.jpg";
+import client4 from "../assets/Delphi.jpg";
 
 function Client() {
-  return (
-    <div className="text-center items-center p-6 mx-auto mb-20  justify-center md:max-w-[78rem] max-w-[28rem]">
-      <h1
-        aria-label="Studio bind"
-        className="2xl:text-6xl text-center mx-auto  justify-center  mt-28 title-gradient title-gradient4 dmsans flex flex-wrap md:max-w-[78rem] max-w-[28rem]  z-30 text-5xl lg:text-7xl md:text-6xl xl:text-8xl title-gradient    duration-1000  cursor-default text-edge-outline animate-title font-display"
-      >
-        Selected Clients
-      </h1>
+  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered2, setIsHovered2] = useState(false);
+  const [isHovered3, setIsHovered3] = useState(false);
+  const [isHovered1, setIsHovered1] = useState(false);
 
-      
-      <h1
-            aria-label="Studio bind"
-            className="text-muted-foreground dmsans text-lg mt-6"
-          >
-            We created brands used by thousand of people around the world. Our
-        designs are 
-            <span className="md:hidden hidden sm:inline-block">
-              &nbsp; unique, useful and user-friendly
-            </span>
-          </h1>
-          <h1
-            aria-label="Studio bind"
-            className=" md:inline-block sm:hidden text-muted-foreground dmsans text-lg "
-          >
-           unique, useful and user-friendly
-          </h1>
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-4 max-w-[50rem] mx-auto mt-10 mb-10 justify-between">
-        <div className="mx-auto mt-10 " >
-          <Image height={70} width={70} alt="logo" src={logo} 
-    style={{ filter: 'grayscale(100%)' }} />
+  return (
+    <div className="items-center md:mt-20 mt-0 flex md:flex-row gap-20 flex-col p-6 mb-20 justify-center md:justify-between max-w-screen">
+      <div className="flex flex-col mt-20 max-w-[25rem]">
+        <h2
+          className="text-5xl dmsans leading-[1.1] mb-5 md:text-6xl"
+          aria-label="Selected Clients"
+        >
+          Selected Clients
+        </h2>
+        <p className="text-muted-foreground text-lg text-left">
+          We play hard so they can win fast. We build new worlds together.
+          Worlds where user value is unprecedented and where it paves the way
+          for even more.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-2 gap-8 md:grid-cols-4 max-w-[50rem] mx-auto mt-10 mb-10 justify-between">
+        <div className="mx-auto mt-10 ">
+          <Image
+            height={130}
+            width={130}
+            alt="logo"
+            src={client1}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+            style={{ filter: isHovered ? "grayscale(0%)" : "grayscale(100%)" }}
+          />
         </div>
-        <div className="mx-auto mt-10 " >
-          <Image height={70} width={70} alt="logo" src={logo} 
-    style={{ filter: 'grayscale(100%)' }} />
+        <div className="mx-auto mt-10 ">
+          <Image
+            height={130}
+            width={130}
+            alt="logo"
+            src={client2}
+            onMouseEnter={() => setIsHovered1(true)}
+            onMouseLeave={() => setIsHovered1(false)}
+            style={{ filter: isHovered1 ? "grayscale(0%)" : "grayscale(100%)" }}
+          />
         </div>
-        <div className="mx-auto mt-10 " >
-          <Image height={70} width={70} alt="logo" src={logo} 
-    style={{ filter: 'grayscale(100%)' }} />
+        <div className="mx-auto mt-10 ">
+          <Image
+            height={130}
+            width={130}
+            alt="logo"
+            src={client3}
+            onMouseEnter={() => setIsHovered2(true)}
+            onMouseLeave={() => setIsHovered2(false)}
+            style={{ filter: isHovered2 ? "grayscale(0%)" : "grayscale(100%)" }}
+          />
         </div>
-        <div className="mx-auto mt-10 " >
-          <Image height={70} width={70} alt="logo" src={logo} 
-    style={{ filter: 'grayscale(100%)' }} />
-        </div>
-        <div className="mx-auto mt-10 " >
-          <Image height={70} width={70} alt="logo" src={logo} 
-    style={{ filter: 'grayscale(100%)' }} />
-        </div>
-        <div className="mx-auto mt-10 " >
-          <Image height={70} width={70} alt="logo" src={logo} 
-    style={{ filter: 'grayscale(100%)' }} />
-        </div>
-        <div className="mx-auto mt-10 " >
-          <Image height={70} width={70} alt="logo" src={logo} 
-    style={{ filter: 'grayscale(100%)' }} />
-        </div>
-        <div className="mx-auto mt-10 " >
-          <Image height={70} width={70} alt="logo" src={logo} 
-    style={{ filter: 'grayscale(100%)' }} />
+        <div className="mx-auto mt-10 ">
+          <Image
+            height={130}
+            width={130}
+            alt="logo"
+            src={client4}
+            onMouseEnter={() => setIsHovered3(true)}
+            onMouseLeave={() => setIsHovered3(false)}
+            style={{ filter: isHovered3 ? "grayscale(0%)" : "grayscale(100%)" }}
+          />
         </div>
       </div>
     </div>
