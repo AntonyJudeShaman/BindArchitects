@@ -24,25 +24,74 @@ interface CardProps {
 const database = getDatabase(app);
 
 const cardColors = [
-  'linear-gradient(to right, #2e5d86, #4b4f6d)',
-  'linear-gradient(to right, #a13c4d, #a33f61)',
-  'linear-gradient(to right, #694b82, #af81a9)',
-  'linear-gradient(to right, #a5311f, #8c2c24)',
-  'linear-gradient(to right, #7a5a6e, #d6aac3)',
-  'linear-gradient(to right, #5d793e, #738d6f)',
-  'linear-gradient(to right, #c8446a, #d97f81)',
-  'linear-gradient(to right, #8c0993, #2f4dbf)',
-  'linear-gradient(to right, #30407f, #a03d91)',
-  'linear-gradient(to right, #3f1e50, #ad4881)',
-  'linear-gradient(to right, #4c2495, #b282ab)',
-  'linear-gradient(to right, #a23e4f, #a8594d)',
-  'linear-gradient(to right, #0081b0, #003b7a)',
-  'linear-gradient(to right, #2d3f75, #1c2a5e)',
-  'linear-gradient(to right, #1e4c7b, #0d366b)'
+  "linear-gradient(to right, #209d86, #004f60)",
+  "linear-gradient(to right, #00004d, #0009d0)",
+  "linear-gradient(to right, #694b82, #af81a9)",
+  "linear-gradient(to right, #a5311f, #8c2c24)",
+  "linear-gradient(to right, #0d5f90, #004f60)",
+  "linear-gradient(to right, #5d793e, #738d6f)",
+  "linear-gradient(to right, #c8446a, #d97f81)",
+  "linear-gradient(to right, #8c0993, #2f4dbf)",
+  "linear-gradient(to right, #30407f, #a03d91)",
+  "linear-gradient(to right, #3f1e50, #ad4881)",
+  "linear-gradient(to right, #4c2495, #b282ab)",
+  "linear-gradient(to right, #a23e4f, #a8594d)",
+  "linear-gradient(to right, #0081b0, #003b7a)",
+  "linear-gradient(to right, #2d3f75, #1c2a5e)",
+  "linear-gradient(to right, #1e4c7b, #0d366b)",
+  "linear-gradient(to right, #363636, #606060)",
+  "linear-gradient(to right, #6a0572, #ab83a1)",
+  "linear-gradient(to right, #2e3b4e, #556f7a)",
+  "linear-gradient(to right, #0f700b, #00baff)",
+  "linear-gradient(to right, #0fabc0, #490057)",
+  "linear-gradient(to right, #28df99, #58a4b0)",
+  "linear-gradient(to right, #f39c12, #e74c3c)",
+  "linear-gradient(to right, #74b9ff, #0984e3)",
+  "linear-gradient(to right, #2ecc71, #27ae60)",
+  "linear-gradient(to right, #3498db, #2980b9)",
+  "linear-gradient(to right, #f368e0, #ff9ff3)",
+  "linear-gradient(to right, #576574, #3d3d3d)",
+  "linear-gradient(to right, #eb4d4b, #b71540)",
+  "linear-gradient(to right, #45aaf2, #2e86de)",
+  "linear-gradient(to right, #686de0, #4834d4)",
+  "linear-gradient(to right, #fd79a8, #d63031)",
+  "linear-gradient(to right, #ff6b81, #ff4757)",
+  "linear-gradient(to right, #6a0572, #fd79a8)",
+  "linear-gradient(to right, #a55eea, #8854d0)",
+  "linear-gradient(to right, #16a085, #2ecc71)",
 ];
 
 
-const fontColors = ["#FFF", "000"];
+function getFontColor(background: string) {
+  const rgb = background.match(/\d+/g);
+  if (!rgb) return "#FFF";
+
+  const luminance =
+      (0.299 * parseInt(rgb[0]) +
+          0.587 * parseInt(rgb[1]) +
+          0.114 * parseInt(rgb[2])) /
+      255;
+
+  if (luminance > 0.8) return "#17202A";
+  else if (luminance > 0.75) return "#191970";
+  else if (luminance > 0.7) return "#000080";
+  else if (luminance > 0.65) return "#483D8B";
+  else if (luminance > 0.6) return "#8900DB";
+  else if (luminance > 0.55) return "#9370DB";
+  else if (luminance > 0.5) return "#6A5ACD";
+  else if (luminance > 0.45) return "#9932CC";
+  else if (luminance > 0.4) return "#FFF";
+  else if (luminance > 0.35) return "#FFD700";
+  else if (luminance > 0.3) return "#FF8C00";
+  else if (luminance > 0.25) return "#D269FF";
+  else if (luminance > 0.2) return "#8B4513";
+  else if (luminance > 0.15) return "#40E0D0";
+  else if (luminance > 0.1) return "#008B8B";
+  else if (luminance > 0.05) return "#DF4FFF";
+  else if (luminance > 0.03) return "#fe3268";
+  else if (luminance > 0.01) return "#0fbe00";
+  else return "#cb371a";
+}
 
 function Card2({ excludeProject }: CardProps) {
   const [MenuItems, setMenuItems] = useState<MenuItem[] | null>(null);
@@ -53,7 +102,6 @@ function Card2({ excludeProject }: CardProps) {
     const fetchMenuData = async () => {
       onValue(menuRef, (snapshot) => {
         const data = snapshot.val();
-        console.log("Data fetched:", data);
         if (data) {
           const menuData: MenuItem[] | null = Object.entries(data).map(
             ([key, value]) => ({
@@ -110,6 +158,11 @@ function Card2({ excludeProject }: CardProps) {
                     cardColors[
                       mapProjectNumberToColorIndex(project.projectNumber)
                     ],
+                  color: getFontColor(
+                    cardColors[
+                      mapProjectNumberToColorIndex(project.projectNumber)
+                    ]
+                  ),
                 }}
                 className=" mt-10  mx-auto  border border-zinc-50 justify-center ml-0 md:ml-0 flex-col flex"
               >

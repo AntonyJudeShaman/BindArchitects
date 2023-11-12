@@ -76,10 +76,10 @@ function ProjectsHome() {
         fallback={<div style={fallbackStyle}>Loading Please wait...</div>}
       >
         <link rel="canonical" href="https://www.bindhomes.com/projects" />
-        <div className="min-h-screen py-2 mt-5 bg" data-theme="">
+        <div className="min-h-screen py-4 mt-4 bg" data-theme="">
           <title>Projects - Studio Bind Architects</title>
 
-          <div className="md:ml-5 ml-5 flex justify-between">
+          <div className="md:ml-0 ml-5 flex justify-between">
             <MainNav items={marketingConfig.mainNav} />
             <nav className="justify-between">
               {marketingConfig &&

@@ -17,7 +17,7 @@ export function Awards() {
           aria-label="about us section"
         >
           <div className="mx-auto  flex max-w-[88rem] flex-col space-y-4 text-center">
-            <h2 className="dmsans-semibold text-4xl text-left dmsans font-medium leading-[1.1] mb-10 md:text-6xl">
+            <h2 className="dmsans-semibold text-4xl text-left dmsans font-medium leading-[1.1] mb-10 md:text-6xl" aria-label="Our Awards">
               Our Awards
             </h2>
           </div>

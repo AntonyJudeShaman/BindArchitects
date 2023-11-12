@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import logo from "./logo.png";
 import Image from "next/image";
@@ -31,36 +31,16 @@ function Client() {
 
       <div className="grid grid-cols-2 gap-16 md:grid-cols-4 max-w-[50rem] mx-auto mt-0 md:mt-10 mb-10 justify-between">
         <div className="mx-auto md:mt-20 grayscale hover:grayscale-0">
-          <Image
-            height={130}
-            width={130}
-            alt="logo"
-            src={client1}
-          />
+          <Image height={130} width={130} alt="Iyer's Delight" src={client1} />
         </div>
         <div className="mx-auto md:mt-20 grayscale hover:grayscale-0">
-          <Image
-            height={130}
-            width={130}
-            alt="logo"
-            src={client2}
-          />
+          <Image height={130} width={130} alt="AR Rahman Cafe" src={client2} />
         </div>
         <div className="mx-auto md:mt-20 grayscale hover:grayscale-0">
-          <Image
-            height={130}
-            width={130}
-            alt="logo"
-            src={client3}
-          />
+          <Image height={130} width={130} alt="TTDC" src={client3} />
         </div>
         <div className="mx-auto md:mt-20 grayscale hover:grayscale-0">
-          <Image
-            height={130}
-            width={130}
-            alt="logo"
-            src={client4}
-          />
+          <Image height={130} width={130} alt="Delphi Clinic" src={client4} />
         </div>
       </div>
     </div>
