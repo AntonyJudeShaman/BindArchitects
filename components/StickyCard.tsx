@@ -20,24 +20,22 @@ interface MenuItem {
 const database = getDatabase(app);
 
 const cardColors = [
-  'linear-gradient(to right, #2e5d86, #4b4f6d)',
-  'linear-gradient(to right, #a13c4d, #a33f61)',
-  'linear-gradient(to right, #694b82, #af81a9)',
-  'linear-gradient(to right, #a5311f, #8c2c24)',
-  'linear-gradient(to right, #7a5a6e, #d6aac3)',
-  'linear-gradient(to right, #5d793e, #738d6f)',
-  'linear-gradient(to right, #c8446a, #d97f81)',
-  'linear-gradient(to right, #8c0993, #2f4dbf)',
-  'linear-gradient(to right, #30407f, #a03d91)',
-  'linear-gradient(to right, #3f1e50, #ad4881)',
-  'linear-gradient(to right, #4c2495, #b282ab)',
-  'linear-gradient(to right, #a23e4f, #a8594d)',
-  'linear-gradient(to right, #0081b0, #003b7a)',
-  'linear-gradient(to right, #2d3f75, #1c2a5e)',
-  'linear-gradient(to right, #1e4c7b, #0d366b)'
+  "linear-gradient(to right, #2e5d86, #4b4f6d)",
+  "linear-gradient(to right, #a13c4d, #a33f61)",
+  "linear-gradient(to right, #694b82, #af81a9)",
+  "linear-gradient(to right, #a5311f, #8c2c24)",
+  "linear-gradient(to right, #7a5a6e, #d6aac3)",
+  "linear-gradient(to right, #5d793e, #738d6f)",
+  "linear-gradient(to right, #c8446a, #d97f81)",
+  "linear-gradient(to right, #8c0993, #2f4dbf)",
+  "linear-gradient(to right, #30407f, #a03d91)",
+  "linear-gradient(to right, #3f1e50, #ad4881)",
+  "linear-gradient(to right, #4c2495, #b282ab)",
+  "linear-gradient(to right, #a23e4f, #a8594d)",
+  "linear-gradient(to right, #0081b0, #003b7a)",
+  "linear-gradient(to right, #2d3f75, #1c2a5e)",
+  "linear-gradient(to right, #1e4c7b, #0d366b)",
 ];
-
-
 
 const fontColors = ["#FFF", "000"];
 
@@ -99,7 +97,10 @@ function Card() {
         {MenuItems?.sort((a, b) =>
           (a.projectNumber || "").localeCompare(b.projectNumber || "")
         ).map((project, index) => (
-          <Link href={`/projects/${project.projectPath}`}>
+          <Link
+            href={`/projects/${project.projectPath}`}
+            key={project.projectNumber}
+          >
             <div className="flex sticky md:-ml-32 top-0 items-center">
               <div className="relative flex items-center">
                 <span className="w-10 border-t" />
