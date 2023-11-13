@@ -13,18 +13,16 @@ import ContactHead from "@/components/contact-head";
 import Contact from "@/components/contact";
 
 export const metadata: Metadata = {
-  title: "Contact Us - Studio Bind Architects",
+  title: "Contact - Need an Architect? Contact us now!",
   description:
     "Connect with Studio Bind Architects, Chennai's premier architectural firm. Specializing in bespoke solutions for residential and commercial projects, our team blends aesthetics and functionality to redefine the cityscape. Elevate your vision — contact Chennai's leading architecture firm today.",
 };
 
 function page() {
   return (
-    <div className="min-h-screen max-w-screen py-4">
+    <div className="min-h-screen max-w-screen py-4 md:-ml-32 md:-mr-32 bg-black">
       <Head>
-        <title>
-          Contact Us - Studio Bind Architects - Best Architects in Chennai
-        </title>
+        <title>Contact - Need an Architect? Contact us now!</title>
         <link rel="canonical" href="https://www.bindhomes.com/contact" />
         <meta
           property="og:description"
@@ -40,7 +38,7 @@ function page() {
           content="Contact Us - Studio Bind Architects - Best Architects in Chennai"
         />
       </Head>
-      <div className="md:ml-0 ml-5 flex mt-4 justify-between">
+      <div className=" md:ml-32 md:mr-32 ml-5 flex mt-4 justify-between">
         <MainNav items={marketingConfig.mainNav} />
         <nav className="justify-between">
           {marketingConfig &&
@@ -65,10 +63,13 @@ function page() {
           </div>
         </nav>
       </div>
-      <ContactHead />
-      <Contactform className="" />
-      <Contact />
-      <SiteFooter className="mt-5 md:-ml-8" />
+      <div className="md:ml-32 md:mr-32">
+        {" "}
+        <ContactHead />
+        <Contactform className="md:mt-20 mt-10" />
+        <Contact />
+        <SiteFooter className="mt-5 md:-ml-8" />
+      </div>
     </div>
   );
 }

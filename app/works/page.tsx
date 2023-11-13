@@ -13,7 +13,7 @@ import Head from "next/head";
 import "@/styles/fonts.css";
 
 const metadata: Metadata = {
-  title: "Works - Studio Bind Architects - Best Architects in Chennai.",
+  title: "Know about our works - Bind Architects - Best Architects in Chennai",
   description:
     "Discover the portfolio of Studio Bind Architects' projects in Chennai. Explore a showcase of innovative and inspiring residential and commercial spaces. From conceptualization to realization, immerse yourself in the artistry and functionality of our architectural designs. Elevate your vision of modern living with Chennai's leading architectural firm, Studio Bind Architects.",
 };
@@ -53,7 +53,7 @@ function ProjectsHome() {
     <>
       <Head>
         <title>
-          Works - Studio Bind Architects - Best Architects in Chennai
+          Know about our works - Bind Architects - Best Architects in Chennai
         </title>
         <link rel="canonical" href="https://www.bindhomes.com/about" />
         <meta
@@ -77,8 +77,6 @@ function ProjectsHome() {
       >
         <link rel="canonical" href="https://www.bindhomes.com/projects" />
         <div className="min-h-screen py-4 mt-4" data-theme="">
-          <title>Works - Studio Bind Architects</title>
-
           <div className="md:ml-0 ml-5 flex  justify-between">
             <MainNav items={marketingConfig.mainNav} />
             <nav className="justify-between">

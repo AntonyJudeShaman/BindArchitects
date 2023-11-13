@@ -13,7 +13,7 @@ import Head from "next/head";
 import "@/styles/fonts.css";
 
 const metadata: Metadata = {
-  title: "Projects - Studio Bind Architects - Best Architects in Chennai.",
+  title: "Explore our projects - Bind Architects - Best Architects in Chennai.",
   description:
     "Discover the portfolio of Studio Bind Architects' projects in Chennai. Explore a showcase of innovative and inspiring residential and commercial spaces. From conceptualization to realization, immerse yourself in the artistry and functionality of our architectural designs. Elevate your vision of modern living with Chennai's leading architectural firm, Studio Bind Architects.",
 };

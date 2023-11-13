@@ -14,7 +14,7 @@ import Head from "next/head";
 import "@/styles/fonts.css";
 
 export const metadata: Metadata = {
-  title: "Frequently Asked Questions - FAQ - Studio Bind Architects",
+  title: "FAQ - Find answers to your questions | Bind Architects - Chennai",
   description:
     "Find answers to common queries about our architectural services and expertise. Explore our FAQ section to get insights into Studio Bind's offerings, processes, and more. Explore Studio Bind Architects' FAQ page for insightful answers to common questions about our architectural services in Chennai. From project inquiries to design inspirations, find expert guidance on residential and commercial spaces. Elevate your understanding of the architectural process with Chennai's leading firm. Have a question? Find the answer here at Studio Bind Architects.",
 };

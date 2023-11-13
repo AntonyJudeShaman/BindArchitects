@@ -22,7 +22,7 @@ export function AboutSection() {
         className="flex justify-center md:p-0 -mt-20 p-4 min-h-screen items-center mx-auto "
         aria-label="about us section"
       >
-        <div className="mx-auto flex flex-col items-center space-y-4 max-w-[40rem] text-center">
+        <div className="mx-auto p-4 md:p-0 flex flex-col items-center space-y-4 max-w-[40rem] text-center">
           <h2
             className="text-5xl dmsans-semibold font-medium leading-[1.1] mb-5 md:text-8xl"
             aria-label="The Studio"
@@ -118,6 +118,7 @@ export function AboutSection() {
             deliver results that exceed your expectations.
           </div>
         </div>
+        
       </section>
     </div>
   );

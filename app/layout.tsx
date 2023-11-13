@@ -28,7 +28,7 @@ interface RootLayoutProps {
 export const metadata: Metadata = {
   metadataBase: new URL("https://bindhomes.com"),
   title:
-    "Studio Bind - Top Architectural Firm - Best Architects in Chennai - Best Interior Designers",
+    "Bind - Top Architectural Firm - Best Architects in Chennai - Best Interior Designers",
   description: siteConfig.description,
 
   keywords: [

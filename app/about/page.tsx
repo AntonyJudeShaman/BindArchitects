@@ -20,7 +20,7 @@ import Head from "next/head";
 import ContactScroll from "@/components/contactscroll"
 
 export const metadata: Metadata = {
-  title: "About Us - Studio Bind Architects",
+  title: "About Us - Bind Architects | Best Architects in Chennai",
   description:
     "Discover unparalleled architectural excellence in Chennai with Studio Bind Architects, a visionary firm shaping spaces that transcend expectations. Our innovative designs seamlessly blend aesthetics and functionality, redefining the cityscape. From residential marvels to commercial landmarks, we specialize in crafting bespoke solutions that stand the test of time. Explore the intersection of art and engineering with Chennai's leading architecture firm. Elevate your vision with Studio Bind Architects",
 };

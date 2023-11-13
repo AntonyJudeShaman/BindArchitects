@@ -54,7 +54,7 @@ const cardColors = [
   "linear-gradient(to right, #2e3b4e, #556f7a)",
   "linear-gradient(to right, #0f700b, #00baff)",
   "linear-gradient(to right, #0fabc0, #490057)",
-  "linear-gradient(to right, #28df99, #58a4b0)",
+  "linear-gradient(to right, #000f99, #000ab0)",
   "linear-gradient(to right, #f39c12, #e74c3c)",
   "linear-gradient(to right, #74b9ff, #0984e3)",
   "linear-gradient(to right, #2ecc71, #27ae60)",
@@ -192,8 +192,8 @@ export default function ProjectPage({
     else if (luminance > 0.4) return "#FFF";
     else if (luminance > 0.35) return "#FFD700";
     else if (luminance > 0.3) return "#FF8C00";
-    else if (luminance > 0.25) return "#D269FF";
-    else if (luminance > 0.2) return "#8B4513";
+    else if (luminance > 0.25) return "#D26900";
+    else if (luminance > 0.2) return "#ff4500";
     else if (luminance > 0.15) return "#40E0D0";
     else if (luminance > 0.1) return "#008B8B";
     else if (luminance > 0.05) return "#DF4FFF";
