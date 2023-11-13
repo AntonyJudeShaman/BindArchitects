@@ -10,7 +10,7 @@ import Head from "next/head";
 
 export default function NotFound() {
   return (
-    <div class="notfound p-6 mt-10 md:mt-24 justify-center">
+    <div class="notfound flex flex-col p-6 justify-center h-screen">
       <Head>
         <title>Not Found || Studio Bind</title>
       </Head>
