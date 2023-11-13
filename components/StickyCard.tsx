@@ -169,7 +169,7 @@ function Card() {
           (a.projectNumber || "").localeCompare(b.projectNumber || "")
         ).map((project, index) => (
           <div
-            className={`card pt-10 pb-10 w-full ${index % 5 !== 0 ? "mt-5" : ""}
+            className={`card pt-10 pb-10 w-full ${index % 0 !== 0 ? "mt-5" : ""}
           }`}
             key={project.projectNumber}
           >
