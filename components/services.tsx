@@ -2,9 +2,9 @@ import React from "react";
 
 function Services() {
   return (
-    <div className="p-0  md:p-4 md:-ml-36 sm:-ml-2 md:-mr-20 lg:-ml-36 2xl:-ml-28 2xl:mt-10 flex flex-col md:flex-col   ">
+    <div className="md:-ml-28 md:-mr-20 flex flex-col md:flex-col   ">
       <div className="flex max-w-[88rem] flex-col text-left">
-        <h2 className="dmsans-semibold md:ml-7 ml-8 mt-10 text-4xl text-left dmsans font-medium leading-[1.1] mb-10 md:text-6xl">
+        <h2 className="dmsans-semibold md:ml-7 ml-8 text-4xl text-left dmsans font-medium leading-[1.1] mb-10 md:text-6xl">
           Our Services
         </h2>
       </div>
