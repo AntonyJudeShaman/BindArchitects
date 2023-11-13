@@ -16,42 +16,42 @@ export default function IndexPage() {
   return (
     <div className="">
       <section
-        className="h-100 flex items-center overflow-y-auto"
+        className="h-100 flex items-center max-w-screen overflow-y-auto"
         style={{ minHeight: "100vh" }}
       >
-        <div className="md:p-0 p-4 text-wrapper flex flex-col gap-8 md:-mt-10 ">
+        <div className="md:p-0 p-4 max-w-full flex flex-col gap-8 md:-mt-10 ">
           {/* <h1 className="font-semibold ">
             <Image src={logo} alt="Jude" className="h-15 w-20" />
           </h1> */}
           <h1
             aria-label="Studio bind"
-            className="2xl:text-8xl  dmsans-home title-gradient2 flex flex-wrap md:max-w-[98rem] max-w-[28rem]  z-30 text-6xl title-gradient    duration-1000   font-display   whitespace-nowrap bg-clip-text"
+            className="2xl:text-8xl xl:text-8xl lg:text-8xl md:text-7xl sm:text-7xl  dmsans-home title-gradient2 flex flex-wrap max-w-full   z-30 text-6xl title-gradient    duration-1000   font-display   "
           >
             We shape
           </h1>
 
           <h1
             aria-label="Studio bind"
-            className="2xl:text-8xl dmsans-home title-gradient2 flex dmsans-home flex-wrap md:max-w-[98rem] max-w-[28rem]  z-30 text-6xl dmsans-home title-gradient3    duration-1000   font-display   whitespace-nowrap bg-clip-text"
+            className="2xl:text-8xl xl:text-8xl lg:text-8xl md:text-7xl sm:text-7xl dmsans-home title-gradient2 flex dmsans-home flex-wrap max-w-full   z-30 text-6xl dmsans-home title-gradient3    duration-1000   font-display   "
           >
             brands that
             <span className="sm:hidden dmsans-home hidden md:inline-block">
-              &nbsp; need no
+              &nbsp;need no
             </span>
           </h1>
           <h1
             aria-label="Studio bind"
-            className="2xl:text-8xl dmsans-home title-gradient2 sm:inline-block md:hidden flex dmsans-home flex-wrap md:max-w-[98rem] max-w-[28rem]  z-30 text-6xl dmsans-home title-gradient    duration-1000   font-display   whitespace-nowrap bg-clip-text"
+            className="2xl:text-8xl xl:text-8xl lg:text-8xl md:text-7xl sm:text-7xl dmsans-home title-gradient2 sm:inline-block md:hidden flex dmsans-home flex-wrap max-w-full   z-30 text-6xl dmsans-home title-gradient    duration-1000   font-display   "
           >
             need no
           </h1>
           <h1
             aria-label="Studio bind"
-            className="2xl:text-8xl dmsans-home title-gradient2 flex dmsans-home flex-wrap   z-30 text-6xl dmsans-home title-gradient4    duration-1000   font-display   whitespace-nowrap bg-clip-text"
+            className="2xl:text-8xl xl:text-8xl lg:text-8xl md:text-7xl sm:text-7xl dmsans-home title-gradient2 flex dmsans-home flex-wrap   z-30 text-6xl dmsans-home title-gradient4    duration-1000   font-display   "
           >
-            introduction
+             introduction
           </h1>
-          <div className="md:max-w-full grid md:grid-cols-4 grid-cols-2 max-w-[28rem] md:gap-x-44 gap-x-12  flex-row  sm:leading-8">
+          <div className="md:max-w-full grid md:grid-cols-4 sm:grid-cols-4 grid-cols-2 md:gap-x-24  xl:gap-x-44 lg:gap-x-40 2xl:gap-x-44 gap-x-12  flex-row  sm:leading-8">
             <div className="flex flex-col title-gradient4 mt-8">
               <span className="dmsans title-gradient title-gradient4   text-4xl mb-3">
                 10{" "}
@@ -63,7 +63,7 @@ export default function IndexPage() {
                 transformations
               </span>
             </div>
-            <div className="flex flex-col md:ml-0 ml-10 dmsans-home title-gradient3 mt-8">
+            <div className="flex flex-col md:ml-0 xs:ml-10 dmsans-home title-gradient3 mt-8">
               <span className=" dmsans title-gradient  title-gradient3 text-4xl mb-3">
                 60
               </span>
@@ -86,7 +86,7 @@ export default function IndexPage() {
                 the market
               </span>
             </div>
-            <div className="flex flex-col dmsans-home title-gradient4 md:ml-0 ml-10 mt-8">
+            <div className="flex flex-col dmsans-home title-gradient4 md:ml-0 xs:ml-10 mt-8">
               <span className="title-gradient dmsans title-gradient4 text-4xl mb-3">
                 11
               </span>
