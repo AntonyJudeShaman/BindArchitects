@@ -71,14 +71,28 @@ function ProjectsHome() {
           content="Projects - Studio Bind Architects - Best Architects in Chennai"
         />
       </Head>
+      <div className="flex flex-row mr-5 items-center justify-between space-x-2 mt-4 bg">
+        <p
+          className="logo-font md:hidden ml-5 md:ml-0 flex-1 text-4xl font-bold"
+          aria-label="BIND"
+        >
+          BIND
+        </p>
+        <div className="flex-1 md:hidden justify-end float-right">
+          <MainNav items={marketingConfig.mainNav} />
+        </div>
+      </div>
       <Suspense
         data-speed="1.5"
         fallback={<div style={fallbackStyle}>Loading Please wait...</div>}
       >
         <link rel="canonical" href="https://www.bindhomes.com/projects" />
-        <div className="min-h-screen py-4 mt-4" data-theme="">
-          <div className="md:ml-0 ml-5 flex  justify-between">
-            <MainNav items={marketingConfig.mainNav} />
+        <div className="min-h-screen max-w-screen mt-4 bg" data-theme="">
+          <div className="md:ml-0 ml-5 flex justify-between">
+            <div className="hidden md:block">
+              {" "}
+              <MainNav items={marketingConfig.mainNav} />
+            </div>
             <nav className="justify-between">
               {marketingConfig &&
                 marketingConfig.mainNav.map((item, index) => (
@@ -94,12 +108,6 @@ function ProjectsHome() {
                     <span className="">{item.title}</span>
                   </Link>
                 ))}
-
-              <div className="flex mr-5 items-center space-x-2 bg-black md:hidden">
-                <p className="logo-font text-4xl font-bold" aria-label="BIND">
-                  BIND
-                </p>
-              </div>
             </nav>
           </div>
 

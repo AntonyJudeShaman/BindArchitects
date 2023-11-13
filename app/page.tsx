@@ -16,7 +16,8 @@ interface MarketingLayoutProps {
 }
 
 export const metadata: Metadata = {
-  title: "Bind - Best Architects & Interior Designers in Chennai | Top Architectural Firm",
+  title:
+    "Bind - Best Architects & Interior Designers in Chennai | Top Architectural Firm",
   description:
     "Discover the Leading Architects in Chennai - Unveiling Unparalleled Design Excellence. Explore the portfolio of top-tier architects and architectural firms in Chennai, renowned for crafting innovative, sustainable, and aesthetically captivating designs. Elevate your architectural visions with our exceptional expertise and dedication to transforming spaces. Whether you're seeking modern house designs, sustainable architecture, or creative commercial spaces, our top architects in Chennai are here to exceed your expectations. Explore our portfolio for residential and commercial architects, and witness the fusion of functionality and aesthetic appeal. Elevate your architectural dreams with the best architects in Chennai, dedicated to delivering excellence in every project.",
 };
@@ -42,8 +43,23 @@ export default function HomeLayout() {
           content="Studio Bind Architects - Best Architects in Chennai"
         />
       </Head>
+      <div className="flex flex-row mr-5 items-center justify-between space-x-2 bg">
+        <p
+          className="logo-font md:hidden ml-5 md:ml-0 flex-1 text-4xl font-bold"
+          aria-label="BIND"
+        >
+          BIND
+        </p>
+        <div className="flex-1 md:hidden justify-end float-right">
+          <MainNav items={marketingConfig.mainNav} />
+        </div>
+      </div>
       <div className="md:ml-0 ml-5 flex mt-4 justify-between">
-        <MainNav items={marketingConfig.mainNav} />
+        <div className="hidden md:block">
+          {" "}
+          <MainNav items={marketingConfig.mainNav} />
+        </div>
+
         <nav className="justify-between">
           {marketingConfig &&
             marketingConfig.mainNav.map((item, index) => (
@@ -59,12 +75,6 @@ export default function HomeLayout() {
                 <span className="">{item.title}</span>
               </Link>
             ))}
-
-          <div className="flex mr-5 items-center space-x-2 bg-black md:hidden">
-            <p className="logo-font text-4xl font-bold" aria-label="BIND">
-              BIND
-            </p>
-          </div>
         </nav>
       </div>
 

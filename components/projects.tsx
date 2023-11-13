@@ -326,13 +326,13 @@ export function Projects() {
           </div>
           <div className="flex flex-wrap text-lg mt-2">
             <p
-              className="flex-1 dmsans-bold text-left text-orange-50"
+              className="flex-1 dmsans-semibold text-left text-orange-50"
               aria-label="Delphi Derma"
              >
               Delphi Derma
             </p>
             <p
-              className="flex-1 dmsans text-right text-gray-300"
+              className="flex-1 dmsans text-right text-muted-foreground"
               aria-label="2023"
             >
               2023
@@ -358,13 +358,13 @@ export function Projects() {
           </div>
           <div className="flex flex-wrap text-lg mt-2">
             <p
-              className="flex-1 dmsans-bold text-left text-orange-50"
+              className="flex-1 dmsans-semibold text-left text-orange-50"
               aria-label="Remy Cinemas"
              >
               Remy Cinemas
             </p>
             <p
-              className="flex-1 dmsans text-right text-gray-300"
+              className="flex-1 dmsans text-right text-muted-foreground"
               aria-label="2022"
             >
               2022
@@ -389,11 +389,11 @@ export function Projects() {
             />
           </div>
           <div className="flex flex-wrap text-lg mt-2">
-            <p className="flex-1 dmsans-bold text-left text-orange-50" aria-label="CCBM">
+            <p className="flex-1 dmsans-semibold text-left text-orange-50" aria-label="CCBM">
               CCBM
             </p>
             <p
-              className="flex-1 dmsans text-right text-gray-300"
+              className="flex-1 dmsans text-right text-muted-foreground"
               aria-label="2022"
             >
               2022
@@ -418,11 +418,11 @@ export function Projects() {
             />
           </div>
           <div className="flex flex-wrap text-lg mt-2">
-            <p className="flex-1 dmsans-bold text-left text-orange-50" aria-label="MGA Sristi">
+            <p className="flex-1 dmsans-semibold text-left text-orange-50" aria-label="MGA Sristi">
               MGA Sristi
             </p>
             <p
-              className="flex-1 dmsans text-right text-gray-300"
+              className="flex-1 dmsans text-right text-muted-foreground"
               aria-label="2022"
             >
               2022
@@ -447,11 +447,11 @@ export function Projects() {
             />
           </div>
           <div className="flex flex-wrap text-lg mt-2">
-            <p className="flex-1 dmsans-bold text-left text-orange-50" aria-label="East West">
+            <p className="flex-1 dmsans-semibold text-left text-orange-50" aria-label="East West">
               East West
             </p>
             <p
-              className="flex-1 dmsans text-right text-gray-300"
+              className="flex-1 dmsans text-right text-muted-foreground"
               aria-label="2022"
             >
               2022

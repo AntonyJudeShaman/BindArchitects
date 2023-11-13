@@ -19,6 +19,10 @@ import ProjectNotFound from "@/components/project-notfound";
 import Card2 from "@/components/StickyCard2";
 import "@/styles/fonts.css";
 import Tilt from "react-parallax-tilt";
+import { MainNav } from "@/components/main-nav";
+import { marketingConfig } from "config/marketing";
+import { Icons } from "@/components/icons";
+import { MobileNav } from "@/components/mobile-nav";
 
 const firebaseApp = initializeApp(firebaseConfig, "Project");
 const database = getDatabase(firebaseApp);
@@ -202,6 +206,12 @@ export default function ProjectPage({
     else return "#cb371a";
   }
 
+  const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
+
+  const toggleMobileMenu = () => {
+    setShowMobileMenu(!showMobileMenu);
+  };
+
   return (
     <div className="max-w-screen">
       <Suspense fallback={<div style={fallbackStyle}>Please wait...</div>}>
@@ -232,8 +242,10 @@ export default function ProjectPage({
                   </span>
                 </Link>
               </div> */}
+
                   <div className="min-h-screen max-w-screen">
                     <title>{menuItem.projectName}</title>
+
                     <div
                       className="p-8 md:p-4 justify-center min-h-screen text-wrapper  flex flex-col gap-4"
                       style={{
@@ -248,6 +260,38 @@ export default function ProjectPage({
                         ),
                       }}
                     >
+                      {/* <div className="flex flex-row mr-5 items-center justify-between space-x-2 -mt-40">
+                        <p
+                          className="logo-font md:hidden md:ml-0 flex-1 text-4xl font-bold"
+                          aria-label="BIND"
+                        >
+                          BIND
+                        </p>
+                        {/* <div className="flex-1 md:hidden justify-end float-right">
+                          <MainNav items={marketingConfig.mainNav} />
+                        </div> */}
+                      {/* </div> */}
+                      {/* <button
+                        className="flex justify-end items-center space-x-2 md:hidden"
+                        onClick={toggleMobileMenu}
+                        aria-label="open menu"
+                      >
+                        {showMobileMenu ? (
+                          "X"
+                        ) : (
+                          <div className="burger -mt-40">
+                            <input type="checkbox" id="burger" />
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        )}
+                        <span className="font-bold"></span>
+                      </button>
+                      {showMobileMenu && marketingConfig.mainNav && (
+                        <MobileNav items={marketingConfig.mainNav} />
+                      )} */}
+
                       <p className="text-xl dmsans md:ml-32">
                         {menuItem.projectNumber}
                       </p>

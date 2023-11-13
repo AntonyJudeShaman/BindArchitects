@@ -46,9 +46,25 @@ function About() {
           content="About Us - Studio Bind Architects - Best Architects in Chennai"
         />
       </Head>
-      <div className="md:ml-0 w-full ml-5 mt-8 flex  justify-between">
-        <MainNav items={marketingConfig.mainNav} />
-        <nav className="justify-between bg-transparent">
+      
+      <div className="flex flex-row mr-5 items-center justify-between space-x-2 mt-4 bg">
+        <p
+          className="logo-font md:hidden ml-5 md:ml-0 flex-1 text-4xl font-bold"
+          aria-label="BIND"
+        >
+          BIND
+        </p>
+        <div className="flex-1 md:hidden justify-end float-right">
+          <MainNav items={marketingConfig.mainNav} />
+        </div>
+      </div>
+      <div className="md:ml-0 ml-5 flex mt-4 justify-between">
+        <div className="hidden md:block">
+          {" "}
+          <MainNav items={marketingConfig.mainNav} />
+        </div>
+
+        <nav className="justify-between">
           {marketingConfig &&
             marketingConfig.mainNav.map((item, index) => (
               <Link
@@ -63,11 +79,6 @@ function About() {
                 <span className="">{item.title}</span>
               </Link>
             ))}
-          <div className="flex mr-5 items-center space-x-2 bg-black md:hidden">
-            <p className="logo-font text-4xl font-bold" aria-label="BIND">
-              BIND
-            </p>
-          </div>
         </nav>
       </div>
       <AboutSection />

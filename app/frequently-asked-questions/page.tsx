@@ -43,10 +43,23 @@ function page() {
           content="FAQ - Studio Bind Architects - Best Architects in Chennai"
         />
       </Head>
-
-      <div className="min-h-screen py-4 mt-4">
-        <div className="md:ml-0 ml-5 flex  justify-between">
+      <div className="flex flex-row mr-5 items-center justify-between space-x-2 mt-4 bg">
+        <p
+          className="logo-font md:hidden ml-5 md:ml-0 flex-1 text-4xl font-bold"
+          aria-label="BIND"
+        >
+          BIND
+        </p>
+        <div className="flex-1 md:hidden justify-end float-right">
           <MainNav items={marketingConfig.mainNav} />
+        </div>
+      </div>
+      <div className="min-h-screen mt-4">
+        <div className="md:ml-0 ml-5 flex  justify-between">
+          <div className="hidden md:block">
+            {" "}
+            <MainNav items={marketingConfig.mainNav} />
+          </div>
           <nav className="justify-between">
             {marketingConfig &&
               marketingConfig.mainNav.map((item, index) => (
@@ -62,10 +75,6 @@ function page() {
                   <span className="">{item.title}</span>
                 </Link>
               ))}
-
-            <div className="flex mr-5 items-center space-x-2 bg-black md:hidden">
-              <p className="logo-font text-4xl font-bold" aria-label="BIND">BIND</p>
-            </div>
           </nav>
         </div>
         <p className="md:text-5xl text-4xl p-4 dmsans mb-5 mt-10 text-center ">

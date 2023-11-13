@@ -22,10 +22,12 @@ export function MainNav({ items, children }: MainNavProps) {
   };
 
   return (
-    <div className="flex gap-6 max-w-full md:gap-10">
+    <div className="flex max-w-full bg md:gap-10">
+      <div className="ml-auto">
+        
       <Link
         href="/"
-        className="hidden items-center space-x-2 md:flex"
+        className="hidden  items-center bg space-x-2 md:flex"
         aria-label="BIND"
       >
         <span
@@ -37,24 +39,25 @@ export function MainNav({ items, children }: MainNavProps) {
           </p>
         </span>
       </Link>
+        <button
+          className="flex justify-between bg items-center space-x-2 md:hidden"
+          onClick={toggleMobileMenu}
+          aria-label="open menu"
+        >
+          {showMobileMenu ? (
+            <Icons.close />
+          ) : (
+            <div className="burger">
+              <input type="checkbox" id="burger" />
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          )}
+          <span className="font-bold"></span>
+        </button>
+      </div>
 
-      <button
-        className="flex items-center space-x-2 md:hidden"
-        onClick={toggleMobileMenu}
-        aria-label="open menu"
-      >
-        {showMobileMenu ? (
-          <Icons.close />
-        ) : (
-          <div className="burger">
-            <input type="checkbox" id="burger" />
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        )}
-        <span className="font-bold"></span>
-      </button>
       {showMobileMenu && items && (
         <MobileNav items={items}>{children}</MobileNav>
       )}
