@@ -19,7 +19,7 @@ import logo from "../assets/8.png";
 import { Checkbox } from "./ui/checkbox";
 import Link from "next/link";
 import { Input2 } from "./ui/input2";
-import { Textarea2} from "./ui/textarea2";
+import { Textarea2 } from "./ui/textarea2";
 
 export function LightBox({ className }) {
   const [name, setName] = useState("");
@@ -114,7 +114,10 @@ export function LightBox({ className }) {
 
   return (
     <div
-      className={cn("space-x-4 pt-0 sm:pt-10 dmsans justify-center flex", className)}
+      className={cn(
+        "space-x-4 pt-0 sm:pt-10 dmsans justify-center flex",
+        className
+      )}
       aria-label="contact form"
     >
       <Dialog>
@@ -134,13 +137,15 @@ export function LightBox({ className }) {
               Book a Free Design Session
             </DialogTitle>
           </DialogHeader>
-          <form ref={form} onSubmit={handleSubmit} 
-        aria-label="contact form">
+          <form ref={form} onSubmit={handleSubmit} aria-label="contact form">
             <div className="grid gap-4 py-4 flex flex-col">
               <div
-                className="grid grid-cols-1 md:grid-cols-1 items-center gap-4"
+                className="grid grid-cols-1 md:grid-cols-1 items-center "
                 aria-label="enter your name"
               >
+                <Label htmlFor="name" className="dmsans font-semibold">
+                  Name
+                </Label>
                 <Input2
                   id="name"
                   name="name"
@@ -157,9 +162,12 @@ export function LightBox({ className }) {
                 )}
               </div>
               <div
-                className="grid grid-cols-1 md:grid-cols-1 items-center gap-4"
+                className="grid grid-cols-1 md:grid-cols-1 items-center "
                 aria-label="enter your email"
               >
+                <Label htmlFor="email" className="dmsans font-semibold">
+                  Email
+                </Label>
                 <Input2
                   id="email"
                   name="email"
@@ -176,9 +184,12 @@ export function LightBox({ className }) {
                 )}
               </div>
               <div
-                className="grid grid-cols-1 md:grid-cols-1 items-center gap-4"
+                className="grid grid-cols-1 md:grid-cols-1 items-center"
                 aria-label="enter your phone number"
               >
+                <Label htmlFor="phone" className="dmsans font-semibold">
+                  Phone
+                </Label>
                 <Input2
                   id="phone"
                   name="phone"
@@ -195,9 +206,12 @@ export function LightBox({ className }) {
                 )}
               </div>
               <div
-                className="grid grid-cols-1 md:grid-cols-1 items-center gap-4"
+                className="grid grid-cols-1 md:grid-cols-1 items-center"
                 aria-label="enter your message optional"
               >
+                <Label htmlFor="message" className="dmsans font-semibold">
+                  Message
+                </Label>
                 <Textarea2
                   id="message"
                   name="message"
