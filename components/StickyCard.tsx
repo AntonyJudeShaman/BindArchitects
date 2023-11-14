@@ -142,7 +142,7 @@ function Card() {
   return (
     <div className="flex-row max-w-screen">
       {" "}
-      <div className="fixed mt-28 ml-2 hidden md:block">
+      <div className="fixed mt-28 ml-2 max-h-screen hidden md:block">
         {MenuItems?.sort((a, b) =>
           (a.projectNumber || "").localeCompare(b.projectNumber || "")
         ).map((project, index) => (

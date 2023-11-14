@@ -1,13 +1,5 @@
 import * as React from "react";
 import Link from "next/link";
-import Tilt from "react-parallax-tilt";
-import logo from "./logo.png";
-import Image from "next/image";
-import { siteConfig } from "config/site";
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
-import { Icons } from "@/components/icons";
-import { ModeToggle } from "@/components/mode-toggle";
 import "@/styles/fonts.css";
 
 export default function Footer({
@@ -22,7 +14,10 @@ export default function Footer({
             target="_blank"
             className="flex items-center mx-auto mb-4 sm:mb-0 max-w-[65rem]"
           >
-            <span className="self-center mx-auto  flex mt-20 mb-10 footer-title dmsans-home whitespace-nowrap ">
+            <span
+              className="self-center mx-auto  flex mt-20 mb-10 footer-title dmsans-home whitespace-nowrap"
+              aria-label="Contact Us"
+            >
               Contact Us
             </span>
           </Link>

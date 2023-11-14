@@ -2,7 +2,6 @@ import React from "react";
 import { Metadata } from "next";
 import Nav from "@/components/nav";
 import { MainNav } from "@/components/main-nav";
-import { SiteFooter } from "@/components/site-footer";
 import { marketingConfig } from "config/marketing";
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
@@ -16,6 +15,7 @@ import ProjectForm from "@/components/projectform";
 // import { experimental_useFormStatus as useFormStatus } from 'react-dom'
 import AddProject from "@/components/add-project"
 import { cn } from "@/lib/utils";
+import SiteFooter from "@/components/site-footer";
 
 export const metadata: Metadata = {
   title: "Admin | Studio Bind",

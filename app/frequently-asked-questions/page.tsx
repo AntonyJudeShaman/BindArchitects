@@ -3,7 +3,6 @@ import { FAQAccordion } from "@/components/faq";
 import { MainNav } from "@/components/main-nav";
 import Nav from "@/components/nav";
 import { marketingConfig } from "config/marketing";
-import { SiteFooter } from "@/components/site-footer";
 import Questions from "@/components/still-questions";
 import logo from "@/components/logo.png";
 import Image from "next/image";
@@ -12,6 +11,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import Head from "next/head";
 import "@/styles/fonts.css";
+import SiteFooter from "@/components/site-footer";
 
 export const metadata: Metadata = {
   title: "FAQ - Find answers to your questions | Bind Architects - Chennai",
