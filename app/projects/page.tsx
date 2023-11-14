@@ -3,7 +3,6 @@ import { Metadata } from "next";
 import { MainNav } from "@/components/main-nav";
 import { HomePage, marketingConfig } from "config/marketing";
 import Link from "next/link";
-import { SiteFooter } from "@/components/site-footer";
 import FreeQuote from "@/components/free-quote";
 import { cn } from "@/lib/utils";
 import Card from "@/components/StickyCard";
@@ -11,6 +10,7 @@ import logo from "@/components/logo.png";
 import Image from "next/image";
 import Head from "next/head";
 import "@/styles/fonts.css";
+import SiteFooter from "@/components/site-footer";
 
 const metadata: Metadata = {
   title: "Explore our projects - Bind Architects - Best Architects in Chennai.",

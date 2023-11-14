@@ -104,7 +104,7 @@ export function Contactform({ className }) {
 
   return (
     <div
-      className=" justify-center flex min-h-screen max-w-[50rem] p-6 md:p-0"
+      className=" justify-center flex min-h-screen max-w-[50rem] p-6 mt-10 md:mt-20 md:p-0"
       aria-label="contact form"
     >
       <form

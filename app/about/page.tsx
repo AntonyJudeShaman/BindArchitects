@@ -3,7 +3,6 @@ import { FAQAccordion } from "@/components/faq";
 import { MainNav } from "@/components/main-nav";
 import Nav from "@/components/nav";
 import { marketingConfig } from "config/marketing";
-import { SiteFooter } from "@/components/site-footer";
 import Questions from "@/components/still-questions";
 import { Metadata } from "next";
 import Aboutus from "@/components/about-us";
@@ -18,6 +17,7 @@ import Image from "next/image";
 import { Skeleton } from "@/components/ui/skeleton";
 import Head from "next/head";
 import ContactScroll from "@/components/contactscroll"
+import SiteFooter from "@/components/site-footer";
 
 export const metadata: Metadata = {
   title: "About Us - Bind Architects | Best Architects in Chennai",

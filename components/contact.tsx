@@ -13,7 +13,7 @@ export function Contact() {
         />
       </Head>
       <section className="p-6 md:p-0 max-w-screen space-y-3 items-start text-left bg-slate-50 mb-20  dark:bg-transparent md:py-6">
-        <div className="mx-auto mt-20 flex max-w-[88rem] flex-col space-y-4 text-left">
+        <div className="mx-au mt-20 flex max-w-[88rem] flex-col space-y-4 text-left">
           <h2
             aria-label=" Contact The Studio"
             className="font-heading text-3xl dmsans font-medium leading-[1.1] mb-5 md:text-5xl"

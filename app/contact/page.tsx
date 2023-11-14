@@ -2,7 +2,6 @@ import React from "react";
 import { MainNav } from "@/components/main-nav";
 import Nav from "@/components/nav";
 import { marketingConfig } from "config/marketing";
-import { SiteFooter } from "@/components/site-footer";
 import { Contactform } from "@/components/contact-form";
 import Head from "next/head";
 import { Metadata } from "next";
@@ -11,6 +10,7 @@ import "@/styles/fonts.css";
 import { cn } from "@/lib/utils";
 import ContactHead from "@/components/contact-head";
 import Contact from "@/components/contact";
+import SiteFooter from "@/components/site-footer";
 
 export const metadata: Metadata = {
   title: "Contact - Need an Architect? Contact us now!",
@@ -72,12 +72,12 @@ function page() {
             ))}
         </nav>
       </div>
-     <div className="md:ml-32 md:mr-32">
+     <div className="md:ml-32 md:mr-32 -mb-4">
         {" "}
         <ContactHead />
         <Contactform className="md:mt-20 mt-10" />
         <Contact />
-        <SiteFooter className="mt-5 md:-ml-8" />
+        <SiteFooter  />
       </div>
     </div>
   );

@@ -2,7 +2,6 @@ import Link from "next/link";
 import { marketingConfig } from "config/marketing";
 import { cn } from "@/lib/utils";
 import { MainNav } from "@/components/main-nav";
-import { SiteFooter } from "@/components/site-footer";
 import IndexPage from "@/components/home-page";
 import Aboutus from "@/components/about-us";
 import { Metadata } from "next";
@@ -10,6 +9,8 @@ import { Projects } from "@/components/projects";
 import Client from "@/components/client";
 import Questions from "@/components/still-questions";
 import Head from "next/head";
+import Footer from "@/components/footer";
+import SiteFooter from "@/components/site-footer";
 
 interface MarketingLayoutProps {
   children: React.ReactNode;
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
 
 export default function HomeLayout() {
   return (
-    <div className="min-h-screen max-w-screen py-4">
+    <div className="min-h-screen max-w-screen mt-4">
       <Head>
         <title>Studio Bind Architects - Best Architects in Chennai</title>
         <link rel="canonical" href="https://www.bindhomes.com/" />

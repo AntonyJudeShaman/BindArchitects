@@ -11,6 +11,20 @@ body {
   background-color: #09090a;
 }
 
+.bg-footer {
+  background-color: #131111;
+}
+
+.footer-title{
+  font-size: 150px;
+}
+
+@media (max-width: 768px) {
+  .footer-title{
+    font-size: 54px;
+  }
+}
+
 .text-muted-foreground {
   color: #888888;
 }

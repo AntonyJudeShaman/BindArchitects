@@ -10,21 +10,23 @@ import { Icons } from "@/components/icons";
 import { ModeToggle } from "@/components/mode-toggle";
 import "@/styles/fonts.css";
 
-export default function SiteFooter({
+export default function Footer({
   className,
 }: React.HTMLAttributes<HTMLElement>) {
   return (
     <div className="max-w-screen md:-ml-32 md:-mr-32">
       <footer className="md:py-8 bg-footer">
-        <Link href="/contact">
-          <div className="sm:flex sm:items-center  sm:justify-between">
-            <div className="flex items-center mx-auto mb-4 sm:mb-0 max-w-[65rem]">
-              <span className="self-center mx-auto  flex mt-20 mb-10 footer-title dmsans-heading whitespace-nowrap ">
-                Contact Us
-              </span>
-            </div>
-          </div>
-        </Link>
+        <div className="sm:flex sm:items-center  sm:justify-between">
+          <Link
+            href="#"
+            target="_blank"
+            className="flex items-center mx-auto mb-4 sm:mb-0 max-w-[65rem]"
+          >
+            <span className="self-center mx-auto  flex mt-20 mb-10 footer-title dmsans-home whitespace-nowrap ">
+              Contact Us
+            </span>
+          </Link>
+        </div>
         <hr className="my-8 border-zinc-600 mx-auto justify-between md:max-w-[85rem] max-w-[23rem] lg:my-8" />
         <div className="flex md:flex-row flex-col gap-y-8 justify-between items-center mx-auto text-lg md:text-md md:max-w-[85rem] max-w-[20rem] sm:text-center  text-gray-50">
           <Link
