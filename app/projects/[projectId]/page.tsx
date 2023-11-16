@@ -234,7 +234,16 @@ export default function ProjectPage({
                     className="cursor-pointer"
                     onClick={() => window.history.back()}
                   >
-                    <ArrowLeft className="absolute md:left-8 left-4 top-8 text-black hover:text-orange-600 w-8 h-8" />
+                    <ArrowLeft
+                      className="absolute md:left-8 left-4 top-8  hover:text-orange-600 w-8 h-8"
+                      style={{
+                        color: getFontColor(
+                          cardColors[
+                            mapProjectNumberToColorIndex(menuItem.projectNumber)
+                          ]
+                        ),
+                      }}
+                    />
                   </Link>
                   <div className="flex flex-row mr-5 absolute md:right-8 right-4 top-8 bg-transparent">
                     <p
