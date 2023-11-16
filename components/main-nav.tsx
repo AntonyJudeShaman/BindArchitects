@@ -22,12 +22,12 @@ export function MainNav({ items, children }: MainNavProps) {
   };
 
   return (
-    <div className="flex max-w-full bg md:gap-10">
+    <div className="flex max-w-full bg-transparent md:gap-10">
       <div className="ml-auto">
         
       <Link
         href="/"
-        className="hidden  items-center bg space-x-2 md:flex"
+        className="hidden  items-center bg-transparent space-x-2 md:flex"
         aria-label="BIND"
       >
         <span
@@ -40,7 +40,7 @@ export function MainNav({ items, children }: MainNavProps) {
         </span>
       </Link>
         <button
-          className="flex justify-between bg items-center space-x-2 md:hidden"
+          className="flex justify-between bg-transparent items-center space-x-2 md:hidden"
           onClick={toggleMobileMenu}
           aria-label="open menu"
         >

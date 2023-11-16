@@ -10,7 +10,7 @@ import Head from "next/head";
 
 export default function NotFound() {
   return (
-    <div class="notfound flex flex-col p-6 justify-center h-screen">
+    <div class="notfound flex bg flex-col p-6 justify-center h-screen">
       <Head>
         <title>Not Found || Studio Bind</title>
       </Head>
@@ -23,7 +23,7 @@ export default function NotFound() {
         changed, or is temporarily unavailable.
       </p>
       <div className="text-left mt-8">
-        <Link href="" onClick={() => window.history.back()}>
+        <Link href="/" onClick={() => window.history.back()}>
         <Button
           size="lg"
           variant="white"

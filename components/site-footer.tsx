@@ -1,12 +1,5 @@
 import * as React from "react";
 import Link from "next/link";
-import Tilt from "react-parallax-tilt";
-import logo from "./logo.png";
-import Image from "next/image";
-import { siteConfig } from "config/site";
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
-import { Icons } from "@/components/icons";
 import { ModeToggle } from "@/components/mode-toggle";
 import "@/styles/fonts.css";
 

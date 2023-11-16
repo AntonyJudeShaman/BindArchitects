@@ -20,6 +20,7 @@ import { Checkbox } from "./ui/checkbox";
 import Link from "next/link";
 import { Input2 } from "./ui/input2";
 import { Textarea2 } from "./ui/textarea2";
+import { Checkbox2 } from "./ui/checkbox2";
 
 export function LightBox({ className }) {
   const [name, setName] = useState("");
@@ -226,7 +227,7 @@ export function LightBox({ className }) {
                 className="flex flex-row items-center gap-4"
                 aria-label="please check this"
               >
-                <Checkbox />
+                <Checkbox2 className="border border-zinc-50" />
                 <div htmlFor="message" className="pt-2 pb-2 dmsans">
                   By submitting this form you agree to our{" "}
                   <Link

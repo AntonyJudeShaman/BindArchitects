@@ -17,7 +17,7 @@ export function MobileNav({ items, children }: MobileNavProps) {
   return (
     <div
       className={cn(
-        "slide-in-from-bottom-100 bg max-w-full  min-h-screen fixed inset-0 top-16 z-50 grid  grid-flow-row auto-rows-max overflow-auto  pb-32 shadow-md animate-in md:hidden"
+        "slide-in-from-right-3000 transition-tranformation duration-500  max-w-full  min-h-screen fixed inset-0 top-16 z-50 grid  grid-flow-row auto-rows-max overflow-auto  pb-32 shadow-md animate-in md:hidden"
       )}
     >
       <div className="relative z-20 grid gap-6 h-screen bg p-4 text-popover-foreground shadow-md">

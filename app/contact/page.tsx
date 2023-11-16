@@ -38,7 +38,7 @@ function page() {
           content="Contact Us - Studio Bind Architects - Best Architects in Chennai"
         />
       </Head>
-      <div className="flex flex-row mr-5 items-center justify-between space-x-2 mt-4 bg">
+      <div className="flex flex-row mr-5 items-center justify-between space-x-2 mt-4 ">
         <p
           className="logo-font md:hidden ml-5 md:ml-0 flex-1 text-4xl"
           aria-label="BIND"

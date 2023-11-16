@@ -130,7 +130,7 @@ export function Contactform({ className }) {
               Hello! Let&apos;s talk about your new project
             </p>
             <p
-              className="md:text-xl  text-xl mb-4 text-left "
+              className="md:text-lg  text-lg mb-4 text-left "
               aria-label="Contact us"
               style={{ color: "#565656" }}
             >
@@ -144,44 +144,14 @@ export function Contactform({ className }) {
                 </span>
               </Link>
             </p>
-            {/* <div className="wave-group">
-            <Input required type="text" className="input" id="name"
-              name="name"
-              value={name}
-              style={{
-                filter: "brightness(180%)",
-              }}/>
-            <span className="bar"></span>
-            <label className="label">
-              <span className="label-char" style={{ "--index": 0 }}>
-                N
-              </span>
-              <span className="label-char" style={{ "--index": 1 }}>
-                a
-              </span>
-              <span className="label-char" style={{ "--index": 2 }}>
-                m
-              </span>
-              <span className="label-char" style={{ "--index": 3 }}>
-                e
-              </span>
-            </label>
-          </div> */}
             <div
               className="grid grid-cols-1  md:grid-cols-1  items-center gap-4"
               aria-label="enter your name"
             >
-              {/* <Label
-              htmlFor="name"
-              className="sub-gradient text-lg font-semibold"
-            >
-              Name
-            </Label> */}
-
               <Input
                 id="name"
                 name="name"
-                className="md:col-span-3 input text-lg"
+                className="md:col-span-3  input text-lg"
                 placeholder="Enter your name"
                 aria-label="name field"
                 value={name}
@@ -200,12 +170,6 @@ export function Contactform({ className }) {
               className="grid grid-cols-1 md:grid-cols-1  items-center gap-4"
               aria-label="enter your email"
             >
-              {/* <Label
-              htmlFor="email"
-              className="sub-gradient text-lg font-semibold"
-            >
-              Email<span className="error-gradient"> *</span>
-            </Label> */}
               <Input
                 id="email"
                 name="email"
@@ -228,12 +192,6 @@ export function Contactform({ className }) {
               className="grid grid-cols-1 md:grid-cols-1  items-center gap-4"
               aria-label="enter your phone number"
             >
-              {/* <Label
-              htmlFor="phone"
-              className="sub-gradient text-lg font-semibold"
-            >
-              Phone<span className="error-gradient"> *</span>
-            </Label> */}
               <Input
                 id="phone"
                 name="phone"
@@ -287,7 +245,7 @@ export function Contactform({ className }) {
               className="flex flex-row mt-4 items-center gap-4"
               aria-label="please check this checkbox"
             >
-              <Checkbox aria-label="tick this checkbox" />
+              <Checkbox aria-label="tick this checkbox" className="border border-zinc-950" />
               <div htmlFor="message" className="pt-2 pb-2 dmsans">
                 By submitting this form you agree to our{" "}
                 <Link

@@ -234,8 +234,36 @@ export default function ProjectPage({
                     className="cursor-pointer"
                     onClick={() => window.history.back()}
                   >
-                    <ArrowLeft className="absolute md:left-8 left-4 top-8 text-white hover:text-orange-600 w-8 h-8" />
+                    <ArrowLeft className="absolute md:left-8 left-4 top-8 text-black hover:text-orange-600 w-8 h-8" />
                   </Link>
+                  <div className="flex flex-row mr-5 absolute md:right-8 right-4 top-8 bg-transparent">
+                    <p
+                      className="logo-font md:block hidden  ml-5 md:ml-0 flex-1 text-4xl"
+                      aria-label="BIND"
+                      style={{
+                        color: getFontColor(
+                          cardColors[
+                            mapProjectNumberToColorIndex(menuItem.projectNumber)
+                          ]
+                        ),
+                      }}
+                    >
+                      BIND
+                    </p>
+                    <p
+                      className="logo-font md:hidden ml-5 md:ml-0 flex-1 text-4xl"
+                      aria-label="BIND"
+                      style={{
+                        color: getFontColor(
+                          cardColors[
+                            mapProjectNumberToColorIndex(menuItem.projectNumber)
+                          ]
+                        ),
+                      }}
+                    >
+                      aa
+                    </p>
+                  </div>
                   <div className="min-h-screen max-w-screen">
                     <title>{menuItem.projectName}</title>
 

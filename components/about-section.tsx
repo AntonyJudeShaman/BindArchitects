@@ -41,7 +41,7 @@ export function AboutSection() {
         aria-label="about us section"
       >
         <h2
-          className="text-4xl md:-ml-20 ml-7 text-left dmsans-semibold font-medium leading-[1.1] mb-5 md:text-6xl"
+          className="text-4xl md:-ml-20 ml-7 text-left dmsans-semibold font-medium leading-[1.1] mb-5 md:text-7xl"
           aria-label="Our Story"
         >
           Our Story
