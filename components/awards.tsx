@@ -11,7 +11,7 @@ export function Awards() {
           content="Explore the awards and recognition received by our architecture and interior design firm in 2023."
         />
       </Head>
-      <div className="md:-mt-28 md:-ml-28 md:p-4 p-4 lg:-ml-28 -ml-4 xl:-ml-28 2xl:-ml-48 md:-mr-20 mt-10">
+      <div className="md:-mt-28 md:-ml-28 md:p-4 p-6 lg:-ml-28 -ml-4 xl:-ml-28 2xl:-ml-48 md:-mr-20 mt-10">
         <section
           className="container mx-auto  items-center text-center bg-slate-50 mb-20  dark:bg-transparent md:py-6"
           aria-label="about us section"
