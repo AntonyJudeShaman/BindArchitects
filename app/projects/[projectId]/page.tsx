@@ -23,6 +23,7 @@ import { MainNav } from "@/components/main-nav";
 import { marketingConfig } from "config/marketing";
 import { Icons } from "@/components/icons";
 import { MobileNav } from "@/components/mobile-nav";
+import { ProjectFound } from "@/components/project-found";
 
 const firebaseApp = initializeApp(firebaseConfig, "Project");
 const database = getDatabase(firebaseApp);
@@ -38,41 +39,41 @@ const imgStyles = {
 };
 
 const cardColors = [
-  "linear-gradient(to right, #209d86, #004f60)",
-  "linear-gradient(to right, #00004d, #0009d0)",
-  "linear-gradient(to right, #694b82, #af81a9)",
-  "linear-gradient(to right, #a5311f, #8c2c24)",
-  "linear-gradient(to right, #0d5f90, #004f60)",
-  "linear-gradient(to right, #5d793e, #738d6f)",
-  "linear-gradient(to right, #c8446a, #d97f81)",
-  "linear-gradient(to right, #8c0993, #2f4dbf)",
-  "linear-gradient(to right, #30407f, #a03d91)",
-  "linear-gradient(to right, #3f1e50, #ad4881)",
-  "linear-gradient(to right, #4c2495, #b282ab)",
-  "linear-gradient(to right, #a23e4f, #a8594d)",
-  "linear-gradient(to right, #0081b0, #003b7a)",
-  "linear-gradient(to right, #2d3f75, #1c2a5e)",
-  "linear-gradient(to right, #1e4c7b, #0d366b)",
-  "linear-gradient(to right, #363636, #606060)",
-  "linear-gradient(to right, #6a0572, #ab83a1)",
-  "linear-gradient(to right, #2e3b4e, #556f7a)",
-  "linear-gradient(to right, #0f700b, #00baff)",
-  "linear-gradient(to right, #0fabc0, #490057)",
-  "linear-gradient(to right, #000f99, #000ab0)",
-  "linear-gradient(to right, #f39c12, #e74c3c)",
-  "linear-gradient(to right, #74b9ff, #0984e3)",
-  "linear-gradient(to right, #2ecc71, #27ae60)",
-  "linear-gradient(to right, #3498db, #2980b9)",
-  "linear-gradient(to right, #f368e0, #ff9ff3)",
-  "linear-gradient(to right, #576574, #3d3d3d)",
-  "linear-gradient(to right, #eb4d4b, #b71540)",
-  "linear-gradient(to right, #45aaf2, #2e86de)",
-  "linear-gradient(to right, #686de0, #4834d4)",
-  "linear-gradient(to right, #fd79a8, #d63031)",
-  "linear-gradient(to right, #ff6b81, #ff4757)",
-  "linear-gradient(to right, #6a0572, #fd79a8)",
-  "linear-gradient(to right, #a55eea, #8854d0)",
-  "linear-gradient(to right, #16a085, #2ecc71)",
+  "linear-gradient(to bottom right, #209d86, #004f60)",
+  "linear-gradient(to bottom right, #00004d, #0009d0)",
+  "linear-gradient(to bottom right, #694b82, #af81a9)",
+  "linear-gradient(to bottom right, #a5311f, #8c2c24)",
+  "linear-gradient(to bottom right, #0d5f90, #004f60)",
+  "linear-gradient(to bottom right, #5d793e, #738d6f)",
+  "linear-gradient(to bottom right, #c8446a, #d97f81)",
+  "linear-gradient(to bottom right, #8c0993, #2f4dbf)",
+  "linear-gradient(to bottom right, #30407f, #a03d91)",
+  "linear-gradient(to bottom right, #3f1e50, #ad4881)",
+  "linear-gradient(to bottom right, #4c2495, #b282ab)",
+  "linear-gradient(to bottom right, #a23e4f, #a8594d)",
+  "linear-gradient(to bottom right, #0081b0, #003b7a)",
+  "linear-gradient(to bottom right, #2d3f75, #1c2a5e)",
+  "linear-gradient(to bottom right, #1e4c7b, #0d366b)",
+  "linear-gradient(to bottom right, #363636, #606060)",
+  "linear-gradient(to bottom right, #6a0572, #ab83a1)",
+  "linear-gradient(to bottom right, #2e3b4e, #556f7a)",
+  "linear-gradient(to bottom right, #0f700b, #00baff)",
+  "linear-gradient(to bottom right, #0fabc0, #490057)",
+  "linear-gradient(to bottom right, #000f99, #000ab0)",
+  "linear-gradient(to bottom right, #f39c12, #e74c3c)",
+  "linear-gradient(to bottom right, #74b9ff, #0984e3)",
+  "linear-gradient(to bottom right, #990FDA, #990F00)  ",
+  "linear-gradient(to bottom right, #3498db, #2980b9)",
+  "linear-gradient(to bottom right, #f368e0, #ff9ff3)",
+  "linear-gradient(to bottom right, #576574, #3d3d3d)",
+  "linear-gradient(to bottom right, #eb4d4b, #b71540)",
+  "linear-gradient(to bottom right, #45aaf2, #2e86de)",
+  "linear-gradient(to bottom right, #686de0, #4834d4)",
+  "linear-gradient(to bottom right, #fd79a8, #d63031)",
+  "linear-gradient(to bottom right, #ff6b81, #ff4757)",
+  "linear-gradient(to bottom right, #6a0572, #fd79a8)",
+  "linear-gradient(to bottom right, #a55eea, #8854d0)",
+  "linear-gradient(to bottom right, #16a085, #2ecc71)",
 ];
 
 const metadata: Metadata = {
@@ -206,11 +207,13 @@ export default function ProjectPage({
     else return "#cb371a";
   }
 
-  const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
+  if (MenuItems === null) {
+    return <ProjectFound />;
+  }
 
-  const toggleMobileMenu = () => {
-    setShowMobileMenu(!showMobileMenu);
-  };
+  if (selectedProjectData.length === 0) {
+    return <ProjectNotFound />;
+  }
 
   return (
     <div className="max-w-screen">
@@ -233,16 +236,6 @@ export default function ProjectPage({
                   >
                     <ArrowLeft className="absolute md:left-8 left-4 top-8 text-white hover:text-orange-600 w-8 h-8" />
                   </Link>
-                  {/* <div className="flex   float-left justify-start md:mr-0 mr-4">
-                <Link href="/" className="cursor-pointer">
-                  <span className=" logo-font text-4xl  font-bold ">
-                    <div className="logo-font">
-                      <p className="logo-font">BIND</p>
-                    </div>
-                  </span>
-                </Link>
-              </div> */}
-
                   <div className="min-h-screen max-w-screen">
                     <title>{menuItem.projectName}</title>
 
@@ -260,38 +253,7 @@ export default function ProjectPage({
                         ),
                       }}
                     >
-                      {/* <div className="flex flex-row mr-5 items-center justify-between space-x-2 -mt-40">
-                        <p
-                          className="logo-font md:hidden md:ml-0 flex-1 text-4xl font-bold"
-                          aria-label="BIND"
-                        >
-                          BIND
-                        </p>
-                        {/* <div className="flex-1 md:hidden justify-end float-right">
-                          <MainNav items={marketingConfig.mainNav} />
-                        </div> */}
-                      {/* </div> */}
-                      {/* <button
-                        className="flex justify-end items-center space-x-2 md:hidden"
-                        onClick={toggleMobileMenu}
-                        aria-label="open menu"
-                      >
-                        {showMobileMenu ? (
-                          "X"
-                        ) : (
-                          <div className="burger -mt-40">
-                            <input type="checkbox" id="burger" />
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                          </div>
-                        )}
-                        <span className="font-bold"></span>
-                      </button>
-                      {showMobileMenu && marketingConfig.mainNav && (
-                        <MobileNav items={marketingConfig.mainNav} />
-                      )} */}
-
+                      {" "}
                       <p className="text-xl dmsans md:ml-32">
                         {menuItem.projectNumber}
                       </p>
@@ -356,7 +318,7 @@ export default function ProjectPage({
               </div>
             ))
         ) : (
-          <ProjectNotFound />
+          <ProjectFound />
         )}
       </Suspense>
     </div>

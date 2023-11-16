@@ -11,6 +11,7 @@ import Image from "next/image";
 import Head from "next/head";
 import "@/styles/fonts.css";
 import SiteFooter from "@/components/site-footer";
+import Card3 from "@/components/StickyCard3";
 
 const metadata: Metadata = {
   title: "Explore our projects - Bind Architects - Best Architects in Chennai.",
@@ -73,7 +74,7 @@ function ProjectsHome() {
       </Head>
       <div className="flex flex-row mr-5 items-center justify-between space-x-2 mt-4 bg">
         <p
-          className="logo-font md:hidden ml-5 md:ml-0 flex-1 text-4xl font-bold"
+          className="logo-font md:hidden ml-5 md:ml-0 flex-1 text-4xl"
           aria-label="BIND"
         >
           BIND
@@ -101,8 +102,10 @@ function ProjectsHome() {
                     aria-label={item.title}
                     href={item.disabled ? "#" : item.href}
                     className={cn(
-                      "group flex hover:bg-slate-900 hover:text-orange-400 flex-col text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium ",
-                      item.disabled && "cursor-not-allowed opacity-60"
+                      "group relative flex flex-col text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium",
+                      item.disabled && "cursor-not-allowed opacity-60",
+                      "relative overflow-hidden after:relative after:flex after:items-center after:content-'' after:w-0 after:h-px after:bg-orange-400 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full",
+                      "after:mt-2" // Add margin-top to create space between line and text
                     )}
                   >
                     <span className="">{item.title}</span>
@@ -112,11 +115,6 @@ function ProjectsHome() {
           </div>
 
           <Card />
-
-          <br />
-          <br />
-          <FreeQuote />
-          <SiteFooter />
         </div>
       </Suspense>
     </>

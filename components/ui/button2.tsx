@@ -3,7 +3,7 @@ import { VariantProps, cva } from "class-variance-authority"
 
 import { cn } from "@/lib/utils"
 
-const buttonVariants = cva(
+const buttonVariants2 = cva(
   "inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background",
   {
     variants: {
@@ -24,6 +24,7 @@ const buttonVariants = cva(
         default: "h-10 py-2 px-4",
         sm: "h-9 px-3 rounded-md",
         lg: "h-11 px-8 rounded-md",
+        contact:"md:min-h-[5rem] min-h-[3rem] md:px-24 px-12"
       },
     },
     defaultVariants: {
@@ -35,19 +36,19 @@ const buttonVariants = cva(
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {}
+    VariantProps<typeof buttonVariants2> {}
 
-const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+const Button2= React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, ...props }, ref) => {
     return (
       <button
-        className={cn(buttonVariants({ variant, size, className }))}
+        className={cn(buttonVariants2({ variant, size, className }))}
         ref={ref}
         {...props}
       />
     )
   }
 )
-Button.displayName = "Button"
+Button2.displayName = "Button"
 
-export { Button, buttonVariants }
+export { Button2, buttonVariants2 }

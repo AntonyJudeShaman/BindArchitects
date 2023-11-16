@@ -101,8 +101,10 @@ function ProjectsHome() {
                     aria-label={item.title}
                     href={item.disabled ? "#" : item.href}
                     className={cn(
-                      "group flex hover:bg-slate-900 hover:text-orange-400 flex-col text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium ",
-                      item.disabled && "cursor-not-allowed opacity-60"
+                      "group relative flex flex-col text-right items-center overflow-hidden dmsans hidden mr-4 text-zinc-300 md:inline-block rounded-md p-2 text-sm font-medium",
+                      item.disabled && "cursor-not-allowed opacity-60",
+                      "relative overflow-hidden after:relative after:flex after:items-center after:content-'' after:w-0 after:h-px after:bg-orange-400 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full",
+                      "after:mt-2" // Add margin-top to create space between line and text
                     )}
                   >
                     <span className="">{item.title}</span>

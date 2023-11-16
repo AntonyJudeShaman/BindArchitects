@@ -16,7 +16,7 @@ export default function SiteFooter({
   return (
     <div className="max-w-screen md:-ml-32 md:-mr-32">
       <footer className="md:py-8 bg-footer">
-        <Link href="/contact">
+        <Link href="/contact#contact-using-this-form">
           <div className="sm:flex sm:items-center  sm:justify-between">
             <div className="flex items-center mx-auto mb-4 sm:mb-0 max-w-[65rem]">
               <span className="self-center mx-auto  flex mt-20 mb-10 footer-title dmsans-heading   whitespace-nowrap ">

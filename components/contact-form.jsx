@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useRef } from "react";
 import emailjs from "emailjs-com";
-import { Button } from "@/components/ui/button";
+import { Button2 } from "@/components/ui/button2";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "./ui/textarea";
@@ -104,41 +104,47 @@ export function Contactform({ className }) {
 
   return (
     <div
-      className=" justify-center flex min-h-screen max-w-[50rem] p-6 mt-10 md:mt-20 md:p-0"
+      className=" bg-white md:-mr-32 md:-ml-32 text-black flex min-h-screen p-6 mt-10 md:mt-20 md:p-0"
       aria-label="contact form"
+      id="contact-using-this-form"
     >
-      <form
-        ref={form}
-        onSubmit={handleSubmit}
-        className={cn("space-x-4 md:-mt-12 sm:pt-10", className)}
-        aria-label="contact-form"
-        style={{
-          maxWidth: "100%",
-          margin: "0 auto",
-        }}
-      >
-        <div className="grid gap-4 ">
-          <p
-            className="md:text-5xl text-5xl dmsans-bold mb-4 text-left "
-            aria-label="Contact us"
-          >
-            Hello! Let&apos;s talk about your new project
-          </p>
-          <p
-            className="md:text-2xl text-muted-foreground text-xl mb-4   text-left "
-            aria-label="Contact us"
-          >
-            Fill in the form to contact us or send an email to{" "}
-            <Link
-              href="mailto:bindarchitects@gmail.com"
-              aria-label="Mail: bindarchitects@gmail.com"
+      <div className="md:ml-24">
+        {" "}
+        <form
+          ref={form}
+          onSubmit={handleSubmit}
+          className={cn(
+            "space-x-4 mt-10 sm:pt-10",
+            className
+          )}
+          aria-label="contact-form"
+          style={{
+            maxWidth: "100%",
+          }}
+        >
+          <div className="grid gap-4 ">
+            <p
+              className="md:text-6xl text-5xl dmsans-bold mb-4 text-left "
+              aria-label="Contact us"
             >
-              <span className="dmsans-bold hover:text-orange-400">
-                bindarchitects@gmail.com
-              </span>
-            </Link>
-          </p>
-          {/* <div className="wave-group">
+              Hello! Let&apos;s talk about your new project
+            </p>
+            <p
+              className="md:text-xl  text-xl mb-4 text-left "
+              aria-label="Contact us"
+              style={{ color: "#565656" }}
+            >
+              Fill in the form to contact us or send an email to{" "}
+              <Link
+                href="mailto:bindarchitects@gmail.com"
+                aria-label="Mail: bindarchitects@gmail.com"
+              >
+                <span className="dmsans-bold hover:text-orange-400">
+                  bindarchitects@gmail.com
+                </span>
+              </Link>
+            </p>
+            {/* <div className="wave-group">
             <Input required type="text" className="input" id="name"
               name="name"
               value={name}
@@ -161,160 +167,162 @@ export function Contactform({ className }) {
               </span>
             </label>
           </div> */}
-          <div
-            className="grid grid-cols-1  md:grid-cols-1  items-center gap-4"
-            aria-label="enter your name"
-          >
-            {/* <Label
+            <div
+              className="grid grid-cols-1  md:grid-cols-1  items-center gap-4"
+              aria-label="enter your name"
+            >
+              {/* <Label
               htmlFor="name"
               className="sub-gradient text-lg font-semibold"
             >
               Name
             </Label> */}
 
-            <Input
-              id="name"
-              name="name"
-              className="md:col-span-3 input text-lg"
-              placeholder="Enter your name"
-              aria-label="name field"
-              value={name}
-              style={{
-                filter: "brightness(180%)",
-              }}
-              onChange={(e) => setName(e.target.value)}
-            />
-            {showNameAlert && (
-              <div className="error-gradient text-md w-full">
-                <p>Name is Empty or Invalid.</p>
-              </div>
-            )}
-          </div>
-          <div
-            className="grid grid-cols-1 md:grid-cols-1  items-center gap-4"
-            aria-label="enter your email"
-          >
-            {/* <Label
+              <Input
+                id="name"
+                name="name"
+                className="md:col-span-3 input text-lg"
+                placeholder="Enter your name"
+                aria-label="name field"
+                value={name}
+                style={{
+                  filter: "brightness(180%)",
+                }}
+                onChange={(e) => setName(e.target.value)}
+              />
+              {showNameAlert && (
+                <div className="error-gradient text-md w-full">
+                  <p>Name is Empty or Invalid.</p>
+                </div>
+              )}
+            </div>
+            <div
+              className="grid grid-cols-1 md:grid-cols-1  items-center gap-4"
+              aria-label="enter your email"
+            >
+              {/* <Label
               htmlFor="email"
               className="sub-gradient text-lg font-semibold"
             >
               Email<span className="error-gradient"> *</span>
             </Label> */}
-            <Input
-              id="email"
-              name="email"
-              className="md:col-span-3 text-lg"
-              aria-label="email field"
-              placeholder="Enter your email"
-              value={email}
-              style={{
-                filter: "brightness(180%)",
-              }}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            {showEmailAlert && (
-              <div className="error-gradient text-md w-full">
-                <p>Email is Empty or Invalid.</p>
-              </div>
-            )}
-          </div>
-          <div
-            className="grid grid-cols-1 md:grid-cols-1  items-center gap-4"
-            aria-label="enter your phone number"
-          >
-            {/* <Label
+              <Input
+                id="email"
+                name="email"
+                className="md:col-span-3 text-lg"
+                aria-label="email field"
+                placeholder="Enter your email"
+                value={email}
+                style={{
+                  filter: "brightness(180%)",
+                }}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              {showEmailAlert && (
+                <div className="error-gradient text-md w-full">
+                  <p>Email is Empty or Invalid.</p>
+                </div>
+              )}
+            </div>
+            <div
+              className="grid grid-cols-1 md:grid-cols-1  items-center gap-4"
+              aria-label="enter your phone number"
+            >
+              {/* <Label
               htmlFor="phone"
               className="sub-gradient text-lg font-semibold"
             >
               Phone<span className="error-gradient"> *</span>
             </Label> */}
-            <Input
-              id="phone"
-              name="phone"
-              aria-label="phone number field"
-              style={{
-                filter: "brightness(180%)",
-              }}
-              className="md:col-span-3 text-lg"
-              placeholder="Enter your phone number"
-              value={phone}
-              onChange={(e) => setPhone(e.target.value)}
-            />
-            {showPhoneAlert && (
-              <div className="error-gradient text-md w-full">
-                <p className="w-full">Phone is Empty or Invalid.</p>
-              </div>
-            )}
-          </div>
-          <div
-            className="grid grid-cols-1 md:grid-cols-1  items-center gap-4"
-            aria-label="enter your message optional"
-          >
-            {/* <Label
+              <Input
+                id="phone"
+                name="phone"
+                aria-label="phone number field"
+                style={{
+                  filter: "brightness(180%)",
+                }}
+                className="md:col-span-3 text-lg"
+                placeholder="Enter your phone number"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+              />
+              {showPhoneAlert && (
+                <div className="error-gradient text-md w-full">
+                  <p className="w-full">Phone is Empty or Invalid.</p>
+                </div>
+              )}
+            </div>
+            <div
+              className="grid grid-cols-1 md:grid-cols-1  items-center gap-4"
+              aria-label="enter your message optional"
+            >
+              {/* <Label
               htmlFor="message"
               className="sub-gradient text-lg font-semibold"
             >
               Message
             </Label> */}
-            <Textarea
-              id="message"
-              style={{
-                filter: "brightness(180%)",
-              }}
-              name="message"
-              aria-label="message field"
-              className="md:col-span-3 text-lg"
-              placeholder="Type your message here."
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-            />
-          </div>
-          {showDialog && (
-            <div className="text-center success-gradient text-md pb-2">
-              <p>
-                Your details has been submitted. Our team will contact you
-                shortly.
-              </p>
+              <Textarea
+                id="message"
+                style={{
+                  filter: "brightness(180%)",
+                }}
+                name="message"
+                aria-label="message field"
+                className="md:col-span-3 text-lg"
+                placeholder="Type your message here."
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+              />
             </div>
-          )}
-          <div
-            className="flex flex-row mt-4 items-center gap-4"
-            aria-label="please check this checkbox"
-          >
-            <Checkbox aria-label="tick this checkbox"/>
-            <div htmlFor="message" className="pt-2 pb-2 dmsans">
-              By submitting this form you agree to our{" "}
-              <Link
-                href="/terms"
-                aria-label="Terms Of Use"
-                className="hover:text-orange-400  dmsans-bold underline underline-offset-4"
-              >
-                Terms of Use
-              </Link>{" "}
-              and{" "}
-              <Link
-                href="/privacy"
-                aria-label="Privacy Policy"
-                className="hover:text-orange-400  dmsans-bold underline underline-offset-4"
-              >
-                Privacy Policy
-              </Link>
-              .
-            </div>
-          </div>
-          <div className="align-right float-right text-right mb-5">
-            <Button
-              aria-label={loading ? "Submitting..." : "Submit the form"}
-              type="submit"
-              variant="white"
-              className=" w-full mt-4 border text-md border-green-300 "
-              disabled={loading}
+            {showDialog && (
+              <div className="text-center success-gradient text-md pb-2">
+                <p>
+                  Your details has been submitted. Our team will contact you
+                  shortly.
+                </p>
+              </div>
+            )}
+            <div
+              className="flex flex-row mt-4 items-center gap-4"
+              aria-label="please check this checkbox"
             >
-              {loading ? <LoadingDots color="red" /> : "Submit"}
-            </Button>
+              <Checkbox aria-label="tick this checkbox" />
+              <div htmlFor="message" className="pt-2 pb-2 dmsans">
+                By submitting this form you agree to our{" "}
+                <Link
+                  href="/terms"
+                  aria-label="Terms Of Use"
+                  className="hover:text-orange-400  dmsans-bold underline underline-offset-4"
+                >
+                  Terms of Use
+                </Link>{" "}
+                and{" "}
+                <Link
+                  href="/privacy"
+                  aria-label="Privacy Policy"
+                  className="hover:text-orange-400  dmsans-bold underline underline-offset-4"
+                >
+                  Privacy Policy
+                </Link>
+                .
+              </div>
+            </div>
+            <div className="mb-20">
+              <Button2
+                aria-label={loading ? "Submitting..." : "Submit the form"}
+                type="submit"
+                variant="black"
+                size="contact"
+                className="mt-4 w-[10rem] text-white border text-md border-green-300 "
+                disabled={loading}
+              >
+                {loading ? <LoadingDots color="red" /> : "Send Message"}
+              </Button2>
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   );
 }

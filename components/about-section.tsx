@@ -1,16 +1,15 @@
-"use client"
+"use client";
 import Head from "next/head";
 import React, { useEffect } from "react";
 import Awards from "./awards";
 
 export function AboutSection() {
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div className="">
+    <div className="p-2">
       <Head>
         <title>About Us - Studio Bind Architects</title>
         <meta
@@ -38,17 +37,30 @@ export function AboutSection() {
         </div>
       </section>
       <section
+        className=" md:mb-10 p-0 md:p-4 md:-ml-4 md:-mr-28 gap-x-24 grid md:grid-cols-1 grid-cols-1"
+        aria-label="about us section"
+      >
+        <h2
+          className="text-4xl md:-ml-20 ml-7 text-left dmsans-semibold font-medium leading-[1.1] mb-5 md:text-6xl"
+          aria-label="Our Story"
+        >
+          Our Story
+          <hr className="mt-10 md:mr-10 mr-0" />
+        </h2>
+      </section>
+      <section
         className=" md:mb-10 min-h-[40rem] p-4 md:-ml-28 md:-mr-28 gap-x-24 grid md:grid-cols-3 grid-cols-1"
         aria-label="about us section"
       >
+        {/* <h2
+          className="text-4xl dmsans-semibold font-medium leading-[1.1] mb-5 md:text-6xl"
+          aria-label="Our Story"
+        >
+          Our Story
+          <hr className="mt-10 md:hidden" />
+        </h2> */}
         <div className="flex flex-col p-4  max-w-[40rem] text-left">
-          <h2
-            className="text-4xl dmsans-semibold font-medium leading-[1.1] mb-5 md:text-6xl"
-            aria-label="Our Story"
-          >
-            Our Story
-          </h2>
-          <div className="text-lg dmsans leading-normal text-justify  text-muted-foreground">
+          <div className="text-lg dmsans md:mt-24 mt-0 leading-normal text-justify  text-muted-foreground">
             We believe good design and powerful storytelling can bring a
             brand&apos;s essence and personality to life. From conception to
             project completion, listening is our top priority to ensure we
@@ -64,6 +76,7 @@ export function AboutSection() {
             aria-label="Our Values"
           >
             Our Values
+            <hr className="mt-10 md:hidden" />
           </h2>
           <div className="max-w-full text-justify text-md text-lg dmsans leading-normal text-muted-foreground sm:text-md sm:leading-8">
             <div className="text-left space-y-4">
@@ -106,6 +119,7 @@ export function AboutSection() {
             aria-label="Our Team"
           >
             Our Team
+            <hr className="mt-10 md:hidden" />
           </h2>
           <div className="text-lg dmsans leading-normal text-justify text-muted-foreground">
             Our diverse team is comprised of Architects, Interior Designers,
@@ -118,7 +132,6 @@ export function AboutSection() {
             deliver results that exceed your expectations.
           </div>
         </div>
-        
       </section>
     </div>
   );

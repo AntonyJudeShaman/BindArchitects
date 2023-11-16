@@ -5,8 +5,9 @@ function Services() {
     <div className="md:-ml-32 -ml-4 md:-mr-20 flex p-4 mt-10 flex-col md:flex-col   ">
       <div className="flex max-w-[88rem] flex-col text-left">
         <h2 className="dmsans-semibold md:ml-7 ml-8 text-4xl text-left dmsans font-medium leading-[1.1] mb-10 md:text-6xl">
-          Our Services
+          Our Services<hr className="mt-10 "/>
         </h2>
+        
       </div>
       <div className="our-story mb-10 flex-col md:flex-row md:p-0">
         <div className="our-story-item relative overflow-hidden rounded-lg border border-zinc-950 p-4">

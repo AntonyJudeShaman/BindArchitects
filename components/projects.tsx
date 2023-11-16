@@ -1,6 +1,5 @@
 "use client";
 import React, { CSSProperties, MouseEvent } from "react";
-import { SiteFooter } from "./site-footer";
 import Link from "next/link";
 import image1 from "../assets/ykck.png";
 import image2 from "../assets/terraceman.png";
@@ -19,287 +18,95 @@ import image14 from "../assets/mga.png";
 import image15 from "../assets/eastwest.png";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { initializeApp } from "firebase/app";
+import {
+  getStorage,
+  ref as reff,
+  uploadBytes,
+  listAll,
+  getDownloadURL,
+} from "firebase/storage";
+import { getDatabase, ref, onValue } from "firebase/database";
+import { firebaseConfig } from "@/components/firebase";
+import ProjectFound from "./project-found";
+
+
+interface MenuItem {
+  projectNumber: string | null | undefined;
+  projectName: string | null | undefined;
+  description: string | null | undefined;
+  type: string | null | undefined;
+  projectPath: string | null | undefined;
+  expertise: string | null | undefined;
+  location: string | null | undefined;
+}
+
+const firebaseApp = initializeApp(firebaseConfig, "Project");
+const database = getDatabase(firebaseApp);
+const storage = getStorage(firebaseApp);
+
 
 export function Projects() {
-  const [hoverStyle, setHoverStyle] = useState({
-    transform: "translate(0, 0)",
-  });
-  const [hoverStyle1, setHoverStyle1] = useState({
-    transform: "translate(0, 0)",
-  });
-  const [hoverStyle2, setHoverStyle2] = useState({
-    transform: "translate(0, 0)",
-  });
-  const [hoverStyle3, setHoverStyle3] = useState({
-    transform: "translate(0, 0)",
-  });
-  const [hoverStyle4, setHoverStyle4] = useState({
-    transform: "translate(0, 0)",
-  });
-  const [hoverStyle5, setHoverStyle5] = useState({
-    transform: "translate(0, 0)",
-  });
-  const [hoverStyle6, setHoverStyle6] = useState({
-    transform: "translate(0, 0)",
-  });
-  const [hoverStyle7, setHoverStyle7] = useState({
-    transform: "translate(0, 0)",
-  });
-  const [hoverStyle8, setHoverStyle8] = useState({
-    transform: "translate(0, 0)",
-  });
-  const [hoverStyle9, setHoverStyle9] = useState({
-    transform: "translate(0, 0)",
-  });
-  const [hoverStyle10, setHoverStyle10] = useState({
-    transform: "translate(0, 0)",
-  });
-  const [hoverStyle11, setHoverStyle11] = useState({
-    transform: "translate(0, 0)",
-  });
-  const [hoverStyle12, setHoverStyle12] = useState({
-    transform: "translate(0, 0)",
-  });
 
-  const handleMouseMove = (e: MouseEvent) => {
-    const container = (e.target as HTMLElement).getBoundingClientRect();
-    const x = e.clientX - container.left;
-    const y = e.clientY - container.top;
+  
+  const [images, setImages] = useState<string[]>([]);
+  const [MenuItems, setMenuItems] = useState<MenuItem[] | null>(null);
 
-    const centerX = container.width / 2;
-    const centerY = container.height / 2;
+  const imagesRef = reff(storage, `Project/`);
 
-    const moveX = ((x - centerX) / centerX) * 3;
-    const moveY = ((y - centerY) / centerY) * 3;
+  const menuRef = ref(database, `Project/`);
 
-    setHoverStyle({
-      transform: `translate(${moveX}px, ${moveY}px)`,
+  
+  useEffect(() => {
+    const fetchMenuData = async () => {
+      onValue(menuRef, (snapshot) => {
+        const data = snapshot.val();
+        if (data) {
+          const menuData: MenuItem[] | null = Object.entries(data).map(
+            ([key, value]) => ({
+              id: key,
+              projectNumber: (
+                value as { projectNumber: string | null | undefined }
+              ).projectNumber,
+              projectName: (value as { projectName: string | null | undefined })
+                .projectName,
+              description: (value as { description: string | null | undefined })
+                .description,
+              type: (value as { type: string | null | undefined }).type,
+              projectPath: (value as { projectPath: string | null | undefined })
+                .projectPath,
+              expertise: (value as { expertise: string | null | undefined })
+                .expertise,
+              location: (value as { location: string | null | undefined })
+                .location,
+            })
+          );
+          setMenuItems(menuData);
+        }
+      });
+    };
+    
+    fetchMenuData();
+  }, []);
+
+  listAll(imagesRef)
+    .then((res) => {
+      const imagePromises = res.items.map((item) => getDownloadURL(item));
+      Promise.all(imagePromises)
+        .then((urls) => {
+          setImages(urls as string[]);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    })
+    .catch((error) => {
+      console.error(error);
     });
-  };
 
-  const handleMouseLeave = () => {
-    setHoverStyle({ transform: "translate(0, 0)" });
-  };
-
-  const handleMouseMove1 = (e: MouseEvent) => {
-    const container = (e.target as HTMLElement).getBoundingClientRect();
-    const x = e.clientX - container.left;
-    const y = e.clientY - container.top;
-
-    const centerX = container.width / 2;
-    const centerY = container.height / 2;
-
-    const moveX = ((x - centerX) / centerX) * 3;
-    const moveY = ((y - centerY) / centerY) * 3;
-
-    setHoverStyle1({
-      transform: `translate(${moveX}px, ${moveY}px)`,
-    });
-  };
-
-  const handleMouseLeave1 = () => {
-    setHoverStyle({ transform: "translate(0, 0)" });
-  };
-
-  const handleMouseMove2 = (e: MouseEvent) => {
-    const container = (e.target as HTMLElement).getBoundingClientRect();
-    const x = e.clientX - container.left;
-    const y = e.clientY - container.top;
-
-    const centerX = container.width / 2;
-    const centerY = container.height / 2;
-
-    const moveX = ((x - centerX) / centerX) * 3;
-    const moveY = ((y - centerY) / centerY) * 3;
-
-    setHoverStyle2({
-      transform: `translate(${moveX}px, ${moveY}px)`,
-    });
-  };
-
-  const handleMouseLeave2 = () => {
-    setHoverStyle({ transform: "translate(0, 0)" });
-  };
-
-  const handleMouseMove3 = (e: MouseEvent) => {
-    const container = (e.target as HTMLElement).getBoundingClientRect();
-    const x = e.clientX - container.left;
-    const y = e.clientY - container.top;
-
-    const centerX = container.width / 2;
-    const centerY = container.height / 2;
-
-    const moveX = ((x - centerX) / centerX) * 3;
-    const moveY = ((y - centerY) / centerY) * 3;
-
-    setHoverStyle3({
-      transform: `translate(${moveX}px, ${moveY}px)`,
-    });
-  };
-
-  const handleMouseLeave3 = () => {
-    setHoverStyle({ transform: "translate(0, 0)" });
-  };
-
-  const handleMouseMove4 = (e: MouseEvent) => {
-    const container = (e.target as HTMLElement).getBoundingClientRect();
-    const x = e.clientX - container.left;
-    const y = e.clientY - container.top;
-
-    const centerX = container.width / 2;
-    const centerY = container.height / 2;
-
-    const moveX = ((x - centerX) / centerX) * 3;
-    const moveY = ((y - centerY) / centerY) * 3;
-
-    setHoverStyle4({
-      transform: `translate(${moveX}px, ${moveY}px)`,
-    });
-  };
-
-  const handleMouseLeave4 = () => {
-    setHoverStyle({ transform: "translate(0, 0)" });
-  };
-
-  const handleMouseMove5 = (e: MouseEvent) => {
-    const container = (e.target as HTMLElement).getBoundingClientRect();
-    const x = e.clientX - container.left;
-    const y = e.clientY - container.top;
-
-    const centerX = container.width / 2;
-    const centerY = container.height / 2;
-
-    const moveX = ((x - centerX) / centerX) * 3;
-    const moveY = ((y - centerY) / centerY) * 3;
-
-    setHoverStyle5({
-      transform: `translate(${moveX}px, ${moveY}px)`,
-    });
-  };
-
-  const handleMouseLeave5 = () => {
-    setHoverStyle({ transform: "translate(0, 0)" });
-  };
-
-  const handleMouseMove6 = (e: MouseEvent) => {
-    const container = (e.target as HTMLElement).getBoundingClientRect();
-    const x = e.clientX - container.left;
-    const y = e.clientY - container.top;
-
-    const centerX = container.width / 2;
-    const centerY = container.height / 2;
-
-    const moveX = ((x - centerX) / centerX) * 3;
-    const moveY = ((y - centerY) / centerY) * 3;
-
-    setHoverStyle6({
-      transform: `translate(${moveX}px, ${moveY}px)`,
-    });
-  };
-
-  const handleMouseLeave6 = () => {
-    setHoverStyle({ transform: "translate(0, 0)" });
-  };
-
-  const handleMouseMove7 = (e: MouseEvent) => {
-    const container = (e.target as HTMLElement).getBoundingClientRect();
-    const x = e.clientX - container.left;
-    const y = e.clientY - container.top;
-
-    const centerX = container.width / 2;
-    const centerY = container.height / 2;
-
-    const moveX = ((x - centerX) / centerX) * 3;
-    const moveY = ((y - centerY) / centerY) * 3;
-
-    setHoverStyle7({
-      transform: `translate(${moveX}px, ${moveY}px)`,
-    });
-  };
-
-  const handleMouseLeave7 = () => {
-    setHoverStyle({ transform: "translate(0, 0)" });
-  };
-
-  const handleMouseMove8 = (e: MouseEvent) => {
-    const container = (e.target as HTMLElement).getBoundingClientRect();
-    const x = e.clientX - container.left;
-    const y = e.clientY - container.top;
-
-    const centerX = container.width / 2;
-    const centerY = container.height / 2;
-
-    const moveX = ((x - centerX) / centerX) * 3;
-    const moveY = ((y - centerY) / centerY) * 3;
-
-    setHoverStyle8({
-      transform: `translate(${moveX}px, ${moveY}px)`,
-    });
-  };
-
-  const handleMouseLeave8 = () => {
-    setHoverStyle({ transform: "translate(0, 0)" });
-  };
-
-  const handleMouseMove9 = (e: MouseEvent) => {
-    const container = (e.target as HTMLElement).getBoundingClientRect();
-    const x = e.clientX - container.left;
-    const y = e.clientY - container.top;
-
-    const centerX = container.width / 2;
-    const centerY = container.height / 2;
-
-    const moveX = ((x - centerX) / centerX) * 3;
-    const moveY = ((y - centerY) / centerY) * 3;
-
-    setHoverStyle9({
-      transform: `translate(${moveX}px, ${moveY}px)`,
-    });
-  };
-
-  const handleMouseLeave9 = () => {
-    setHoverStyle({ transform: "translate(0, 0)" });
-  };
-
-  const handleMouseMove10 = (e: MouseEvent) => {
-    const container = (e.target as HTMLElement).getBoundingClientRect();
-    const x = e.clientX - container.left;
-    const y = e.clientY - container.top;
-
-    const centerX = container.width / 2;
-    const centerY = container.height / 2;
-
-    const moveX = ((x - centerX) / centerX) * 3;
-    const moveY = ((y - centerY) / centerY) * 3;
-
-    setHoverStyle10({
-      transform: `translate(${moveX}px, ${moveY}px)`,
-    });
-  };
-
-  const handleMouseMove11 = (e: MouseEvent) => {
-    const container = (e.target as HTMLElement).getBoundingClientRect();
-    const x = e.clientX - container.left;
-    const y = e.clientY - container.top;
-
-    const centerX = container.width / 2;
-    const centerY = container.height / 2;
-
-    const moveX = ((x - centerX) / centerX) * 3;
-    const moveY = ((y - centerY) / centerY) * 3;
-
-    setHoverStyle11({
-      transform: `translate(${moveX}px, ${moveY}px)`,
-    });
-  };
-
-  const handleMouseLeave11 = () => {
-    setHoverStyle({ transform: "translate(0, 0)" });
-  };
-
-  const handleMouseLeave10 = () => {
-    setHoverStyle({ transform: "none" });
-  };
+    if (MenuItems === null) {
+      return <ProjectFound />;
+    }
 
   return (
     <div
@@ -328,7 +135,7 @@ export function Projects() {
             <p
               className="flex-1 dmsans-semibold text-left text-orange-50"
               aria-label="Delphi Derma"
-             >
+            >
               Delphi Derma
             </p>
             <p
@@ -360,7 +167,7 @@ export function Projects() {
             <p
               className="flex-1 dmsans-semibold text-left text-orange-50"
               aria-label="Remy Cinemas"
-             >
+            >
               Remy Cinemas
             </p>
             <p
@@ -389,7 +196,10 @@ export function Projects() {
             />
           </div>
           <div className="flex flex-wrap text-lg mt-2">
-            <p className="flex-1 dmsans-semibold text-left text-orange-50" aria-label="CCBM">
+            <p
+              className="flex-1 dmsans-semibold text-left text-orange-50"
+              aria-label="CCBM"
+            >
               CCBM
             </p>
             <p
@@ -418,7 +228,10 @@ export function Projects() {
             />
           </div>
           <div className="flex flex-wrap text-lg mt-2">
-            <p className="flex-1 dmsans-semibold text-left text-orange-50" aria-label="MGA Sristi">
+            <p
+              className="flex-1 dmsans-semibold text-left text-orange-50"
+              aria-label="MGA Sristi"
+            >
               MGA Sristi
             </p>
             <p
@@ -447,7 +260,10 @@ export function Projects() {
             />
           </div>
           <div className="flex flex-wrap text-lg mt-2">
-            <p className="flex-1 dmsans-semibold text-left text-orange-50" aria-label="East West">
+            <p
+              className="flex-1 dmsans-semibold text-left text-orange-50"
+              aria-label="East West"
+            >
               East West
             </p>
             <p
