@@ -261,7 +261,7 @@ export default function ProjectPage({
                         ),
                       }}
                     >
-                      aa
+                      BIND
                     </p>
                   </div>
                   <div className="min-h-screen max-w-screen">
