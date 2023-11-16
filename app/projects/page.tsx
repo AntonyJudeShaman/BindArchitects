@@ -88,13 +88,13 @@ function ProjectsHome() {
         fallback={<div style={fallbackStyle}>Loading Please wait...</div>}
       >
         <link rel="canonical" href="https://www.bindhomes.com/projects" />
-        <div className="min-h-screen max-w-screen mt-4 bg" data-theme="">
+        <div className="min-h-screen  max-w-screen mt-4 bg" data-theme="">
           <div className="md:ml-0 ml-5 flex justify-between">
-            <div className="hidden md:block">
+            <div className="hidden md:ml-24 md:block">
               {" "}
               <MainNav items={marketingConfig.mainNav} />
             </div>
-            <nav className="justify-between">
+            <nav className="justify-between md:-mr-16">
               {marketingConfig &&
                 marketingConfig.mainNav.map((item, index) => (
                   <Link
@@ -113,8 +113,17 @@ function ProjectsHome() {
                 ))}
             </nav>
           </div>
+          <div className=" md:-ml-0 md:-mr-32 max-w-screen  ">
+            <div className="  ">
+              <div className="">
+                <div className="p-8 md:p-4 justify-center  text-wrapper  flex flex-col gap-4"></div>
 
-          <Card />
+                <div className="md:m-0  mx-auto">
+                  <Card />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </Suspense>
     </>

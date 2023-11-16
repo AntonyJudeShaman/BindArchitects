@@ -164,7 +164,7 @@ function Card2({ excludeProject }: CardProps) {
                     ]
                   ),
                 }}
-                className=" mt-10  mx-auto  border border-zinc-50 justify-center ml-0 md:ml-0 flex-col flex"
+                className=" mt-10  mx-auto  rounded-md justify-center ml-0 md:ml-0 flex-col flex"
               >
                 <div className="container text-wrapper md:pt-32 pt-12 pb-12 md:pl-12 md:pr-12 md:pb-20 flex flex-col gap-4 ">
                   <p
