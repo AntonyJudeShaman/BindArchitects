@@ -71,23 +71,23 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
-        // "fade-in": {
-        //   "0%": {
-        //     opacity: "0%",
-        //   },
-        //   "25%": {
-        //     opacity: "0%",
-        //   },
-        //   "50%": {
-        //     opacity: "100%",
-        //   },
-        //   "75%": {
-        //     opacity: "100%",
-        //   },
-        //   "100%": {
-        //     opacity: "100%",
-        //   },
-        // },
+        "fade-in": {
+          "0%": {
+            opacity: "0%",
+          },
+          "25%": {
+            opacity: "0%",
+          },
+          "50%": {
+            opacity: "0%",
+          },
+          "75%": {
+            opacity: "100%",
+          },
+          "100%": {
+            opacity: "100%",
+          },
+        },
         // "fade-left": {
         //   "0%": {
         //     transform: "translateX(100%)",

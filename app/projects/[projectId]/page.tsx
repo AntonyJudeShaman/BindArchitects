@@ -216,7 +216,7 @@ export default function ProjectPage({
   }
 
   return (
-    <div className="max-w-screen">
+    <div className="max-w-screen animate-fade-in">
       <Suspense fallback={<div style={fallbackStyle}>Please wait...</div>}>
         {selectedProjectData && selectedProjectData.length > 0 ? (
           selectedProjectData

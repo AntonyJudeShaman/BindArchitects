@@ -142,12 +142,12 @@ function Card() {
   if (MenuItems === null) {
     return (
       <div className="bg-tranparent flex flex-row mx-auto mt-24 align-middle justify-center items-center p-8 rounded shadow-lg text-center">
-        <p className="text-2xl justify-center flex dmsans-bold">
-          Loading please wait &nbsp;&nbsp;
-        </p>
         <div className=" justify-center items-center">
           <div className="animate-spin rounded-full border-t-4 border-blue-500 border-t-blue-500 h-12 w-12"></div>
         </div>
+        <p className="text-2xl justify-center flex dmsans-bold">
+        &nbsp;&nbsp; Loading please wait 
+        </p>
       </div>
     );
   }
