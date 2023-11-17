@@ -41,7 +41,7 @@ export function AboutSection() {
         aria-label="about us section"
       >
         <h2
-          className="text-4xl md:-ml-20 ml-7 text-left dmsans-semibold font-medium leading-[1.1] mb-5 md:text-7xl"
+          className="text-5xl md:-ml-20 ml-7 text-left dmsans-semibold font-medium leading-[1.1] mb-5 md:text-7xl"
           aria-label="Our Story"
         >
           Our Story
@@ -60,7 +60,7 @@ export function AboutSection() {
           <hr className="mt-10 md:hidden" />
         </h2> */}
         <div className="flex flex-col p-4  max-w-[40rem] text-left">
-          <div className="text-lg dmsans md:mt-24 mt-0 leading-normal text-justify  text-muted-foreground">
+          <div className="text-lg dmsans md:mt-2 mt-0 leading-normal text-justify  text-muted-foreground">
             We believe good design and powerful storytelling can bring a
             brand&apos;s essence and personality to life. From conception to
             project completion, listening is our top priority to ensure we
@@ -72,7 +72,7 @@ export function AboutSection() {
         </div>
         <div className="p-4 flex max-w-[40rem] flex-col space-y-4 text-left">
           <h2
-            className="text-4xl dmsans-semibold font-medium leading-[1.1] mb-5 md:text-6xl"
+            className="text-4xl dmsans-semibold font-medium leading-[1.1] mb-5 md:text-4xl"
             aria-label="Our Values"
           >
             Our Values
@@ -80,32 +80,32 @@ export function AboutSection() {
           </h2>
           <div className="max-w-full text-justify text-md text-lg dmsans leading-normal text-muted-foreground sm:text-md sm:leading-8">
             <div className="text-left space-y-4">
-              <p className="text-lg dmsans flex  md:flex-row flex-col text-muted-foreground">
+              <p className="text-lg dmsans flex  md:flex-col 2xl:flex-row flex-col text-muted-foreground">
                 <span className="my-font flex  flex-row text-white font-semibold">
                   &bull; &nbsp; Think.
                 </span>
                 &nbsp;This is 90% of the job.
               </p>
-              <p className="text-lg dmsans flex  md:flex-row flex-col text-muted-foreground">
+              <p className="text-lg dmsans flex  md:flex-col 2xl:flex-row flex-col text-muted-foreground">
                 <span className="my-font flex  flex-row text-white font-semibold">
                   &bull; &nbsp; Ask.
                 </span>
                 &nbsp;Discover the things you don&apos;t know.
               </p>
-              <p className="text-lg dmsans flex  md:flex-row flex-col text-muted-foreground">
-                <span className="my-font flex  flex-col text-white font-semibold">
+              <p className="text-lg dmsans flex  md:flex-col 2xl:flex-row flex-col text-muted-foreground">
+                <span className="my-font flex  flex-row text-white font-semibold">
                   &bull; &nbsp; Get Inspired.
                 </span>
                 &nbsp;Create something new.
               </p>
-              <p className="text-lg dmsans flex  md:flex-row flex-col text-muted-foreground">
-                <span className="my-font flex  flex-col text-white font-semibold">
+              <p className="text-lg dmsans flex  md:flex-col 2xl:flex-row flex-col text-muted-foreground">
+                <span className="my-font flex  flex-row text-white font-semibold">
                   &bull; &nbsp; Colloborate.
                 </span>
                 &nbsp;Big things can&apos;t be done alone.
               </p>
-              <p className="text-lg dmsans flex  md:flex-row  flex-col text-muted-foreground">
-                <span className="my-font flex  flex-col text-white font-semibold">
+              <p className="text-lg dmsans flex  md:flex-col 2xl:flex-row  flex-col text-muted-foreground">
+                <span className="my-font flex  flex-row text-white font-semibold">
                   &bull; &nbsp; Create.
                 </span>
                 &nbsp;Don&apos;t fall in love with your creation.
@@ -115,7 +115,7 @@ export function AboutSection() {
         </div>
         <div className="flex flex-col p-4 space-y-4 max-w-[40rem] text-left">
           <h2
-            className="text-4xl dmsans-semibold font-medium leading-[1.1] mb-5 md:text-6xl"
+            className="text-4xl dmsans-semibold font-medium leading-[1.1] mb-5 md:text-4xl"
             aria-label="Our Team"
           >
             Our Team
