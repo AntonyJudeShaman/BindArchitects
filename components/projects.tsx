@@ -30,7 +30,6 @@ import { getDatabase, ref, onValue } from "firebase/database";
 import { firebaseConfig } from "@/components/firebase";
 import ProjectFound from "./project-found";
 
-
 interface MenuItem {
   projectNumber: string | null | undefined;
   projectName: string | null | undefined;
@@ -45,10 +44,7 @@ const firebaseApp = initializeApp(firebaseConfig, "Project");
 const database = getDatabase(firebaseApp);
 const storage = getStorage(firebaseApp);
 
-
 export function Projects() {
-
-  
   const [images, setImages] = useState<string[]>([]);
   const [MenuItems, setMenuItems] = useState<MenuItem[] | null>(null);
 
@@ -56,7 +52,6 @@ export function Projects() {
 
   const menuRef = ref(database, `Project/`);
 
-  
   useEffect(() => {
     const fetchMenuData = async () => {
       onValue(menuRef, (snapshot) => {
@@ -85,13 +80,19 @@ export function Projects() {
         }
       });
     };
-    
+
     fetchMenuData();
   }, []);
 
-  listAll(imagesRef)
-    .then((res) => {
-      const imagePromises = res.items.map((item) => getDownloadURL(item));
+  useEffect(() => {
+    if (MenuItems) {
+      const imagePaths = MenuItems.map(
+        (project) => `Project/${project.projectPath}/`
+      );
+      const imagePromises = imagePaths.map((path) =>
+        listAll(reff(storage, path)).then((res) => getDownloadURL(res.items[0]))
+      );
+
       Promise.all(imagePromises)
         .then((urls) => {
           setImages(urls as string[]);
@@ -99,181 +100,58 @@ export function Projects() {
         .catch((error) => {
           console.error(error);
         });
-    })
-    .catch((error) => {
-      console.error(error);
-    });
-
-    if (MenuItems === null) {
-      return <ProjectFound />;
     }
+  }, [MenuItems]);
+
+  if (MenuItems === null) {
+    return <ProjectFound />;
+  }
 
   return (
     <div
-      className="min-h-screen max-w-full py-8 mx-auto justify-center"
+      className="min-h-screen max-w-screen py-8 mx-auto justify-center"
       data-theme=""
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-14 justify-center w-full ">
-        <Link
-          href="/projects/delphiderma"
-          style={{ filter: "brightness(130%)" }}
-          className="overflow-hidden md:m-0 m-4 groupjustify-center"
-        >
-          <div className="overflow-hidden ">
-            <Image
-              src={image9}
-              alt="Delphi Derma Clinic"
-              height={400}
-              width={700}
-              className="project-frame overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
-              // onMouseMove={handleMouseMove6}
-              // onMouseLeave={handleMouseLeave6}
-              // style={hoverStyle6}
-            />
-          </div>
-          <div className="flex flex-wrap text-lg mt-2">
-            <p
-              className="flex-1 dmsans-semibold text-left text-orange-50"
-              aria-label="Delphi Derma"
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center w-full ">
+        {MenuItems?.sort((a, b) =>
+          (b.projectNumber || "").localeCompare(a.projectNumber || "")
+        ).map((project, index) => (
+          <Link
+            key={project.projectName}
+            href={`/projects/${project.projectPath}`}
+            style={{ filter: "brightness(130%)" }}
+            className="overflow-hidden md:m-0 m-4 group justify-center"
+          >
+            <div
+              className="overflow-hidden"
+              style={{ height: "320px", width: "600px" }}
             >
-              Delphi Derma
-            </p>
-            <p
-              className="flex-1 dmsans text-right text-muted-foreground"
-              aria-label="2023"
-            >
-              2023
-            </p>
-          </div>
-        </Link>
-        <Link
-          href="/projects/remycinemas"
-          style={{ filter: "brightness(130%)" }}
-          className="overflow-hidden md:m-0 m-4 groupjustify-center"
-        >
-          <div className="overflow-hidden ">
-            <Image
-              src={image12}
-              alt="Remy Cinemas"
-              height={400}
-              width={700}
-              className="project-frame overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
-              // onMouseMove={handleMouseMove10}
-              // onMouseLeave={handleMouseLeave10}
-              // style={hoverStyle10}
-            />
-          </div>
-          <div className="flex flex-wrap text-lg mt-2">
-            <p
-              className="flex-1 dmsans-semibold text-left text-orange-50"
-              aria-label="Remy Cinemas"
-            >
-              Remy Cinemas
-            </p>
-            <p
-              className="flex-1 dmsans text-right text-muted-foreground"
-              aria-label="2022"
-            >
-              2022
-            </p>
-          </div>
-        </Link>
-        <Link
-          href="/projects/ccbm"
-          className=" overflow-hidden md:m-0 m-4 group"
-          style={{ filter: "brightness(130%)" }}
-        >
-          <div className=" overflow-hidden " aria-label="CCBM 2022">
-            <Image
-              src={image13}
-              alt="CCBM"
-              height={400}
-              width={700}
-              className="project-frame overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
-              // onMouseMove={handleMouseMove11}
-              // onMouseLeave={handleMouseLeave11}
-              // style={hoverStyle11}
-            />
-          </div>
-          <div className="flex flex-wrap text-lg mt-2">
-            <p
-              className="flex-1 dmsans-semibold text-left text-orange-50"
-              aria-label="CCBM"
-            >
-              CCBM
-            </p>
-            <p
-              className="flex-1 dmsans text-right text-muted-foreground"
-              aria-label="2022"
-            >
-              2022
-            </p>
-          </div>
-        </Link>
-        <Link
-          href="/projects/mgasristi"
-          className=" overflow-hidden md:m-0 m-4 group"
-          style={{ filter: "brightness(130%)" }}
-        >
-          <div className=" overflow-hidden ">
-            <Image
-              src={image14}
-              alt="MGA Sristi"
-              height={400}
-              width={700}
-              className="project-frame overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
-              // onMouseMove={handleMouseMove9}
-              // onMouseLeave={handleMouseLeave9}
-              // style={hoverStyle9}
-            />
-          </div>
-          <div className="flex flex-wrap text-lg mt-2">
-            <p
-              className="flex-1 dmsans-semibold text-left text-orange-50"
-              aria-label="MGA Sristi"
-            >
-              MGA Sristi
-            </p>
-            <p
-              className="flex-1 dmsans text-right text-muted-foreground"
-              aria-label="2022"
-            >
-              2022
-            </p>
-          </div>
-        </Link>
-        <Link
-          href="/projects/eastwest"
-          className="overflow-hidden md:m-0 m-4 group"
-          style={{ filter: "brightness(130%)" }}
-        >
-          <div className="overflow-hidden">
-            <Image
-              src={image15}
-              alt="East West"
-              height={400}
-              width={700}
-              className="project-frame overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
-              // onMouseMove={handleMouseMove8}
-              // onMouseLeave={handleMouseLeave8}
-              // style={hoverStyle8}
-            />
-          </div>
-          <div className="flex flex-wrap text-lg mt-2">
-            <p
-              className="flex-1 dmsans-semibold text-left text-orange-50"
-              aria-label="East West"
-            >
-              East West
-            </p>
-            <p
-              className="flex-1 dmsans text-right text-muted-foreground"
-              aria-label="2022"
-            >
-              2022
-            </p>
-          </div>
-        </Link>
+              <Image
+                src={images[index]}
+                alt={project.projectName || ""}
+                height={350}
+                width={600}
+                style={{ height: "auto", width: "auto" }}
+                className="project-frame overflow-hidden transform hover:scale-105 transition-transform duration-500 ease-in-out"
+              />
+            </div>
+
+            <div className="flex flex-wrap text-lg mt-2 2xl:mr-5">
+              <p
+                className="flex-1 dmsans-semibold text-left text-orange-50"
+                aria-label={project.projectName || ""}
+              >
+                {project.projectName}
+              </p>
+              <p
+                className="flex-1 dmsans text-right text-muted-foreground"
+                aria-label={project.projectNumber || ""}
+              >
+                {project.projectNumber}
+              </p>
+            </div>
+          </Link>
+        ))}
       </div>
     </div>
   );

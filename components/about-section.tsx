@@ -15,6 +15,12 @@ export function AboutSection() {
         <meta
           name="description"
           content="Explore our services and learn more about our approach to branding and product design."
+        />{" "}
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Studio Bind Architects" />
+        <meta
+          name="keywords"
+          content="best architects in chennai,, top architects, residential architecture, apartment design, villa design, restaurant architecture, interior design architects near me, cheap price architects, famous architects, interior designs, Architect in chennai, Interior designer in chennai, Top architects in chennai, Best architects in chennai, Home design in chennai, Shop design in chennai, Showroom designer in chennai, Residential architects, Commercial architects, best architects in chennai, top architects, residential architecture, apartment design, villa design, restaurant architecture, interior design, Modern home designs, Affordable home architects, Office interior designers, Trendy home plans, Innovative building designers, Local architects, Building design experts, Chennai architecture firms, Creative interior designs, Budget-friendly house architects, Local shop makeover, Renowned showroom renovators, Skilled construction designers, Contemporary building styles, Architecture and design services, Experienced architectural consultants"
         />
       </Head>
       <section
@@ -52,13 +58,6 @@ export function AboutSection() {
         className=" md:mb-10 min-h-[40rem] p-4 md:-ml-28 md:-mr-28 gap-x-24 grid md:grid-cols-3 grid-cols-1"
         aria-label="about us section"
       >
-        {/* <h2
-          className="text-4xl dmsans-semibold font-medium leading-[1.1] mb-5 md:text-6xl"
-          aria-label="Our Story"
-        >
-          Our Story
-          <hr className="mt-10 md:hidden" />
-        </h2> */}
         <div className="flex flex-col p-4  max-w-[40rem] text-left">
           <div className="text-lg dmsans md:mt-2 mt-0 leading-normal text-justify  text-muted-foreground">
             We believe good design and powerful storytelling can bring a
@@ -81,31 +80,31 @@ export function AboutSection() {
           <div className="max-w-full text-justify text-md text-lg dmsans leading-normal text-muted-foreground sm:text-md sm:leading-8">
             <div className="text-left space-y-4">
               <p className="text-lg dmsans flex  md:flex-col 2xl:flex-row flex-col text-muted-foreground">
-                <span className="my-font flex  flex-row text-white font-semibold">
+                <span className="my-font flex  flex-row text-white  dmsans-semibold">
                   &bull; &nbsp; Think.
                 </span>
                 &nbsp;This is 90% of the job.
               </p>
               <p className="text-lg dmsans flex  md:flex-col 2xl:flex-row flex-col text-muted-foreground">
-                <span className="my-font flex  flex-row text-white font-semibold">
+                <span className="my-font flex  flex-row text-white dmsans-semibold font-semibold">
                   &bull; &nbsp; Ask.
                 </span>
                 &nbsp;Discover the things you don&apos;t know.
               </p>
               <p className="text-lg dmsans flex  md:flex-col 2xl:flex-row flex-col text-muted-foreground">
-                <span className="my-font flex  flex-row text-white font-semibold">
+                <span className="my-font flex  flex-row text-white dmsans-semibold font-semibold">
                   &bull; &nbsp; Get Inspired.
                 </span>
                 &nbsp;Create something new.
               </p>
               <p className="text-lg dmsans flex  md:flex-col 2xl:flex-row flex-col text-muted-foreground">
-                <span className="my-font flex  flex-row text-white font-semibold">
+                <span className="my-font flex  flex-row text-white dmsans-semibold font-semibold">
                   &bull; &nbsp; Colloborate.
                 </span>
                 &nbsp;Big things can&apos;t be done alone.
               </p>
               <p className="text-lg dmsans flex  md:flex-col 2xl:flex-row  flex-col text-muted-foreground">
-                <span className="my-font flex  flex-row text-white font-semibold">
+                <span className="my-font flex  flex-row text-white dmsans-semibold font-semibold">
                   &bull; &nbsp; Create.
                 </span>
                 &nbsp;Don&apos;t fall in love with your creation.

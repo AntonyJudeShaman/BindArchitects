@@ -4,11 +4,16 @@ import Head from "next/head";
 export function Aboutus() {
   return (
     <>
-    <Head>
-        <title>About Us - Studio Bind Architects</title>
+      <Head>
         <meta
           name="description"
           content="Explore our services and learn more about our approach to branding and product design."
+        />{" "}
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Studio Bind Architects" />
+        <meta
+          name="keywords"
+          content="best architects in chennai,, top architects, residential architecture, apartment design, villa design, restaurant architecture, interior design architects near me, cheap price architects, famous architects, interior designs, Architect in chennai, Interior designer in chennai, Top architects in chennai, Best architects in chennai, Home design in chennai, Shop design in chennai, Showroom designer in chennai, Residential architects, Commercial architects, best architects in chennai, top architects, residential architecture, apartment design, villa design, restaurant architecture, interior design, Modern home designs, Affordable home architects, Office interior designers, Trendy home plans, Innovative building designers, Local architects, Building design experts, Chennai architecture firms, Creative interior designs, Budget-friendly house architects, Local shop makeover, Renowned showroom renovators, Skilled construction designers, Contemporary building styles, Architecture and design services, Experienced architectural consultants"
         />
       </Head>
       <section
@@ -17,7 +22,10 @@ export function Aboutus() {
         aria-label="about us section"
       >
         <div className=" mt-20 flex flex-col md:items-start items-center space-y-4 text-left">
-          <h2 aria-label="About us" className="dmsans text-5xl title-gradient4  leading-[1.1] mb-10  md:text-6xl">
+          <h2
+            aria-label="About us"
+            className="dmsans text-5xl title-gradient4  leading-[1.1] mb-10  md:text-6xl"
+          >
             About Us
           </h2>
         </div>

@@ -1,5 +1,6 @@
 import { MarketingConfig } from "types"
 
+// marketingConfig.ts
 export const marketingConfig: MarketingConfig = {
   mainNav: [
     {
@@ -23,7 +24,9 @@ export const marketingConfig: MarketingConfig = {
       href: "/contact",
     },
   ],
-}
+ 
+};
+
 
 
 export const HomePage: MarketingConfig = {
@@ -46,3 +49,4 @@ export const HomePage: MarketingConfig = {
     },
   ],
 }
+

@@ -24,6 +24,7 @@ import { marketingConfig } from "config/marketing";
 import { Icons } from "@/components/icons";
 import { MobileNav } from "@/components/mobile-nav";
 import { ProjectFound } from "@/components/project-found";
+import Head from "next/head";
 
 const firebaseApp = initializeApp(firebaseConfig, "Project");
 const database = getDatabase(firebaseApp);
@@ -217,6 +218,26 @@ export default function ProjectPage({
 
   return (
     <div className="max-w-screen animate-fade-in">
+      <Head>
+        {" "}
+        <script>
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-P29J8CQM');
+          `}
+        </script>
+      </Head>
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-P29J8CQM"
+          height="0"
+          width="0"
+          style={{ display: "none", visibility: "hidden" }}
+        ></iframe>
+      </noscript>
       <Suspense fallback={<div style={fallbackStyle}>Please wait...</div>}>
         {selectedProjectData && selectedProjectData.length > 0 ? (
           selectedProjectData
@@ -247,7 +268,7 @@ export default function ProjectPage({
                   </Link>
                   <div className="flex flex-row mr-5 absolute md:right-8 right-4 top-8 bg-transparent">
                     <p
-                      className="logo-font md:block hidden  ml-5 md:ml-0 flex-1 text-4xl"
+                      className="logo-font select-none md:block hidden  ml-5 md:ml-0 flex-1 text-4xl"
                       aria-label="BIND"
                       style={{
                         color: getFontColor(
@@ -260,7 +281,7 @@ export default function ProjectPage({
                       BIND
                     </p>
                     <p
-                      className="logo-font md:hidden ml-5 md:ml-0 flex-1 text-4xl"
+                      className="logo-font select-none md:hidden ml-5 md:ml-0 flex-1 text-4xl"
                       aria-label="BIND"
                       style={{
                         color: getFontColor(
@@ -317,14 +338,18 @@ export default function ProjectPage({
                         </div>
                       </div>
                     </div>
-                    <div className=" bg-gray-900 max-w-screen">
-                      <div className="dmsans min-h-screen flex flex-col mx-auto max-w-[60rem] flex-wrap leading-loose justify-center sm:leading-8">
+                    <div className="bg-gray-900 max-w-screen">
+                      <div className="dmsans min-h-screen flex flex-col mx-auto max-w-[69rem] flex-wrap leading-loose justify-center sm:leading-8">
                         {/* <span className="dmsans text-5xl mb-5">About</span> */}
-                        <span className="md:text-4xl md:p-0 p-8 text-2xl leading-loose">
+                        <span
+                          className="md:text-5xl md:p-0 p-8 text-2xl "
+                          style={{ lineHeight: "1.5" }}
+                        >
                           {menuItem.description}
                         </span>
                       </div>
                     </div>
+
                     <div className="md:m-0  mx-auto">
                       <div className="mx-auto mt-20 flex max-w-[88rem] p-4 md:p-8 flex-col  text-center">
                         <h2 className="font-heading text-6xl text-left dmsans font-medium leading-[1.1]  md:text-7xl">
@@ -342,7 +367,7 @@ export default function ProjectPage({
                               width={700}
                               src={url}
                               alt="uploaded"
-                              className="overflow-hidden transition-transform duration-1800 ease-in-out transform hover:scale-105"
+                              className="overflow-hidden transform hover:scale-105 transition-transform duration-500 ease-in-out"
                               style={{ filter: "brightness(110%)" }}
                             />
                           </div>

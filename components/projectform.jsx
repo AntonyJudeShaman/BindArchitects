@@ -11,6 +11,22 @@ import { Button } from "./ui/button";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 
+import image1 from "../assets/ykck.png";
+import image2 from "../assets/terraceman.png";
+import image3 from "../assets/mokshabar.png";
+import image4 from "../assets/sportsone.png";
+import image5 from "../assets/grandentrance.png";
+import image6 from "../assets/casagrande.png";
+import image7 from "../assets/casabudget.png";
+import image8 from "../assets/visore.png";
+import image9 from "../assets/delphi.png";
+import image10 from "../assets/arrahman.png";
+import image11 from "../assets/residence.png";
+import image12 from "../assets/remy.png";
+import image13 from "../assets/ccbm.png";
+import image14 from "../assets/mga.png";
+import image15 from "../assets/eastwest.png"
+
 export default function ProjectForm() {
   const [loading, setLoading] = React.useState(false);
 

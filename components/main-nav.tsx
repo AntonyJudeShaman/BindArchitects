@@ -34,7 +34,7 @@ export function MainNav({ items, children }: MainNavProps) {
           aria-label="BIND"
           className="hidden logo-font text-4xl font-display sm:inline-block"
         >
-          <p className="logo-font font-display" aria-label="BIND">
+          <p className="logo-font select-none font-display" aria-label="BIND">
             BIND
           </p>
         </span>

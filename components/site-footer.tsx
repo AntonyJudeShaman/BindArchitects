@@ -12,7 +12,7 @@ export default function SiteFooter({
         <Link href="/contact#contact-using-this-form">
           <div className="sm:flex sm:items-center  sm:justify-between">
             <div className="flex items-center mx-auto mb-4 sm:mb-0 max-w-[65rem]">
-              <span className="self-center mx-auto  flex mt-20 mb-10 footer-title dmsans-heading   whitespace-nowrap ">
+              <span className="self-center mx-auto  select-none flex mt-20 mb-10 footer-title dmsans-heading   whitespace-nowrap ">
                 Contact Us
               </span>
             </div>
