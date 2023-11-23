@@ -40,31 +40,28 @@ function About() {
         </script>
         <script type="application/ld+json">
           {`
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Studio Bind",
-  "legalName": "Bind Architects Pvt. Ltd.",
-  "url": "https://bindhomes.com",
-  "logo": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
-  "description": "Studio Bind is a premier architectural firm in Chennai, dedicated to transforming visions into stunning reality. Our diverse portfolio showcases excellence in home, shop, and showroom design.",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "10, Anjugam Street, Meenakshi Amman Nagar, Alwarthirunagar",
-    "addressLocality": "Chennai",
-    "postalCode": "600087",
-    "addressCountry": "India"
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+91 8072701454",
-    "contactType": "customer service",
-    "availableLanguage": ["Tamil", "English"],
-    "email": "bindarchitects@gmail.com"
-  },
-  "sameAs": [
-    "https://www.instagram.com/studio_bind/"
-    // Add other social media profiles as needed
-  ]`}
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Studio Bind",
+            "legalName": "Bind Architects Pvt. Ltd.",
+            "url": "https://bindhomes.com",
+            "logo": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
+            "description": "Discover unparalleled architectural excellence in Chennai with Studio Bind Architects, a visionary firm shaping spaces that transcend expectations. Our innovative designs seamlessly blend aesthetics and functionality, redefining the cityscape. From residential marvels to commercial landmarks, we specialize in crafting bespoke solutions that stand the test of time. Explore the intersection of art and engineering with Chennai's leading architecture firm. Elevate your vision with Studio Bind Architects",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "10, Anjugam Street, Meenakshi Amman Nagar, Alwarthirunagar",
+              "addressLocality": "Chennai",
+              "postalCode": "600087",
+              "addressCountry": "India"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+91-8072701454",
+              "contactType": "customer service",
+              "availableLanguage": ["Tamil", "English"],
+              "email": "bindarchitects@gmail.com"
+            },
+            "sameAs": ["https://www.instagram.com/studio_bind/","https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.bindarchitects.com%2Ffaq%3FquestionId%3Dbbe7072b-402e-4a9a-9fe1-cbf90f0c831e&appDefId=14c92d28-031e-7910-c9a8-a670011e062d","https://www.youtube.com/channel/UCTI09wWkEJeNy7wXwD4zSCQ"]`}
         </script>
 
         <title>
