@@ -214,7 +214,7 @@ export default function HomeLayout() {
     <div className="min-h-screen max-w-screen mt-4">
       <Head>
         <script
-          key="structured-data"
+        
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
         />

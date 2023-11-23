@@ -7,6 +7,12 @@ const nextConfig = {
     domains: ['firebasestorage.googleapis.com'],
   },
   swcMinify: true,
+  rewrites: async () => [
+    {
+      source: "/",
+      destination: "/index.html",
+    },
+  ],
 };
 
 module.exports = nextConfig;
