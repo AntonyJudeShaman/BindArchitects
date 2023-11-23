@@ -22,109 +22,378 @@ export const metadata: Metadata = {
     "Discover the Leading Architects in Chennai - Unveiling Unparalleled Design Excellence. Explore the portfolio of top-tier architects and architectural firms in Chennai, renowned for crafting innovative, sustainable, and aesthetically captivating designs. Elevate your architectural visions with our exceptional expertise and dedication to transforming spaces. Whether you're seeking modern house designs, sustainable architecture, or creative commercial spaces, our top architects in Chennai are here to exceed your expectations. Explore our portfolio for residential and commercial architects, and witness the fusion of functionality and aesthetic appeal. Elevate your architectural dreams with the best architects in Chennai, dedicated to delivering excellence in every project.",
 };
 
-
+const graph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WPHeader",
+      url: "https://bindhomes.com/",
+      headline:
+        "Studio Bind - Best Architects in Chennai | Top Architectural Firm",
+      description:
+        "Award-winning Best architects in Chennai, we cater our top architect's services on residential buildings, Interior Designs, Villa, Apartment, Institutional and commercial mall, hotel, restaurant in Chennai & all over Tamilnadu. A leading and best interior designer in Chennai",
+    },
+    {
+      "@type": "WPFooter",
+      url: "https://bindhomes.com/",
+      headline:
+        "Studio Bind - Best Architects in Chennai | Top Architectural Firm",
+      description:
+        "Award-winning Best architects in Chennai, we cater our top architect's services on residential buildings, Interior Designs, Villa, Apartment, Institutional and commercial mall, hotel, restaurant in Chennai & all over Tamilnadu. A leading and best interior designer in Chennai",
+      copyrightYear: "2023",
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://bindhomes.com/#schema-publishing-organization",
+      url: "https://bindhomes.com",
+      name: "Studio Bind",
+      description:
+        "We are the team of Best architects in Chennai and cater our top architects services on residential buildings, Interior Designs, Villa, Urban, Institutional and commercial places in Chennai and all over Tamilnadu.",
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "customer support",
+        telephone: "+91-8072701454",
+        url: "https://bindhomes.com/contact/",
+        availableLanguage: "Tamil, English",
+        email: "bindarchitects@gmail.com",
+      },
+      address: {
+        "@type": "PostalAddress",
+        streetAddress:
+          "10, Anjugam Street, Meenakshi Amman Nagar, Alwarthirunagar",
+        addressLocality: "Chennai",
+        postalCode: "600087",
+        addressCountry: "India",
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bindhomes.com/#schema-website",
+      url: "https://bindhomes.com",
+      name: "Studio Bind",
+      encoding: "UTF-8",
+      potentialAction: {
+        "@type": "SearchAction",
+        target: "https://bindhomes.com/projects/{search_term_string}/",
+        "query-input": "required name=search_term_string",
+      },
+      image: {
+        "@type": "ImageObject",
+        "@id": "https://bindhomes.com/#schema-site-logo",
+        url: "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
+        height: 153,
+        width: 300,
+        caption: "design lab for engineering and architecture bind logo",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bindhomes.com/#breadcrumb",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://bindhomes.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Contact",
+          item: "https://bindhomes.com/contact",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Best architects in chennai",
+          item: "https://bindhomes.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          name: "Top architects in chennai",
+          item: "https://bindhomes.com",
+        },
+      ],
+    },
+    {
+      "@type": "Person",
+      "@id": "https://bindhomes.com/about/#schema-author",
+      name: "Studio Bind",
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://bindhomes.com/#schema-webpage",
+      isPartOf: {
+        "@id": "https://bindhomes.com/#schema-website",
+      },
+      publisher: {
+        "@id": "https://bindhomes.com/#schema-publishing-organization",
+      },
+      url: "https://bindhomes.com/",
+      inLanguage: "en-US",
+      hasPart: [
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/#schema-nav-element-529",
+          name: "Home",
+          url: "https://bindhomes.com/",
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/#schema-nav-element-528",
+          name: "",
+          url: "https://bindhomes.com/about/",
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/#schema-nav-element-527",
+          name: "",
+          url: "https://bindhomes.com/projects/",
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/#schema-nav-element-525",
+          name: "",
+          url: "https://bindhomes.com/contact/",
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/#schema-nav-element-2394",
+          name: '<img src="https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/facebook.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4" title="facebook bind"width="32px">',
+          url: "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.bindarchitects.com%2Ffaq%3FquestionId%3Dbbe7072b-402e-4a9a-9fe1-cbf90f0c831e&appDefId=14c92d28-031e-7910-c9a8-a670011e062d",
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/#schema-nav-element-2395",
+          name: '<img src="https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/youtube.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4" target="_blank" title="youtube bind"width="32px">',
+          url: "https://www.youtube.com/channel/UCTI09wWkEJeNy7wXwD4zSCQ",
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/#schema-nav-element-2396",
+          name: '<img src="https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/instagram.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4" target="_blank" title="instagram bind" width="32px">',
+          url: "https://www.instagram.com/studio_bind/",
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@id": "https://bindhomes.com/#schema-webpage",
+      },
+      author: {
+        "@id": "https://bindhomes.com/about/#schema-author",
+      },
+      publisher: {
+        "@id": "https://bindhomes.com/#schema-publishing-organization",
+      },
+      dateModified: "2023-11-22T14:29:49",
+      datePublished: "2023-09-24T08:32:28",
+      headline:
+        "Studio Bind - Best Architects in Chennai | Top Architectural Firm",
+      description:
+        "Award-winning Best architects in Chennai, we cater our top architect's services on residential buildings, Interior Designs, Villa, Apartment, Institutional and commercial mall, hotel, restaurant in Chennai & all over Tamilnadu. A leading and best interior designer in Chennai",
+      name: "Best architects in chennai",
+      image: {
+        "@type": "ImageObject",
+        "@id": "https://bindhomes.com/#schema-article-image",
+        url: "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
+        height: 153,
+        width: 300,
+        caption: "design lab for engineering and architecture bind logo",
+      },
+      thumbnailUrl:
+        "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
+    },
+  ],
+};
 
 export default function HomeLayout() {
   return (
     <div className="min-h-screen max-w-screen mt-4">
       <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
+        />
         <script type="application/ld+json">
           {`
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "name": "Bind Architects",
-      "logo": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
-      "url": "https://bindhomes.com",
-      "sameAs": ["https://www.instagram.com/studio_bind/","https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.bindarchitects.com%2Ffaq%3FquestionId%3Dbbe7072b-402e-4a9a-9fe1-cbf90f0c831e&appDefId=14c92d28-031e-7910-c9a8-a670011e062d","https://www.youtube.com/channel/UCTI09wWkEJeNy7wXwD4zSCQ"],
-      "contactPoint": [
-        {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WPHeader",
+        "url": "https://bindhomes.com/",
+        "headline": "Studio Bind - Best Architects in Chennai | Top Architectural Firm",
+        "description": "Award-winning Best architects in Chennai, we cater our top architect's services on residential buildings, Interior Designs, Villa, Apartment, Institutional and commercial mall, hotel, restaurant in Chennai & all over Tamilnadu. A leading and best interior designer in Chennai"
+      },
+      {
+        "@type": "WPFooter",
+        "url": "https://bindhomes.com/",
+        "headline": "Studio Bind - Best Architects in Chennai | Top Architectural Firm",
+        "description": "Award-winning Best architects in Chennai, we cater our top architect's services on residential buildings, Interior Designs, Villa, Apartment, Institutional and commercial mall, hotel, restaurant in Chennai & all over Tamilnadu. A leading and best interior designer in Chennai",
+        "copyrightYear": "2023"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://bindhomes.com/#schema-publishing-organization",
+        "url": "https://bindhomes.com",
+        "name": "Studio Bind",
+        "description": "We are the team of Best architects in Chennai and cater our top architects services on residential buildings, Interior Designs, Villa, Urban, Institutional and commercial places in Chennai and all over Tamilnadu.",
+        "contactPoint": {
           "@type": "ContactPoint",
-          "telephone": "+91 8072701454",
-          "contactType": "general inquiries",
+          "contactType": "customer support",
+          "telephone": "+91-8072701454",
+          "url": "https://bindhomes.com/contact/",
           "availableLanguage": "Tamil, English",
           "email": "bindarchitects@gmail.com"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "10, Anjugam Street, Meenakshi Amman Nagar, Alwarthirunagar",
+          "addressLocality": "Chennai",
+          "postalCode": "600087",
+          "addressCountry": "India"
         }
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "10, Anjugam Street, Meenakshi Amman Nagar, Alwarthirunagar",
-        "addressLocality": "Chennai",
-        "postalCode": "600087",
-        "addressCountry": "India"
-      }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://bindhomes.com"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://bindhomes.com/#schema-website",
+        "url": "https://bindhomes.com",
+        "name": "Studio Bind",
+        "encoding": "UTF-8",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://bindhomes.com/projects/{search_term_string}/",
+          "query-input": "required name=search_term_string"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Projects",
-          "item": "https://bindhomes.com/projects"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "About",
-          "item": "https://bindhomes.com/about"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "FAQ",
-          "item": "https://bindhomes.com/frequently-asked-questions"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Contact",
-          "item": "https://bindhomes.com/contact"
+        "image": {
+          "@type": "ImageObject",
+          "@id": "https://bindhomes.com/#schema-site-logo",
+          "url": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
+          "height": 153,
+          "width": 300,
+          "caption": "design lab for engineering and architecture bind logo"
         }
-      ]
-    },
-    {
-      "@type": "Article",
-      "headline": "Studio Bind - Best Architects in Chennai | Top Architectural Firm",
-      "datePublished": "2023-11-22T12:00:00Z",
-      "dateModified": "2023-11-22T14:30:00Z",
-      "author": {
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://bindhomes.com/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://bindhomes.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contact",
+            "item": "https://bindhomes.com/contact"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Best architects in chennai",
+            "item": "https://bindhomes.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Top architects in chennai",
+            "item": "https://bindhomes.com"
+          }
+        ]
+      },
+      {
         "@type": "Person",
+        "@id": "https://bindhomes.com/about/#schema-author",
         "name": "Studio Bind"
       },
-      "image": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Bind Architects",
-        "logo": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
-        "url": "https://bindhomes.com/"
-      },
-      "mainEntityOfPage": {
+      {
         "@type": "WebPage",
-        "@id": "https://bindhomes.com/"
+        "@id": "https://bindhomes.com/#schema-webpage",
+        "isPartOf": {
+          "@id": "https://bindhomes.com/#schema-website"
+        },
+        "publisher": {
+          "@id": "https://bindhomes.com/#schema-publishing-organization"
+        },
+        "url": "https://bindhomes.com/",
+        "inLanguage": "en-US",
+        "hasPart": [
+          {
+            "@type": "SiteNavigationElement",
+            "@id": "https://bindhomes.com/#schema-nav-element-529",
+            "name": "Home",
+            "url": "https://bindhomes.com/"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "@id": "https://bindhomes.com/#schema-nav-element-528",
+            "name": "",
+            "url": "https://bindhomes.com/about/"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "@id": "https://bindhomes.com/#schema-nav-element-527",
+            "name": "",
+            "url": "https://bindhomes.com/projects/"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "@id": "https://bindhomes.com/#schema-nav-element-525",
+            "name": "",
+            "url": "https://bindhomes.com/contact/"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "@id": "https://bindhomes.com/#schema-nav-element-2394",
+            "name": "<img src=\"https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/facebook.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4\" title=\"facebook bind\"width=\"32px\">",
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.bindarchitects.com%2Ffaq%3FquestionId%3Dbbe7072b-402e-4a9a-9fe1-cbf90f0c831e&appDefId=14c92d28-031e-7910-c9a8-a670011e062d"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "@id": "https://bindhomes.com/#schema-nav-element-2395",
+            "name": "<img src=\"https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/youtube.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4\" target=\"_blank\" title=\"youtube bind\"width=\"32px\">",
+            "url": "https://www.youtube.com/channel/UCTI09wWkEJeNy7wXwD4zSCQ"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "@id": "https://bindhomes.com/#schema-nav-element-2396",
+            "name": "<img src=\"https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/instagram.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4\" target=\"_blank\" title=\"instagram bind\" width=\"32px\">",
+            "url": "https://www.instagram.com/studio_bind/"
+          }
+        ]
       },
-      "articleSection": "Best Architects in Chennai",
-      "keywords": "best architects in chennai, top architects, ... (your other keywords)",
-      "description": "Welcome to Studio Bind, your premier architectural firm in Chennai. Transforming visions into stunning reality. Explore our innovative and sustainable architectural solutions, crafted by experienced architects and interior designers. From modern house designs to creative commercial spaces, our diverse portfolio showcases excellence in home, shop, and showroom design. Discover architectural dreams brought to life at Studio Bind, where every detail matters, and your unique vision takes center stage.",
-      "articleBody": "In the dynamic realm of architecture and interior design, achieving the delicate equilibrium between form and function is paramount. As a leading firm in the industry, Bind Homes is dedicated to delivering cutting-edge and enduring designs that not only captivate the eye but also enrich the living experience. Our team, comprised of skilled architects and designers, recognizes the significance of crafting spaces that mirror the distinctive identity of our clients. Whether it's residential projects redefining modern living or commercial spaces fostering creativity, our commitment lies in transforming visions into reality. Key Services: Architectural Design: Our architectural design services span a spectrum of styles, from contemporary to classic. We believe in creating spaces that seamlessly integrate with their surroundings while pushing the boundaries of creativity. Interior Design: Interior design at Bind Homes transcends aesthetics. We focus on creating interiors that narrate a story, reflecting the personality and aspirations of our clients. Each project is a unique journey, striving to make every space both functional and visually stunning. Sustainable Architecture: Embracing eco-friendly practices, we integrate sustainable design principles into our projects. From energy-efficient lighting to eco-conscious material choices, we are dedicated to reducing our environmental footprint while delivering top-notch designs. Project Showcase: Explore our portfolio to witness the diversity and excellence of our work. From residential homes to commercial complexes, each project showcases our commitment to quality craftsmanship and attention to detail. Why Bind Homes: Expert Team: Our team comprises experienced architects, interior designers, and project managers committed to surpassing client expectations. Innovative Solutions: Leveraging the latest trends and technologies, we bring innovative solutions to every project, ensuring a forward-thinking approach. Client-Centric Approach: Your vision is our priority. We work closely with clients to understand their needs and aspirations, tailoring our designs to match their unique requirements. Award-Winning Designs: Our commitment to excellence has been recognized through numerous awards in the architecture and interior design industry. At Bind Homes, we believe that great design has the power to transform lives. Whether you're embarking on a residential project or envisioning a commercial space that stands out, let us be your partner in turning dreams into reality. For inquiries and consultations, contact us. Transform your space with Bind Homes & where innovation meets inspiration."
-}
+      {
+        "@type": "Article",
+        "mainEntityOfPage": {
+          "@id": "https://bindhomes.com/#schema-webpage"
+        },
+        "author": {
+          "@id": "https://bindhomes.com/about/#schema-author"
+        },
+        "publisher": {
+          "@id": "https://bindhomes.com/#schema-publishing-organization"
+        },
+        "dateModified": "2023-11-22T14:29:49",
+        "datePublished": "2023-09-24T08:32:28",
+        "headline": "Studio Bind - Best Architects in Chennai | Top Architectural Firm",
+        "description": "Award-winning Best architects in Chennai, we cater our top architect's services on residential buildings, Interior Designs, Villa, Apartment, Institutional and commercial mall, hotel, restaurant in Chennai & all over Tamilnadu. A leading and best interior designer in Chennai",
+        "name": "Best architects in chennai",
+        "image": {
+          "@type": "ImageObject",
+          "@id": "https://bindhomes.com/#schema-article-image",
+          "url": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
+          "height": 153,
+          "width": 300,
+          "caption": "design lab for engineering and architecture bind logo"
+        },
+        "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d"
+      }
     ]`}
-        </script>
-        <script>
-          {`
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-P29J8CQM');
-          `}
         </script>
         <title>
           Studio Bind - Best Architects in Chennai | Top Architectural Firm

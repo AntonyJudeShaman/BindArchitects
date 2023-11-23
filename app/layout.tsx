@@ -11,6 +11,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { fontSans } from "./fontSans";
 import Head from "next/head";
 import { Graph } from "schema-dts";
+import { GoogleTagManager } from '@next/third-parties/google'
 
 const fontHeading = localFont({
   src: "../assets/fonts/CalSans-SemiBold.woff2",
@@ -267,6 +268,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <Head>
+        
+      <GoogleTagManager gtmId="GTM-P29J8CQM" />
+      
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}

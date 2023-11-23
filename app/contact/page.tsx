@@ -13,25 +13,299 @@ import Contact from "@/components/contact";
 import SiteFooter from "@/components/site-footer";
 
 export const metadata: Metadata = {
-  title: "Contact - Need an Architect? Contact us now!",
+  title: "Need help? Contact us now! - Studio Bind",
   description:
     "Connect with Studio Bind Architects, Chennai's premier architectural firm. Specializing in bespoke solutions for residential and commercial projects, our team blends aesthetics and functionality to redefine the cityscape. Elevate your vision — contact Chennai's leading architecture firm today.",
+};
+
+const graph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WPHeader",
+      url: "https://bindhomes.com/contact/",
+      headline: "Need help? Contact us now! - Studio Bind",
+      description:
+        "GET IN TOUCH WITH US We are Super Friendly Registered Office No. 10, Anjugam St, Meenakshi Amman Nagar, Alwartirunagar, Valasaravakkam, Chennai, Tamil Nadu 600087 ...",
+    },
+    {
+      "@type": "WPFooter",
+      url: "https://bindhomes.com/contact/",
+      headline: "Need help? Contact us now! - Studio Bind",
+      description:
+        "GET IN TOUCH WITH US We are Super Friendly Registered Office No. 10, Anjugam St, Meenakshi Amman Nagar, Alwartirunagar, Valasaravakkam, Chennai, Tamil Nadu 600087 ...",
+      copyrightYear: "2023",
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://bindhomes.com/#schema-publishing-organization",
+      url: "https://bindhomes.com",
+      name: "Studio Bind",
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bindhomes.com/#schema-website",
+      url: "https://bindhomes.com",
+      name: "Studio Bind",
+      encoding: "UTF-8",
+      potentialAction: {
+        "@type": "SearchAction",
+        target: "https://bindhomes.com/projects/{search_term_string}/",
+        "query-input": "required name=search_term_string",
+      },
+      image: {
+        "@type": "ImageObject",
+        "@id": "https://bindhomes.com/#schema-site-logo",
+        url: "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
+        height: 153,
+        width: 300,
+        caption: "design lab for engineering and architecture bind logo",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bindhomes.com/contact?page&pagename=contact/#breadcrumb",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://bindhomes.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Contact",
+        },
+      ],
+    },
+    {
+      "@type": "Person",
+      "@id": "https://bindhomes.com/about/#schema-author",
+      name: "Studio Bind",
+    },
+    {
+      "@type": "ContactPage",
+      "@id": "https://bindhomes.com/contact/#schema-webpage",
+      isPartOf: "https://bindhomes.com/#schema-website",
+      hasPart: [
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/contact/#schema-nav-element-529",
+          name: "Home",
+          url: "https://bindhomes.com/",
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/contact/#schema-nav-element-528",
+          name: "",
+          url: "https://bindhomes.com/about/",
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/contact/#schema-nav-element-527",
+          name: "",
+          url: "https://bindhomes.com/projects/",
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/contact/#schema-nav-element-525",
+          name: "",
+          url: "https://bindhomes.com/contact/",
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/#schema-nav-element-2394",
+          name: '<img src="https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/facebook.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4" title="facebook bind"width="32px">',
+          url: "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.bindarchitects.com%2Ffaq%3FquestionId%3Dbbe7072b-402e-4a9a-9fe1-cbf90f0c831e&appDefId=14c92d28-031e-7910-c9a8-a670011e062d",
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/#schema-nav-element-2395",
+          name: '<img src="https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/youtube.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4" target="_blank" title="youtube bind"width="32px">',
+          url: "https://www.youtube.com/channel/UCTI09wWkEJeNy7wXwD4zSCQ",
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/#schema-nav-element-2396",
+          name: '<img src="https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/instagram.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4" target="_blank" title="instagram bind" width="32px">',
+          url: "https://www.instagram.com/studio_bind/",
+        },
+      ],
+      url: "https://bindhomes.com/contact/",
+      author: {
+        "@id": "https://bindhomes.com/about/#schema-author",
+      },
+      publisher: {
+        "@id": "https://bindhomes.com/#schema-publishing-organization",
+      },
+      dateModified: "2023-11-22T11:30:56",
+      datePublished: "2023-10-29T05:29:19",
+      headline: "Need help? Contact us now! - Studio Bind",
+      description:
+        "GET IN TOUCH WITH US We are Super Friendly Registered Office No. 10, Anjugam St, Meenakshi Amman Nagar, Alwartirunagar, Valasaravakkam, Chennai, Tamil Nadu 600087 ...",
+      name: "Contact",
+      image: {
+        "@type": "ImageObject",
+        "@id": "https://bindhomes.com/contact/#schema-article-image",
+        url: "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
+        height: 153,
+        width: 300,
+        caption: "design lab for engineering and architecture bind logo",
+      },
+      thumbnailUrl:
+        "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
+    },
+  ],
 };
 
 function page() {
   return (
     <div className="min-h-screen max-w-screen py-4 md:-ml-32 md:-mr-32 bg-black">
       <Head>
-        <script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
+        />
+        <script type="application/ld+json">
           {`
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-P29J8CQM');
-          `}
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WPHeader",
+      "url": "https://bindhomes.com/contact/",
+      "headline": "Need help? Contact us now! - Studio Bind",
+      "description": "GET IN TOUCH WITH US We are Super Friendly Registered Office No. 10, Anjugam St, Meenakshi Amman Nagar, Alwartirunagar, Valasaravakkam, Chennai, Tamil Nadu 600087 ..."
+    },
+    {
+      "@type": "WPFooter",
+      "url": "https://bindhomes.com/contact/",
+      "headline": "Need help? Contact us now! - Studio Bind",
+      "description": "GET IN TOUCH WITH US We are Super Friendly Registered Office No. 10, Anjugam St, Meenakshi Amman Nagar, Alwartirunagar, Valasaravakkam, Chennai, Tamil Nadu 600087 ...",
+      "copyrightYear": "2023"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://bindhomes.com/#schema-publishing-organization",
+      "url": "https://bindhomes.com",
+      "name": "Studio Bind"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bindhomes.com/#schema-website",
+      "url": "https://bindhomes.com",
+      "name": "Studio Bind",
+      "encoding": "UTF-8",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://bindhomes.com/projects/{search_term_string}/",
+        "query-input": "required name=search_term_string"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "@id": "https://bindhomes.com/#schema-site-logo",
+        "url": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
+        "height": 153,
+        "width": 300,
+        "caption": "design lab for engineering and architecture bind logo"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bindhomes.com/contact?page&pagename=contact/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://bindhomes.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Contact"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://bindhomes.com/about/#schema-author",
+      "name": "Studio Bind"
+    },
+    {
+      "@type": "ContactPage",
+      "@id": "https://bindhomes.com/contact/#schema-webpage",
+      "isPartOf": "https://bindhomes.com/#schema-website",
+      "hasPart": [
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/contact/#schema-nav-element-529",
+          "name": "Home",
+          "url": "https://bindhomes.com/"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/contact/#schema-nav-element-528",
+          "name": "",
+          "url": "https://bindhomes.com/about/"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/contact/#schema-nav-element-527",
+          "name": "",
+          "url": "https://bindhomes.com/projects/"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/contact/#schema-nav-element-525",
+          "name": "",
+          "url": "https://bindhomes.com/contact/"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/#schema-nav-element-2394",
+          "name": "<img src=\"https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/facebook.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4\" title=\"facebook bind\"width=\"32px\">",
+          "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.bindarchitects.com%2Ffaq%3FquestionId%3Dbbe7072b-402e-4a9a-9fe1-cbf90f0c831e&appDefId=14c92d28-031e-7910-c9a8-a670011e062d"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/#schema-nav-element-2395",
+          "name": "<img src=\"https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/youtube.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4\" target=\"_blank\" title=\"youtube bind\"width=\"32px\">",
+          "url": "https://www.youtube.com/channel/UCTI09wWkEJeNy7wXwD4zSCQ"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/#schema-nav-element-2396",
+          "name": "<img src=\"https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/instagram.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4\" target=\"_blank\" title=\"instagram bind\" width=\"32px\">",
+          "url": "https://www.instagram.com/studio_bind/"
+        }
+      ],
+      "url": "https://bindhomes.com/contact/",
+      "author": {
+        "@id": "https://bindhomes.com/about/#schema-author"
+      },
+      "publisher": {
+        "@id": "https://bindhomes.com/#schema-publishing-organization"
+      },
+      "dateModified": "2023-11-22T11:30:56",
+      "datePublished": "2023-10-29T05:29:19",
+      "headline": "Need help? Contact us now! - Studio Bind",
+      "description": "GET IN TOUCH WITH US We are Super Friendly Registered Office No. 10, Anjugam St, Meenakshi Amman Nagar, Alwartirunagar, Valasaravakkam, Chennai, Tamil Nadu 600087 ...",
+      "name": "Contact",
+      "image": {
+        "@type": "ImageObject",
+        "@id": "https://bindhomes.com/contact/#schema-article-image",
+        "url": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
+        "height": 153,
+        "width": 300,
+        "caption": "design lab for engineering and architecture bind logo"
+      },
+      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d"
+    }
+  ]`}
         </script>
-        <title>Contact - Need an Architect? Contact us now!</title>
+
+        <title>Need help? Contact us now! - Studio Bind</title>
         <link rel="canonical" href="https://bindhomes.com/contact/" />
         <meta
           property="og:description"

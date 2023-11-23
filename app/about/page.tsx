@@ -25,43 +25,319 @@ export const metadata: Metadata = {
     "Discover unparalleled architectural excellence in Chennai with Studio Bind Architects, a visionary firm shaping spaces that transcend expectations. Our innovative designs seamlessly blend aesthetics and functionality, redefining the cityscape. From residential marvels to commercial landmarks, we specialize in crafting bespoke solutions that stand the test of time. Explore the intersection of art and engineering with Chennai's leading architecture firm. Elevate your vision with Studio Bind Architects",
 };
 
+const graph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WPHeader",
+      url: "https://bindhomes.com/about/",
+      headline: "About Us - Bind Architects | Best Architects in Chennai",
+      description:
+        "Discover unparalleled architectural excellence in Chennai with Studio Bind Architects, a visionary firm shaping spaces that transcend expectations. Our innovative designs seamlessly blend aesthetics and functionality, redefining the cityscape. From residential marvels to commercial landmarks, we specialize in crafting bespoke solutions that stand the test of time. Explore the intersection of art and engineering with Chennai's leading architecture firm. Elevate your vision with Studio Bind Architects",
+    },
+    {
+      "@type": "WPFooter",
+      url: "https://bindhomes.com/about/",
+      headline: "About Us - Bind Architects | Best Architects in Chennai",
+      description:
+        "Discover unparalleled architectural excellence in Chennai with Studio Bind Architects, a visionary firm shaping spaces that transcend expectations. Our innovative designs seamlessly blend aesthetics and functionality, redefining the cityscape. From residential marvels to commercial landmarks, we specialize in crafting bespoke solutions that stand the test of time. Explore the intersection of art and engineering with Chennai's leading architecture firm. Elevate your vision with Studio Bind Architects",
+      copyrightYear: "2023",
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://bindhomes.com/#schema-publishing-organization",
+      url: "https://bindhomes.com",
+      name: "Studio Bind",
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bindhomes.com/#schema-website",
+      url: "https://bindhomes.com",
+      name: "Studio Bind",
+      encoding: "UTF-8",
+      potentialAction: {
+        "@type": "SearchAction",
+        target: "https://bindhomes.com/projects/{search_term_string}/",
+        "query-input": "required name=search_term_string",
+      },
+      image: {
+        "@type": "ImageObject",
+        "@id": "https://bindhomes.com/#schema-site-logo",
+        url: "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
+        height: 153,
+        width: 300,
+        caption: "design lab for engineering and architecture bind logo",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bindhomes.com/about?page&pagename=about/#breadcrumb",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://bindhomes.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "About",
+        },
+      ],
+    },
+    {
+      "@type": "Person",
+      "@id": "https://bindhomes.com/about/#schema-author",
+      name: "Studio Bind",
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://bindhomes.com/about/#schema-webpage",
+      isPartOf: "https://bindhomes.com/#schema-website",
+      hasPart: [
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/about/#schema-nav-element-529",
+          name: "Home",
+          url: "https://bindhomes.com/",
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/about/#schema-nav-element-528",
+          name: "",
+          url: "https://bindhomes.com/about/",
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/about/#schema-nav-element-527",
+          name: "",
+          url: "https://bindhomes.com/projects/",
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/about/#schema-nav-element-525",
+          name: "",
+          url: "https://bindhomes.com/contact/",
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/#schema-nav-element-2394",
+          name: '<img src="https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/facebook.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4" title="facebook bind"width="32px">',
+          url: "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.bindarchitects.com%2Ffaq%3FquestionId%3Dbbe7072b-402e-4a9a-9fe1-cbf90f0c831e&appDefId=14c92d28-031e-7910-c9a8-a670011e062d",
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/#schema-nav-element-2395",
+          name: '<img src="https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/youtube.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4" target="_blank" title="youtube bind"width="32px">',
+          url: "https://www.youtube.com/channel/UCTI09wWkEJeNy7wXwD4zSCQ",
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/#schema-nav-element-2396",
+          name: '<img src="https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/instagram.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4" target="_blank" title="instagram bind" width="32px">',
+          url: "https://www.instagram.com/studio_bind/",
+        },
+      ],
+      url: "https://bindhomes.com/about/",
+      author: {
+        "@id": "https://bindhomes.com/about/#schema-author",
+      },
+      publisher: {
+        "@id": "https://bindhomes.com/#schema-publishing-organization",
+      },
+      dateModified: "2023-11-22T11:13:10",
+      datePublished: "2023-04-10T06:04:33",
+      headline: "About Us - Bind Architects | Best Architects in Chennai",
+      description:
+        "Discover unparalleled architectural excellence in Chennai with Studio Bind Architects, a visionary firm shaping spaces that transcend expectations. Our innovative designs seamlessly blend aesthetics and functionality, redefining the cityscape. From residential marvels to commercial landmarks, we specialize in crafting bespoke solutions that stand the test of time. Explore the intersection of art and engineering with Chennai's leading architecture firm. Elevate your vision with Studio Bind Architects",
+      name: "About",
+      image: {
+        "@type": "ImageObject",
+        "@id": "https://bindhomes.com/about/#schema-article-image",
+        url: "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
+        height: 153,
+        width: 300,
+        caption: "design lab for engineering and architecture bind logo",
+      },
+      thumbnailUrl:
+        "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
+    },
+    {
+      "@type": "VideoObject",
+      name: "Studio Bind Architects and Interior Designers in Chennai",
+      url: "https://www.youtube.com/watch?v=ANK2MXhP3P8",
+      thumbnail: {
+        "@type": "ImageObject",
+        url: "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
+        width: 480,
+        height: 360,
+      },
+      thumbnailUrl:
+        "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
+      embedUrl:
+        "https://www.youtube.com/embed/Ks--4Wvf6W0?si=GvFq-qe3mhqRFkVP?feature=oembed",
+    },
+  ],
+};
+
 function About() {
   return (
     <div>
       <Head>
-        <script>
-          {`
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-P29J8CQM');
-          `}
-        </script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
+        />
         <script type="application/ld+json">
           {`
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Studio Bind",
-            "legalName": "Bind Architects Pvt. Ltd.",
-            "url": "https://bindhomes.com",
-            "logo": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
-            "description": "Discover unparalleled architectural excellence in Chennai with Studio Bind Architects, a visionary firm shaping spaces that transcend expectations. Our innovative designs seamlessly blend aesthetics and functionality, redefining the cityscape. From residential marvels to commercial landmarks, we specialize in crafting bespoke solutions that stand the test of time. Explore the intersection of art and engineering with Chennai's leading architecture firm. Elevate your vision with Studio Bind Architects",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "10, Anjugam Street, Meenakshi Amman Nagar, Alwarthirunagar",
-              "addressLocality": "Chennai",
-              "postalCode": "600087",
-              "addressCountry": "India"
-            },
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "telephone": "+91-8072701454",
-              "contactType": "customer service",
-              "availableLanguage": ["Tamil", "English"],
-              "email": "bindarchitects@gmail.com"
-            },
-            "sameAs": ["https://www.instagram.com/studio_bind/","https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.bindarchitects.com%2Ffaq%3FquestionId%3Dbbe7072b-402e-4a9a-9fe1-cbf90f0c831e&appDefId=14c92d28-031e-7910-c9a8-a670011e062d","https://www.youtube.com/channel/UCTI09wWkEJeNy7wXwD4zSCQ"]`}
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WPHeader",
+      "url": "https://bindhomes.com/about/",
+      "headline": "About Us - Bind Architects | Best Architects in Chennai",
+      "description": "Discover unparalleled architectural excellence in Chennai with Studio Bind Architects, a visionary firm shaping spaces that transcend expectations. Our innovative designs seamlessly blend aesthetics and functionality, redefining the cityscape. From residential marvels to commercial landmarks, we specialize in crafting bespoke solutions that stand the test of time. Explore the intersection of art and engineering with Chennai's leading architecture firm. Elevate your vision with Studio Bind Architects"
+    },
+    {
+      "@type": "WPFooter",
+      "url": "https://bindhomes.com/about/",
+      "headline": "About Us - Bind Architects | Best Architects in Chennai",
+      "description": "Discover unparalleled architectural excellence in Chennai with Studio Bind Architects, a visionary firm shaping spaces that transcend expectations. Our innovative designs seamlessly blend aesthetics and functionality, redefining the cityscape. From residential marvels to commercial landmarks, we specialize in crafting bespoke solutions that stand the test of time. Explore the intersection of art and engineering with Chennai's leading architecture firm. Elevate your vision with Studio Bind Architects",
+      "copyrightYear": "2023"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://bindhomes.com/#schema-publishing-organization",
+      "url": "https://bindhomes.com",
+      "name": "Studio Bind"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bindhomes.com/#schema-website",
+      "url": "https://bindhomes.com",
+      "name": "Studio Bind",
+      "encoding": "UTF-8",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://bindhomes.com/projects/{search_term_string}/",
+        "query-input": "required name=search_term_string"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "@id": "https://bindhomes.com/#schema-site-logo",
+        "url": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
+        "height": 153,
+        "width": 300,
+        "caption": "design lab for engineering and architecture bind logo"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bindhomes.com/about?page&pagename=about/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://bindhomes.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://bindhomes.com/about/#schema-author",
+      "name": "Studio Bind"
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://bindhomes.com/about/#schema-webpage",
+      "isPartOf": "https://bindhomes.com/#schema-website",
+      "hasPart": [
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/about/#schema-nav-element-529",
+          "name": "Home",
+          "url": "https://bindhomes.com/"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/about/#schema-nav-element-528",
+          "name": "",
+          "url": "https://bindhomes.com/about/"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/about/#schema-nav-element-527",
+          "name": "",
+          "url": "https://bindhomes.com/projects/"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/about/#schema-nav-element-525",
+          "name": "",
+          "url": "https://bindhomes.com/contact/"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/#schema-nav-element-2394",
+          "name": "<img src=\"https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/facebook.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4\" title=\"facebook bind\"width=\"32px\">",
+          "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.bindarchitects.com%2Ffaq%3FquestionId%3Dbbe7072b-402e-4a9a-9fe1-cbf90f0c831e&appDefId=14c92d28-031e-7910-c9a8-a670011e062d"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/#schema-nav-element-2395",
+          "name": "<img src=\"https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/youtube.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4\" target=\"_blank\" title=\"youtube bind\"width=\"32px\">",
+          "url": "https://www.youtube.com/channel/UCTI09wWkEJeNy7wXwD4zSCQ"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "@id": "https://bindhomes.com/#schema-nav-element-2396",
+          "name": "<img src=\"https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/instagram.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4\" target=\"_blank\" title=\"instagram bind\" width=\"32px\">",
+          "url": "https://www.instagram.com/studio_bind/"
+        }
+      ],
+      "url": "https://bindhomes.com/about/",
+      "author": {
+        "@id": "https://bindhomes.com/about/#schema-author"
+      },
+      "publisher": {
+        "@id": "https://bindhomes.com/#schema-publishing-organization"
+      },
+      "dateModified": "2023-11-22T11:13:10",
+      "datePublished": "2023-04-10T06:04:33",
+      "headline": "About Us - Bind Architects | Best Architects in Chennai",
+      "description": "Discover unparalleled architectural excellence in Chennai with Studio Bind Architects, a visionary firm shaping spaces that transcend expectations. Our innovative designs seamlessly blend aesthetics and functionality, redefining the cityscape. From residential marvels to commercial landmarks, we specialize in crafting bespoke solutions that stand the test of time. Explore the intersection of art and engineering with Chennai's leading architecture firm. Elevate your vision with Studio Bind Architects",
+      "name": "About",
+      "image": {
+        "@type": "ImageObject",
+        "@id": "https://bindhomes.com/about/#schema-article-image",
+        "url": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
+        "height": 153,
+        "width": 300,
+        "caption": "design lab for engineering and architecture bind logo"
+      },
+      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Studio Bind Architects and Interior Designers in Chennai",
+      "url": "https://www.youtube.com/watch?v=ANK2MXhP3P8",
+      "thumbnail": {
+        "@type": "ImageObject",
+        "url": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
+        "width": 480,
+        "height": 360
+      },
+      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
+      "embedUrl": "https://www.youtube.com/embed/Ks--4Wvf6W0?si=GvFq-qe3mhqRFkVP?feature=oembed"
+    }
+  ]`}
         </script>
 
         <title>
