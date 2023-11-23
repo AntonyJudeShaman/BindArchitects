@@ -164,10 +164,7 @@ function page() {
   return (
     <>
       <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
-        />
+{/*         
         <script type="application/ld+json">
           {`
   "@context": "https://schema.org",
@@ -288,8 +285,8 @@ function page() {
       "publisher": {
         "@id": "https://bindhomes.com/#schema-publishing-organization"
       },
-      "dateModified": "2023-11-22T11:30:56",
-      "datePublished": "2023-10-29T05:29:19",
+      "dateModified": "2023-11-22T11:30:56+05:30",
+      "datePublished": "2023-10-29T05:29:19+05:30",
       "headline": "Frequently Asked Questions - Studio Bind",
       "description": "Find answers to common questions about Studio Bind and our services.",
       "name": "FAQ",
@@ -304,8 +301,12 @@ function page() {
       "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d"
     }
   ]`}
-        </script>
-
+        </script> */}
+        <script
+          key="structured-data"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
+        />
         <link
           rel="canonical"
           href="https://bindhomes.com/frequently-asked-questions/"

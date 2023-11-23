@@ -173,10 +173,11 @@ function ProjectsHome() {
     <>
       <Head>
         <script
+          key="structured-data"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
         />
-        <script type="application/ld+json">
+        {/* <script type="application/ld+json">
           {`
   "@context": "https://schema.org",
   "@graph": [
@@ -295,8 +296,8 @@ function ProjectsHome() {
           "url": "https://www.instagram.com/studio_bind/"
         }
       ],
-      "dateModified": "2023-11-22T08:16:04",
-      "datePublished": "2023-10-25T14:33:12",
+      "dateModified": "2023-11-22T08:16:04+05:30",
+      "datePublished": "2023-10-25T14:33:12+05:30",
       "headline": "Explore our projects - Studio Bind Architects",
       "description": "List of our various kinds of architecture designs. Share us your idea, we will design the rest to bring it to life.",
       "name": "Projects",
@@ -311,7 +312,7 @@ function ProjectsHome() {
       "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d"
     }
   ]`}
-        </script>
+        </script> */}
 
         <title>
           Projects - Studio Bind Architects - Best Architects in Chennai

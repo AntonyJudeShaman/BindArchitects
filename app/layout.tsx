@@ -12,6 +12,7 @@ import { fontSans } from "./fontSans";
 import Head from "next/head";
 import { Graph } from "schema-dts";
 import { GoogleTagManager } from '@next/third-parties/google'
+import Script from 'next/script'
 
 const fontHeading = localFont({
   src: "../assets/fonts/CalSans-SemiBold.woff2",
@@ -272,10 +273,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <GoogleTagManager gtmId="GTM-P29J8CQM" />
       
       <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
-      />
-      <script type="application/ld+json">
+          key="structured-data"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
+        />
+      {/* <script type="application/ld+json">
   {`
     "@context": "https://schema.org",
     "@graph": [
@@ -436,8 +438,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
         "publisher": {
           "@id": "https://bindhomes.com/#schema-publishing-organization"
         },
-        "dateModified": "2023-11-22T14:29:49",
-        "datePublished": "2023-09-24T08:32:28",
+        "dateModified": "2023-11-22T14:29:49+05:30",
+        "datePublished": "2023-09-24T08:32:28+05:30",
         "headline": "Studio Bind - Best Architects in Chennai | Top Architectural Firm",
         "description": "Award-winning Best architects in Chennai, we cater our top architect's services on residential buildings, Interior Designs, Villa, Apartment, Institutional and commercial mall, hotel, restaurant in Chennai & all over Tamilnadu. A leading and best interior designer in Chennai",
         "name": "Best architects in chennai",
@@ -453,8 +455,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
       }
     ]`
   }
-</script>
-
+</script> */}
+ <meta name="twitter:image:alt" property="og:image:alt" content="Studio Bind Architects Logo"/>
+       
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link
           rel="apple-touch-icon"

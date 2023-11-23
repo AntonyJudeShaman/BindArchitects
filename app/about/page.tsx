@@ -185,11 +185,12 @@ function About() {
   return (
     <div>
       <Head>
-        <script
+      <script
+          key="structured-data"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
         />
-        <script type="application/ld+json">
+        {/* <script type="application/ld+json">
           {`
   "@context": "https://schema.org",
   "@graph": [
@@ -309,8 +310,8 @@ function About() {
       "publisher": {
         "@id": "https://bindhomes.com/#schema-publishing-organization"
       },
-      "dateModified": "2023-11-22T11:13:10",
-      "datePublished": "2023-04-10T06:04:33",
+      "dateModified": "2023-11-22T11:13:10+05:30",
+      "datePublished": "2023-04-10T06:04:33+05:30",
       "headline": "About Us - Bind Architects | Best Architects in Chennai",
       "description": "Discover unparalleled architectural excellence in Chennai with Studio Bind Architects, a visionary firm shaping spaces that transcend expectations. Our innovative designs seamlessly blend aesthetics and functionality, redefining the cityscape. From residential marvels to commercial landmarks, we specialize in crafting bespoke solutions that stand the test of time. Explore the intersection of art and engineering with Chennai's leading architecture firm. Elevate your vision with Studio Bind Architects",
       "name": "About",
@@ -328,6 +329,8 @@ function About() {
       "@type": "VideoObject",
       "name": "Studio Bind Architects and Interior Designers in Chennai",
       "url": "https://www.youtube.com/watch?v=ANK2MXhP3P8",
+      "description:"Discover unparalleled architectural excellence in Chennai with Studio Bind Architects, a visionary firm shaping spaces that transcend expectations. Our innovative designs seamlessly blend aesthetics and functionality, redefining the cityscape. From residential marvels to commercial landmarks, we specialize in crafting bespoke solutions that stand the test of time. Explore the intersection of art and engineering with Chennai's leading architecture firm. Elevate your vision with Studio Bind Architects",
+      "uploadDate": "2023-04-10T06:04:33",
       "thumbnail": {
         "@type": "ImageObject",
         "url": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
@@ -338,7 +341,7 @@ function About() {
       "embedUrl": "https://www.youtube.com/embed/Ks--4Wvf6W0?si=GvFq-qe3mhqRFkVP?feature=oembed"
     }
   ]`}
-        </script>
+        </script> */}
 
         <title>
           About Us - Studio Bind Architects - Best Architects in Chennai

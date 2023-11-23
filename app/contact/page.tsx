@@ -163,11 +163,12 @@ function page() {
   return (
     <div className="min-h-screen max-w-screen py-4 md:-ml-32 md:-mr-32 bg-black">
       <Head>
-        <script
+      <script
+          key="structured-data"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
         />
-        <script type="application/ld+json">
+        {/* <script type="application/ld+json">
           {`
   "@context": "https://schema.org",
   "@graph": [
@@ -287,8 +288,8 @@ function page() {
       "publisher": {
         "@id": "https://bindhomes.com/#schema-publishing-organization"
       },
-      "dateModified": "2023-11-22T11:30:56",
-      "datePublished": "2023-10-29T05:29:19",
+      "dateModified": "2023-11-22T11:30:56+05:30",
+      "datePublished": "2023-10-29T05:29:19+05:30",
       "headline": "Need help? Contact us now! - Studio Bind",
       "description": "GET IN TOUCH WITH US We are Super Friendly Registered Office No. 10, Anjugam St, Meenakshi Amman Nagar, Alwartirunagar, Valasaravakkam, Chennai, Tamil Nadu 600087 ...",
       "name": "Contact",
@@ -303,7 +304,7 @@ function page() {
       "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d"
     }
   ]`}
-        </script>
+        </script> */}
 
         <title>Need help? Contact us now! - Studio Bind</title>
         <link rel="canonical" href="https://bindhomes.com/contact/" />
