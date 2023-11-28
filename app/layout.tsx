@@ -11,7 +11,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { fontSans } from "./fontSans";
 import Head from "next/head";
 import { Graph } from "schema-dts";
-import { GoogleTagManager } from "@next/third-parties/dist/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import Script from "next/script";
 
 const fontHeading = localFont({
