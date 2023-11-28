@@ -1,4 +1,4 @@
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from '@vercel/analytics/react';
 import "@/styles/globals.css";
 import { Metadata } from "next";
 import localFont from "next/font/local";
@@ -507,6 +507,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           fontHeading.variable
         )}
       >
+        <Analytics />
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-P29J8CQM"
