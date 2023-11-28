@@ -25,6 +25,7 @@ export const metadata: Metadata = {
 export default async function ProjectsHome() {
 
   return (
+    <>
     <div className="min-h-screen animate-fade-in py-8">
       <SignOut />
       <div className="md:ml-5 justify-center flex  md:justify-between">
@@ -53,7 +54,8 @@ export default async function ProjectsHome() {
       </p>
 
       <AddProject/>
-      <SiteFooter />
     </div>
+      <SiteFooter />
+      </>
   );
 }

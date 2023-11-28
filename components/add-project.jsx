@@ -185,7 +185,7 @@ const AddProject = () => {
           className="d-flex flex-wrap items-center"
         >
           <Textarea
-            className="flex  w-full rounded-md placeholder-zinc-50 border border-input bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 "
+            className="flex  w-full rounded-md placeholder:text-white border border-zinc-600 bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 "
             type="text"
             rows={10}
             placeholder="Project Name"
@@ -197,7 +197,7 @@ const AddProject = () => {
           <Textarea
             type="text"
             placeholder="Project Number"
-            className="flex  w-full rounded-md placeholder-zinc-50 border border-input bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            className="flex  w-full rounded-md placeholder:text-white border border-zinc-600 bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
             value={projectNumber}
             rows={10}
             onChange={(e) => setprojectNumber(e.target.value)}
@@ -206,7 +206,7 @@ const AddProject = () => {
 
           <Textarea
             type="text"
-            className="flex  w-full rounded-md placeholder-zinc-50 border border-input bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            className="flex  w-full rounded-md placeholder:text-white border border-zinc-600 bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
             placeholder="Project Sector"
             value={type}
             onChange={(e) => settype(e.target.value)}
@@ -214,7 +214,7 @@ const AddProject = () => {
           <br />
           <Textarea
             type="text"
-            className="flex  w-full rounded-md placeholder-zinc-50 border border-input bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            className="flex  w-full rounded-md placeholder:text-white border border-zinc-600 bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
             placeholder="Expertise"
             value={expertise}
             onChange={(e) => setExpertise(e.target.value)}
@@ -222,7 +222,7 @@ const AddProject = () => {
           <br />
           <Textarea
             type="text"
-            className="flex  w-full rounded-md placeholder-zinc-50 border border-input bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            className="flex  w-full rounded-md placeholder:text-white border border-zinc-600 bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
             placeholder="Location"
             value={location}
             onChange={(e) => setLocation(e.target.value)}
@@ -231,7 +231,7 @@ const AddProject = () => {
 
           <Textarea
             type="text"
-            className="flex  w-full rounded-md placeholder-zinc-50 border border-input bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            className="flex  w-full rounded-md placeholder:text-white border border-zinc-600 bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
             placeholder="Project Year"
             value={projectYear}
             onChange={(e) => setprojectYear(e.target.value)}
@@ -240,7 +240,7 @@ const AddProject = () => {
           <br />
           <Textarea
             type="text"
-            className="flex  w-full rounded-md placeholder-zinc-50 border border-input bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            className="flex  w-full rounded-md placeholder:text-white border border-zinc-600 bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
             placeholder="Project Name in small"
             value={projectPath}
             onChange={(e) => setprojectPath(e.target.value)}
@@ -248,7 +248,7 @@ const AddProject = () => {
           <br />
           <Textarea
             type="text"
-            className="flex  w-full rounded-md placeholder-zinc-50 border border-input bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            className="flex  w-full rounded-md placeholder:text-white border border-zinc-600 bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
             placeholder="Description 1"
             value={description}
             rows={10}
@@ -257,7 +257,7 @@ const AddProject = () => {
           <br />
           <Textarea
             type="text"
-            className="flex  w-full rounded-md placeholder-zinc-50 border border-input bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            className="flex  w-full rounded-md placeholder:text-white border border-zinc-600 bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
             placeholder="Description 2"
             value={description2}
             onChange={(e) => setdescription2(e.target.value)}
@@ -268,7 +268,7 @@ const AddProject = () => {
               <div
                 {...getRootProps()}
                 style={{ marginBottom: "20px" }}
-                className="flex  w-full rounded-md placeholder-zinc-50 border border-input bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                className="flex  w-full rounded-md placeholder:text-white border border-zinc-600 bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
               >
                 <Input {...getInputProps()} />
                 <p>
@@ -283,7 +283,8 @@ const AddProject = () => {
           <Button
             type="submit"
             variant="secondary"
-            className="text-white rounded-lg border border-zinc-50"
+            size="lg"
+            className="text-white text-md rounded-lg border border-zinc-50"
           >
             {editItemId ? "Update Project" : "Add Project"}
           </Button>
