@@ -11,8 +11,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { fontSans } from "./fontSans";
 import Head from "next/head";
 import { Graph } from "schema-dts";
-import { GoogleTagManager } from '@next/third-parties/google'
-import Script from 'next/script'
+import { GoogleTagManager } from "@next/third-parties/google";
+import Script from "next/script";
 
 const fontHeading = localFont({
   src: "../assets/fonts/CalSans-SemiBold.woff2",
@@ -28,8 +28,7 @@ interface RootLayoutProps {
   children: React.ReactNode;
 }
 
-
-const graph = {
+const graph = `
   
   "@context": "https://schema.org",
   "@graph": [
@@ -205,8 +204,7 @@ const graph = {
       },
       "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d"
     }
-  ]
-}
+  ]`;
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.bindhomes.com"),
@@ -268,16 +266,24 @@ const fallbackStyle = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
+      <Script
+        id="structured-data"
+        key="structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
+      />
       <Head>
-        
-      <GoogleTagManager gtmId="GTM-P29J8CQM" />
-      
-      <script
-          key="structured-data"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
-        />
-      {/* <script type="application/ld+json">
+        <GoogleTagManager gtmId="GTM-P29J8CQM" />
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-P29J8CQM"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
+
+        {/* <script type="application/ld+json">
   {`
     "@context": "https://schema.org",
     "@graph": [
@@ -455,10 +461,16 @@ export default function RootLayout({ children }: RootLayoutProps) {
       }
     ]`
   }
-</script> */}
- <meta name="twitter:image:alt" property="og:image:alt" content="Studio Bind Architects Logo"/>
-       
+</cript> */}
+        <meta
+          name="twitter:image:alt"
+          property="og:image:alt"
+          content="Studio Bind Architects Logo"
+        />
+
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.ico" sizes="16x16" />
+        <link rel="icon" href="/favicon.ico" sizes="32x32" />
         <link
           rel="apple-touch-icon"
           href="/apple-touch-icon.png"

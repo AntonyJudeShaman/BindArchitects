@@ -1,7 +1,7 @@
 "use client";
 import React, { CSSProperties, MouseEvent } from "react";
 import Link from "next/link";
-import dynamic from 'next/dynamic'
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { initializeApp } from "firebase/app";
@@ -98,46 +98,55 @@ export function Projects() {
       className="min-h-screen max-w-screen py-8 mx-auto justify-center"
       data-theme=""
     >
+      {/* {" "}
+      <h2
+        className="text-5xl dmsans md:text-left text-center leading-[1.1] mb-5 md:text-6xl"
+        aria-label="Some of our projects"
+      >
+        Some of our projects
+      </h2> */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center w-full ">
         {MenuItems?.sort((a, b) =>
           (b.projectNumber || "").localeCompare(a.projectNumber || "")
-        ).map((project, index) => (
-          <Link
-            key={project.projectName}
-            href={`/projects/${project.projectPath}`}
-            style={{ filter: "brightness(130%)" }}
-            className="overflow-hidden md:m-0 m-4 group justify-center"
-          >
-            <div
-              className="overflow-hidden"
-              style={{ height: "320px", width: "600px" }}
+        )
+          .slice(0, 5)
+          .map((project, index) => (
+            <Link
+              key={project.projectName}
+              href={`/projects/${project.projectPath}`}
+              style={{ filter: "brightness(130%)" }}
+              className="overflow-hidden md:m-0 m-4 group justify-center"
             >
-              <Image
-                src={images[index]}
-                alt={project.projectName || ""}
-                height={350}
-                width={600}
-                style={{ height: "auto", width: "auto" }}
-                className="project-frame overflow-hidden transform hover:scale-105 transition-transform duration-500 ease-in-out"
-              />
-            </div>
+              <div
+                className="overflow-hidden"
+                style={{ height: "320px", width: "600px" }}
+              >
+                <Image
+                  src={images[index]}
+                  alt={project.projectName || ""}
+                  height={350}
+                  width={600}
+                  style={{ height: "auto", width: "auto" }}
+                  className="project-frame overflow-hidden transform hover:scale-105 transition-transform duration-500 ease-in-out"
+                />
+              </div>
 
-            <div className="flex flex-wrap text-lg mt-2 2xl:mr-5">
-              <p
-                className="flex-1 dmsans-semibold text-left text-orange-50"
-                aria-label={project.projectName || ""}
-              >
-                {project.projectName}
-              </p>
-              <p
-                className="flex-1 dmsans text-right text-muted-foreground"
-                aria-label={project.projectNumber || ""}
-              >
-                {project.projectNumber}
-              </p>
-            </div>
-          </Link>
-        ))}
+              <div className="flex flex-wrap text-lg mt-2 2xl:mr-5">
+                <p
+                  className="flex-1 dmsans-semibold text-left text-orange-50"
+                  aria-label={project.projectName || ""}
+                >
+                  {project.projectName}
+                </p>
+                <p
+                  className="flex-1 dmsans text-right text-muted-foreground"
+                  aria-label={project.projectNumber || ""}
+                >
+                  {project.projectNumber}
+                </p>
+              </div>
+            </Link>
+          ))}
       </div>
     </div>
   );
