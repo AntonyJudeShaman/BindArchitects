@@ -386,7 +386,7 @@ function About() {
           ></iframe>
         </noscript>{" "}
         <p
-          className="logo-font select-none md:hidden ml-5 md:ml-0 flex-1 text-4xl"
+          className="logo-font select-none pl-2 md:hidden ml-5 md:ml-0 flex-1 text-4xl"
           aria-label="BIND"
         >
           BIND

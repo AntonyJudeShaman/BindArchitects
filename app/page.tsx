@@ -281,7 +281,7 @@ export default function HomeLayout() {
           ></iframe>
         </noscript>
         <p
-          className="logo-font select-none md:hidden ml-5 md:ml-0 flex-1 text-4xl font-bold"
+          className="logo-font select-none md:hidden pl-2 md:ml-0 flex-1 text-4xl font-bold"
           aria-label="BIND"
         >
           BIND
