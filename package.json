@@ -25,7 +25,7 @@
     "firebase": "^10.6.0",
     "formidable": "^3.5.1",
     "framer-motion": "^10.16.5",
-    "fs": "0.0.1-security",
+    "fs": "0.0.2",
     "gsap": "^3.12.2",
     "lucide-react": "^0.279.0",
     "micro-cors": "^0.1.1",
