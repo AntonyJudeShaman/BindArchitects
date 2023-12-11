@@ -10,9 +10,6 @@ import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { ThemeProvider } from "@/components/theme-provider";
 import { fontSans } from "./fontSans";
 import Head from "next/head";
-import { Graph } from "schema-dts";
-import { GoogleTagManager } from "@next/third-parties/google";
-import Script from "next/script";
 
 const fontHeading = localFont({
   src: "../assets/fonts/CalSans-SemiBold.woff2",
@@ -451,7 +448,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
         }}
       /> */}
       <Head>
-        <GoogleTagManager gtmId="GTM-P29J8CQM" />
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-P29J8CQM"

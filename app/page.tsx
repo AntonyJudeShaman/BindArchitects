@@ -27,7 +27,7 @@ const graph = {
   "@graph": [
     {
       "@type": "WPHeader",
-      url: "https://www.bindhomes.com/",
+      url: "https://www.bindarchitects.com/",
       headline:
         "Studio Bind - Best Architects in Chennai | Top Architectural Firm",
       description:
@@ -35,7 +35,7 @@ const graph = {
     },
     {
       "@type": "WPFooter",
-      url: "https://www.bindhomes.com/",
+      url: "https://www.bindarchitects.com/",
       headline:
         "Studio Bind - Best Architects in Chennai | Top Architectural Firm",
       description:
@@ -44,8 +44,8 @@ const graph = {
     },
     {
       "@type": "Organization",
-      "@id": "https://www.bindhomes.com/#schema-publishing-organization",
-      url: "https://www.bindhomes.com",
+      "@id": "https://www.bindarchitects.com/#schema-publishing-organization",
+      url: "https://www.bindarchitects.com",
       name: "Studio Bind",
       description:
         "We are the team of Best architects in Chennai and cater our top architects services on residential buildings, Interior Designs, Villa, Urban, Institutional and commercial places in Chennai and all over Tamilnadu.",
@@ -53,7 +53,7 @@ const graph = {
         "@type": "ContactPoint",
         contactType: "customer support",
         telephone: "+91-8072701454",
-        url: "https://www.bindhomes.com/contact/",
+        url: "https://www.bindarchitects.com/contact/",
         availableLanguage: "Tamil, English",
         email: "bindarchitects@gmail.com",
       },
@@ -68,18 +68,18 @@ const graph = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://www.bindhomes.com/#schema-website",
-      url: "https://www.bindhomes.com",
+      "@id": "https://www.bindarchitects.com/#schema-website",
+      url: "https://www.bindarchitects.com",
       name: "Studio Bind",
       encoding: "UTF-8",
       potentialAction: {
         "@type": "SearchAction",
-        target: "https://www.bindhomes.com/projects/{search_term_string}/",
+        target: "https://www.bindarchitects.com/projects/{search_term_string}/",
         "query-input": "required name=search_term_string",
       },
       image: {
         "@type": "ImageObject",
-        "@id": "https://www.bindhomes.com/#schema-site-logo",
+        "@id": "https://www.bindarchitects.com/#schema-site-logo",
         url: "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
         height: 153,
         width: 300,
@@ -88,90 +88,90 @@ const graph = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.bindhomes.com/#breadcrumb",
+      "@id": "https://www.bindarchitects.com/#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.bindhomes.com",
+          item: "https://www.bindarchitects.com",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Contact",
-          item: "https://www.bindhomes.com/contact",
+          item: "https://www.bindarchitects.com/contact",
         },
         {
           "@type": "ListItem",
           position: 3,
           name: "Best architects in chennai",
-          item: "https://www.bindhomes.com",
+          item: "https://www.bindarchitects.com",
         },
         {
           "@type": "ListItem",
           position: 4,
           name: "Top architects in chennai",
-          item: "https://www.bindhomes.com",
+          item: "https://www.bindarchitects.com",
         },
       ],
     },
     {
       "@type": "Person",
-      "@id": "https://www.bindhomes.com/about/#schema-author",
+      "@id": "https://www.bindarchitects.com/about/#schema-author",
       name: "Studio Bind",
     },
     {
       "@type": "WebPage",
-      "@id": "https://www.bindhomes.com/#schema-webpage",
+      "@id": "https://www.bindarchitects.com/#schema-webpage",
       isPartOf: {
-        "@id": "https://www.bindhomes.com/#schema-website",
+        "@id": "https://www.bindarchitects.com/#schema-website",
       },
       publisher: {
-        "@id": "https://www.bindhomes.com/#schema-publishing-organization",
+        "@id": "https://www.bindarchitects.com/#schema-publishing-organization",
       },
-      url: "https://www.bindhomes.com/",
+      url: "https://www.bindarchitects.com/",
       inLanguage: "en-US",
       hasPart: [
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://www.bindhomes.com/#schema-nav-element-529",
+          "@id": "https://www.bindarchitects.com/#schema-nav-element-529",
           name: "Home",
-          url: "https://www.bindhomes.com/",
+          url: "https://www.bindarchitects.com/",
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://www.bindhomes.com/#schema-nav-element-528",
+          "@id": "https://www.bindarchitects.com/#schema-nav-element-528",
           name: "",
-          url: "https://www.bindhomes.com/about/",
+          url: "https://www.bindarchitects.com/about/",
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://www.bindhomes.com/#schema-nav-element-527",
+          "@id": "https://www.bindarchitects.com/#schema-nav-element-527",
           name: "",
-          url: "https://www.bindhomes.com/projects/",
+          url: "https://www.bindarchitects.com/projects/",
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://www.bindhomes.com/#schema-nav-element-525",
+          "@id": "https://www.bindarchitects.com/#schema-nav-element-525",
           name: "",
-          url: "https://www.bindhomes.com/contact/",
+          url: "https://www.bindarchitects.com/contact/",
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://www.bindhomes.com/#schema-nav-element-2394",
+          "@id": "https://www.bindarchitects.com/#schema-nav-element-2394",
           name: '<img src="https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/facebook.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4" title="facebook bind"width="32px">',
           url: "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.bindarchitects.com%2Ffaq%3FquestionId%3Dbbe7072b-402e-4a9a-9fe1-cbf90f0c831e&appDefId=14c92d28-031e-7910-c9a8-a670011e062d",
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://www.bindhomes.com/#schema-nav-element-2395",
+          "@id": "https://www.bindarchitects.com/#schema-nav-element-2395",
           name: '<img src="https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/youtube.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4" target="_blank" title="youtube bind"width="32px">',
           url: "https://www.youtube.com/channel/UCTI09wWkEJeNy7wXwD4zSCQ",
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://www.bindhomes.com/#schema-nav-element-2396",
+          "@id": "https://www.bindarchitects.com/#schema-nav-element-2396",
           name: '<img src="https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/instagram.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4" target="_blank" title="instagram bind" width="32px">',
           url: "https://www.instagram.com/studio_bind/",
         },
@@ -180,13 +180,13 @@ const graph = {
     {
       "@type": "Article",
       mainEntityOfPage: {
-        "@id": "https://www.bindhomes.com/#schema-webpage",
+        "@id": "https://www.bindarchitects.com/#schema-webpage",
       },
       author: {
-        "@id": "https://www.bindhomes.com/about/#schema-author",
+        "@id": "https://www.bindarchitects.com/about/#schema-author",
       },
       publisher: {
-        "@id": "https://www.bindhomes.com/#schema-publishing-organization",
+        "@id": "https://www.bindarchitects.com/#schema-publishing-organization",
       },
       dateModified: "2023-11-22T14:29:49",
       datePublished: "2023-09-24T08:32:28",
@@ -197,7 +197,7 @@ const graph = {
       name: "Best architects in chennai",
       image: {
         "@type": "ImageObject",
-        "@id": "https://www.bindhomes.com/#schema-article-image",
+        "@id": "https://www.bindarchitects.com/#schema-article-image",
         url: "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
         height: 153,
         width: 300,
@@ -222,28 +222,28 @@ export default function HomeLayout() {
       //   "@graph": [
       //     {
       //       "@type": "WPHeader",
-      //       "url": "https://www.bindhomes.com/",
+      //       "url": "https://www.bindarchitects.com/",
       //       "headline": "Studio Bind - Best Architects in Chennai | Top Architectural Firm",
       //       "description": "Award-winning Best architects in Chennai, we cater our top architect's services on residential buildings, Interior Designs, Villa, Apartment, Institutional and commercial mall, hotel, restaurant in Chennai & all over Tamilnadu. A leading and best interior designer in Chennai"
       //     },
       //     {
       //       "@type": "WPFooter",
-      //       "url": "https://www.bindhomes.com/",
+      //       "url": "https://www.bindarchitects.com/",
       //       "headline": "Studio Bind - Best Architects in Chennai | Top Architectural Firm",
       //       "description": "Award-winning Best architects in Chennai, we cater our top architect's services on residential buildings, Interior Designs, Villa, Apartment, Institutional and commercial mall, hotel, restaurant in Chennai & all over Tamilnadu. A leading and best interior designer in Chennai",
       //       "copyrightYear": "2023"
       //     },
       //     {
       //       "@type": "Organization",
-      //       "@id": "https://www.bindhomes.com/#schema-publishing-organization",
-      //       "url": "https://www.bindhomes.com",
+      //       "@id": "https://www.bindarchitects.com/#schema-publishing-organization",
+      //       "url": "https://www.bindarchitects.com",
       //       "name": "Studio Bind",
       //       "description": "We are the team of Best architects in Chennai and cater our top architects services on residential buildings, Interior Designs, Villa, Urban, Institutional and commercial places in Chennai and all over Tamilnadu.",
       //       "contactPoint": {
       //         "@type": "ContactPoint",
       //         "contactType": "customer support",
       //         "telephone": "+91-8072701454",
-      //         "url": "https://bindhomes.com/contact/",
+      //         "url": "https://bindarchitects.com/contact/",
       //         "availableLanguage": "Tamil, English",
       //         "email": "bindarchitects@gmail.com"
       //       },
@@ -257,18 +257,18 @@ export default function HomeLayout() {
       //     },
       //     {
       //       "@type": "WebSite",
-      //       "@id": "https://www.bindhomes.com/#schema-website",
-      //       "url": "https://www.bindhomes.com",
+      //       "@id": "https://www.bindarchitects.com/#schema-website",
+      //       "url": "https://www.bindarchitects.com",
       //       "name": "Studio Bind",
       //       "encoding": "UTF-8",
       //       "potentialAction": {
       //         "@type": "SearchAction",
-      //         "target": "https://bindhomes.com/projects/{search_term_string}/",
+      //         "target": "https://bindarchitects.com/projects/{search_term_string}/",
       //         "query-input": "required name=search_term_string"
       //       },
       //       "image": {
       //         "@type": "ImageObject",
-      //         "@id": "https://www.bindhomes.com/#schema-site-logo",
+      //         "@id": "https://www.bindarchitects.com/#schema-site-logo",
       //         "url": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
       //         "height": 153,
       //         "width": 300,
@@ -277,90 +277,90 @@ export default function HomeLayout() {
       //     },
       //     {
       //       "@type": "BreadcrumbList",
-      //       "@id": "https://www.bindhomes.com/#breadcrumb",
+      //       "@id": "https://www.bindarchitects.com/#breadcrumb",
       //       "itemListElement": [
       //         {
       //           "@type": "ListItem",
       //           "position": 1,
       //           "name": "Home",
-      //           "item": "https://www.bindhomes.com"
+      //           "item": "https://www.bindarchitects.com"
       //         },
       //         {
       //           "@type": "ListItem",
       //           "position": 2,
       //           "name": "Contact",
-      //           "item": "https://bindhomes.com/contact"
+      //           "item": "https://bindarchitects.com/contact"
       //         },
       //         {
       //           "@type": "ListItem",
       //           "position": 3,
       //           "name": "Best architects in chennai",
-      //           "item": "https://www.bindhomes.com"
+      //           "item": "https://www.bindarchitects.com"
       //         },
       //         {
       //           "@type": "ListItem",
       //           "position": 4,
       //           "name": "Top architects in chennai",
-      //           "item": "https://www.bindhomes.com"
+      //           "item": "https://www.bindarchitects.com"
       //         }
       //       ]
       //     },
       //     {
       //       "@type": "Person",
-      //       "@id": "https://bindhomes.com/about/#schema-author",
+      //       "@id": "https://bindarchitects.com/about/#schema-author",
       //       "name": "Studio Bind"
       //     },
       //     {
       //       "@type": "WebPage",
-      //       "@id": "https://www.bindhomes.com/#schema-webpage",
+      //       "@id": "https://www.bindarchitects.com/#schema-webpage",
       //       "isPartOf": {
-      //         "@id": "https://www.bindhomes.com/#schema-website"
+      //         "@id": "https://www.bindarchitects.com/#schema-website"
       //       },
       //       "publisher": {
-      //         "@id": "https://www.bindhomes.com/#schema-publishing-organization"
+      //         "@id": "https://www.bindarchitects.com/#schema-publishing-organization"
       //       },
-      //       "url": "https://www.bindhomes.com/",
+      //       "url": "https://www.bindarchitects.com/",
       //       "inLanguage": "en-US",
       //       "hasPart": [
       //         {
       //           "@type": "SiteNavigationElement",
-      //           "@id": "https://www.bindhomes.com/#schema-nav-element-529",
+      //           "@id": "https://www.bindarchitects.com/#schema-nav-element-529",
       //           "name": "Home",
-      //           "url": "https://www.bindhomes.com/"
+      //           "url": "https://www.bindarchitects.com/"
       //         },
       //         {
       //           "@type": "SiteNavigationElement",
-      //           "@id": "https://www.bindhomes.com/#schema-nav-element-528",
+      //           "@id": "https://www.bindarchitects.com/#schema-nav-element-528",
       //           "name": "",
-      //           "url": "https://bindhomes.com/about/"
+      //           "url": "https://bindarchitects.com/about/"
       //         },
       //         {
       //           "@type": "SiteNavigationElement",
-      //           "@id": "https://www.bindhomes.com/#schema-nav-element-527",
+      //           "@id": "https://www.bindarchitects.com/#schema-nav-element-527",
       //           "name": "",
-      //           "url": "https://bindhomes.com/projects/"
+      //           "url": "https://bindarchitects.com/projects/"
       //         },
       //         {
       //           "@type": "SiteNavigationElement",
-      //           "@id": "https://www.bindhomes.com/#schema-nav-element-525",
+      //           "@id": "https://www.bindarchitects.com/#schema-nav-element-525",
       //           "name": "",
-      //           "url": "https://bindhomes.com/contact/"
+      //           "url": "https://bindarchitects.com/contact/"
       //         },
       //         {
       //           "@type": "SiteNavigationElement",
-      //           "@id": "https://bindhomes.com/#schema-nav-element-2394",
+      //           "@id": "https://bindarchitects.com/#schema-nav-element-2394",
       //           "name": "<img src=\"https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/facebook.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4\" title=\"facebook bind\"width=\"32px\">",
       //           "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.bindarchitects.com%2Ffaq%3FquestionId%3Dbbe7072b-402e-4a9a-9fe1-cbf90f0c831e&appDefId=14c92d28-031e-7910-c9a8-a670011e062d"
       //         },
       //         {
       //           "@type": "SiteNavigationElement",
-      //           "@id": "https://www.bindhomes.com/#schema-nav-element-2395",
+      //           "@id": "https://www.bindarchitects.com/#schema-nav-element-2395",
       //           "name": "<img src=\"https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/youtube.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4\" target=\"_blank\" title=\"youtube bind\"width=\"32px\">",
       //           "url": "https://www.youtube.com/channel/UCTI09wWkEJeNy7wXwD4zSCQ"
       //         },
       //         {
       //           "@type": "SiteNavigationElement",
-      //           "@id": "https://www.bindhomes.com/#schema-nav-element-2396",
+      //           "@id": "https://www.bindarchitects.com/#schema-nav-element-2396",
       //           "name": "<img src=\"https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/instagram.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4\" target=\"_blank\" title=\"instagram bind\" width=\"32px\">",
       //           "url": "https://www.instagram.com/studio_bind/"
       //         }
@@ -369,13 +369,13 @@ export default function HomeLayout() {
       //     {
       //       "@type": "Article",
       //       "mainEntityOfPage": {
-      //         "@id": "https://www.bindhomes.com/#schema-webpage"
+      //         "@id": "https://www.bindarchitects.com/#schema-webpage"
       //       },
       //       "author": {
-      //         "@id": "https://bindhomes.com/about/#schema-author"
+      //         "@id": "https://bindarchitects.com/about/#schema-author"
       //       },
       //       "publisher": {
-      //         "@id": "https://www.bindhomes.com/#schema-publishing-organization"
+      //         "@id": "https://www.bindarchitects.com/#schema-publishing-organization"
       //       },
       //       "dateModified": "2023-11-22T14:29:49",
       //       "datePublished": "2023-09-24T08:32:28",
@@ -384,7 +384,7 @@ export default function HomeLayout() {
       //       "name": "Best architects in chennai",
       //       "image": {
       //         "@type": "ImageObject",
-      //         "@id": "https://www.bindhomes.com/#schema-article-image",
+      //         "@id": "https://www.bindarchitects.com/#schema-article-image",
       //         "url": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
       //         "height": 153,
       //         "width": 300,
@@ -400,7 +400,7 @@ export default function HomeLayout() {
         <title>
           Studio Bind - Best Architects in Chennai | Top Architectural Firm
         </title>
-        <link rel="canonical" href="https://www.bindhomes.com/" />
+        <link rel="canonical" href="https://www.bindarchitects.com/" />
         <meta
           name="twitter:image:alt"
           property="og:image:alt"
@@ -419,7 +419,7 @@ export default function HomeLayout() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="generator" content="Site Kit by Google 1.104.0" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.bindhomes.com/" />
+        <meta property="og:url" content="https://www.bindarchitects.com/" />
         <meta
           property="og:title"
           content="Studio Bind - Best Architects in Chennai | Top Architectural Firm"

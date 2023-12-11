@@ -3,40 +3,40 @@ import { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://www.bindhomes.com",
+      url: "https://www.bindarchitects.com",
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1,
     },
     {
-      url: "https://bindhomes.com/",
+      url: "https://bindarchitects.com/",
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1,
     },
     {
-        url: "https://bindhomes.com/contact",
+        url: "https://bindarchitects.com/contact",
         lastModified: new Date(),
         changeFrequency: 'weekly',
         priority: 1,
       },
       {
-        url: "https://bindhomes.com/about",
+        url: "https://bindarchitects.com/about",
         lastModified: new Date(),
         changeFrequency: 'weekly',
       },
       {
-        url: "https://bindhomes.com/frequently-asked-questions",
+        url: "https://bindarchitects.com/frequently-asked-questions",
         lastModified: new Date(),
         changeFrequency: 'weekly',
       },
       {
-        url: "https://bindhomes.com/works",
+        url: "https://bindarchitects.com/works",
         changeFrequency: 'weekly',
         lastModified: new Date(),
       },
       {
-        url: "https://bindhomes.com/projects",
+        url: "https://bindarchitects.com/projects",
         lastModified: new Date(),
         changeFrequency: 'weekly',
       },

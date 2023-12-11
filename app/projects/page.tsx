@@ -32,14 +32,14 @@ const graph = {
   "@graph": [
     {
       "@type": "WPHeader",
-      url: "https://bindhomes.com/projects/",
+      url: "https://bindarchitects.com/projects/",
       headline: "Explore our projects - Studio Bind Architects",
       description:
         "List of our various kinds of architecture designs. Share us your idea, we will design the rest to bring it to life.",
     },
     {
       "@type": "WPFooter",
-      url: "https://bindhomes.com/projects/",
+      url: "https://bindarchitects.com/projects/",
       headline: "Explore our projects - Studio Bind Architects",
       description:
         "List of our various kinds of architecture designs. Share us your idea, we will design the rest to bring it to life.",
@@ -47,24 +47,24 @@ const graph = {
     },
     {
       "@type": "Organization",
-      "@id": "https://bindhomes.com/#schema-publishing-organization",
-      url: "https://bindhomes.com",
+      "@id": "https://bindarchitects.com/#schema-publishing-organization",
+      url: "https://bindarchitects.com",
       name: "DLEA",
     },
     {
       "@type": "WebSite",
-      "@id": "https://bindhomes.com/#schema-website",
-      url: "https://bindhomes.com",
+      "@id": "https://bindarchitects.com/#schema-website",
+      url: "https://bindarchitects.com",
       name: "DLEA",
       encoding: "UTF-8",
       potentialAction: {
         "@type": "SearchAction",
-        target: "https://bindhomes.com/projects/{search_term_string}/",
+        target: "https://bindarchitects.com/projects/{search_term_string}/",
         "query-input": "required name=search_term_string",
       },
       image: {
         "@type": "ImageObject",
-        "@id": "https://bindhomes.com/#schema-site-logo",
+        "@id": "https://bindarchitects.com/#schema-site-logo",
         url: "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
         height: 153,
         width: 300,
@@ -74,13 +74,13 @@ const graph = {
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://bindhomes.com/projects?page&pagename=projects/#breadcrumb",
+        "https://bindarchitects.com/projects?page&pagename=projects/#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://bindhomes.com",
+          item: "https://bindarchitects.com",
         },
         {
           "@type": "ListItem",
@@ -91,59 +91,59 @@ const graph = {
     },
     {
       "@type": "Person",
-      "@id": "https://bindhomes.com/about/#schema-author",
+      "@id": "https://bindarchitects.com/about/#schema-author",
       name: "dleain",
     },
     {
       "@type": "WebPage",
-      "@id": "https://bindhomes.com/projects/#schema-webpage",
+      "@id": "https://bindarchitects.com/projects/#schema-webpage",
       isPartOf: {
-        "@id": "https://bindhomes.com/#schema-website",
+        "@id": "https://bindarchitects.com/#schema-website",
       },
       publisher: {
-        "@id": "https://bindhomes.com/#schema-publishing-organization",
+        "@id": "https://bindarchitects.com/#schema-publishing-organization",
       },
-      url: "https://bindhomes.com/projects/",
+      url: "https://bindarchitects.com/projects/",
       hasPart: [
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://bindhomes.com/projects/#schema-nav-element-529",
+          "@id": "https://bindarchitects.com/projects/#schema-nav-element-529",
           name: "Home",
-          url: "https://bindhomes.com/",
+          url: "https://bindarchitects.com/",
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://bindhomes.com/projects/#schema-nav-element-528",
+          "@id": "https://bindarchitects.com/projects/#schema-nav-element-528",
           name: "",
-          url: "https://bindhomes.com/about/",
+          url: "https://bindarchitects.com/about/",
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://bindhomes.com/projects/#schema-nav-element-527",
+          "@id": "https://bindarchitects.com/projects/#schema-nav-element-527",
           name: "",
-          url: "https://bindhomes.com/projects/",
+          url: "https://bindarchitects.com/projects/",
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://bindhomes.com/projects/#schema-nav-element-525",
+          "@id": "https://bindarchitects.com/projects/#schema-nav-element-525",
           name: "",
-          url: "https://bindhomes.com/contact/",
+          url: "https://bindarchitects.com/contact/",
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://bindhomes.com/#schema-nav-element-2394",
+          "@id": "https://bindarchitects.com/#schema-nav-element-2394",
           name: '<img src="https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/facebook.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4" title="facebook bind" width="32px">',
           url: "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.bindarchitects.com%2Ffaq%3FquestionId%3Dbbe7072b-402e-4a9a-9fe1-cbf90f0c831e&appDefId=14c92d28-031e-7910-c9a8-a670011e062d",
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://bindhomes.com/#schema-nav-element-2395",
+          "@id": "https://bindarchitects.com/#schema-nav-element-2395",
           name: '<img src="https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/youtube.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4" target="_blank" title="youtube bind" width="32px">',
           url: "https://www.youtube.com/channel/UCTI09wWkEJeNy7wXwD4zSCQ",
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://bindhomes.com/#schema-nav-element-2396",
+          "@id": "https://bindarchitects.com/#schema-nav-element-2396",
           name: '<img src="https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/instagram.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4" target="_blank" title="instagram bind" width="32px">',
           url: "https://www.instagram.com/studio_bind/",
         },
@@ -156,7 +156,7 @@ const graph = {
       name: "Projects",
       image: {
         "@type": "ImageObject",
-        "@id": "https://bindhomes.com/projects/#schema-article-image",
+        "@id": "https://bindarchitects.com/projects/#schema-article-image",
         url: "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
         height: 153,
         width: 300,
@@ -183,37 +183,37 @@ function ProjectsHome() {
   "@graph": [
     {
       "@type": "WPHeader",
-      "url": "https://bindhomes.com/projects/",
+      "url": "https://bindarchitects.com/projects/",
       "headline": "Explore our projects - Studio Bind Architects",
       "description": "List of our various kinds of architecture designs. Share us your idea, we will design the rest to bring it to life."
     },
     {
       "@type": "WPFooter",
-      "url": "https://bindhomes.com/projects/",
+      "url": "https://bindarchitects.com/projects/",
       "headline": "Explore our projects - Studio Bind Architects",
       "description": "List of our various kinds of architecture designs. Share us your idea, we will design the rest to bring it to life.",
       "copyrightYear": "2023"
     },
     {
       "@type": "Organization",
-      "@id": "https://bindhomes.com/#schema-publishing-organization",
-      "url": "https://bindhomes.com",
+      "@id": "https://bindarchitects.com/#schema-publishing-organization",
+      "url": "https://bindarchitects.com",
       "name": "DLEA"
     },
     {
       "@type": "WebSite",
-      "@id": "https://bindhomes.com/#schema-website",
-      "url": "https://bindhomes.com",
+      "@id": "https://bindarchitects.com/#schema-website",
+      "url": "https://bindarchitects.com",
       "name": "DLEA",
       "encoding": "UTF-8",
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://bindhomes.com/projects/{search_term_string}/",
+        "target": "https://bindarchitects.com/projects/{search_term_string}/",
         "query-input": "required name=search_term_string"
       },
       "image": {
         "@type": "ImageObject",
-        "@id": "https://bindhomes.com/#schema-site-logo",
+        "@id": "https://bindarchitects.com/#schema-site-logo",
         "url": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
         "height": 153,
         "width": 300,
@@ -222,13 +222,13 @@ function ProjectsHome() {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://bindhomes.com/projects?page&pagename=projects/#breadcrumb",
+      "@id": "https://bindarchitects.com/projects?page&pagename=projects/#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://bindhomes.com"
+          "item": "https://bindarchitects.com"
         },
         {
           "@type": "ListItem",
@@ -239,59 +239,59 @@ function ProjectsHome() {
     },
     {
       "@type": "Person",
-      "@id": "https://bindhomes.com/about/#schema-author",
+      "@id": "https://bindarchitects.com/about/#schema-author",
       "name": "dleain"
     },
     {
       "@type": "WebPage",
-      "@id": "https://bindhomes.com/projects/#schema-webpage",
+      "@id": "https://bindarchitects.com/projects/#schema-webpage",
       "isPartOf": {
-        "@id": "https://bindhomes.com/#schema-website"
+        "@id": "https://bindarchitects.com/#schema-website"
       },
       "publisher": {
-        "@id": "https://bindhomes.com/#schema-publishing-organization"
+        "@id": "https://bindarchitects.com/#schema-publishing-organization"
       },
-      "url": "https://bindhomes.com/projects/",
+      "url": "https://bindarchitects.com/projects/",
       "hasPart": [
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://bindhomes.com/projects/#schema-nav-element-529",
+          "@id": "https://bindarchitects.com/projects/#schema-nav-element-529",
           "name": "Home",
-          "url": "https://bindhomes.com/"
+          "url": "https://bindarchitects.com/"
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://bindhomes.com/projects/#schema-nav-element-528",
+          "@id": "https://bindarchitects.com/projects/#schema-nav-element-528",
           "name": "",
-          "url": "https://bindhomes.com/about/"
+          "url": "https://bindarchitects.com/about/"
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://bindhomes.com/projects/#schema-nav-element-527",
+          "@id": "https://bindarchitects.com/projects/#schema-nav-element-527",
           "name": "",
-          "url": "https://bindhomes.com/projects/"
+          "url": "https://bindarchitects.com/projects/"
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://bindhomes.com/projects/#schema-nav-element-525",
+          "@id": "https://bindarchitects.com/projects/#schema-nav-element-525",
           "name": "",
-          "url": "https://bindhomes.com/contact/"
+          "url": "https://bindarchitects.com/contact/"
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://bindhomes.com/#schema-nav-element-2394",
+          "@id": "https://bindarchitects.com/#schema-nav-element-2394",
           "name": "<img src=\"https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/facebook.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4\" title=\"facebook bind\" width=\"32px\">",
           "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.bindarchitects.com%2Ffaq%3FquestionId%3Dbbe7072b-402e-4a9a-9fe1-cbf90f0c831e&appDefId=14c92d28-031e-7910-c9a8-a670011e062d"
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://bindhomes.com/#schema-nav-element-2395",
+          "@id": "https://bindarchitects.com/#schema-nav-element-2395",
           "name": "<img src=\"https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/youtube.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4\" target=\"_blank\" title=\"youtube bind\" width=\"32px\">",
           "url": "https://www.youtube.com/channel/UCTI09wWkEJeNy7wXwD4zSCQ"
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://bindhomes.com/#schema-nav-element-2396",
+          "@id": "https://bindarchitects.com/#schema-nav-element-2396",
           "name": "<img src=\"https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/instagram.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4\" target=\"_blank\" title=\"instagram bind\" width=\"32px\">",
           "url": "https://www.instagram.com/studio_bind/"
         }
@@ -303,7 +303,7 @@ function ProjectsHome() {
       "name": "Projects",
       "image": {
         "@type": "ImageObject",
-        "@id": "https://bindhomes.com/projects/#schema-article-image",
+        "@id": "https://bindarchitects.com/projects/#schema-article-image",
         "url": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
         "height": 153,
         "width": 300,
@@ -317,7 +317,7 @@ function ProjectsHome() {
         <title>
           Projects - Studio Bind Architects - Best Architects in Chennai
         </title>
-        <link rel="canonical" href="https://bindhomes.com/projects/" />
+        <link rel="canonical" href="https://bindarchitects.com/projects/" />
         <meta
           property="og:description"
           content="Discover the portfolio of Studio Bind Architects' projects in Chennai. Explore a showcase of innovative and inspiring residential and commercial spaces. From conceptualization to realization, immerse yourself in the artistry and functionality of our architectural designs. Elevate your vision of modern living with Chennai's leading architectural firm, Studio Bind Architects."
@@ -337,7 +337,7 @@ function ProjectsHome() {
           content="https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://bindhomes.com/projects/" />
+        <meta property="og:url" content="https://bindarchitects.com/projects/" />
         <meta name="twitter:card" content="summary" />
         <meta
           name="twitter:title"
@@ -371,7 +371,7 @@ function ProjectsHome() {
         data-speed="1.5"
         fallback={<div style={fallbackStyle}>Loading Please wait...</div>}
       >
-        <link rel="canonical" href="https://www.bindhomes.com/projects" />
+        <link rel="canonical" href="https://www.bindarchitects.com/projects" />
         <div className="min-h-screen  max-w-screen mt-4 bg" data-theme="">
           <div className="md:ml-0 ml-5 flex justify-between">
             <div className="hidden md:ml-24 md:block">
