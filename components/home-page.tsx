@@ -23,14 +23,14 @@ export default function IndexPage() {
           {/* <h1 className="font-semibold ">
             <Image src={logo} alt="Jude" className="h-15 w-20" />
           </h1> */}
-          <h1
+          <p
             aria-label="Studio bind"
             className="2xl:text-8xl xl:text-8xl lg:text-8xl md:text-7xl sm:text-7xl  dmsans-home title-gradient2 flex flex-wrap max-w-full   z-30 text-6xl title-gradient    duration-1000   font-display   "
           >
             We shape
-          </h1>
+          </p>
 
-          <h1
+          <p
             aria-label="Studio bind"
             className="2xl:text-8xl xl:text-8xl lg:text-8xl md:text-7xl sm:text-7xl dmsans-home title-gradient2 flex dmsans-home flex-wrap max-w-full   z-30 text-6xl dmsans-home title-gradient3    duration-1000   font-display   "
           >
@@ -38,19 +38,19 @@ export default function IndexPage() {
             <span className="sm:hidden dmsans-home hidden md:inline-block">
               &nbsp;need no
             </span>
-          </h1>
-          <h1
+          </p>
+          <p
             aria-label="Studio bind"
             className="2xl:text-8xl xl:text-8xl lg:text-8xl md:text-7xl sm:text-7xl dmsans-home title-gradient2 sm:inline-block md:hidden flex dmsans-home flex-wrap max-w-full   z-30 text-6xl dmsans-home title-gradient    duration-1000   font-display   "
           >
             need no
-          </h1>
-          <h1
+          </p>
+          <p
             aria-label="Studio bind"
             className="2xl:text-8xl xl:text-8xl lg:text-8xl md:text-7xl sm:text-7xl dmsans-home title-gradient2 flex dmsans-home flex-wrap   z-30 text-6xl dmsans-home title-gradient4    duration-1000   font-display   "
           >
              introduction
-          </h1>
+          </p>
           <div className="md:max-w-full grid md:grid-cols-4 sm:grid-cols-4 grid-cols-2 md:gap-x-24  xl:gap-x-44 lg:gap-x-40 2xl:gap-x-44 gap-x-12  flex-row  sm:leading-8">
             <div className="flex flex-col title-gradient4 mt-8">
               <span className="dmsans title-gradient title-gradient4   text-4xl mb-3">
