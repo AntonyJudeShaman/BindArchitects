@@ -251,10 +251,6 @@ export const metadata: Metadata = {
     "Tailored design for shops and homes",
     "Reliable home and business designers",
   ],
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
-  ],
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",
