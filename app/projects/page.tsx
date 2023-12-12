@@ -171,14 +171,14 @@ const graph = {
 
 function ProjectsHome() {
   return (
-    <>
+    <><Script
+    id="structured-data"
+    key="structured-data"
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
+  />
       <Head>
-        <Script
-          id="structured-data"
-          key="structured-data"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
-        />
+        
         <title>
           Projects - Studio Bind Architects - Best Architects in Chennai
         </title>
