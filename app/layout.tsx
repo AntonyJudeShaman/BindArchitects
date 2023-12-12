@@ -50,7 +50,7 @@ const graph = {
       "@type": "Organization",
       "@id": "https://www.bindarchitects.com/#schema-publishing-organization",
       url: "https://www.bindarchitects.com",
-      name: "Studio Bind",
+      name: "Studio Bind Architects",
       description:
         "We are the team of Best architects in Chennai and cater our top architects services on residential buildings, Interior Designs, Villa, Urban, Institutional and commercial places in Chennai and all over Tamilnadu.",
       contactPoint: {
@@ -303,7 +303,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         "@type": "Organization",
         "@id": "https://bindarchitects.com/#schema-publishing-organization",
         "url": "https://bindarchitects.com",
-        "name": "Studio Bind",
+        "name": "Studio Bind Architects",
         "description": "We are the team of Best architects in Chennai and cater our top architects services on residential buildings, Interior Designs, Villa, Urban, Institutional and commercial places in Chennai and all over Tamilnadu.",
         "contactPoint": {
           "@type": "ContactPoint",
