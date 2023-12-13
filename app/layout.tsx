@@ -333,11 +333,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         )}
       >
         <Analytics />
-        <SpeedInsights
-          url="https://www.bindarchitects.com"
-          locale="en_US"
-          strategy="mobile, desktop"
-        />
+        <SpeedInsights />
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-P29J8CQM"

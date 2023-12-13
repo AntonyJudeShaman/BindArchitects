@@ -20,9 +20,6 @@ export default function IndexPage() {
         style={{ minHeight: "100vh" }}
       >
         <div className="md:p-0 p-4 max-w-full flex flex-col gap-8 md:-mt-10 ">
-          {/* <h1 className="font-semibold ">
-            <Image src={logo} alt="Jude" className="h-15 w-20" />
-          </h1> */}
           <p
             aria-label="Studio bind"
             className="2xl:text-8xl xl:text-8xl lg:text-8xl md:text-7xl sm:text-7xl  dmsans-home title-gradient2 flex flex-wrap max-w-full   z-30 text-6xl title-gradient    duration-1000   font-display   "

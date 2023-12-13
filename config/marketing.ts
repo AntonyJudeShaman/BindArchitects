@@ -17,7 +17,7 @@ export const marketingConfig: MarketingConfig = {
     },
     {
       title: "FAQ",
-      href: "/frequently-asked-questions",
+      href: "/faq",
     },
     {
       title: "Contact",
@@ -41,7 +41,7 @@ export const HomePage: MarketingConfig = {
     },
     {
       title: "FAQ",
-      href: "/frequently-asked-questions",
+      href: "/faq",
     },
     {
       title: "Contact",
