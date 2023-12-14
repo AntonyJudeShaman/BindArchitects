@@ -47,13 +47,13 @@ const graph = {
       "@type": "Organization",
       "@id": "https://bindarchitects.com/#schema-publishing-organization",
       url: "https://bindarchitects.com",
-      name: "Studio Bind",
+      name: "Studio Bind Architects",
     },
     {
       "@type": "WebSite",
       "@id": "https://bindarchitects.com/#schema-website",
       url: "https://bindarchitects.com",
-      name: "Studio Bind",
+      name: "Studio Bind Architects",
       encoding: "UTF-8",
       potentialAction: {
         "@type": "SearchAction",
@@ -89,7 +89,7 @@ const graph = {
     {
       "@type": "Person",
       "@id": "https://bindarchitects.com/about/#schema-author",
-      name: "Studio Bind",
+      name: "Studio Bind Architects",
     },
     {
       "@type": "AboutPage",

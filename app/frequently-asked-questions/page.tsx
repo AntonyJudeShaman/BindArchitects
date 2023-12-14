@@ -25,14 +25,14 @@ const graph = {
   "@graph": [
     {
       "@type": "WPHeader",
-      url: "https://bindarchitects.com/faq/",
+      url: "https://bindarchitects.com/frequently-asked-questions/",
       headline: "Frequently Asked Questions - Studio Bind",
       description:
         "Find answers to common questions about Studio Bind and our services.",
     },
     {
       "@type": "WPFooter",
-      url: "https://bindarchitects.com/faq/",
+      url: "https://bindarchitects.com/frequently-asked-questions/",
       headline: "Frequently Asked Questions - Studio Bind",
       description:
         "Find answers to common questions about Studio Bind and our services.",
@@ -42,7 +42,7 @@ const graph = {
       "@type": "Organization",
       "@id": "https://bindarchitects.com/#schema-publishing-organization",
       url: "https://bindarchitects.com",
-      name: "Studio Bind Architects",
+      name: "Studio Bind",
     },
     {
       "@type": "WebSite",
@@ -67,7 +67,7 @@ const graph = {
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://bindarchitects.com/faq?page&pagename=faq/#breadcrumb",
+        "https://bindarchitects.com/frequently-asked-questions?page&pagename=faq/#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
@@ -85,18 +85,18 @@ const graph = {
     {
       "@type": "Person",
       "@id": "https://bindarchitects.com/about/#schema-author",
-      name: "Studio Bind Architects",
+      name: "Studio Bind",
     },
     {
       "@type": "FAQPage",
       "@id":
-        "https://bindarchitects.com/faq/#schema-webpage",
+        "https://bindarchitects.com/frequently-asked-questions/#schema-webpage",
       isPartOf: "https://bindarchitects.com/#schema-website",
       mainEntity: {
         "@type": "WebPage",
         "@id":
-          "https://bindarchitects.com/faq/#schema-webpage-main-entity",
-        url: "https://bindarchitects.com/faq/",
+          "https://bindarchitects.com/frequently-asked-questions/#schema-webpage-main-entity",
+        url: "https://bindarchitects.com/frequently-asked-questions/",
         headline: "Frequently Asked Questions - Studio Bind",
         description:
           "Find answers to common questions about Studio Bind and our services.",
@@ -105,30 +105,30 @@ const graph = {
         {
           "@type": "SiteNavigationElement",
           "@id":
-            "https://bindarchitects.com/faq/#schema-nav-element-529",
+            "https://bindarchitects.com/frequently-asked-questions/#schema-nav-element-529",
           name: "Home",
           url: "https://bindarchitects.com/",
         },
         {
           "@type": "SiteNavigationElement",
           "@id":
-            "https://bindarchitects.com/faq/#schema-nav-element-528",
+            "https://bindarchitects.com/frequently-asked-questions/#schema-nav-element-528",
           name: "",
           url: "https://bindarchitects.com/about/",
         },
         {
           "@type": "SiteNavigationElement",
           "@id":
-            "https://bindarchitects.com/faq/#schema-nav-element-527",
+            "https://bindarchitects.com/frequently-asked-questions/#schema-nav-element-527",
           name: "",
           url: "https://bindarchitects.com/projects/",
         },
         {
           "@type": "SiteNavigationElement",
           "@id":
-            "https://bindarchitects.com/faq/#schema-nav-element-525",
+            "https://bindarchitects.com/frequently-asked-questions/#schema-nav-element-525",
           name: "",
-          url: "https://bindarchitects.com/faq/",
+          url: "https://bindarchitects.com/frequently-asked-questions/",
         },
         {
           "@type": "SiteNavigationElement",
@@ -149,7 +149,7 @@ const graph = {
           url: "https://www.instagram.com/studio_bind/",
         },
       ],
-      url: "https://bindarchitects.com/faq/",
+      url: "https://bindarchitects.com/frequently-asked-questions/",
       author: {
         "@id": "https://bindarchitects.com/about/#schema-author",
       },
@@ -165,7 +165,7 @@ const graph = {
       image: {
         "@type": "ImageObject",
         "@id":
-          "https://bindarchitects.com/faq/#schema-article-image",
+          "https://bindarchitects.com/frequently-asked-questions/#schema-article-image",
         url: "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
         height: 153,
         width: 300,
@@ -189,7 +189,7 @@ function page() {
       <Head>
         <link
           rel="canonical"
-          href="https://bindarchitects.com/faq/"
+          href="https://bindarchitects.com/frequently-asked-questions/"
         />
         <meta
           property="og:description"
@@ -212,7 +212,7 @@ function page() {
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://bindarchitects.com/faq/"
+          content="https://bindarchitects.com/frequently-asked-questions/"
         />
         <meta name="twitter:card" content="summary" />
         <meta

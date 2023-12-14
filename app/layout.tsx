@@ -75,7 +75,7 @@ const graph = {
       "@type": "WebSite",
       "@id": "https://www.bindarchitects.com/#schema-website",
       url: "https://www.bindarchitects.com",
-      name: "Studio Bind",
+      name: "Studio Bind Architects",
       encoding: "UTF-8",
       potentialAction: {
         "@type": "SearchAction",
@@ -124,7 +124,7 @@ const graph = {
     {
       "@type": "Person",
       "@id": "https://bindarchitects.com/about/#schema-author",
-      name: "Studio Bind",
+      name: "Studio Bind Architects",
     },
     {
       "@type": "WebPage",

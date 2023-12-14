@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "Need help? Contact us now! - Studio Bind",
   description:
     "Connect with Studio Bind Architects, Chennai's premier architectural firm. Specializing in bespoke solutions for residential and commercial projects, our team blends aesthetics and functionality to redefine the cityscape. Elevate your vision — contact Chennai's leading architecture firm today.",
-};
+};  
 
 const graph = {
   "@context": "https://schema.org",
@@ -41,13 +41,13 @@ const graph = {
       "@type": "Organization",
       "@id": "https://bindarchitects.com/#schema-publishing-organization",
       url: "https://bindarchitects.com",
-      name: "Studio Bind",
+      name: "Studio Bind Architects",
     },
     {
       "@type": "WebSite",
       "@id": "https://bindarchitects.com/#schema-website",
       url: "https://bindarchitects.com",
-      name: "Studio Bind",
+      name: "Studio Bind Architects",
       encoding: "UTF-8",
       potentialAction: {
         "@type": "SearchAction",
@@ -84,7 +84,7 @@ const graph = {
     {
       "@type": "Person",
       "@id": "https://bindarchitects.com/about/#schema-author",
-      name: "Studio Bind",
+      name: "Studio Bind Architects",
     },
     {
       "@type": "ContactPage",

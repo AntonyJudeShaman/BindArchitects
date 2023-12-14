@@ -31,6 +31,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "daily",
     },
     {
+      url: "https://bindarchitects.com/frequently-asked-questions",
+      lastModified: new Date(),
+      changeFrequency: "daily",
+    },
+    {
       url: "https://bindarchitects.com/works",
       changeFrequency: "daily",
       lastModified: new Date(),
