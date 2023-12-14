@@ -17,9 +17,67 @@ interface MarketingLayoutProps {
 }
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.bindarchitects.com"),
   title: "Studio Bind - Best Architects in Chennai | Top Architectural Firm",
   description:
-    "Discover the Leading Architects in Chennai - Unveiling Unparalleled Design Excellence. Explore the portfolio of top-tier architects and architectural firms in Chennai, renowned for crafting innovative, sustainable, and aesthetically captivating designs. Elevate your architectural visions with our exceptional expertise and dedication to transforming spaces. Whether you're seeking modern house designs, sustainable architecture, or creative commercial spaces, our top architects in Chennai are here to exceed your expectations. Explore our portfolio for residential and commercial architects, and witness the fusion of functionality and aesthetic appeal. Elevate your architectural dreams with the best architects in Chennai, dedicated to delivering excellence in every project.",
+    "Discover the leading best architects in Chennai - Unveiling Unparalleled Design Excellence. Explore the portfolio of top-tier architects and architectural firm in Chennai, renowned for crafting innovative, sustainable, and aesthetically captivating designs. Elevate your architectural visions with our exceptional expertise and dedication to transforming spaces. Whether you're seeking modern house designs, sustainable architecture, or creative commercial spaces, our top architects in Chennai are here to exceed your expectations. Explore our portfolio for residential and commercial architects, and witness the fusion of functionality and aesthetic appeal. Elevate your architectural dreams with the best architects in Chennai, dedicated to delivering excellence in every project.",
+  keywords: [
+    "best architects in chennai",
+    "architecture",
+    "architects",
+    "architects near me",
+    "cheap price architects",
+    "famous architects",
+    "interior designs",
+    "Architect in chennai",
+    "Interior designer in chennai",
+    "Top architects in chennai",
+    "Best architects in chennai",
+    "Home design in chennai",
+    "Shop design in chennai",
+    "Showroom designer in chennai",
+    "Affordable residential architects",
+    "Modern house designs",
+    "Experienced home planners",
+    "Budget-friendly interior designers",
+    "Local architects for homes",
+    "Creative space planners",
+    "Chennai's top-rated home architects",
+    "Innovative interior decor solutions",
+    "Custom home design services",
+    "Commercial space designers",
+    "Chennai interior specialists",
+    "Best local architects",
+    "Residential and commercial design experts",
+    "Quality home blueprints",
+    "Unique showroom designs",
+    "Top-notch home and shop designers",
+    "Chennai architectural excellence",
+    "Tailored design for shops and homes",
+    "Reliable home and business designers",
+  ],
+  applicationName: "Studio Bind Architects",
+  generator: "Site Kit by Google",
+  referrer: "origin",
+  viewport: "width=device-width, initial-scale=1.0",
+  robots: "index, follow",
+  alternates: { canonical: "https://bindarchitects.com/" },
+  category:
+    "Architecture, Interior Design, Construction, Building Design, Architectural Design, Interior Designers, Architects, Interior Designers, Interior Decorators, Interior Decorators For Residence, Interior Decorators For Office, Interior Decorators For Showroom, Interior Decorators For Restaurant, Interior Decorators For Hotel, Interior Decorators For Hospital, Interior Decorators For School, Interior Decorators For College, Interior Decorators For University, Interior Decorators For Institute, Interior Decorators For Factory, Interior Decorators For Warehouse, Interior Decorators For Godown, Interior Decorators For Shop, Interior Decorators For Mall, Interior Decorators For Theatre, Interior Decorators For Auditorium, Interior Decorators For Stadium, Interior Decorators For Airport, Interior Decorators For Railway Station, Interior Decorators For Bus Sta",
+  manifest: "https://bindarchitects.com/site.webmanifest",
+  appleWebApp: {
+    capable: true,
+    title: "Studio Bind Architects",
+    statusBarStyle: "black-translucent",
+  },
+  abstract:
+    "Discover the leading best architects in Chennai - Unveiling Unparalleled Design Excellence. Explore the portfolio of top-tier architects and architectural firm in Chennai, renowned for crafting innovative, sustainable, and aesthetically captivating designs. Elevate your architectural visions with our exceptional expertise and dedication to transforming spaces. Whether you're seeking modern house designs, sustainable architecture, or creative commercial spaces, our top architects in Chennai are here to exceed your expectations. Explore our portfolio for residential and commercial architects, and witness the fusion of functionality and aesthetic appeal. Elevate your architectural dreams with the best architects in Chennai, dedicated to delivering excellence in every project.",
+
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon-16x16.png",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 const graph = {
@@ -257,11 +315,11 @@ export default function HomeLayout() {
         />
         <meta
           name="keywords"
-          content="best architects in chennai,architecture,architects, top architects, residential architecture, apartment design, villa design, restaurant architecture, interior design architects near me, cheap price architects, famous architects, interior designs, Architect in chennai, Interior designer in chennai, Top architects in chennai, Best architects in chennai, Home design in chennai, Shop design in chennai, Showroom designer in chennai, Residential architects, Commercial architects, best architects in chennai, top architects, residential architecture, apartment design, villa design, restaurant architecture, interior design, Modern home designs, Affordable home architects, Office interior designers, Trendy home plans, Innovative building designers, Local architects, Building design experts, Chennai architecture firms, Creative interior designs, Budget-friendly house architects, Local shop makeover, Renowned showroom renovators, Skilled construction designers, Contemporary building styles, Architecture and design services, Experienced architectural consultants"
+          content="best architects in chennai, architecture, architects, top architects, residential architecture, apartment design, villa design, restaurant architecture, interior design architects near me, cheap price architects, famous architects, interior designs, Architect in chennai, Interior designer in chennai, Top architects in chennai, Best architects in chennai, Home design in chennai, Shop design in chennai, Showroom designer in chennai, Residential architects, Commercial architects, best architects in chennai, top architects, residential architecture, apartment design, villa design, restaurant architecture, interior design, Modern home designs, Affordable home architects, Office interior designers, Trendy home plans, Innovative building designers, Local architects, Building design experts, Chennai architecture firms, Creative interior designs, Budget-friendly house architects, Local shop makeover, Renowned showroom renovators, Skilled construction designers, Contemporary building styles, Architecture and design services, Experienced architectural consultants"
         />
         <meta
           name="description"
-          content="Welcome to Studio Bind, your premier architectural firm in Chennai. Transforming visions into stunning reality. Explore our innovative and sustainable architectural solutions, crafted by experienced architects and interior designers. From modern house designs to creative commercial spaces, our diverse portfolio showcases excellence in home, shop, and showroom design. Discover architectural dreams brought to life at Studio Bind, where every detail matters, and your unique vision takes center stage."
+          content="Discover the portfolio of Best Architects in Chennai.Transforming visions into stunning reality. Explore our innovative and sustainable architectural solutions, crafted by experienced architects and interior designers. From modern house designs to creative commercial spaces, our diverse portfolio showcases excellence in home, shop, and showroom design. Discover architectural dreams brought to life at Studio Bind, where every detail matters, and your unique vision takes center stage."
         />
         <meta name="twitter:card" content="summary" />
         <meta
@@ -270,7 +328,7 @@ export default function HomeLayout() {
         />
         <meta
           name="twitter:description"
-          content="Welcome to Studio Bind, your premier architectural firm in Chennai. Transforming visions into stunning reality. Explore our innovative and sustainable architectural solutions, crafted by experienced architects and interior designers. From modern house designs to creative commercial spaces, our diverse portfolio showcases excellence in home, shop, and showroom design. Discover architectural dreams brought to life at Studio Bind, where every detail matters, and your unique vision takes center stage."
+          content="Discover the portfolio of Best Architects in Chennai. Transforming visions into stunning reality. Explore our innovative and sustainable architectural solutions, crafted by experienced architects and interior designers. From modern house designs to creative commercial spaces, our diverse portfolio showcases excellence in home, shop, and showroom design. Discover architectural dreams brought to life at Studio Bind, where every detail matters, and your unique vision takes center stage."
         />
       </Head>
       <div className="flex flex-row mr-5 items-center justify-between space-x-2 bg">
