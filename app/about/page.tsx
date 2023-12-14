@@ -23,6 +23,41 @@ export const metadata: Metadata = {
   title: "About Us - Bind Architects | Best Architects in Chennai",
   description:
     "Discover unparalleled architectural excellence in Chennai with Studio Bind Architects, a visionary firm shaping spaces that transcend expectations. Our innovative designs seamlessly blend aesthetics and functionality, redefining the cityscape. From residential marvels to commercial landmarks, we specialize in crafting bespoke solutions that stand the test of time. Explore the intersection of art and engineering with Chennai's leading architecture firm. Elevate your vision with Studio Bind Architects",
+  keywords: [
+    "best architects in chennai",
+    "architecture",
+    "architects",
+    "architects near me",
+    "cheap price architects",
+    "famous architects",
+    "interior designs",
+    "Architect in chennai",
+    "Interior designer in chennai",
+    "Top architects in chennai",
+    "Best architects in chennai",
+    "Home design in chennai",
+    "Shop design in chennai",
+    "Showroom designer in chennai",
+    "Affordable residential architects",
+    "Modern house designs",
+    "Experienced home planners",
+    "Budget-friendly interior designers",
+    "Local architects for homes",
+    "Creative space planners",
+    "Chennai's top-rated home architects",
+    "Innovative interior decor solutions",
+    "Custom home design services",
+    "Commercial space designers",
+    "Chennai interior specialists",
+    "Best local architects",
+    "Residential and commercial design experts",
+    "Quality home blueprints",
+    "Unique showroom designs",
+    "Top-notch home and shop designers",
+    "Chennai architectural excellence",
+    "Tailored design for shops and homes",
+    "Reliable home and business designers",
+  ],
 };
 
 const graph = {
@@ -185,164 +220,12 @@ function About() {
   return (
     <div>
       <Head>
-      <script
+        <script
           key="structured-data"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
         />
-        {/* <script type="application/ld+json">
-          {`
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WPHeader",
-      "url": "https://bindarchitects.com/about/",
-      "headline": "About Us - Bind Architects | Best Architects in Chennai",
-      "description": "Discover unparalleled architectural excellence in Chennai with Studio Bind Architects, a visionary firm shaping spaces that transcend expectations. Our innovative designs seamlessly blend aesthetics and functionality, redefining the cityscape. From residential marvels to commercial landmarks, we specialize in crafting bespoke solutions that stand the test of time. Explore the intersection of art and engineering with Chennai's leading architecture firm. Elevate your vision with Studio Bind Architects"
-    },
-    {
-      "@type": "WPFooter",
-      "url": "https://bindarchitects.com/about/",
-      "headline": "About Us - Bind Architects | Best Architects in Chennai",
-      "description": "Discover unparalleled architectural excellence in Chennai with Studio Bind Architects, a visionary firm shaping spaces that transcend expectations. Our innovative designs seamlessly blend aesthetics and functionality, redefining the cityscape. From residential marvels to commercial landmarks, we specialize in crafting bespoke solutions that stand the test of time. Explore the intersection of art and engineering with Chennai's leading architecture firm. Elevate your vision with Studio Bind Architects",
-      "copyrightYear": "2023"
-    },
-    {
-      "@type": "Organization",
-      "@id": "https://bindarchitects.com/#schema-publishing-organization",
-      "url": "https://bindarchitects.com",
-      "name": "Studio Bind"
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://bindarchitects.com/#schema-website",
-      "url": "https://bindarchitects.com",
-      "name": "Studio Bind",
-      "encoding": "UTF-8",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://bindarchitects.com/projects/{search_term_string}/",
-        "query-input": "required name=search_term_string"
-      },
-      "image": {
-        "@type": "ImageObject",
-        "@id": "https://bindarchitects.com/#schema-site-logo",
-        "url": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
-        "height": 153,
-        "width": 300,
-        "caption": "design lab for engineering and architecture bind logo"
-      }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://bindarchitects.com/about?page&pagename=about/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://bindarchitects.com"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "About"
-        }
-      ]
-    },
-    {
-      "@type": "Person",
-      "@id": "https://bindarchitects.com/about/#schema-author",
-      "name": "Studio Bind"
-    },
-    {
-      "@type": "AboutPage",
-      "@id": "https://bindarchitects.com/about/#schema-webpage",
-      "isPartOf": "https://bindarchitects.com/#schema-website",
-      "hasPart": [
-        {
-          "@type": "SiteNavigationElement",
-          "@id": "https://bindarchitects.com/about/#schema-nav-element-529",
-          "name": "Home",
-          "url": "https://bindarchitects.com/"
-        },
-        {
-          "@type": "SiteNavigationElement",
-          "@id": "https://bindarchitects.com/about/#schema-nav-element-528",
-          "name": "",
-          "url": "https://bindarchitects.com/about/"
-        },
-        {
-          "@type": "SiteNavigationElement",
-          "@id": "https://bindarchitects.com/about/#schema-nav-element-527",
-          "name": "",
-          "url": "https://bindarchitects.com/projects/"
-        },
-        {
-          "@type": "SiteNavigationElement",
-          "@id": "https://bindarchitects.com/about/#schema-nav-element-525",
-          "name": "",
-          "url": "https://bindarchitects.com/contact/"
-        },
-        {
-          "@type": "SiteNavigationElement",
-          "@id": "https://bindarchitects.com/#schema-nav-element-2394",
-          "name": "<img src=\"https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/facebook.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4\" title=\"facebook bind\"width=\"32px\">",
-          "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.bindarchitects.com%2Ffaq%3FquestionId%3Dbbe7072b-402e-4a9a-9fe1-cbf90f0c831e&appDefId=14c92d28-031e-7910-c9a8-a670011e062d"
-        },
-        {
-          "@type": "SiteNavigationElement",
-          "@id": "https://bindarchitects.com/#schema-nav-element-2395",
-          "name": "<img src=\"https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/youtube.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4\" target=\"_blank\" title=\"youtube bind\"width=\"32px\">",
-          "url": "https://www.youtube.com/channel/UCTI09wWkEJeNy7wXwD4zSCQ"
-        },
-        {
-          "@type": "SiteNavigationElement",
-          "@id": "https://bindarchitects.com/#schema-nav-element-2396",
-          "name": "<img src=\"https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/instagram.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4\" target=\"_blank\" title=\"instagram bind\" width=\"32px\">",
-          "url": "https://www.instagram.com/studio_bind/"
-        }
-      ],
-      "url": "https://bindarchitects.com/about/",
-      "author": {
-        "@id": "https://bindarchitects.com/about/#schema-author"
-      },
-      "publisher": {
-        "@id": "https://bindarchitects.com/#schema-publishing-organization"
-      },
-      "dateModified": "2023-11-22T11:13:10+05:30",
-      "datePublished": "2023-04-10T06:04:33+05:30",
-      "headline": "About Us - Bind Architects | Best Architects in Chennai",
-      "description": "Discover unparalleled architectural excellence in Chennai with Studio Bind Architects, a visionary firm shaping spaces that transcend expectations. Our innovative designs seamlessly blend aesthetics and functionality, redefining the cityscape. From residential marvels to commercial landmarks, we specialize in crafting bespoke solutions that stand the test of time. Explore the intersection of art and engineering with Chennai's leading architecture firm. Elevate your vision with Studio Bind Architects",
-      "name": "About",
-      "image": {
-        "@type": "ImageObject",
-        "@id": "https://bindarchitects.com/about/#schema-article-image",
-        "url": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
-        "height": 153,
-        "width": 300,
-        "caption": "design lab for engineering and architecture bind logo"
-      },
-      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d"
-    },
-    {
-      "@type": "VideoObject",
-      "name": "Studio Bind Architects and Interior Designers in Chennai",
-      "url": "https://www.youtube.com/watch?v=ANK2MXhP3P8",
-      "description:"Discover unparalleled architectural excellence in Chennai with Studio Bind Architects, a visionary firm shaping spaces that transcend expectations. Our innovative designs seamlessly blend aesthetics and functionality, redefining the cityscape. From residential marvels to commercial landmarks, we specialize in crafting bespoke solutions that stand the test of time. Explore the intersection of art and engineering with Chennai's leading architecture firm. Elevate your vision with Studio Bind Architects",
-      "uploadDate": "2023-04-10T06:04:33",
-      "thumbnail": {
-        "@type": "ImageObject",
-        "url": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
-        "width": 480,
-        "height": 360
-      },
-      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
-      "embedUrl": "https://www.youtube.com/embed/Ks--4Wvf6W0?si=GvFq-qe3mhqRFkVP?feature=oembed"
-    }
-  ]`}
-        </script> */}
-
+       
         <title>
           About Us - Studio Bind Architects - Best Architects in Chennai
         </title>

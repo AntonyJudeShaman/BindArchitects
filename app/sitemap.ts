@@ -9,7 +9,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: "https://bindarchitects.com/",
+      url: "https://home.bindarchitects.com",
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 1,
+    },
+    {
+      url: "https://www.bindarchitects.com/",
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 1,
