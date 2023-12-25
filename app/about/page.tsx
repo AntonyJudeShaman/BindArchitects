@@ -20,9 +20,10 @@ import ContactScroll from "@/components/contactscroll";
 import SiteFooter from "@/components/site-footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://bindarchitects.com/about"),
   title: "About Us - Bind Architects | Best Architects in Chennai",
   description:
-    "Discover unparalleled architectural excellence in Chennai with Studio Bind Architects, a visionary firm shaping spaces that transcend expectations. Our innovative designs seamlessly blend aesthetics and functionality, redefining the cityscape. From residential marvels to commercial landmarks, we specialize in crafting bespoke solutions that stand the test of time. Explore the intersection of art and engineering with Chennai's leading architecture firm. Elevate your vision with Studio Bind Architects",
+    "Ready to elevate your vision? Witness the magic we weave with brick and mortar. Contact us today and let's create a space that reflects your unique story.",
   keywords: [
     "best architects in chennai",
     "architecture",
@@ -68,14 +69,14 @@ const graph = {
       url: "https://bindarchitects.com/about/",
       headline: "About Us - Bind Architects | Best Architects in Chennai",
       description:
-        "Discover unparalleled architectural excellence in Chennai with Studio Bind Architects, a visionary firm shaping spaces that transcend expectations. Our innovative designs seamlessly blend aesthetics and functionality, redefining the cityscape. From residential marvels to commercial landmarks, we specialize in crafting bespoke solutions that stand the test of time. Explore the intersection of art and engineering with Chennai's leading architecture firm. Elevate your vision with Studio Bind Architects",
+        "Ready to elevate your vision? Witness the magic we weave with brick and mortar. Contact us today and let's create a space that reflects your unique story.",
     },
     {
       "@type": "WPFooter",
       url: "https://bindarchitects.com/about/",
       headline: "About Us - Bind Architects | Best Architects in Chennai",
       description:
-        "Discover unparalleled architectural excellence in Chennai with Studio Bind Architects, a visionary firm shaping spaces that transcend expectations. Our innovative designs seamlessly blend aesthetics and functionality, redefining the cityscape. From residential marvels to commercial landmarks, we specialize in crafting bespoke solutions that stand the test of time. Explore the intersection of art and engineering with Chennai's leading architecture firm. Elevate your vision with Studio Bind Architects",
+        "Ready to elevate your vision? Witness the magic we weave with brick and mortar. Contact us today and let's create a space that reflects your unique story.",
       copyrightYear: "2023",
     },
     {
@@ -185,7 +186,7 @@ const graph = {
       datePublished: "2023-04-10T06:04:33",
       headline: "About Us - Bind Architects | Best Architects in Chennai",
       description:
-        "Discover unparalleled architectural excellence in Chennai with Studio Bind Architects, a visionary firm shaping spaces that transcend expectations. Our innovative designs seamlessly blend aesthetics and functionality, redefining the cityscape. From residential marvels to commercial landmarks, we specialize in crafting bespoke solutions that stand the test of time. Explore the intersection of art and engineering with Chennai's leading architecture firm. Elevate your vision with Studio Bind Architects",
+        "Ready to elevate your vision? Witness the magic we weave with brick and mortar. Contact us today and let's create a space that reflects your unique story.",
       name: "About",
       image: {
         "@type": "ImageObject",
@@ -225,14 +226,14 @@ function About() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
         />
-       
+
         <title>
           About Us - Studio Bind Architects - Best Architects in Chennai
         </title>
         <link rel="canonical" href="https://bindarchitects.com/about/" />
         <meta
           property="og:description"
-          content="Discover unparalleled architectural excellence in Chennai with Studio Bind Architects, a visionary firm shaping spaces that transcend expectations. Our innovative designs seamlessly blend aesthetics and functionality, redefining the cityscape. From residential marvels to commercial landmarks, we specialize in crafting bespoke solutions that stand the test of time. Explore the intersection of art and engineering with Chennai's leading architecture firm. Elevate your vision with Studio Bind Architects"
+          content="Ready to elevate your vision? Witness the magic we weave with brick and mortar. Contact us today and let's create a space that reflects your unique story."
         />
         <meta
           property="og:image"
@@ -240,7 +241,7 @@ function About() {
         />
         <meta
           name="description"
-          content="Discover unparalleled architectural excellence in Chennai with Studio Bind Architects, a visionary firm shaping spaces that transcend expectations. Our innovative designs seamlessly blend aesthetics and functionality, redefining the cityscape. From residential marvels to commercial landmarks, we specialize in crafting bespoke solutions that stand the test of time. Explore the intersection of art and engineering with Chennai's leading architecture firm. Elevate your vision with Studio Bind Architects"
+          content="Ready to elevate your vision? Witness the magic we weave with brick and mortar. Contact us today and let's create a space that reflects your unique story."
         />
         <meta
           property="og:title"
@@ -255,7 +256,7 @@ function About() {
         />
         <meta
           name="twitter:description"
-          content="Welcome to Studio Bind, your premier architectural firm in Chennai. Transforming visions into stunning reality. Explore our innovative and sustainable architectural solutions, crafted by experienced architects and interior designers. From modern house designs to creative commercial spaces, our diverse portfolio showcases excellence in home, shop, and showroom design. Discover architectural dreams brought to life at Studio Bind, where every detail matters, and your unique vision takes center stage."
+          content="Ready to elevate your vision? Witness the magic we weave with brick and mortar. Contact us today and let's create a space that reflects your unique story."
         />
       </Head>
 

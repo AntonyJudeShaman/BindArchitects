@@ -14,9 +14,10 @@ import SiteFooter from "@/components/site-footer";
 import Script from "next/script";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://bindarchitects.com/contact"),
   title: "Need help? Contact us now! - Studio Bind",
   description:
-    "Connect with Studio Bind Architects, Chennai's premier architectural firm. Specializing in bespoke solutions for residential and commercial projects, our team blends aesthetics and functionality to redefine the cityscape. Elevate your vision — contact Chennai's leading architecture firm today.",
+    "Connect with Studio Bind Architects, Chennai's leading architectural firm, and forge the cityscape of your dreams.",
     keywords: [
       "best architects in chennai",
       "architecture",
@@ -211,11 +212,11 @@ function page() {
         <link rel="canonical" href="https://bindarchitects.com/contact/" />
         <meta
           property="og:description"
-          content="Connect with Studio Bind Architects, Chennai's premier architectural firm. Specializing in bespoke solutions for residential and commercial projects, our team blends aesthetics and functionality to redefine the cityscape. Elevate your vision — contact Chennai's leading architecture firm today."
+          content="Connect with Studio Bind Architects, Chennai's leading architectural firm, and forge the cityscape of your dreams."
         />
         <meta
           name="description"
-          content="Connect with Studio Bind Architects, Chennai's premier architectural firm. Specializing in bespoke solutions for residential and commercial projects, our team blends aesthetics and functionality to redefine the cityscape. Elevate your vision — contact Chennai's leading architecture firm today."
+          content="Connect with Studio Bind Architects, Chennai's leading architectural firm, and forge the cityscape of your dreams."
         />
         <meta
           property="og:image"
@@ -230,7 +231,7 @@ function page() {
         />
         <meta
           name="twitter:description"
-          content="Welcome to Studio Bind, your premier architectural firm in Chennai. Transforming visions into stunning reality. Explore our innovative and sustainable architectural solutions, crafted by experienced architects and interior designers. From modern house designs to creative commercial spaces, our diverse portfolio showcases excellence in home, shop, and showroom design. Discover architectural dreams brought to life at Studio Bind, where every detail matters, and your unique vision takes center stage."
+          content="Connect with Studio Bind Architects, Chennai's leading architectural firm, and forge the cityscape of your dreams."
         />
         <meta
           property="og:title"

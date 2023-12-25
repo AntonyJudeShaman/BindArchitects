@@ -215,10 +215,9 @@ const graph = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.bindarchitects.com"),
   title: "Studio Bind - Best Architects in Chennai | Top Architectural Firm",
   description:
-    "Discover the leading best architects in Chennai - Unveiling Unparalleled Design Excellence. Explore the portfolio of top-tier architects and architectural firm in Chennai, renowned for crafting innovative, sustainable, and aesthetically captivating designs. Elevate your architectural visions with our exceptional expertise and dedication to transforming spaces. Whether you're seeking modern house designs, sustainable architecture, or creative commercial spaces, our top architects in Chennai are here to exceed your expectations. Explore our portfolio for residential and commercial architects, and witness the fusion of functionality and aesthetic appeal. Elevate your architectural dreams with the best architects in Chennai, dedicated to delivering excellence in every project.",
+    "From dream to reality: Build your sustainable future in Chennai with the best architects in Studio Bind.",
   keywords: [
     "best architects in chennai",
     "architecture",
@@ -275,7 +274,7 @@ export const metadata: Metadata = {
     statusBarStyle: "black-translucent",
   },
   abstract:
-    "Discover the leading best architects in Chennai - Unveiling Unparalleled Design Excellence. Explore the portfolio of top-tier architects and architectural firm in Chennai, renowned for crafting innovative, sustainable, and aesthetically captivating designs. Elevate your architectural visions with our exceptional expertise and dedication to transforming spaces. Whether you're seeking modern house designs, sustainable architecture, or creative commercial spaces, our top architects in Chennai are here to exceed your expectations. Explore our portfolio for residential and commercial architects, and witness the fusion of functionality and aesthetic appeal. Elevate your architectural dreams with the best architects in Chennai, dedicated to delivering excellence in every project.",
+    "From dream to reality: Build your sustainable future in Chennai with the best architects in Studio Bind.",
 
   icons: {
     icon: "/favicon.ico",
@@ -329,7 +328,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <meta name="generator" content="Site Kit by Google 1.104.0" />
         <meta
           name="description"
-          content="Discover the portfolio of Best Architects in Chennai. Transforming visions into stunning reality. Explore our innovative and sustainable architectural solutions, crafted by experienced architects and interior designers. From modern house designs to creative commercial spaces, our diverse portfolio showcases excellence in home, shop, and showroom design. Discover architectural dreams brought to life at Studio Bind, where every detail matters, and your unique vision takes center stage."
+          content="From dream to reality: Build your sustainable future in Chennai with the best architects in Studio Bind."
         />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Studio Bind Architects" />
@@ -344,7 +343,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         />
         <meta
           name="twitter:description"
-          content="Welcome to Studio Bind, your premier architectural firm in Chennai. Transforming visions into stunning reality. Explore our innovative and sustainable architectural solutions, crafted by experienced architects and interior designers. From modern house designs to creative commercial spaces, our diverse portfolio showcases excellence in home, shop, and showroom design. Discover architectural dreams brought to life at Studio Bind, where every detail matters, and your unique vision takes center stage."
+          content="Welcome to Studio Bind, your premier architectural firm in Chennai. Transforming visions into stunning reality. Explore our innovative and sustainable architectural solutions."
         />
       </Head>
       <body

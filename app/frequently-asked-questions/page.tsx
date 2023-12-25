@@ -15,9 +15,10 @@ import SiteFooter from "@/components/site-footer";
 import Script from "next/script";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://bindarchitects.com/frequently-asked-questions"),
   title: "FAQ - Find answers to your questions | Bind Architects - Chennai",
   description:
-    "Find answers to common queries about our architectural services and expertise. Explore our FAQ section to get insights into Studio Bind's offerings, processes, and more. Explore Studio Bind Architects' FAQ page for insightful answers to common questions about our architectural services in Chennai. From project inquiries to design inspirations, find expert guidance on residential and commercial spaces. Elevate your understanding of the architectural process with Chennai's leading firm. Have a question? Find the answer here at Studio Bind Architects.",
+    "Unravel design mysteries and illuminate your dream project with Studio Bind Architects' insightful FAQs.",
     keywords: [
       "best architects in chennai",
       "architecture",
@@ -228,12 +229,12 @@ function page() {
         />
         <meta
           property="og:description"
-          content="Find answers to common queries about our architectural services and expertise. Explore our FAQ section to get insights into Studio Bind's offerings, processes, and more. Explore Studio Bind Architects' FAQ page for insightful answers to common questions about our architectural services in Chennai. From project inquiries to design inspirations, find expert guidance on residential and commercial spaces. Elevate your understanding of the architectural process with Chennai's leading firm. Have a question? Find the answer here at Studio Bind Architects."
+          content="Unravel design mysteries and illuminate your dream project with Studio Bind Architects' insightful FAQs."
         />
 
         <meta
           name="description"
-          content="Find answers to common queries about our architectural services and expertise. Explore our FAQ section to get insights into Studio Bind's offerings, processes, and more. Explore Studio Bind Architects' FAQ page for insightful answers to common questions about our architectural services in Chennai. From project inquiries to design inspirations, find expert guidance on residential and commercial spaces. Elevate your understanding of the architectural process with Chennai's leading firm. Have a question? Find the answer here at Studio Bind Architects."
+          content="Unravel design mysteries and illuminate your dream project with Studio Bind Architects' insightful FAQs."
         />
         <meta
           property="og:image"

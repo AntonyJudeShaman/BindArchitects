@@ -6,18 +6,15 @@ import Link from "next/link";
 import FreeQuote from "@/components/free-quote";
 import { cn } from "@/lib/utils";
 import Card from "@/components/StickyCard";
-import logo from "@/components/logo.png";
-import Image from "next/image";
 import Head from "next/head";
 import "@/styles/fonts.css";
-import SiteFooter from "@/components/site-footer";
-import Card3 from "@/components/StickyCard3";
 import Script from "next/script";
 
 const metadata: Metadata = {
+  metadataBase: new URL("https://bindarchitects.com/projects"),
   title: "Explore our projects - Studio Bind Architects",
   description:
-    "Discover the portfolio of Studio Bind Architects' projects in Chennai. Explore a showcase of innovative and inspiring residential and commercial spaces. From conceptualization to realization, immerse yourself in the artistry and functionality of our architectural designs. Elevate your vision of modern living with Chennai's leading architectural firm, Studio Bind Architects.",
+    "Step into a realm of architectural brilliance with Studio Bind Architects, Chennai's renowned firm shaping spaces that ignite the imagination. ",
     keywords: [
       "best architects in chennai",
       "architecture",
@@ -220,12 +217,12 @@ function ProjectsHome() {
         <link rel="canonical" href="https://bindarchitects.com/projects/" />
         <meta
           property="og:description"
-          content="Discover the portfolio of Studio Bind Architects' projects in Chennai. Explore a showcase of innovative and inspiring residential and commercial spaces. From conceptualization to realization, immerse yourself in the artistry and functionality of our architectural designs. Elevate your vision of modern living with Chennai's leading architectural firm, Studio Bind Architects."
+          content="Step into a realm of architectural brilliance with Studio Bind Architects, Chennai's renowned firm shaping spaces that ignite the imagination. "
         />
 
         <meta
           name="description"
-          content="Explore Studio Bind Architects' portfolio of projects in Chennai, showcasing innovation in residential and commercial spaces. From initial concepts to stunning realizations, immerse yourself in the artistry and functionality of our architectural designs. Elevate your understanding of modern living with Chennai's premier architectural firm, Studio Bind Architects."
+          content="Step into a realm of architectural brilliance with Studio Bind Architects, Chennai's renowned firm shaping spaces that ignite the imagination. "
         />
 
         <meta
@@ -248,7 +245,7 @@ function ProjectsHome() {
         />
         <meta
           name="twitter:description"
-          content="Welcome to Studio Bind, your premier architectural firm in Chennai. Transforming visions into stunning reality. Explore our innovative and sustainable architectural solutions, crafted by experienced architects and interior designers. From modern house designs to creative commercial spaces, our diverse portfolio showcases excellence in home, shop, and showroom design. Discover architectural dreams brought to life at Studio Bind, where every detail matters, and your unique vision takes center stage."
+          content="Step into a realm of architectural brilliance with Studio Bind Architects, Chennai's renowned firm shaping spaces that ignite the imagination. "
         />
       </Head>
       <div className="flex flex-row mr-5 items-center justify-between space-x-2 mt-4 bg">
