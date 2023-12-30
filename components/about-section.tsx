@@ -61,11 +61,11 @@ export function AboutSection() {
         <article className="flex flex-col p-4  max-w-[40rem] text-left">
           <article className="text-lg dmsans md:mt-2 mt-0 leading-normal text-justify  text-muted-foreground">
             Embracing the synergy of innovative design and captivating
-            storytelling, we bring a brand's essence and personality to vivid
+            storytelling, we bring a brand&apos;s essence and personality to vivid
             life. From concept to completion, attentive listening is our
             hallmark, guaranteeing superior outcomes for our clients. Our
             approach melds artistic inspiration with thorough market research,
-            crafting a truly unique visual identity. Whether it's architectural
+            crafting a truly unique visual identity. Whether it&apos;s architectural
             design, interior aesthetics, or project management, our diverse team
             ensures results that transcend expectations.
           </article>
