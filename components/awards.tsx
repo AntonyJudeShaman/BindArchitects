@@ -28,7 +28,7 @@ export function Awards() {
             </h2>
             <hr/>
           </div>
-          <div className="md:max-w-[58rem] md:grid-cols-1">
+          <article className="md:max-w-[58rem] md:grid-cols-1">
             <div className="flex md:flex-col flex-col">
               <div className="flex-1 text-3xl mt-10 font-semibold dmsans leading-normal dmsans-semibold text-left sm:text-md sm:leading-8">
                 Promising & Creative Architecture & Interior Design Firm of the
@@ -42,10 +42,10 @@ export function Awards() {
                 Excellence Awards and Conference, 2023, Global Edition.
               </div>{" "}
             </div>
-          </div>
+          </article>
           <br />
           <br />
-          <div className="md:max-w-[58rem] md:grid-cols-1">
+          <article className="md:max-w-[58rem] md:grid-cols-1">
             <div className="flex md:flex-col flex-col">
               <div className="flex-1 text-3xl font-semibold dmsans leading-normal dmsans-semibold text-left sm:text-md sm:leading-8">
                 Top 30 Rising & Trendsetter Architect & Designer of the Year
@@ -57,7 +57,7 @@ export function Awards() {
                 Excellence Awards and Conference, 2023, Global Edition{" "}
               </div>{" "}
             </div>
-          </div>
+          </article>
         </section>
       </div>
     </>

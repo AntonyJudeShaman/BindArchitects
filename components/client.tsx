@@ -16,12 +16,12 @@ function Client() {
   return (
     <div className="items-center md:mt-20 mt-0 flex md:flex-row gap-20 flex-col md:p-0 p-6 mb-3 md:mb-20 justify-center md:justify-between max-w-screen">
       <div className="flex flex-col mt-20 max-w-[25rem]">
-        <h2
+        <h1
           className="text-5xl dmsans md:text-left text-center leading-[1.1] mb-5 md:text-6xl"
           aria-label="Selected Clients"
         >
           Selected Clients
-        </h2>
+        </h1>
         <p className="text-muted-foreground text-lg text-left">
           We play hard so they can win fast. We build new worlds together.
           Worlds where user value is unprecedented and where it paves the way

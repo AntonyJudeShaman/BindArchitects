@@ -17,7 +17,6 @@ interface MarketingLayoutProps {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.bindarchitects.com"),
   title: "Studio Bind - Best Architects in Chennai | Top Architectural Firm",
   description:
     "From dream to reality: Build your sustainable future in Chennai with the best architects in Studio Bind.",
@@ -26,6 +25,8 @@ export const metadata: Metadata = {
     "architecture",
     "architects",
     "chennai",
+    "how to find architect",
+    "architects in chennai",
     "tamilnadu",
     "top architects",
     "residential architecture",
@@ -65,13 +66,10 @@ export const metadata: Metadata = {
     "Reliable home and business designers",
   ],
   applicationName: "Studio Bind Architects",
-  generator: "Site Kit by Google",
-  referrer: "origin",
-  viewport: "width=device-width, initial-scale=1.0",
   robots: "index, follow",
   alternates: { canonical: "https://bindarchitects.com/" },
   category:
-    "Architecture, Interior Design, Construction, Building Design, Architectural Design, Interior Designers, Architects, Interior Designers, Interior Decorators, Interior Decorators For Residence, Interior Decorators For Office, Interior Decorators For Showroom, Interior Decorators For Restaurant, Interior Decorators For Hotel, Interior Decorators For Hospital, Interior Decorators For School, Interior Decorators For College, Interior Decorators For University, Interior Decorators For Institute, Interior Decorators For Factory, Interior Decorators For Warehouse, Interior Decorators For Godown, Interior Decorators For Shop, Interior Decorators For Mall, Interior Decorators For Theatre, Interior Decorators For Auditorium, Interior Decorators For Stadium, Interior Decorators For Airport, Interior Decorators For Railway Station, Interior Decorators For Bus Sta",
+    "Architecture, architectural firm, Interior Design, Construction, Building Design, Architectural Design, Interior Designers, Architects, Interior Designers, Interior Decorators, Interior Decorators For Residence, Interior Decorators For Office, Interior Decorators For Showroom, Interior Decorators For Restaurant, Interior Decorators For Hotel, Interior Decorators For Hospital, Interior Decorators For School, Interior Decorators For College, Interior Decorators For University, Interior Decorators For Institute, Interior Decorators For Factory, Interior Decorators For Warehouse, Interior Decorators For Godown, Interior Decorators For Shop, Interior Decorators For Mall, Interior Decorators For Theatre, Interior Decorators For Auditorium, Interior Decorators For Stadium, Interior Decorators For Airport, Interior Decorators For Railway Station, Interior Decorators For Bus Sta",
   manifest: "https://bindarchitects.com/site.webmanifest",
   appleWebApp: {
     capable: true,

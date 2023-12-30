@@ -28,56 +28,57 @@ export function AboutSection() {
         aria-label="about us section"
       >
         <div className="mx-auto p-4 md:p-0 flex flex-col items-center space-y-4 max-w-[40rem] text-center">
-          <h2
+          <h1
             className="text-5xl dmsans-semibold font-medium leading-[1.1] mb-5 md:text-8xl"
             aria-label="The Studio"
           >
             The Studio
-          </h2>
-          <div className="text-2xl  dmsans leading-normal text-justify md:text-center text-muted-foreground">
+          </h1>
+          <article className="text-2xl  dmsans leading-normal text-justify md:text-center text-muted-foreground">
             Our in-house design team comprises professionals with diverse
             backgrounds, including architects, interior designers, visual
             designers, and project managers. This multidisciplinary approach
             ensures that we can tackle complex projects from various angles.
-          </div>
+          </article>
         </div>
       </section>
       <section
         className=" md:mb-10 p-0 md:p-4 md:-ml-4 md:-mr-28 gap-x-24 grid md:grid-cols-1 grid-cols-1"
         aria-label="about us section"
       >
-        <h2
+        <h1
           className="text-5xl md:-ml-20 ml-7 text-left dmsans-semibold font-medium leading-[1.1] mb-5 md:text-7xl"
           aria-label="Our Story"
         >
           Our Story
           <hr className="mt-10 md:mr-10 mr-0" />
-        </h2>
+        </h1>
       </section>
       <section
         className=" md:mb-10 min-h-[40rem] p-4 md:-ml-28 md:-mr-28 gap-x-24 grid md:grid-cols-3 grid-cols-1"
         aria-label="about us section"
       >
-        <div className="flex flex-col p-4  max-w-[40rem] text-left">
-          <div className="text-lg dmsans md:mt-2 mt-0 leading-normal text-justify  text-muted-foreground">
-            We believe good design and powerful storytelling can bring a
-            brand&apos;s essence and personality to life. From conception to
-            project completion, listening is our top priority to ensure we
-            deliver the best possible results for our clients. Our approach
-            combines design inspiration from the art world with market research
-            and analysis to provide a truly unique visual identity for our
-            clients.
-          </div>
-        </div>
+        <article className="flex flex-col p-4  max-w-[40rem] text-left">
+          <article className="text-lg dmsans md:mt-2 mt-0 leading-normal text-justify  text-muted-foreground">
+            Embracing the synergy of innovative design and captivating
+            storytelling, we bring a brand's essence and personality to vivid
+            life. From concept to completion, attentive listening is our
+            hallmark, guaranteeing superior outcomes for our clients. Our
+            approach melds artistic inspiration with thorough market research,
+            crafting a truly unique visual identity. Whether it's architectural
+            design, interior aesthetics, or project management, our diverse team
+            ensures results that transcend expectations.
+          </article>
+        </article>
         <div className="p-4 flex max-w-[40rem] flex-col space-y-4 text-left">
-          <h2
+          <h1
             className="text-4xl dmsans-semibold font-medium leading-[1.1] mb-5 md:text-4xl"
             aria-label="Our Values"
           >
             Our Values
             <hr className="mt-10 md:hidden" />
-          </h2>
-          <div className="max-w-full text-justify text-md text-lg dmsans leading-normal text-muted-foreground sm:text-md sm:leading-8">
+          </h1>
+          <article className="max-w-full text-justify text-md text-lg dmsans leading-normal text-muted-foreground sm:text-md sm:leading-8">
             <div className="text-left space-y-4">
               <p className="text-lg dmsans flex  md:flex-col 2xl:flex-row flex-col text-muted-foreground">
                 <span className="my-font flex  flex-row text-white  dmsans-semibold">
@@ -110,17 +111,17 @@ export function AboutSection() {
                 &nbsp;Don&apos;t fall in love with your creation.
               </p>
             </div>
-          </div>
+          </article>
         </div>
         <div className="flex flex-col p-4 space-y-4 max-w-[40rem] text-left">
-          <h2
+          <h1
             className="text-4xl dmsans-semibold font-medium leading-[1.1] mb-5 md:text-4xl"
             aria-label="Our Team"
           >
             Our Team
             <hr className="mt-10 md:hidden" />
-          </h2>
-          <div className="text-lg dmsans leading-normal text-justify text-muted-foreground">
+          </h1>
+          <article className="text-lg dmsans leading-normal text-justify text-muted-foreground">
             Our diverse team is comprised of Architects, Interior Designers,
             Visual Designers, and Project Managers. From A to Z, our
             collaborative approach draws on the team&apos;s diverse skills and
@@ -129,7 +130,7 @@ export function AboutSection() {
             it&apos;s architectural design, interior aesthetics, visual
             branding, or project management, our team combines their skills to
             deliver results that exceed your expectations.
-          </div>
+          </article>
         </div>
       </section>
     </div>

@@ -29,7 +29,7 @@ export function Aboutus() {
             About Us
           </h2>
         </div>
-        <div className="mx-auto flex-col flex grid justify-center gap-4 sm:grid-cols-2  justify-between md:grid-cols-1">
+        <article className="mx-auto flex-col flex grid justify-center gap-4 sm:grid-cols-2  justify-between md:grid-cols-1">
           <div className="flex md:flex-row flex-col ">
             <div className="flex-1 text-4xl dmsans-semibold   title-gradient md:text-left md:mr-10 mr-0 text-center">
               We shape brands that need no introduction.
@@ -72,7 +72,7 @@ export function Aboutus() {
               happy to duplicate.
             </div>
           </div>
-        </div>
+        </article>
       </section>
     </>
   );
