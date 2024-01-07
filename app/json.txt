@@ -62,12 +62,12 @@
     },
     {
       "@type": "Article",
-      "headline": "Studio Bind - Best Architects in Chennai | Top Architectural Firm",
+      "headline": "Bind - Best Architects in Chennai | Top Architectural Firm",
       "datePublished": "2023-11-22T12:00:00Z",
       "dateModified": "2023-11-22T14:30:00Z",
       "author": {
         "@type": "Person",
-        "name": "Studio Bind"
+        "name": "Bind"
       },
       "image": "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
       "publisher": {
@@ -82,7 +82,7 @@
       },
       "articleSection": "Best Architects in Chennai",
       "keywords": "best architects in chennai, top architects, ... (your other keywords)",
-      "description": "Welcome to Studio Bind, your premier architectural firm in Chennai. Transforming visions into stunning reality. Explore our innovative and sustainable architectural solutions, crafted by experienced architects and interior designers. From modern house designs to creative commercial spaces, our diverse portfolio showcases excellence in home, shop, and showroom design. Discover architectural dreams brought to life at Studio Bind, where every detail matters, and your unique vision takes center stage.",
+      "description": "Welcome to Bind, your premier architectural firm in Chennai. Transforming visions into stunning reality. Explore our innovative and sustainable architectural solutions, crafted by experienced architects and interior designers. From modern house designs to creative commercial spaces, our diverse portfolio showcases excellence in home, shop, and showroom design. Discover architectural dreams brought to life at Bind, where every detail matters, and your unique vision takes center stage.",
       "articleBody": "In the dynamic realm of architecture and interior design, achieving the delicate equilibrium between form and function is paramount. As a leading firm in the industry, Bind Homes is dedicated to delivering cutting-edge and enduring designs that not only captivate the eye but also enrich the living experience. Our team, comprised of skilled architects and designers, recognizes the significance of crafting spaces that mirror the distinctive identity of our clients. Whether it's residential projects redefining modern living or commercial spaces fostering creativity, our commitment lies in transforming visions into reality. Key Services: Architectural Design: Our architectural design services span a spectrum of styles, from contemporary to classic. We believe in creating spaces that seamlessly integrate with their surroundings while pushing the boundaries of creativity. Interior Design: Interior design at Bind Homes transcends aesthetics. We focus on creating interiors that narrate a story, reflecting the personality and aspirations of our clients. Each project is a unique journey, striving to make every space both functional and visually stunning. Sustainable Architecture: Embracing eco-friendly practices, we integrate sustainable design principles into our projects. From energy-efficient lighting to eco-conscious material choices, we are dedicated to reducing our environmental footprint while delivering top-notch designs. Project Showcase: Explore our portfolio to witness the diversity and excellence of our work. From residential homes to commercial complexes, each project showcases our commitment to quality craftsmanship and attention to detail. Why Bind Homes: Expert Team: Our team comprises experienced architects, interior designers, and project managers committed to surpassing client expectations. Innovative Solutions: Leveraging the latest trends and technologies, we bring innovative solutions to every project, ensuring a forward-thinking approach. Client-Centric Approach: Your vision is our priority. We work closely with clients to understand their needs and aspirations, tailoring our designs to match their unique requirements. Award-Winning Designs: Our commitment to excellence has been recognized through numerous awards in the architecture and interior design industry. At Bind Homes, we believe that great design has the power to transform lives. Whether you're embarking on a residential project or envisioning a commercial space that stands out, let us be your partner in turning dreams into reality. For inquiries and consultations, contact us. Transform your space with Bind Homes & where innovation meets inspiration."
 }
     ]`}

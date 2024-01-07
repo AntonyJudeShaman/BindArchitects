@@ -5,13 +5,13 @@ export function Awards() {
   return (
     <>
       <Head>
-        <title>Awards - Studio Bind Architects</title>
+        <title>Awards - Bind Architects</title>
         <meta
           name="description"
           content="Explore the awards and recognition received by our architecture and interior design firm in 2023."
         />
          <meta name="robots" content="index, follow" />
-        <meta name="author" content="Studio Bind Architects" />
+        <meta name="author" content="Bind Architects" />
         <meta
           name="keywords"
           content="best architects in chennai,, top architects, residential architecture, apartment design, villa design, restaurant architecture, interior design architects near me, cheap price architects, famous architects, interior designs, Architect in chennai, Interior designer in chennai, Top architects in chennai, Best architects in chennai, Home design in chennai, Shop design in chennai, Showroom designer in chennai, Residential architects, Commercial architects, best architects in chennai, top architects, residential architecture, apartment design, villa design, restaurant architecture, interior design, Modern home designs, Affordable home architects, Office interior designers, Trendy home plans, Innovative building designers, Local architects, Building design experts, Chennai architecture firms, Creative interior designs, Budget-friendly house architects, Local shop makeover, Renowned showroom renovators, Skilled construction designers, Contemporary building styles, Architecture and design services, Experienced architectural consultants"
@@ -38,7 +38,7 @@ export function Awards() {
               </div>
               <br />
               <div className="flex-1 text-xl dmsans leading-normal dmsans text-left text-muted-foreground sm:text-md sm:leading-8">
-                STUDIO BIND - National Architecture and Interior Design
+                Bind - National Architecture and Interior Design
                 Excellence Awards and Conference, 2023, Global Edition.
               </div>{" "}
             </div>

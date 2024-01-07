@@ -48,6 +48,7 @@
     "react-hook-form": "^7.48.2",
     "react-hot-toast": "^2.4.1",
     "react-icons": "^4.12.0",
+    "react-masonry-css": "^1.0.16",
     "react-parallax-tilt": "^1.7.175",
     "react-search-box": "^3.0.0",
     "react-select": "^5.8.0",

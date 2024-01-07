@@ -17,14 +17,16 @@ interface MarketingLayoutProps {
 }
 
 export const metadata: Metadata = {
-  title: "Studio Bind - Best Architects in Chennai | Top Architectural Firm",
+  metadataBase: new URL("https://www.bindarchitects.com/"),
+  title: "Bind - Best Architects in Chennai | Top Architectural Firm",
   description:
-    "From dream to reality: Build your sustainable future in Chennai with the best architects in Studio Bind.",
+    "Welcome to Bind Architects, where dreams take shape and sustainable futures are built in the vibrant city of Chennai. As a leading architecture firm, we specialize in turning your visionary dreams into tangible realities, crafting spaces that seamlessly blend innovation, aesthetics, and sustainability.",
   keywords: [
     "best architects in chennai",
     "architecture",
     "architects",
     "chennai",
+    "best architects",
     "how to find architect",
     "architects in chennai",
     "tamilnadu",
@@ -65,19 +67,19 @@ export const metadata: Metadata = {
     "Tailored design for shops and homes",
     "Reliable home and business designers",
   ],
-  applicationName: "Studio Bind Architects",
+  applicationName: "Bind Architects",
   robots: "index, follow",
-  alternates: { canonical: "https://bindarchitects.com/" },
+  alternates: { canonical: "https://www.bindarchitects.com/" },
   category:
-    "Architecture, architectural firm, Interior Design, Construction, Building Design, Architectural Design, Interior Designers, Architects, Interior Designers, Interior Decorators, Interior Decorators For Residence, Interior Decorators For Office, Interior Decorators For Showroom, Interior Decorators For Restaurant, Interior Decorators For Hotel, Interior Decorators For Hospital, Interior Decorators For School, Interior Decorators For College, Interior Decorators For University, Interior Decorators For Institute, Interior Decorators For Factory, Interior Decorators For Warehouse, Interior Decorators For Godown, Interior Decorators For Shop, Interior Decorators For Mall, Interior Decorators For Theatre, Interior Decorators For Auditorium, Interior Decorators For Stadium, Interior Decorators For Airport, Interior Decorators For Railway Station, Interior Decorators For Bus Sta",
-  manifest: "https://bindarchitects.com/site.webmanifest",
+    "Architecture,best architects, architectural firm, Interior Design, Construction, Building Design, Architectural Design, Interior Designers, Architects, Interior Designers, Interior Decorators, Interior Decorators For Residence, Interior Decorators For Office, Interior Decorators For Showroom, Interior Decorators For Restaurant, Interior Decorators For Hotel, Interior Decorators For Hospital, Interior Decorators For School, Interior Decorators For College, Interior Decorators For University, Interior Decorators For Institute, Interior Decorators For Factory, Interior Decorators For Warehouse, Interior Decorators For Godown, Interior Decorators For Shop, Interior Decorators For Mall, Interior Decorators For Theatre, Interior Decorators For Auditorium, Interior Decorators For Stadium, Interior Decorators For Airport, Interior Decorators For Railway Station",
+  manifest: "https://www.bindarchitects.com/site.webmanifest",
   appleWebApp: {
     capable: true,
-    title: "Studio Bind Architects",
+    title: "Bind Architects",
     statusBarStyle: "black-translucent",
   },
   abstract:
-    "From dream to reality: Build your sustainable future in Chennai with the best architects in Studio Bind.",
+    "Welcome to Bind Architects, where dreams take shape and sustainable futures are built in the vibrant city of Chennai. As a leading architecture firm, we specialize in turning your visionary dreams into tangible realities, crafting spaces that seamlessly blend innovation, aesthetics, and sustainability.",
 
   icons: {
     icon: "/favicon.ico",
@@ -93,7 +95,7 @@ const graph = {
       "@type": "WPHeader",
       url: "https://www.bindarchitects.com/",
       headline:
-        "Studio Bind - Best Architects in Chennai | Top Architectural Firm",
+        "Bind - Best Architects in Chennai | Top Architectural Firm",
       description:
         "Award-winning Best architects in Chennai, we cater our top architect's services on residential buildings, Interior Designs, Villa, Apartment, Institutional and commercial mall, hotel, restaurant in Chennai & all over Tamilnadu. A leading and best interior designer in Chennai",
     },
@@ -101,7 +103,7 @@ const graph = {
       "@type": "WPFooter",
       url: "https://www.bindarchitects.com/",
       headline:
-        "Studio Bind - Best Architects in Chennai | Top Architectural Firm",
+        "Bind - Best Architects in Chennai | Top Architectural Firm",
       description:
         "Award-winning Best architects in Chennai, we cater our top architect's services on residential buildings, Interior Designs, Villa, Apartment, Institutional and commercial mall, hotel, restaurant in Chennai & all over Tamilnadu. A leading and best interior designer in Chennai",
       copyrightYear: "2023",
@@ -110,7 +112,7 @@ const graph = {
       "@type": "Organization",
       "@id": "https://www.bindarchitects.com/#schema-publishing-organization",
       url: "https://www.bindarchitects.com",
-      name: "Studio Bind Architects",
+      name: "Bind Architects",
       description:
         "We are the team of Best architects in Chennai and cater our top architects services on residential buildings, Interior Designs, Villa, Urban, Institutional and commercial places in Chennai and all over Tamilnadu.",
       contactPoint: {
@@ -134,7 +136,7 @@ const graph = {
       "@type": "WebSite",
       "@id": "https://www.bindarchitects.com/#schema-website",
       url: "https://www.bindarchitects.com",
-      name: "Studio Bind Architects",
+      name: "Bind Architects",
       encoding: "UTF-8",
       potentialAction: {
         "@type": "SearchAction",
@@ -183,7 +185,7 @@ const graph = {
     {
       "@type": "Person",
       "@id": "https://www.bindarchitects.com/about/#schema-author",
-      name: "Studio Bind Architects",
+      name: "Bind Architects",
     },
     {
       "@type": "WebPage",
@@ -255,7 +257,7 @@ const graph = {
       dateModified: "2023-11-22T14:29:49",
       datePublished: "2023-09-24T08:32:28",
       headline:
-        "Studio Bind - Best Architects in Chennai | Top Architectural Firm",
+        "Bind - Best Architects in Chennai | Top Architectural Firm",
       description:
         "Award-winning Best architects in Chennai, we cater our top architect's services on residential buildings, Interior Designs, Villa, Apartment, Institutional and commercial mall, hotel, restaurant in Chennai & all over Tamilnadu. A leading and best interior designer in Chennai",
       name: "Best architects in chennai",
@@ -285,13 +287,13 @@ export default function HomeLayout() {
 
       <Head>
         <title>
-          Studio Bind - Best Architects in Chennai | Top Architectural Firm
+          Bind - Best Architects in Chennai | Top Architectural Firm
         </title>
         <link rel="canonical" href="https://www.bindarchitects.com/" />
         <meta
           name="twitter:image:alt"
           property="og:image:alt"
-          content="Studio Bind Architects Logo"
+          content="Bind Architects Logo"
         />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/favicon.ico" sizes="16x16" />
@@ -308,11 +310,11 @@ export default function HomeLayout() {
         <meta property="og:url" content="https://www.bindarchitects.com/" />
         <meta
           property="og:title"
-          content="Studio Bind - Best Architects in Chennai | Top Architectural Firm"
+          content="Bind - Best Architects in Chennai | Top Architectural Firm"
         />
         <meta
           property="og:description"
-          content="From dream to reality: Build your sustainable future in Chennai with the best architects in Studio Bind."
+          content="Welcome to Bind Architects, where dreams take shape and sustainable futures are built in the vibrant city of Chennai. As a leading architecture firm, we specialize in turning your visionary dreams into tangible realities, crafting spaces that seamlessly blend innovation, aesthetics, and sustainability."
         />
 
         <meta
@@ -325,16 +327,16 @@ export default function HomeLayout() {
         />
         <meta
           name="description"
-          content="From dream to reality: Build your sustainable future in Chennai with the best architects in Studio Bind."
+          content="Welcome to Bind Architects, where dreams take shape and sustainable futures are built in the vibrant city of Chennai. As a leading architecture firm, we specialize in turning your visionary dreams into tangible realities, crafting spaces that seamlessly blend innovation, aesthetics, and sustainability."
         />
         <meta name="twitter:card" content="summary" />
         <meta
           name="twitter:title"
-          content="Studio Bind - Best Architects in Chennai | Top Architectural Firm"
+          content="Bind - Best Architects in Chennai | Top Architectural Firm"
         />
         <meta
           name="twitter:description"
-          content="Welcome to Studio Bind, your premier architectural firm in Chennai. Transforming visions into stunning reality. Explore our innovative and sustainable architectural solutions."
+          content="Welcome to Bind Architects, your premier architectural firm in Chennai. Transforming visions into stunning reality. Explore our innovative and sustainable architectural solutions."
         />
       </Head>
       <div className="flex flex-row mr-5 items-center justify-between space-x-2 bg">

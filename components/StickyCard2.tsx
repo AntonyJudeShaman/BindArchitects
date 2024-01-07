@@ -185,7 +185,7 @@ function Card2({ excludeProject }: CardProps) {
                         className="expertise mb-5 dmsans-bold sm:max-w-[20rem]"
                         aria-label={project.expertise || ""}
                       >
-                        Expertise{" "}
+                        Expertise
                         <span className="dmsans">{project.expertise}</span>
                       </p>
                       <p

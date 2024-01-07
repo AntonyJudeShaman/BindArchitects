@@ -301,7 +301,11 @@ body {
   left: 5px;
 }
 
-
+.highlighted {
+  background-color: #f0f0f0; /* Adjust as needed */
+  font-weight: bold;
+  /* Add other visual adjustments as desired */
+}
 
 .our-story-item h2 {
   margin: 0 0 1rem;

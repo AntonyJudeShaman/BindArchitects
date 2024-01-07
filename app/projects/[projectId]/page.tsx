@@ -78,7 +78,7 @@ const cardColors = [
 ];
 
 const metadata: Metadata = {
-  title: "Project | Best Architects in Chennai | Studio Bind Architects",
+  title: "Project | Best Architects in Chennai | Bind Architects",
   description: "Project details and description.",
 };
 
@@ -316,7 +316,7 @@ export default function ProjectPage({
                         {menuItem.projectNumber}
                       </p>
                       <p
-                        aria-label="Studio bind"
+                        aria-label="Bind"
                         className="projectName md:ml-32 dmsans-home mt-2 flex flex-wrap md:max-w-full z-30"
                       >
                         {menuItem.projectName}

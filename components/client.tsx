@@ -15,32 +15,57 @@ function Client() {
 
   return (
     <div className="items-center md:mt-20 mt-0 flex md:flex-row gap-20 flex-col md:p-0 p-6 mb-3 md:mb-20 justify-center md:justify-between max-w-screen">
-      <div className="flex flex-col mt-20 max-w-[25rem]">
+      <div className="flex flex-col mt-20 max-w-[35rem]">
         <h1
-          className="text-5xl dmsans md:text-left text-center leading-[1.1] mb-5 md:text-6xl"
-          aria-label="Selected Clients"
+          className="text-5xl dmsans text-left leading-[1.1] mb-5 md:text-6xl"
+          aria-label="Architecture Studio's Distinguished Clients"
         >
-          Selected Clients
+          Distinguished Clients
         </h1>
         <p className="text-muted-foreground text-lg text-left">
-          We play hard so they can win fast. We build new worlds together.
-          Worlds where user value is unprecedented and where it paves the way
-          for even more.
+          Elevating architectural experiences with our curated list of clients.
+          We collaborate tirelessly to shape innovative environments. Together,
+          we redefine user value, creating unprecedented worlds that pave the
+          way for even greater achievements.
         </p>
       </div>
 
       <div className="grid grid-cols-2 gap-16 md:grid-cols-4 max-w-[50rem] mx-auto mt-0 md:mt-10 mb-10 justify-between">
-        <div className="mx-auto md:mt-20 grayscale hover:grayscale-0">
-          <Image height={130} width={130} alt="Iyer's Delight" src={client1} />
+        <div className="mx-auto md:mt-20">
+          <Image
+            height={130}
+            width={130}
+            className=" rounded-2xl"
+            alt="Iyer's Delight"
+            src={client1}
+          />
         </div>
-        <div className="mx-auto md:mt-20 grayscale hover:grayscale-0">
-          <Image height={130} width={130} alt="AR Rahman Cafe" src={client2} />
+        <div className="mx-auto md:mt-20">
+          <Image
+            height={130}
+            width={130}
+            className=" rounded-2xl"
+            alt="AR Rahman Cafe"
+            src={client2}
+          />
         </div>
-        <div className="mx-auto md:mt-20 grayscale hover:grayscale-0">
-          <Image height={130} width={130} alt="TTDC" src={client3} />
+        <div className="mx-auto md:mt-20">
+          <Image
+            height={130}
+            width={130}
+            className=" rounded-2xl"
+            alt="TTDC"
+            src={client3}
+          />
         </div>
-        <div className="mx-auto md:mt-20 grayscale hover:grayscale-0">
-          <Image height={130} width={130} alt="Delphi Clinic" src={client4} />
+        <div className="mx-auto md:mt-20">
+          <Image
+            height={130}
+            width={130}
+            className=" rounded-2xl"
+            alt="Delphi Clinic"
+            src={client4}
+          />
         </div>
       </div>
     </div>

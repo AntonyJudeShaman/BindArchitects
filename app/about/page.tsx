@@ -20,10 +20,10 @@ import ContactScroll from "@/components/contactscroll";
 import SiteFooter from "@/components/site-footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bindarchitects.com/about"),
+  metadataBase: new URL("https://www.bindarchitects.com/about"),
   title: "About Us - Bind Architects | Best Architects in Chennai",
   description:
-    "Ready to elevate your vision? Witness the magic we weave with brick and mortar. Contact us today and let's create a space that reflects your unique story.",
+    "Bind, the premier architectural firm in Chennai, specializes in innovative and sustainable design solutions, creating bespoke and environmentally conscious spaces that seamlessly blend timeless elegance, artisanal craftsmanship, and cutting-edge technology, ensuring a perfect harmony of function and aesthetics in residential, commercial, and public projects.",
   keywords: [
     "best architects in chennai",
     "architecture",
@@ -66,39 +66,39 @@ const graph = {
   "@graph": [
     {
       "@type": "WPHeader",
-      url: "https://bindarchitects.com/about/",
+      url: "https://www.bindarchitects.com/about/",
       headline: "About Us - Bind Architects | Best Architects in Chennai",
       description:
-        "Ready to elevate your vision? Witness the magic we weave with brick and mortar. Contact us today and let's create a space that reflects your unique story.",
+        "Bind, the premier architectural firm in Chennai, specializes in innovative and sustainable design solutions, creating bespoke and environmentally conscious spaces that seamlessly blend timeless elegance, artisanal craftsmanship, and cutting-edge technology, ensuring a perfect harmony of function and aesthetics in residential, commercial, and public projects.",
     },
     {
       "@type": "WPFooter",
-      url: "https://bindarchitects.com/about/",
+      url: "https://www.bindarchitects.com/about/",
       headline: "About Us - Bind Architects | Best Architects in Chennai",
       description:
-        "Ready to elevate your vision? Witness the magic we weave with brick and mortar. Contact us today and let's create a space that reflects your unique story.",
+        "Bind, the premier architectural firm in Chennai, specializes in innovative and sustainable design solutions, creating bespoke and environmentally conscious spaces that seamlessly blend timeless elegance, artisanal craftsmanship, and cutting-edge technology, ensuring a perfect harmony of function and aesthetics in residential, commercial, and public projects.",
       copyrightYear: "2023",
     },
     {
       "@type": "Organization",
-      "@id": "https://bindarchitects.com/#schema-publishing-organization",
-      url: "https://bindarchitects.com",
-      name: "Studio Bind Architects",
+      "@id": "https://www.bindarchitects.com/#schema-publishing-organization",
+      url: "https://www.bindarchitects.com",
+      name: "Bind Architects",
     },
     {
       "@type": "WebSite",
-      "@id": "https://bindarchitects.com/#schema-website",
-      url: "https://bindarchitects.com",
-      name: "Studio Bind Architects",
+      "@id": "https://www.bindarchitects.com/#schema-website",
+      url: "https://www.bindarchitects.com",
+      name: "Bind Architects",
       encoding: "UTF-8",
       potentialAction: {
         "@type": "SearchAction",
-        target: "https://bindarchitects.com/projects/{search_term_string}/",
+        target: "https://www.bindarchitects.com/projects/{search_term_string}/",
         "query-input": "required name=search_term_string",
       },
       image: {
         "@type": "ImageObject",
-        "@id": "https://bindarchitects.com/#schema-site-logo",
+        "@id": "https://www.bindarchitects.com/#schema-site-logo",
         url: "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
         height: 153,
         width: 300,
@@ -107,13 +107,13 @@ const graph = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://bindarchitects.com/about?page&pagename=about/#breadcrumb",
+      "@id": "https://www.bindarchitects.com/about?page&pagename=about/#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://bindarchitects.com",
+          item: "https://www.bindarchitects.com",
         },
         {
           "@type": "ListItem",
@@ -124,73 +124,73 @@ const graph = {
     },
     {
       "@type": "Person",
-      "@id": "https://bindarchitects.com/about/#schema-author",
-      name: "Studio Bind Architects",
+      "@id": "https://www.bindarchitects.com/about/#schema-author",
+      name: "Bind Architects",
     },
     {
       "@type": "AboutPage",
-      "@id": "https://bindarchitects.com/about/#schema-webpage",
-      isPartOf: "https://bindarchitects.com/#schema-website",
+      "@id": "https://www.bindarchitects.com/about/#schema-webpage",
+      isPartOf: "https://www.bindarchitects.com/#schema-website",
       hasPart: [
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://bindarchitects.com/about/#schema-nav-element-529",
+          "@id": "https://www.bindarchitects.com/about/#schema-nav-element-529",
           name: "Home",
-          url: "https://bindarchitects.com/",
+          url: "https://www.bindarchitects.com/",
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://bindarchitects.com/about/#schema-nav-element-528",
+          "@id": "https://www.bindarchitects.com/about/#schema-nav-element-528",
           name: "",
-          url: "https://bindarchitects.com/about/",
+          url: "https://www.bindarchitects.com/about/",
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://bindarchitects.com/about/#schema-nav-element-527",
+          "@id": "https://www.bindarchitects.com/about/#schema-nav-element-527",
           name: "",
-          url: "https://bindarchitects.com/projects/",
+          url: "https://www.bindarchitects.com/projects/",
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://bindarchitects.com/about/#schema-nav-element-525",
+          "@id": "https://www.bindarchitects.com/about/#schema-nav-element-525",
           name: "",
-          url: "https://bindarchitects.com/contact/",
+          url: "https://www.bindarchitects.com/contact/",
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://bindarchitects.com/#schema-nav-element-2394",
+          "@id": "https://www.bindarchitects.com/#schema-nav-element-2394",
           name: '<img src="https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/facebook.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4" title="facebook bind"width="32px">',
           url: "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.bindarchitects.com%2Ffaq%3FquestionId%3Dbbe7072b-402e-4a9a-9fe1-cbf90f0c831e&appDefId=14c92d28-031e-7910-c9a8-a670011e062d",
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://bindarchitects.com/#schema-nav-element-2395",
+          "@id": "https://www.bindarchitects.com/#schema-nav-element-2395",
           name: '<img src="https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/youtube.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4" target="_blank" title="youtube bind"width="32px">',
           url: "https://www.youtube.com/channel/UCTI09wWkEJeNy7wXwD4zSCQ",
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://bindarchitects.com/#schema-nav-element-2396",
+          "@id": "https://www.bindarchitects.com/#schema-nav-element-2396",
           name: '<img src="https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/instagram.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4" target="_blank" title="instagram bind" width="32px">',
           url: "https://www.instagram.com/studio_bind/",
         },
       ],
-      url: "https://bindarchitects.com/about/",
+      url: "https://www.bindarchitects.com/about/",
       author: {
-        "@id": "https://bindarchitects.com/about/#schema-author",
+        "@id": "https://www.bindarchitects.com/about/#schema-author",
       },
       publisher: {
-        "@id": "https://bindarchitects.com/#schema-publishing-organization",
+        "@id": "https://www.bindarchitects.com/#schema-publishing-organization",
       },
       dateModified: "2023-11-22T11:13:10",
       datePublished: "2023-04-10T06:04:33",
       headline: "About Us - Bind Architects | Best Architects in Chennai",
       description:
-        "Ready to elevate your vision? Witness the magic we weave with brick and mortar. Contact us today and let's create a space that reflects your unique story.",
+        "Bind, the premier architectural firm in Chennai, specializes in innovative and sustainable design solutions, creating bespoke and environmentally conscious spaces that seamlessly blend timeless elegance, artisanal craftsmanship, and cutting-edge technology, ensuring a perfect harmony of function and aesthetics in residential, commercial, and public projects.",
       name: "About",
       image: {
         "@type": "ImageObject",
-        "@id": "https://bindarchitects.com/about/#schema-article-image",
+        "@id": "https://www.bindarchitects.com/about/#schema-article-image",
         url: "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
         height: 153,
         width: 300,
@@ -201,7 +201,7 @@ const graph = {
     },
     {
       "@type": "VideoObject",
-      name: "Studio Bind Architects and Interior Designers in Chennai",
+      name: "Bind Architects and Interior Designers in Chennai",
       url: "https://www.youtube.com/watch?v=ANK2MXhP3P8",
       thumbnail: {
         "@type": "ImageObject",
@@ -228,12 +228,12 @@ function About() {
         />
 
         <title>
-          About Us - Studio Bind Architects - Best Architects in Chennai
+          About Us - Bind Architects - Best Architects in Chennai
         </title>
-        <link rel="canonical" href="https://bindarchitects.com/about/" />
+        <link rel="canonical" href="https://www.bindarchitects.com/about/" />
         <meta
           property="og:description"
-          content="Ready to elevate your vision? Witness the magic we weave with brick and mortar. Contact us today and let's create a space that reflects your unique story."
+          content="Bind, the premier architectural firm in Chennai, specializes in innovative and sustainable design solutions, creating bespoke and environmentally conscious spaces that seamlessly blend timeless elegance, artisanal craftsmanship, and cutting-edge technology, ensuring a perfect harmony of function and aesthetics in residential, commercial, and public projects."
         />
         <meta
           property="og:image"
@@ -241,14 +241,14 @@ function About() {
         />
         <meta
           name="description"
-          content="Ready to elevate your vision? Witness the magic we weave with brick and mortar. Contact us today and let's create a space that reflects your unique story."
+          content="Bind, the premier architectural firm in Chennai, specializes in innovative and sustainable design solutions, creating bespoke and environmentally conscious spaces that seamlessly blend timeless elegance, artisanal craftsmanship, and cutting-edge technology, ensuring a perfect harmony of function and aesthetics in residential, commercial, and public projects."
         />
         <meta
           property="og:title"
-          content="About Us - Studio Bind Architects - Best Architects in Chennai"
+          content="About Us - Bind Architects - Best Architects in Chennai"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://bindarchitects.com/about/" />
+        <meta property="og:url" content="https://www.bindarchitects.com/about/" />
         <meta name="twitter:card" content="summary" />
         <meta
           name="twitter:title"
@@ -256,7 +256,7 @@ function About() {
         />
         <meta
           name="twitter:description"
-          content="Ready to elevate your vision? Witness the magic we weave with brick and mortar. Contact us today and let's create a space that reflects your unique story."
+          content="Bind, the premier architectural firm in Chennai, specializes in innovative and sustainable design solutions, creating bespoke and environmentally conscious spaces that seamlessly blend timeless elegance, artisanal craftsmanship, and cutting-edge technology, ensuring a perfect harmony of function and aesthetics in residential, commercial, and public projects."
         />
       </Head>
 

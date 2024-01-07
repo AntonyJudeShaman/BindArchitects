@@ -12,7 +12,7 @@ export default function NotFound() {
   return (
     <div class="notfound flex bg flex-col p-6 justify-center h-screen">
       <Head>
-        <title>Not Found || Studio Bind</title>
+        <title>Not Found || Bind</title>
       </Head>
       
       <h2 className="dmsans contact-title pb-3 text-left">

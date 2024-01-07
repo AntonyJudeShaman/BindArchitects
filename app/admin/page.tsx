@@ -18,7 +18,7 @@ import { cn } from "@/lib/utils";
 import SiteFooter from "@/components/site-footer";
 
 export const metadata: Metadata = {
-  title: "Admin | Studio Bind",
+  title: "Admin | Bind",
   description: "Admin page to add and delete projects",
 };
 

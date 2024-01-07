@@ -4,7 +4,7 @@ import { LightBox } from "./light-box";
 function Questions() {
   return (
     <div className="mb-10 md:mb-20 p-6">
-      <div className="relative overflow-hidden hover:bg-slate-950 rounded-lg border  border-zinc-400 text-muted-foreground p-2 mx-auto grid justify-center  gap-4 sm:grid-cols-1 md:max-w-[75rem] md:grid-cols-1">
+      <div className="relative overflow-hidden bg-footer rounded-lg border  border-gray-600 text-muted-foreground p-2 mx-auto grid justify-center  gap-4 sm:grid-cols-1 md:max-w-[75rem] md:grid-cols-1">
         <div className="flex  flex-col justify-between rounded-md p-6">
           <div className="  mt-1 text-center mx-auto d-block">
             <p

@@ -15,7 +15,7 @@ import SiteFooter from "@/components/site-footer";
 const metadata: Metadata = {
   title: "Know about our works - Bind Architects - Best Architects in Chennai",
   description:
-    "Discover the portfolio of Studio Bind Architects' projects in Chennai. Explore a showcase of innovative and inspiring residential and commercial spaces. From conceptualization to realization, immerse yourself in the artistry and functionality of our architectural designs. Elevate your vision of modern living with Chennai's leading architectural firm, Studio Bind Architects.",
+    "Discover the portfolio of Bind Architects' projects in Chennai. Explore a showcase of innovative and inspiring residential and commercial spaces. From conceptualization to realization, immerse yourself in the artistry and functionality of our architectural designs. Elevate your vision of modern living with Chennai's leading architectural firm, Bind Architects.",
 };
 
 export interface Project {
@@ -58,17 +58,17 @@ function ProjectsHome() {
         <link rel="canonical" href="https://www.bindhomes.com/about" />
         <meta
           property="og:description"
-          content="Discover the portfolio of Studio Bind Architects' projects in Chennai. Explore a showcase of innovative and inspiring residential and commercial spaces. From conceptualization to realization, immerse yourself in the artistry and functionality of our architectural designs. Elevate your vision of modern living with Chennai's leading architectural firm, Studio Bind Architects."
+          content="Discover the portfolio of Bind Architects' projects in Chennai. Explore a showcase of innovative and inspiring residential and commercial spaces. From conceptualization to realization, immerse yourself in the artistry and functionality of our architectural designs. Elevate your vision of modern living with Chennai's leading architectural firm, Bind Architects."
         />
 
         <meta
           name="description"
-          content="Explore Studio Bind Architects' portfolio of projects in Chennai, showcasing innovation in residential and commercial spaces. From initial concepts to stunning realizations, immerse yourself in the artistry and functionality of our architectural designs. Elevate your understanding of modern living with Chennai's premier architectural firm, Studio Bind Architects."
+          content="Explore Bind Architects' portfolio of projects in Chennai, showcasing innovation in residential and commercial spaces. From initial concepts to stunning realizations, immerse yourself in the artistry and functionality of our architectural designs. Elevate your understanding of modern living with Chennai's premier architectural firm, Bind Architects."
         />
 
         <meta
           property="og:title"
-          content="Projects - Studio Bind Architects - Best Architects in Chennai"
+          content="Projects - Bind Architects - Best Architects in Chennai"
         />
       </Head>
       <div className="flex flex-row mr-5 items-center justify-between space-x-2 mt-4 bg">

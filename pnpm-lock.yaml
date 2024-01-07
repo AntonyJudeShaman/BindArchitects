@@ -128,6 +128,9 @@ dependencies:
   react-icons:
     specifier: ^4.12.0
     version: 4.12.0(react@18.2.0)
+  react-masonry-css:
+    specifier: ^1.0.16
+    version: 1.0.16(react@18.2.0)
   react-parallax-tilt:
     specifier: ^1.7.175
     version: 1.7.175(react-dom@18.2.0)(react@18.2.0)
@@ -6598,6 +6601,14 @@ packages:
 
   /react-lifecycles-compat@3.0.4:
     resolution: {integrity: sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==}
+    dev: false
+
+  /react-masonry-css@1.0.16(react@18.2.0):
+    resolution: {integrity: sha512-KSW0hR2VQmltt/qAa3eXOctQDyOu7+ZBevtKgpNDSzT7k5LA/0XntNa9z9HKCdz3QlxmJHglTZ18e4sX4V8zZQ==}
+    peerDependencies:
+      react: '>=16.0.0'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react-parallax-tilt@1.7.175(react-dom@18.2.0)(react@18.2.0):

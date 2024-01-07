@@ -7,7 +7,7 @@ import bg from "./bg.jpg";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Login | Studio Bind",
+  title: "Login | Bind",
   description: "Login to your account",
 };
 

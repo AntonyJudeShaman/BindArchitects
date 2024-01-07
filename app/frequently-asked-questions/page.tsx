@@ -15,10 +15,10 @@ import SiteFooter from "@/components/site-footer";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bindarchitects.com/frequently-asked-questions"),
+  metadataBase: new URL("https://www.bindarchitects.com/frequently-asked-questions"),
   title: "FAQ - Find answers to your questions | Bind Architects - Chennai",
   description:
-    "Unravel design mysteries and illuminate your dream project with Studio Bind Architects' insightful FAQs.",
+    "Unravel design mysteries and illuminate your dream project with Bind Architects' insightful FAQs.",
     keywords: [
       "best architects in chennai",
       "architecture",
@@ -61,39 +61,39 @@ const graph = {
   "@graph": [
     {
       "@type": "WPHeader",
-      url: "https://bindarchitects.com/frequently-asked-questions/",
-      headline: "Frequently Asked Questions - Studio Bind",
+      url: "https://www.bindarchitects.com/frequently-asked-questions/",
+      headline: "Frequently Asked Questions - Bind",
       description:
-        "Find answers to common questions about Studio Bind and our services.",
+        "Find answers to common questions about Bind and our services.",
     },
     {
       "@type": "WPFooter",
-      url: "https://bindarchitects.com/frequently-asked-questions/",
-      headline: "Frequently Asked Questions - Studio Bind",
+      url: "https://www.bindarchitects.com/frequently-asked-questions/",
+      headline: "Frequently Asked Questions - Bind",
       description:
-        "Find answers to common questions about Studio Bind and our services.",
+        "Find answers to common questions about Bind and our services.",
       copyrightYear: "2023",
     },
     {
       "@type": "Organization",
-      "@id": "https://bindarchitects.com/#schema-publishing-organization",
-      url: "https://bindarchitects.com",
-      name: "Studio Bind",
+      "@id": "https://www.bindarchitects.com/#schema-publishing-organization",
+      url: "https://www.bindarchitects.com",
+      name: "Bind",
     },
     {
       "@type": "WebSite",
-      "@id": "https://bindarchitects.com/#schema-website",
-      url: "https://bindarchitects.com",
-      name: "Studio Bind Architects",
+      "@id": "https://www.bindarchitects.com/#schema-website",
+      url: "https://www.bindarchitects.com",
+      name: "Bind Architects",
       encoding: "UTF-8",
       potentialAction: {
         "@type": "SearchAction",
-        target: "https://bindarchitects.com/projects/{search_term_string}/",
+        target: "https://www.bindarchitects.com/projects/{search_term_string}/",
         "query-input": "required name=search_term_string",
       },
       image: {
         "@type": "ImageObject",
-        "@id": "https://bindarchitects.com/#schema-site-logo",
+        "@id": "https://www.bindarchitects.com/#schema-site-logo",
         url: "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
         height: 153,
         width: 300,
@@ -103,13 +103,13 @@ const graph = {
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://bindarchitects.com/frequently-asked-questions?page&pagename=faq/#breadcrumb",
+        "https://www.bindarchitects.com/frequently-asked-questions?page&pagename=faq/#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://bindarchitects.com",
+          item: "https://www.bindarchitects.com",
         },
         {
           "@type": "ListItem",
@@ -120,88 +120,88 @@ const graph = {
     },
     {
       "@type": "Person",
-      "@id": "https://bindarchitects.com/about/#schema-author",
-      name: "Studio Bind",
+      "@id": "https://www.bindarchitects.com/about/#schema-author",
+      name: "Bind",
     },
     {
       "@type": "FAQPage",
       "@id":
-        "https://bindarchitects.com/frequently-asked-questions/#schema-webpage",
-      isPartOf: "https://bindarchitects.com/#schema-website",
+        "https://www.bindarchitects.com/frequently-asked-questions/#schema-webpage",
+      isPartOf: "https://www.bindarchitects.com/#schema-website",
       mainEntity: {
         "@type": "WebPage",
         "@id":
-          "https://bindarchitects.com/frequently-asked-questions/#schema-webpage-main-entity",
-        url: "https://bindarchitects.com/frequently-asked-questions/",
-        headline: "Frequently Asked Questions - Studio Bind",
+          "https://www.bindarchitects.com/frequently-asked-questions/#schema-webpage-main-entity",
+        url: "https://www.bindarchitects.com/frequently-asked-questions/",
+        headline: "Frequently Asked Questions - Bind",
         description:
-          "Find answers to common questions about Studio Bind and our services.",
+          "Find answers to common questions about Bind and our services.",
       },
       hasPart: [
         {
           "@type": "SiteNavigationElement",
           "@id":
-            "https://bindarchitects.com/frequently-asked-questions/#schema-nav-element-529",
+            "https://www.bindarchitects.com/frequently-asked-questions/#schema-nav-element-529",
           name: "Home",
-          url: "https://bindarchitects.com/",
+          url: "https://www.bindarchitects.com/",
         },
         {
           "@type": "SiteNavigationElement",
           "@id":
-            "https://bindarchitects.com/frequently-asked-questions/#schema-nav-element-528",
+            "https://www.bindarchitects.com/frequently-asked-questions/#schema-nav-element-528",
           name: "",
-          url: "https://bindarchitects.com/about/",
+          url: "https://www.bindarchitects.com/about/",
         },
         {
           "@type": "SiteNavigationElement",
           "@id":
-            "https://bindarchitects.com/frequently-asked-questions/#schema-nav-element-527",
+            "https://www.bindarchitects.com/frequently-asked-questions/#schema-nav-element-527",
           name: "",
-          url: "https://bindarchitects.com/projects/",
+          url: "https://www.bindarchitects.com/projects/",
         },
         {
           "@type": "SiteNavigationElement",
           "@id":
-            "https://bindarchitects.com/frequently-asked-questions/#schema-nav-element-525",
+            "https://www.bindarchitects.com/frequently-asked-questions/#schema-nav-element-525",
           name: "",
-          url: "https://bindarchitects.com/frequently-asked-questions/",
+          url: "https://www.bindarchitects.com/frequently-asked-questions/",
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://bindarchitects.com/#schema-nav-element-2394",
+          "@id": "https://www.bindarchitects.com/#schema-nav-element-2394",
           name: '<img src="https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/facebook.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4" title="facebook bind" width="32px">',
           url: "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.bindarchitects.com%2Ffaq%3FquestionId%3Dbbe7072b-402e-4a9a-9fe1-cbf90f0c831e&appDefId=14c92d28-031e-7910-c9a8-a670011e062d",
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://bindarchitects.com/#schema-nav-element-2395",
+          "@id": "https://www.bindarchitects.com/#schema-nav-element-2395",
           name: '<img src="https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/youtube.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4" target="_blank" title="youtube bind" width="32px">',
           url: "https://www.youtube.com/channel/UCTI09wWkEJeNy7wXwD4zSCQ",
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://bindarchitects.com/#schema-nav-element-2396",
+          "@id": "https://www.bindarchitects.com/#schema-nav-element-2396",
           name: '<img src="https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/instagram.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4" target="_blank" title="instagram bind" width="32px">',
           url: "https://www.instagram.com/studio_bind/",
         },
       ],
-      url: "https://bindarchitects.com/frequently-asked-questions/",
+      url: "https://www.bindarchitects.com/frequently-asked-questions/",
       author: {
-        "@id": "https://bindarchitects.com/about/#schema-author",
+        "@id": "https://www.bindarchitects.com/about/#schema-author",
       },
       publisher: {
-        "@id": "https://bindarchitects.com/#schema-publishing-organization",
+        "@id": "https://www.bindarchitects.com/#schema-publishing-organization",
       },
       dateModified: "2023-11-22T11:30:56",
       datePublished: "2023-10-29T05:29:19",
-      headline: "Frequently Asked Questions - Studio Bind",
+      headline: "Frequently Asked Questions - Bind",
       description:
-        "Find answers to common questions about Studio Bind and our services.",
+        "Find answers to common questions about Bind and our services.",
       name: "FAQ",
       image: {
         "@type": "ImageObject",
         "@id":
-          "https://bindarchitects.com/frequently-asked-questions/#schema-article-image",
+          "https://www.bindarchitects.com/frequently-asked-questions/#schema-article-image",
         url: "https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/logo.png?alt=media&token=5a778e05-4ce8-4b61-ae5d-b6ec3e3e359d",
         height: 153,
         width: 300,
@@ -225,16 +225,16 @@ function page() {
       <Head>
         <link
           rel="canonical"
-          href="https://bindarchitects.com/frequently-asked-questions/"
+          href="https://www.bindarchitects.com/frequently-asked-questions/"
         />
         <meta
           property="og:description"
-          content="Unravel design mysteries and illuminate your dream project with Studio Bind Architects' insightful FAQs."
+          content="Unravel design mysteries and illuminate your dream project with Bind Architects' insightful FAQs."
         />
 
         <meta
           name="description"
-          content="Unravel design mysteries and illuminate your dream project with Studio Bind Architects' insightful FAQs."
+          content="Unravel design mysteries and illuminate your dream project with Bind Architects' insightful FAQs."
         />
         <meta
           property="og:image"
@@ -242,13 +242,13 @@ function page() {
         />
         <meta
           property="og:title"
-          content="FAQ - Studio Bind Architects - Best Architects in Chennai"
+          content="FAQ - Bind Architects - Best Architects in Chennai"
         />
 
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://bindarchitects.com/frequently-asked-questions/"
+          content="https://www.bindarchitects.com/frequently-asked-questions/"
         />
         <meta name="twitter:card" content="summary" />
         <meta
@@ -257,7 +257,7 @@ function page() {
         />
         <meta
           name="twitter:description"
-          content="Welcome to Studio Bind, your premier architectural firm in Chennai. Transforming visions into stunning reality. Explore our innovative and sustainable architectural solutions, crafted by experienced architects and interior designers. From modern house designs to creative commercial spaces, our diverse portfolio showcases excellence in home, shop, and showroom design. Discover architectural dreams brought to life at Studio Bind, where every detail matters, and your unique vision takes center stage."
+          content="Welcome to Bind, your premier architectural firm in Chennai. Transforming visions into stunning reality. Explore our innovative and sustainable architectural solutions, crafted by experienced architects and interior designers. From modern house designs to creative commercial spaces, our diverse portfolio showcases excellence in home, shop, and showroom design. Discover architectural dreams brought to life at Bind, where every detail matters, and your unique vision takes center stage."
         />
       </Head>
       <div className="flex flex-row mr-5 items-center justify-between space-x-2 mt-4 bg">

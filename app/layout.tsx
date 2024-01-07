@@ -34,7 +34,7 @@ const graph = {
       "@type": "WPHeader",
       url: "https://www.bindarchitects.com/",
       headline:
-        "Studio Bind - Best Architects in Chennai | Top Architectural Firm",
+        "Bind - Best Architects in Chennai | Top Architectural Firm",
       description:
         "Award-winning Best architects in Chennai, we cater our top architect's services on residential buildings, Interior Designs, Villa, Apartment, Institutional and commercial mall, hotel, restaurant in Chennai & all over Tamilnadu. A leading and best interior designer in Chennai",
     },
@@ -42,7 +42,7 @@ const graph = {
       "@type": "WPFooter",
       url: "https://www.bindarchitects.com/",
       headline:
-        "Studio Bind - Best Architects in Chennai | Top Architectural Firm",
+        "Bind - Best Architects in Chennai | Top Architectural Firm",
       description:
         "Award-winning Best architects in Chennai, we cater our top architect's services on residential buildings, Interior Designs, Villa, Apartment, Institutional and commercial mall, hotel, restaurant in Chennai & all over Tamilnadu. A leading and best interior designer in Chennai",
       copyrightYear: "2023",
@@ -51,14 +51,14 @@ const graph = {
       "@type": "Organization",
       "@id": "https://www.bindarchitects.com/#schema-publishing-organization",
       url: "https://www.bindarchitects.com",
-      name: "Studio Bind Architects",
+      name: "Bind Architects",
       description:
         "We are the team of Best architects in Chennai and cater our top architects services on residential buildings, Interior Designs, Villa, Urban, Institutional and commercial places in Chennai and all over Tamilnadu.",
       contactPoint: {
         "@type": "ContactPoint",
         contactType: "customer support",
         telephone: "+91-8072701454",
-        url: "https://bindarchitects.com/contact/",
+        url: "https://www.bindarchitects.com/contact/",
         availableLanguage: "Tamil, English",
         email: "bindarchitects@gmail.com",
       },
@@ -75,11 +75,11 @@ const graph = {
       "@type": "WebSite",
       "@id": "https://www.bindarchitects.com/#schema-website",
       url: "https://www.bindarchitects.com",
-      name: "Studio Bind Architects",
+      name: "Bind Architects",
       encoding: "UTF-8",
       potentialAction: {
         "@type": "SearchAction",
-        target: "https://bindarchitects.com/projects/{search_term_string}/",
+        target: "https://www.bindarchitects.com/projects/{search_term_string}/",
         "query-input": "required name=search_term_string",
       },
       image: {
@@ -105,7 +105,7 @@ const graph = {
           "@type": "ListItem",
           position: 2,
           name: "Contact",
-          item: "https://bindarchitects.com/contact",
+          item: "https://www.bindarchitects.com/contact",
         },
         {
           "@type": "ListItem",
@@ -123,8 +123,8 @@ const graph = {
     },
     {
       "@type": "Person",
-      "@id": "https://bindarchitects.com/about/#schema-author",
-      name: "Studio Bind Architects",
+      "@id": "https://www.bindarchitects.com/about/#schema-author",
+      name: "Bind Architects",
     },
     {
       "@type": "WebPage",
@@ -148,23 +148,23 @@ const graph = {
           "@type": "SiteNavigationElement",
           "@id": "https://www.bindarchitects.com/#schema-nav-element-528",
           name: "",
-          url: "https://bindarchitects.com/about/",
+          url: "https://www.bindarchitects.com/about/",
         },
         {
           "@type": "SiteNavigationElement",
           "@id": "https://www.bindarchitects.com/#schema-nav-element-527",
           name: "",
-          url: "https://bindarchitects.com/projects/",
+          url: "https://www.bindarchitects.com/projects/",
         },
         {
           "@type": "SiteNavigationElement",
           "@id": "https://www.bindarchitects.com/#schema-nav-element-525",
           name: "",
-          url: "https://bindarchitects.com/contact/",
+          url: "https://www.bindarchitects.com/contact/",
         },
         {
           "@type": "SiteNavigationElement",
-          "@id": "https://bindarchitects.com/#schema-nav-element-2394",
+          "@id": "https://www.bindarchitects.com/#schema-nav-element-2394",
           name: '<img src="https://firebasestorage.googleapis.com/v0/b/bind-f87fe.appspot.com/o/facebook.png?alt=media&token=ca6253bd-41b2-4bb1-9882-bcb9f0d43ce4" title="facebook bind"width="32px">',
           url: "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.bindarchitects.com%2Ffaq%3FquestionId%3Dbbe7072b-402e-4a9a-9fe1-cbf90f0c831e&appDefId=14c92d28-031e-7910-c9a8-a670011e062d",
         },
@@ -188,7 +188,7 @@ const graph = {
         "@id": "https://www.bindarchitects.com/#schema-webpage",
       },
       author: {
-        "@id": "https://bindarchitects.com/about/#schema-author",
+        "@id": "https://www.bindarchitects.com/about/#schema-author",
       },
       publisher: {
         "@id": "https://www.bindarchitects.com/#schema-publishing-organization",
@@ -196,7 +196,7 @@ const graph = {
       dateModified: "2023-11-22T14:29:49",
       datePublished: "2023-09-24T08:32:28",
       headline:
-        "Studio Bind - Best Architects in Chennai | Top Architectural Firm",
+        "Bind - Best Architects in Chennai | Top Architectural Firm",
       description:
         "Award-winning Best architects in Chennai, we cater our top architect's services on residential buildings, Interior Designs, Villa, Apartment, Institutional and commercial mall, hotel, restaurant in Chennai & all over Tamilnadu. A leading and best interior designer in Chennai",
       name: "Best architects in chennai",
@@ -214,75 +214,6 @@ const graph = {
   ],
 };
 
-export const metadata: Metadata = {
-  title: "Studio Bind - Best Architects in Chennai | Top Architectural Firm",
-  description:
-    "From dream to reality: Build your sustainable future in Chennai with the best architects in Studio Bind.",
-  keywords: [
-    "best architects in chennai",
-    "architecture",
-    "architects",
-    "chennai",
-    "tamilnadu",
-    "top architects",
-    "residential architecture",
-    "apartment design",
-    "villa design",
-    "architects near me",
-    "cheap price architects",
-    "famous architects",
-    "interior designs",
-    "Architect in chennai",
-    "Interior designer in chennai",
-    "Top architects in chennai",
-    "Best architects in chennai",
-    "Home design in chennai",
-    "Shop design in chennai",
-    "Showroom designer in chennai",
-    "Affordable residential architects",
-    "Modern house designs",
-    "Experienced home planners",
-    "Budget-friendly interior designers",
-    "Local architects for homes",
-    "Creative space planners",
-    "Chennai's top-rated home architects",
-    "Innovative interior decor solutions",
-    "Custom home design services",
-    "Commercial space designers",
-    "Chennai interior specialists",
-    "Best local architects",
-    "Residential and commercial design experts",
-    "Quality home blueprints",
-    "Unique showroom designs",
-    "Top-notch home and shop designers",
-    "Chennai architectural excellence",
-    "Tailored design for shops and homes",
-    "Reliable home and business designers",
-  ],
-  applicationName: "Studio Bind Architects",
-  generator: "Site Kit by Google",
-  referrer: "origin",
-  viewport: "width=device-width, initial-scale=1.0",
-  robots: "index, follow",
-  alternates: { canonical: "https://bindarchitects.com/" },
-  category:
-    "Architecture, Interior Design, Construction, Building Design, Architectural Design, Interior Designers, Architects, Interior Designers, Interior Decorators, Interior Decorators For Residence, Interior Decorators For Office, Interior Decorators For Showroom, Interior Decorators For Restaurant, Interior Decorators For Hotel, Interior Decorators For Hospital, Interior Decorators For School, Interior Decorators For College, Interior Decorators For University, Interior Decorators For Institute, Interior Decorators For Factory, Interior Decorators For Warehouse, Interior Decorators For Godown, Interior Decorators For Shop, Interior Decorators For Mall, Interior Decorators For Theatre, Interior Decorators For Auditorium, Interior Decorators For Stadium, Interior Decorators For Airport, Interior Decorators For Railway Station, Interior Decorators For Bus Sta",
-  manifest: "https://bindarchitects.com/site.webmanifest",
-  appleWebApp: {
-    capable: true,
-    title: "Studio Bind Architects",
-    statusBarStyle: "black-translucent",
-  },
-  abstract:
-    "From dream to reality: Build your sustainable future in Chennai with the best architects in Studio Bind.",
-
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
-  },
-};
-
 const fallbackStyle = {
   display: "flex",
   justifyContent: "center",
@@ -294,58 +225,12 @@ const fallbackStyle = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <Script
+      {/* <Script
         id="structured-data"
         key="structured-data"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
-      />
-      <Head>
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-P29J8CQM"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
-        </noscript>
-        <meta
-          name="twitter:image:alt"
-          property="og:image:alt"
-          content="Studio Bind Architects Logo"
-        />
-
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/favicon.ico" sizes="16x16" />
-        <link rel="icon" href="/favicon.ico" sizes="32x32" />
-        <link
-          rel="apple-touch-icon"
-          href="/apple-touch-icon.png"
-          type="image"
-          sizes="any"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="generator" content="Site Kit by Google 1.104.0" />
-        <meta
-          name="description"
-          content="From dream to reality: Build your sustainable future in Chennai with the best architects in Studio Bind."
-        />
-        <meta name="robots" content="index, follow" />
-        <meta name="author" content="Studio Bind Architects" />
-        <meta
-          name="keywords"
-          content="best architects in chennai,architects, architecture, top architects, residential architecture, apartment design, villa design, restaurant architecture, interior design architects near me, cheap price architects, famous architects, interior designs, Architect in chennai, Interior designer in chennai, Top architects in chennai, Best architects in chennai, Home design in chennai, Shop design in chennai, Showroom designer in chennai, Residential architects, Commercial architects, best architects in chennai, top architects, residential architecture, apartment design, villa design, restaurant architecture, interior design, Modern home designs, Affordable home architects, Office interior designers, Trendy home plans, Innovative building designers, Local architects, Building design experts, Chennai architecture firms, Creative interior designs, Budget-friendly house architects, Local shop makeover, Renowned showroom renovators, Skilled construction designers, Contemporary building styles, Architecture and design services, Experienced architectural consultants"
-        />
-        <meta name="twitter:card" content="summary" />
-        <meta
-          name="twitter:title"
-          content="Studio Bind - Best Architects in Chennai | Top Architectural Firm"
-        />
-        <meta
-          name="twitter:description"
-          content="Welcome to Studio Bind, your premier architectural firm in Chennai. Transforming visions into stunning reality. Explore our innovative and sustainable architectural solutions."
-        />
-      </Head>
+      /> */}
       <body
         id="section1"
         className={cn(
