@@ -106,7 +106,7 @@ export function Projects() {
         )
           .slice(0, 6)
           .map((project, index) => (
-            <div className="flex flex-col">
+            <div className="flex flex-col" key={project.projectNumber}>
             <Link
               key={project.projectName}
               href={`/projects/${project.projectPath}`}

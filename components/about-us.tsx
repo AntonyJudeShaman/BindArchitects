@@ -38,7 +38,7 @@ export function Aboutus() {
               At Studio Bind, we pride ourselves on being the best architects
               offering affordable solutions. Our commitment to cost-effective
               design ensures that excellence in architecture is accessible to
-              all. We don't just create spaces; we create value.
+              all. We don&apos;t just create spaces; we create value.
             </div>
           </div>
           <div className="flex md:flex-row flex-col md:mt-5">
@@ -47,7 +47,7 @@ export function Aboutus() {
             </div>
             <div className="flex-1 md:text-md fs-3 font-extralight dmsans text-md text-muted-foreground text-md md:text-left text-center md:p-0 p-3 md:justify-items-center md:ml-0 md:ml-24 md:mt-0 mt-10">
               Studio Bind believes in initiating architectural projects with
-              cost-effective kick-offs. Our cheap architectural solutions don't
+              cost-effective kick-offs. Our cheap architectural solutions don&apos;t
               compromise on quality, providing you with budget-friendly options
               without sacrificing excellence.
             </div>
@@ -69,8 +69,8 @@ export function Aboutus() {
             </div>
             <div className="flex-1 md:text-md fs-3 font-extralight dmsans text-md text-muted-foreground text-md md:text-left text-center md:p-0 p-3 md:justify-items-center md:ml-0 md:ml-24 md:mt-0 mt-10">
               At Studio Bind, we believe in direct communication with those
-              holding the final say. We've successfully executed awe-inspiring
-              projects by engaging directly with CEOs and decision-makers. Let's
+              holding the final say. We&apos;ve successfully executed awe-inspiring
+              projects by engaging directly with CEOs and decision-makers. Let&apos;s
               discuss your architectural vision with the individuals who shape
               its destiny.
             </div>

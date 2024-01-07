@@ -62,7 +62,7 @@ export function AboutSection() {
 >
   <article className="flex flex-col p-4 max-w-[40rem] text-left">
     <article className="text-lg dmsans md:mt-2 mt-0 leading-normal text-justify text-muted-foreground">
-      At Bind Architects, we seamlessly blend innovative design with captivating storytelling, bringing the essence and personality of architectural projects to vivid life. From conceptualization to completion, our hallmark is attentive listening, ensuring superior outcomes for our clients. Our approach combines artistic inspiration with thorough market research, resulting in a unique visual identity that transcends expectations. Whether it's architectural design, interior aesthetics, or project management, our diverse team guarantees exceptional results.
+      At Bind Architects, we seamlessly blend innovative design with captivating storytelling, bringing the essence and personality of architectural projects to vivid life. From conceptualization to completion, our hallmark is attentive listening, ensuring superior outcomes for our clients. Our approach combines artistic inspiration with thorough market research, resulting in a unique visual identity that transcends expectations. Whether it&apos;s architectural design, interior aesthetics, or project management, our diverse team guarantees exceptional results.
     </article>
   </article>
   <div className="p-4 flex max-w-[40rem] flex-col space-y-4 text-left">
@@ -117,7 +117,7 @@ export function AboutSection() {
       <hr className="mt-10 md:hidden" />
     </h1>
     <article className="text-lg dmsans leading-normal text-justify text-muted-foreground">
-      Our dynamic team includes Architects, Interior Designers, Visual Designers, and Project Managers. From project inception to completion, our collaborative approach harnesses the team's diverse skills and expertise. This collective knowledge allows us to provide comprehensive and tailored solutions for architectural design, interior aesthetics, visual branding, and project management. At [Your Architecture Firm], our team combines their skills to deliver results that consistently exceed your architectural expectations.
+      Our dynamic team includes Architects, Interior Designers, Visual Designers, and Project Managers. From project inception to completion, our collaborative approach harnesses the team&apos;s diverse skills and expertise. This collective knowledge allows us to provide comprehensive and tailored solutions for architectural design, interior aesthetics, visual branding, and project management. At [Your Architecture Firm], our team combines their skills to deliver results that consistently exceed your architectural expectations.
     </article>
   </div>
 </section>
