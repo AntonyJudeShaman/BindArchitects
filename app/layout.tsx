@@ -104,18 +104,30 @@ const graph = {
         {
           "@type": "ListItem",
           position: 2,
-          name: "Contact",
+          name: "Contact Us",
           item: "https://www.bindarchitects.com/contact",
         },
         {
           "@type": "ListItem",
           position: 3,
+          name: "Projects",
+          item: "https://www.bindarchitects.com/projects",
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          name: "About Studio Bind",
+          item: "https://www.bindarchitects.com/about",
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
           name: "Best architects in chennai",
           item: "https://www.bindarchitects.com",
         },
         {
           "@type": "ListItem",
-          position: 4,
+          position: 6,
           name: "Top architects in chennai",
           item: "https://www.bindarchitects.com",
         },
