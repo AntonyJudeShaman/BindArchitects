@@ -34,7 +34,7 @@ const graph = {
       "@type": "WPHeader",
       url: "https://www.bindarchitects.com/",
       headline:
-        "Bind - Best Architects in Chennai | Top Architectural Firm",
+        "Studio Bind - Best Architects in Chennai | Top Architectural Firm",
       description:
         "Award-winning Best architects in Chennai, we cater our top architect's services on residential buildings, Interior Designs, Villa, Apartment, Institutional and commercial mall, hotel, restaurant in Chennai & all over Tamilnadu. A leading and best interior designer in Chennai",
     },
@@ -42,7 +42,7 @@ const graph = {
       "@type": "WPFooter",
       url: "https://www.bindarchitects.com/",
       headline:
-        "Bind - Best Architects in Chennai | Top Architectural Firm",
+        "Studio Bind - Best Architects in Chennai | Top Architectural Firm",
       description:
         "Award-winning Best architects in Chennai, we cater our top architect's services on residential buildings, Interior Designs, Villa, Apartment, Institutional and commercial mall, hotel, restaurant in Chennai & all over Tamilnadu. A leading and best interior designer in Chennai",
       copyrightYear: "2023",
@@ -51,7 +51,7 @@ const graph = {
       "@type": "Organization",
       "@id": "https://www.bindarchitects.com/#schema-publishing-organization",
       url: "https://www.bindarchitects.com",
-      name: "Bind Architects",
+      name: "Studio Bind Architects",
       description:
         "We are the team of Best architects in Chennai and cater our top architects services on residential buildings, Interior Designs, Villa, Urban, Institutional and commercial places in Chennai and all over Tamilnadu.",
       contactPoint: {
@@ -75,7 +75,7 @@ const graph = {
       "@type": "WebSite",
       "@id": "https://www.bindarchitects.com/#schema-website",
       url: "https://www.bindarchitects.com",
-      name: "Bind Architects",
+      name: "Studio Bind Architects",
       encoding: "UTF-8",
       potentialAction: {
         "@type": "SearchAction",
@@ -124,7 +124,7 @@ const graph = {
     {
       "@type": "Person",
       "@id": "https://www.bindarchitects.com/about/#schema-author",
-      name: "Bind Architects",
+      name: "Studio Bind Architects",
     },
     {
       "@type": "WebPage",
@@ -196,7 +196,7 @@ const graph = {
       dateModified: "2023-11-22T14:29:49",
       datePublished: "2023-09-24T08:32:28",
       headline:
-        "Bind - Best Architects in Chennai | Top Architectural Firm",
+        "Studio Bind - Best Architects in Chennai | Top Architectural Firm",
       description:
         "Award-winning Best architects in Chennai, we cater our top architect's services on residential buildings, Interior Designs, Villa, Apartment, Institutional and commercial mall, hotel, restaurant in Chennai & all over Tamilnadu. A leading and best interior designer in Chennai",
       name: "Best architects in chennai",
@@ -225,12 +225,12 @@ const fallbackStyle = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      {/* <Script
+      <Script
         id="structured-data"
         key="structured-data"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
-      /> */}
+      />
       <body
         id="section1"
         className={cn(
