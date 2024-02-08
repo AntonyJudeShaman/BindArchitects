@@ -191,6 +191,7 @@ const AddProject = () => {
             placeholder="Project Name"
             value={projectName}
             onChange={(e) => setprojectName(e.target.value)}
+            required
           />
           <br />
 
@@ -201,6 +202,7 @@ const AddProject = () => {
             value={projectNumber}
             rows={10}
             onChange={(e) => setprojectNumber(e.target.value)}
+            required
           />
           <br />
 
@@ -210,6 +212,7 @@ const AddProject = () => {
             placeholder="Project Sector"
             value={type}
             onChange={(e) => settype(e.target.value)}
+            required
           />
           <br />
           <Textarea
@@ -218,6 +221,7 @@ const AddProject = () => {
             placeholder="Expertise"
             value={expertise}
             onChange={(e) => setExpertise(e.target.value)}
+            required
           />
           <br />
           <Textarea
@@ -226,6 +230,7 @@ const AddProject = () => {
             placeholder="Location"
             value={location}
             onChange={(e) => setLocation(e.target.value)}
+            required
           />
           <br />
 
@@ -235,6 +240,7 @@ const AddProject = () => {
             placeholder="Project Year"
             value={projectYear}
             onChange={(e) => setprojectYear(e.target.value)}
+            required
           />
 
           <br />
@@ -244,6 +250,7 @@ const AddProject = () => {
             placeholder="Project Name in small"
             value={projectPath}
             onChange={(e) => setprojectPath(e.target.value)}
+            required
           />
           <br />
           <Textarea
@@ -253,6 +260,7 @@ const AddProject = () => {
             value={description}
             rows={10}
             onChange={(e) => setDescription(e.target.value)}
+            required
           />
           <br />
           <Textarea
