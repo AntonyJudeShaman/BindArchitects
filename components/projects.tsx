@@ -93,13 +93,14 @@ export function Projects() {
     return <ProjectFound />;
   }
 
-  
   return (
     <div
       className="min-h-screen max-w-screen bg-footer md:border border-gray-600 md:rounded-2xl md:-ml-12 md:-mr-12 py-8 mx-auto justify-center"
       data-theme=""
     >
-      <h3 className="poppins mx-auto flex justify-center text-[2rem]">Take a look at some of our recent projects</h3>
+      <h3 className="poppins mx-auto flex justify-center md:p-0 p-4 text-[2rem]">
+        Take a look at some of our recent projects
+      </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:p-12 p-0 justify-center w-full ">
         {MenuItems?.sort((a, b) =>
           (b.projectNumber || "").localeCompare(a.projectNumber || "")
@@ -107,28 +108,24 @@ export function Projects() {
           .slice(0, 6)
           .map((project, index) => (
             <div className="flex flex-col" key={project.projectNumber}>
-            <Link
-              key={project.projectName}
-              href={`/projects/${project.projectPath}`}
-              style={{ filter: "brightness(105%)" }}
-              className="overflow-hidden m-4 rounded-2xl group justify-center"
-            >
-              <div
-                className="overflow-hidden border border-slate-600 rounded-2xl"
-                style={{ height: "320px", width: "600px" }}
+              <Link
+                key={project.projectName}
+                href={`/projects/${project.projectPath}`}
+                style={{ filter: "brightness(105%)" }}
+                className="overflow-hidden m-4 rounded-2xl group justify-center"
               >
-                <Image
-                  src={images[index]}
-                  alt={project.projectName || ""}
-                  height={320}
-                  width={600}
-                  style={{ height: "auto", width: "auto" }}
-                  className="overflow-hidden rounded-2xl items-center object-center transform hover:scale-105 transition-transform duration-500 ease-in-out"
-                />
-              </div>
-
-              
-            </Link><div className="flex flex-wrap text-lg mt-2 m-4 2xl:mr-5">
+                <div
+                  className="overflow-hidden border md:h-[400px] h-auto border-slate-600 rounded-2xl"
+                >
+                  <img
+                    src={images[index]}
+                    alt={project.projectName || ""}
+                    style={{ height: "auto", width: "auto" }}
+                    className="overflow-hidden rounded-2xl items-center object-center transform hover:scale-105 transition-transform duration-500 ease-in-out"
+                  />
+                </div>
+              </Link>
+              <div className="flex flex-wrap text-lg mt-2 m-4 2xl:mr-5">
                 <p
                   className="flex-1 dmsans-semibold text-left text-orange-50"
                   aria-label={project.projectName || ""}
@@ -141,7 +138,8 @@ export function Projects() {
                 >
                   {project.projectNumber}
                 </p>
-              </div></div>
+              </div>
+            </div>
           ))}
       </div>
     </div>

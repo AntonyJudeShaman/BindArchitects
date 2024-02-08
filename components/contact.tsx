@@ -57,7 +57,7 @@ export function Contact() {
           </div>
         </div>
       </section>
-      <iframe className="justify-end flex float-right md:h-[30rem] md:w-[100vh]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.0467992301183!2d80.1736660746047!3d13.03269181353689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261c174b694c1%3A0xdd2250c4920b50af!2sSTUDIO%20BIND%20ARCHITECTS!5e0!3m2!1sen!2sin!4v1704605085004!5m2!1sen!2sin" style={{border:"0",margin:"3vh"}} loading="lazy"></iframe>
+      <iframe className="justify-end flex float-right md:h-[30rem] w-[40vh] h-[40vh] 2xl:w-[77vh] xl:w-[67vh] lg:w-[57vh] md:w-[47vh]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.0467992301183!2d80.1736660746047!3d13.03269181353689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261c174b694c1%3A0xdd2250c4920b50af!2sSTUDIO%20BIND%20ARCHITECTS!5e0!3m2!1sen!2sin!4v1704605085004!5m2!1sen!2sin" style={{border:"0",margin:"3vh"}} loading="lazy"></iframe>
     </div>
   );
 }

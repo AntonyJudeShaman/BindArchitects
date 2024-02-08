@@ -32,7 +32,7 @@ export function Aboutus() {
         <article className="mx-auto flex-col flex grid justify-center gap-4 sm:grid-cols-2 justify-between md:grid-cols-1">
           <div className="flex md:flex-row flex-col ">
             <div className="flex-1 text-4xl dmsans-semibold title-gradient md:text-left md:mr-10 mr-0 text-center">
-              Affordable Excellence with the Best Architects.
+            Top architects, unbeatable prices.
             </div>
             <div className="flex-1 md:text-md fs-3 font-extralight dmsans text-md text-muted-foreground text-md md:text-left text-center md:p-0 p-3 md:justify-items-center md:ml-0 md:ml-24 md:mt-0 mt-10">
               At Studio Bind, we pride ourselves on being the best architects
@@ -43,7 +43,7 @@ export function Aboutus() {
           </div>
           <div className="flex md:flex-row flex-col md:mt-5">
             <div className="flex-1 text-4xl dmsans-semibold title-gradient md:text-left md:mr-10 mr-0 text-center md:mt-0 mt-6">
-              Budget-Friendly Kick-Offs for Cheap Architectural Solutions
+              Budget-Friendly Kick-Offs
             </div>
             <div className="flex-1 md:text-md fs-3 font-extralight dmsans text-md text-muted-foreground text-md md:text-left text-center md:p-0 p-3 md:justify-items-center md:ml-0 md:ml-24 md:mt-0 mt-10">
               Studio Bind believes in initiating architectural projects with
@@ -54,7 +54,7 @@ export function Aboutus() {
           </div>
           <div className="flex md:flex-row flex-col md:mt-5">
             <div className="flex-1 text-4xl dmsans-semibold title-gradient md:text-left md:mr-10 mr-0 text-center md:mt-0 mt-6">
-              Best Architectural Practices on a Budget
+              Best Architectural Practices
             </div>
             <div className="flex-1 md:text-md fs-3 font-extralight dmsans text-md text-muted-foreground text-md md:text-left text-center md:p-0 p-3 md:justify-items-center md:ml-0 md:ml-24 md:mt-0 mt-6">
               Studio Bind excels in delivering best-in-class architectural
@@ -65,7 +65,7 @@ export function Aboutus() {
           </div>
           <div className="flex md:flex-row flex-col md:mt-5">
             <div className="flex-1 text-4xl dmsans-semibold title-gradient md:text-left md:mr-10 mr-0 text-center md:mt-0 mt-6">
-              Direct Collaboration with Decision Makers
+              Direct Collaboration
             </div>
             <div className="flex-1 md:text-md fs-3 font-extralight dmsans text-md text-muted-foreground text-md md:text-left text-center md:p-0 p-3 md:justify-items-center md:ml-0 md:ml-24 md:mt-0 mt-10">
               At Studio Bind, we believe in direct communication with those

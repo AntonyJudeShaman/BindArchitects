@@ -305,7 +305,6 @@ function About() {
         </nav>
       </div>
       <AboutSection />
-      <Awards />
       <Services />
       <Questions />
       {/* <ContactScroll/> */}
