@@ -11,13 +11,34 @@ export default function IndexPage() {
       style={{ minHeight: "100vh" }}
     >
       <div className="md:p-0 p-4 max-w-full flex flex-col gap-8 md:-mt-10 -mt-[5rem]">
-        <h1
-          aria-label="Architectural Studio"
-          className="2xl:text-[4.8rem] xl:text-[4.5rem] lg:text-[4rem] md:text-[2.8rem] sm:text-[3rem] dmsans-home flex flex-wrap z-30 text-[2.4rem] duration-1000 font-display"
-        >
-          Studio Bind: Bringing Your Vision to Life - Residential & Commercial
-          Architecture
-        </h1>
+      <p
+            aria-label="Studio bind"
+            className="2xl:text-8xl xl:text-8xl lg:text-8xl md:text-7xl sm:text-7xl  dmsans-home title-gradient2 flex flex-wrap max-w-full   z-30 text-6xl title-gradient    duration-1000   font-display   "
+          >
+            We shape
+          </p>
+
+          <p
+            aria-label="Studio bind"
+            className="2xl:text-8xl xl:text-8xl lg:text-8xl md:text-7xl sm:text-7xl dmsans-home title-gradient2 flex dmsans-home flex-wrap max-w-full   z-30 text-6xl dmsans-home title-gradient3    duration-1000   font-display   "
+          >
+            brands that
+            <span className="sm:hidden dmsans-home hidden md:inline-block">
+              &nbsp;need no
+            </span>
+          </p>
+          <p
+            aria-label="Studio bind"
+            className="2xl:text-8xl xl:text-8xl lg:text-8xl md:text-7xl sm:text-7xl dmsans-home title-gradient2 sm:inline-block md:hidden flex dmsans-home flex-wrap max-w-full   z-30 text-6xl dmsans-home title-gradient    duration-1000   font-display   "
+          >
+            need no
+          </p>
+          <p
+            aria-label="Studio bind"
+            className="2xl:text-8xl xl:text-8xl lg:text-8xl md:text-7xl sm:text-7xl dmsans-home title-gradient2 flex dmsans-home flex-wrap   z-30 text-6xl dmsans-home title-gradient4    duration-1000   font-display   "
+          >
+             introduction
+          </p>
 
         <div className="md:max-w-full grid lg:grid-cols-2 xl:grid-cols-4 sm:grid-cols-2 md:grid-cols-2 grid-cols-2 md:gap-x-24  xl:gap-x-12 lg:gap-x-40 2xl:gap-x-32 gap-x-12  flex-row  sm:leading-8">
           <article className="flex flex-col title-gradient4 mt-8">

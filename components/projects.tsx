@@ -95,7 +95,7 @@ export function Projects() {
 
   return (
     <div
-      className="min-h-screen max-w-screen bg-footer md:border border-gray-600 md:rounded-2xl md:-ml-12 md:-mr-12 py-8 mx-auto justify-center"
+      className="min-h-screen max-w-screen md:rounded-2xl md:-ml-12 md:-mr-12 py-8 mx-auto justify-center"
       data-theme=""
     >
       <h3 className="poppins mx-auto flex justify-center md:p-0 p-4 text-[2rem]">
@@ -115,7 +115,7 @@ export function Projects() {
                 className="overflow-hidden m-4 rounded-2xl group justify-center"
               >
                 <div
-                  className="overflow-hidden border md:h-[400px] h-auto border-slate-600 rounded-2xl"
+                  className="overflow-hidden md:h-[400px] h-auto rounded-2xl"
                 >
                   <img
                     src={images[index]}
