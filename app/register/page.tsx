@@ -6,10 +6,10 @@ import { ArrowLeft } from "lucide-react";
 
 export default function Login() {
   return (
-    <div className="flex h-screen w-screen items-center text-black justify-center bg-purple-50" data-theme="cmyk">
-      
-      Hello!
-          
-      </div>
+    <div
+      className="flex  min-h-screen md:-ml-32 md:-mr-32 ml-0 mr-0  items-center text-white bg-black/80 justify-center"
+    >
+      You cannot register as an admin.
+    </div>
   );
 }
