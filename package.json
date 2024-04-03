@@ -35,7 +35,7 @@
     "next": "^14.0.3",
     "next-auth": "^4.24.5",
     "next-seo": "^6.4.0",
-    "next-themes": "^0.2.1",
+    "next-themes": "^0.3.0",
     "node-fetch": "^3.3.2",
     "pnpm": "^8.10.5",
     "radix-ui": "^1.0.1",
