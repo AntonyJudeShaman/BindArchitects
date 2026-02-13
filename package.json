@@ -19,7 +19,7 @@
     "@vercel/speed-insights": "^1.0.1",
     "animejs": "^3.2.1",
     "appwrite": "^13.0.1",
-    "axios": "^1.6.2",
+    "axios": "^1.13.2",
     "bcrypt": "^5.1.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
